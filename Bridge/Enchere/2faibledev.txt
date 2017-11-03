@@ -1,0 +1,62 @@
+// réponses sur ouverture d'un 2 faible
+
+?--- 2M -
+	= 15H+ = 2S
+?--- 2M X
+	= 15H+ = XX
+?--- 2M ?
+	= 3M 10-12H = 3M
+	= 4M+ 13-14H = 4M
+	= N 3M = 3M
+	= N 4M+ = 4M
+	= 6n+ 16DH+ = 0n
+	= 15H+ = X
+	= = -
+
+//	redemandes sur enchère forcing
+
+?--- 2M - 2S -
+	= 8H+ hnA = 3n	
+	= 8H+ hnR = 3n	
+	= 8H+ ctrn = 4n	
+	= = 3M
+?--- 2M X XX -
+	= 8H+ hnA = 3n	
+	= 8H+ hnR = 3n	
+	= 8H+ ctrn = 4n	
+	= = 3M
+?--- 2M ? X -
+	= 8H+ hnA = 3n	
+	= 8H+ hnR = 3n	
+	= 8H+ ctrn = 4n	
+	= = 3M
+?--- 2M ? X ?
+	= 8H+ = 4M	
+	
+// 2ème réponse après enchère forcing
+
+?--- 2M - 2S - 3M -
+	= = $finaleMaj M 6-8DH
+?--- 2M - 2S - 3x -
+	= = $finaleMaj M 8-10DH
+?--- 2M - 2S - 4x -
+	= = $finaleMaj M 8-10DH
+	
+?--- 2M X XX - 3M -
+	=	= -
+?--- 2M X XX - 3x -
+	= = 4M
+?--- 2M X XX - 4x -
+	= = 4M
+	
+?--- 2M ? X - 3M -
+	=	= -
+?--- 2M ? X - 3x -
+	=	= 4M
+?--- 2M ? X - 4x -
+	=	= 4M
+
+	
+
+	
+

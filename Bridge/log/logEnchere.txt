@@ -1,0 +1,2372 @@
+>>*** 2j N P maj5 maj5 IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RV86
+>>R32
+>>R32
+>>
+>>R= 1T - 1C - 1P - 1S - -
+>>***
+Enchère : 1T - 1C - 1P - 1S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>Rxx
+>>Rxx
+>>
+>>R= 1T - 1C - 1P - 2K - 2C - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2K - 2C - - (2S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>RDV
+>>xxx
+>>
+>>R= 1T - 1C - 1P - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>86
+>>RDX95
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1C - 2K - 2C - 3K - -
+>>***
+Enchère : 1C - 2K - 2C - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>RDX95
+>>86
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1P - 2K - 2P - 3K - -
+>>***
+Enchère : 1P - 2K - 2P - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>ARxx
+>>xx
+>>AVxxx
+>>
+>>DVxx
+>>Dxx
+>>Axxx
+>>RD
+>>
+>>R= 1T - 1K - 1C - 1P - 2S - 4S - 6S - -
+>>***
+Enchère : 1T - 1K - 1C - 1P - 2S - - (4S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>xx
+>>Ax
+>>xx
+>>ARDVxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 3T - -
+>>***
+Enchère : 1T - 1C - 3T - 3S (-)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>xx
+>>Ax
+>>xx
+>>ARDxxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 2T - -
+>>***
+Enchère : 1T - 1C - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>5
+>>A543
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 1T - 1C - 3C - 4C - - 
+>>***
+Enchère : 1T - 1C - 3C - - (4C) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>5
+>>AV54
+>>RD5
+>>AV954
+>>
+>>RV862
+>>D82
+>>832
+>>X2
+>>
+>>R= 1T - 1P - 2T - - 
+>>***
+Enchère : 1T - 1P - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>RV8652
+>>AV5
+>>5
+>>RD6
+>>
+>>3
+>>RDX6
+>>RDX62
+>>AV9
+>>
+>>R= 1P - 2K - 2P - 3S - -
+>>***
+Enchère : 1P - 2K - 2P - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>
+*** Erreurs détectées ***
+>>*** 2j N P maj5 maj5 IMP
+>>V3
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 1S - 2K - 2C - 2S - - 
+>>***
+Enchère : 1S - 2K - 2C - 2S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>V3
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RD862
+>>832
+>>R2
+>>
+>>R= 1S - 2K - 2C - 3S - 4C - - 
+>>***
+Enchère : 1S - 2K - 2C - 3S - 4C - -  
+Enchères OK
+-----------------------------------------
+*** Fin ***
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 2S - 3K - 3C - 3S - 4C - -
+>>***
+Enchère : 2S - 3K - 3C - 3S - - (4C) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 2S - 3K - 3C - 3P - 4C - -
+>>***
+Enchère : 2S - 3K - 3C - 3S (3P)- - (4C) 
+Erreur enchères
+-----------------------------------------
+*** Erreurs détectées ***
+>>*** 2j N P maj5 maj5 IMP
+>>xx
+>>Ax
+>>x
+>>ARDVxxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 2T - 2K - 3T - -
+>>***
+Enchère : 2T - 2K - 3T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>A54
+>>RD5
+>>AD954
+>>
+>>D832
+>>RV862
+>>83
+>>R2
+>>
+>>R= 2T - 2K - 2S - 3K - 3C - 3S - 4C - -
+>>***
+Enchère : 2T - 2K - 2S - - (3K) 
+Erreur enchères
+-----------------------------------------
+*** Erreurs détectées ***
+>>*** 2j N P maj5 maj5 IMP
+>>xxx
+>>xx
+>>Rxxx
+>>Axxx
+>>
+>>ARxxx
+>>xxx
+>>xxx
+>>R2
+>>
+>>R= - - 1P - 2P - -
+>>***
+Enchère : - - 1P - 2P - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>xxx
+>>x
+>>ARDVx
+>>xxxx
+>>
+>>ARxxx
+>>xxx
+>>xxx
+>>R2
+>>
+>>R= - - 1P - 3K - -
+>>***
+Enchère : - - 1P - 3K - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>xxxx
+>>x
+>>RDVx
+>>Axxx
+>>
+>>ARxxx
+>>xxx
+>>xxx
+>>R2
+>>
+>>R= - - 1P - 2T - 2K - 2P - -
+>>***
+Enchère : - - 1P - 2T - 2K - 2P - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>82
+>>RX7
+>>D743
+>>AD74
+>>
+>>RDX93
+>>V5
+>>A62
+>>865
+>>
+>>R= - - 1P - 1S - -
+>>***
+Enchère : - - 1P - 1S - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>D3
+>>RX4
+>>R752
+>>R963
+>>
+>>AVX62
+>>D93
+>>AD4
+>>V7
+>>
+>>R= - - 1P - 2T - 2K - 2S - 3S - -
+>>***
+Enchère : - - 1P - 2T - 2K - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>43
+>>RX4
+>>R752
+>>RD63
+>>
+>>AVX62
+>>D93
+>>AD4
+>>V7
+>>
+>>R= - - 1P - 1S - 2K - 2S - 3S - -
+>>***
+Enchère : - - 1P - 1S - 2K - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+*** Fin ***
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>AD
+>>R= 1P
+>>***
+Enchère : 1P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>ARxxx
+>>Rx
+>>AD
+>>R= 1C
+>>***
+Enchère : 1C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>Rx
+>>x
+>>ADxxx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>ARxx
+>>Rx
+>>ADx
+>>R= 1S
+>>***
+Enchère : 1S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>Axx
+>>Rxx
+>>ADx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>Axx
+>>Rxxx
+>>AD
+>>R= 1K
+>>***
+Enchère : 1K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADxxxx
+>>xxx
+>>xxx
+>>x
+>>R= 2P
+>>***
+Enchère : 2P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADVxxx
+>>xxx
+>>Axx
+>>x
+>>R= 1P
+>>***
+Enchère : 1P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>ADxx
+>>Axx
+>>Rx
+>>R= 2S
+>>***
+Enchère : 2S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>AVxx
+>>Axx
+>>AR
+>>R= 2T
+>>***
+Enchère : 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>ARxx
+>>Axx
+>>AR
+>>R= 2K
+>>***
+Enchère : 2K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADxx
+>>ADxx
+>>Axx
+>>Rx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xx
+>>Rx
+>>Axxx
+>>ADxxx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>DVxxxx
+>>Rxx
+>>xx
+>>R= 2C
+>>***
+Enchère : 2C  
+Enchères OK
+-----------------------------------------
+*** Fin ***
+>>*** 1j N P maj5 maj5 IMP
+>>ADXxxxx
+>>RX
+>>-
+>>ARVx
+>>R= 2T
+>>***
+Enchère : 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADXxxxx
+>>xx
+>>-
+>>ARxx
+>>R= 1P
+>>***
+Enchère : 1P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADVXxxx
+>>xx
+>>-
+>>xxxx
+>>R= 3P
+>>***
+Enchère : 3P  
+Enchères OK
+-----------------------------------------
+*** Fin ***
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxx
+>>xxxx
+>>Ax
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxxx
+>>xx
+>>Ax
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>x
+>>xxx
+>>RDxx
+>>ARxxx
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xx
+>>xxx
+>>RVxx
+>>Axxx
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1S -
+>>R= 2C
+>>***
+Enchère : 1S - 2C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxx
+>>ARxxx
+>>xxx
+>>Ax
+>>E= 1S -
+>>R= 2K
+>>***
+Enchère : 1S - 2K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>A
+>>E= 1S -
+>>R= 4K
+>>***
+Enchère : 1S - 4K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>x
+>>E= 1S -
+>>R= 2K
+>>***
+Enchère : 1S - 4K (2K) 
+Erreur enchères
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADxxx
+>>ADxxx
+>>xx
+>>A
+>>E= 1S -
+>>R= 2C
+>>***
+Enchère : 1S - 2C  
+Enchères OK
+-----------------------------------------
+*** Erreurs détectées ***
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxx
+>>xxxx
+>>Ax
+>>E= 2S -
+>>R= 3T
+>>***
+Enchère : 2S - 3T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxxx
+>>xx
+>>xx
+>>E= 2S -
+>>R= 3S
+>>***
+Enchère : 2S - 3S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>x
+>>xxx
+>>RDxx
+>>ARxxx
+>>E= 2S -
+>>R= 5S
+>>***
+Enchère : 2S - 5S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xx
+>>xxx
+>>RVxx
+>>Axxx
+>>E= 2S -
+>>R= 3T
+>>***
+Enchère : 2S - 3T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 2S -
+>>R= 3C
+>>***
+Enchère : 2S - 3C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxx
+>>ARxxx
+>>xxx
+>>Ax
+>>E= 2S -
+>>R= 3K
+>>***
+Enchère : 2S - 3K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>A
+>>E= 2S -
+>>R= 3K
+>>***
+Enchère : 2S - 3K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>x
+>>E= 2S -
+>>R= 4K
+>>***
+Enchère : 2S - 4K  
+Enchères OK
+-----------------------------------------
+*** Fin ***
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 1P
+>>***
+Enchère : 1T X - 1P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 1C
+>>***
+Enchère : 1T X - 1C  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>xxxx
+>>xxx
+>>E= 1T X -
+>>R= 1C
+>>***
+Enchère : 1T X - 1C  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>Axxxxx
+>>xx
+>>E= 1T X -
+>>R= 1K
+>>***
+Enchère : 1T X - 1K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>Axxxxx
+>>E= 1T X -
+>>R= -
+>>***
+Enchère : 1T X - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARDxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 3P
+>>***
+Enchère : 1T X - 3P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>Dxxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 2T
+>>***
+Enchère : 1T X - 2T  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>Dxxx
+>>xxx
+>>E= 1T X -
+>>R= 2K
+>>***
+Enchère : 1T X - 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>ADxxxx
+>>xx
+>>E= 1T X -
+>>R= 2K
+>>***
+Enchère : 1T X - 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>ADxxxx
+>>E= 1T X -
+>>R= 1S
+>>***
+Enchère : 1T X - 1S  
+Enchères OK
+-----------------------------------------
+>>
+*** Fin ***
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X 1K
+>>R= 1P
+>>***
+Enchère : 1T X 1K 1P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxxx
+>>xxx
+>>xx
+>>E= 1T X 1K
+>>R= 1C
+>>***
+Enchère : 1T X 1K 1C  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>xxxx
+>>xxx
+>>E= 1T X 1P
+>>R= 2K
+>>***
+Enchère : 1T X 1P 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>Axxxxx
+>>xx
+>>E= 1T X 1P
+>>R= 2K
+>>***
+Enchère : 1T X 1P 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>Axxxxx
+>>E= 1T X 1P
+>>R= -
+>>***
+Enchère : 1T X 1P -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARDxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X 1C
+>>R= 2P
+>>***
+Enchère : 1T X 1C 2P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>Dxxx
+>>xxx
+>>xx
+>>E= 1T X 1C
+>>R= X
+>>***
+Enchère : 1T X 1C X  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>Dxxx
+>>xxx
+>>E= 1T X 1K
+>>R= X
+>>***
+Enchère : 1T X 1K X  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>ADxxxx
+>>xx
+>>E= 1T X 1P
+>>R= 3K
+>>***
+Enchère : 1T X 1P 3K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>ADxxxx
+>>E= 1T X 1C
+>>R= 1S
+>>***
+Enchère : 1T X 1C 1S  
+Enchères OK
+-----------------------------------------
+>>
+*** Fin ***
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>Ax
+>>E= 1T - - -
+>>R= 1P
+>>***
+Enchère : 1T - - - 1P  
+Enchères OK
+-----------------------------------------
+*** Fin ***
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RV86
+>>R32
+>>R32
+>>
+>>R= 1T - 1C - 1P - 1S - -
+>>***
+Enchère : 1T - 1C - 1P - 1S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>Rxx
+>>Rxx
+>>
+>>R= 1T - 1C - 1P - 2K - 2C - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2K - 2C - - (2S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>RDV
+>>xxx
+>>
+>>R= 1T - 1C - 1P - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>86
+>>RDX95
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1C - 2K - 2C - 3K - -
+>>***
+Enchère : 1C - 2K - 2C - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>RDX95
+>>86
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1P - 2K - 2P - 3K - -
+>>***
+Enchère : 1P - 2K - 2P - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AR
+>>ARxx
+>>xx
+>>AVxxx
+>>
+>>DVxx
+>>Dxx
+>>Axxx
+>>RD
+>>
+>>R= 1T - 1K - 1C - 1P - 2S - 4S - 6S - -
+>>***
+Enchère : 1T - 1K - 1C - 1P - 2S - - (4S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>xx
+>>Ax
+>>xx
+>>ARDVxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 3T - -
+>>***
+Enchère : 1T - 1C - 3T - 3S (-)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>xx
+>>Ax
+>>xx
+>>ARDxxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 2T - -
+>>***
+Enchère : 1T - 1C - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>5
+>>A543
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 1T - 1C - 3C - 4C - - 
+>>***
+Enchère : 1T - 1C - 3C - - (4C) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>5
+>>AV54
+>>RD5
+>>AV954
+>>
+>>RV862
+>>D82
+>>832
+>>X2
+>>
+>>R= 1T - 1P - 2T - - 
+>>***
+Enchère : 1T - 1P - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>RV8652
+>>AV5
+>>5
+>>RD6
+>>
+>>3
+>>RDX6
+>>RDX62
+>>AV9
+>>
+>>R= 1P - 2K - 2P - 3S - -
+>>***
+Enchère : 1P - 2K - 2P - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>
+*** Erreurs détectées ***
+>>*** 2j N P maj5 maj5 IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RV86
+>>R32
+>>R32
+>>
+>>R= 1T - 1C - 1P - 1S - -
+>>***
+Enchère : 1T - 1C - 1P - 1S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>Rxx
+>>Rxx
+>>
+>>R= 1T - 1C - 1P - 2K - 2C - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2K - 2C - - (2S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>RDV
+>>xxx
+>>
+>>R= 1T - 1C - 1P - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>86
+>>RDX95
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1C - 2K - 2C - 3K - -
+>>***
+Enchère : 1C - 2K - 2C - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>RDX95
+>>86
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1P - 2K - 2P - 3K - -
+>>***
+Enchère : 1P - 2K - 2P - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>ARxx
+>>xx
+>>AVxxx
+>>
+>>DVxx
+>>Dxx
+>>Axxx
+>>RD
+>>
+>>R= 1T - 1K - 1C - 1P - 2S - 4S - 6S - -
+>>***
+Enchère : 1T - 1K - 1C - 1P - 2S - - (4S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>xx
+>>Ax
+>>xx
+>>ARDVxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 3T - -
+>>***
+Enchère : 1T - 1C - 3T - 3S (-)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>xx
+>>Ax
+>>xx
+>>ARDxxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 2T - -
+>>***
+Enchère : 1T - 1C - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>5
+>>A543
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 1T - 1C - 3C - 4C - - 
+>>***
+Enchère : 1T - 1C - 3C - - (4C) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>5
+>>AV54
+>>RD5
+>>AV954
+>>
+>>RV862
+>>D82
+>>832
+>>X2
+>>
+>>R= 1T - 1P - 2T - - 
+>>***
+Enchère : 1T - 1P - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>RV8652
+>>AV5
+>>5
+>>RD6
+>>
+>>3
+>>RDX6
+>>RDX62
+>>AV9
+>>
+>>R= 1P - 2K - 2P - 3S - -
+>>***
+Enchère : 1P - 2K - 2P - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>V3
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 1S - 2K - 2C - 2S - - 
+>>***
+Enchère : 1S - 2K - 2C - 2S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>V3
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RD862
+>>832
+>>R2
+>>
+>>R= 1S - 2K - 2C - 3S - 4C - - 
+>>***
+Enchère : 1S - 2K - 2C - 3S - 4C - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 2S - 3K - 3C - 3S - 4C - -
+>>***
+Enchère : 2S - 3K - 3C - 3S - - (4C) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>A54
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 2S - 3K - 3C - 3P - 4C - -
+>>***
+Enchère : 2S - 3K - 3C - 3S (3P)- - (4C) 
+Erreur enchères
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>xx
+>>Ax
+>>x
+>>ARDVxxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 2T - 2K - 3T - -
+>>***
+Enchère : 2T - 2K - 3T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5 maj5 IMP
+>>AR
+>>A54
+>>RD5
+>>AD954
+>>
+>>D832
+>>RV862
+>>83
+>>R2
+>>
+>>R= 2T - 2K - 2S - 3K - 3C - 3S - 4C - -
+>>***
+Enchère : 2T - 2K - 2S - - (3K) 
+Erreur enchères
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>xxx
+>>xx
+>>Rxxx
+>>Axxx
+>>
+>>ARxxx
+>>xxx
+>>xxx
+>>R2
+>>
+>>R= - - 1P - 2P - -
+>>***
+Enchère : - - 1P - 2P - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>xxx
+>>x
+>>ARDVx
+>>xxxx
+>>
+>>ARxxx
+>>xxx
+>>xxx
+>>R2
+>>
+>>R= - - 1P - 3K - -
+>>***
+Enchère : - - 1P - 3K - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>xxxx
+>>x
+>>RDVx
+>>Axxx
+>>
+>>ARxxx
+>>xxx
+>>xxx
+>>R2
+>>
+>>R= - - 1P - 2T - 2K - 2P - -
+>>***
+Enchère : - - 1P - 2T - 2K - 2P - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>82
+>>RX7
+>>D743
+>>AD74
+>>
+>>RDX93
+>>V5
+>>A62
+>>865
+>>
+>>R= - - 1P - 1S - -
+>>***
+Enchère : - - 1P - 1S - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>D3
+>>RX4
+>>R752
+>>R963
+>>
+>>AVX62
+>>D93
+>>AD4
+>>V7
+>>
+>>R= - - 1P - 2T - 2K - 2S - 3S - -
+>>***
+Enchère : - - 1P - 2T - 2K - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5 maj5 IMP
+>>43
+>>RX4
+>>R752
+>>RD63
+>>
+>>AVX62
+>>D93
+>>AD4
+>>V7
+>>
+>>R= - - 1P - 1S - 2K - 2S - 3S - -
+>>***
+Enchère : - - 1P - 1S - 2K - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>AD
+>>R= 1P
+>>***
+Enchère : 1P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>ARxxx
+>>Rx
+>>AD
+>>R= 1C
+>>***
+Enchère : 1C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>Rx
+>>x
+>>ADxxx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>ARxx
+>>Rx
+>>ADx
+>>R= 1S
+>>***
+Enchère : 1S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>Axx
+>>Rxx
+>>ADx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxx
+>>Axx
+>>Rxxx
+>>AD
+>>R= 1K
+>>***
+Enchère : 1K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADxxxx
+>>xxx
+>>xxx
+>>x
+>>R= 2P
+>>***
+Enchère : 2P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADVxxx
+>>xxx
+>>Axx
+>>x
+>>R= 1P
+>>***
+Enchère : 1P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>ADxx
+>>Axx
+>>Rx
+>>R= 2S
+>>***
+Enchère : 2S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>AVxx
+>>Axx
+>>AR
+>>R= 2T
+>>***
+Enchère : 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>ARxx
+>>Axx
+>>AR
+>>R= 2K
+>>***
+Enchère : 2K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADxx
+>>ADxx
+>>Axx
+>>Rx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xx
+>>Rx
+>>Axxx
+>>ADxxx
+>>R= 1T
+>>***
+Enchère : 1T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>DVxxxx
+>>Rxx
+>>xx
+>>R= 2C
+>>***
+Enchère : 2C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADXxxxx
+>>RX
+>>-
+>>ARVx
+>>R= 2T
+>>***
+Enchère : 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADXxxxx
+>>xx
+>>-
+>>ARxx
+>>R= 1P
+>>***
+Enchère : 1P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADVXxxx
+>>xx
+>>-
+>>xxxx
+>>R= 3P
+>>***
+Enchère : 3P  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxx
+>>xxxx
+>>Ax
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxxx
+>>xx
+>>Ax
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>x
+>>xxx
+>>RDxx
+>>ARxxx
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xx
+>>xxx
+>>RVxx
+>>Axxx
+>>E= 1S -
+>>R= 2T
+>>***
+Enchère : 1S - 2T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1S -
+>>R= 2C
+>>***
+Enchère : 1S - 2C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxx
+>>ARxxx
+>>xxx
+>>Ax
+>>E= 1S -
+>>R= 2K
+>>***
+Enchère : 1S - 2K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>A
+>>E= 1S -
+>>R= 4K
+>>***
+Enchère : 1S - 4K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>x
+>>E= 1S -
+>>R= 2K
+>>***
+Enchère : 1S - 4K (2K) 
+Erreur enchères
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ADxxx
+>>ADxxx
+>>xx
+>>A
+>>E= 1S -
+>>R= 2C
+>>***
+Enchère : 1S - 2C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxx
+>>xxxx
+>>Ax
+>>E= 2S -
+>>R= 3T
+>>***
+Enchère : 2S - 3T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxxx
+>>xx
+>>xx
+>>E= 2S -
+>>R= 3S
+>>***
+Enchère : 2S - 3S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>x
+>>xxx
+>>RDxx
+>>ARxxx
+>>E= 2S -
+>>R= 5S
+>>***
+Enchère : 2S - 5S  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xx
+>>xxx
+>>RVxx
+>>Axxx
+>>E= 2S -
+>>R= 3T
+>>***
+Enchère : 2S - 3T  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 2S -
+>>R= 3C
+>>***
+Enchère : 2S - 3C  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxx
+>>ARxxx
+>>xxx
+>>Ax
+>>E= 2S -
+>>R= 3K
+>>***
+Enchère : 2S - 3K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>A
+>>E= 2S -
+>>R= 3K
+>>***
+Enchère : 2S - 3K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>xxxxx
+>>ARxxx
+>>xx
+>>x
+>>E= 2S -
+>>R= 4K
+>>***
+Enchère : 2S - 4K  
+Enchères OK
+-----------------------------------------
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 1P
+>>***
+Enchère : 1T X - 1P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 1C
+>>***
+Enchère : 1T X - 1C  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>xxxx
+>>xxx
+>>E= 1T X -
+>>R= 1C
+>>***
+Enchère : 1T X - 1C  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>Axxxxx
+>>xx
+>>E= 1T X -
+>>R= 1K
+>>***
+Enchère : 1T X - 1K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>Axxxxx
+>>E= 1T X -
+>>R= -
+>>***
+Enchère : 1T X - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARDxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 3P
+>>***
+Enchère : 1T X - 3P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>Dxxx
+>>xxx
+>>xx
+>>E= 1T X -
+>>R= 2T
+>>***
+Enchère : 1T X - 2T  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>Dxxx
+>>xxx
+>>E= 1T X -
+>>R= 2K
+>>***
+Enchère : 1T X - 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>ADxxxx
+>>xx
+>>E= 1T X -
+>>R= 2K
+>>***
+Enchère : 1T X - 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>ADxxxx
+>>E= 1T X -
+>>R= 1S
+>>***
+Enchère : 1T X - 1S  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X 1K
+>>R= 1P
+>>***
+Enchère : 1T X 1K 1P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>xxxx
+>>xxx
+>>xx
+>>E= 1T X 1K
+>>R= 1C
+>>***
+Enchère : 1T X 1K 1C  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>xxxx
+>>xxx
+>>E= 1T X 1P
+>>R= 2K
+>>***
+Enchère : 1T X 1P 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>Axxxxx
+>>xx
+>>E= 1T X 1P
+>>R= 2K
+>>***
+Enchère : 1T X 1P 2K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>Axxxxx
+>>E= 1T X 1P
+>>R= -
+>>***
+Enchère : 1T X 1P -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARDxx
+>>xxx
+>>xxx
+>>xx
+>>E= 1T X 1C
+>>R= 2P
+>>***
+Enchère : 1T X 1C 2P  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxx
+>>Dxxx
+>>xxx
+>>xx
+>>E= 1T X 1C
+>>R= X
+>>***
+Enchère : 1T X 1C X  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARx
+>>xxx
+>>Dxxx
+>>xxx
+>>E= 1T X 1K
+>>R= X
+>>***
+Enchère : 1T X 1K X  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xxx
+>>ADxxxx
+>>xx
+>>E= 1T X 1P
+>>R= 3K
+>>***
+Enchère : 1T X 1P 3K  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>Rx
+>>xx
+>>xxx
+>>ADxxxx
+>>E= 1T X 1C
+>>R= 1S
+>>***
+Enchère : 1T X 1C 1S  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 1j N P maj5 maj5 IMP
+>>ARxxx
+>>xxx
+>>xxx
+>>Ax
+>>E= 1T - - -
+>>R= 1P
+>>***
+Enchère : 1T - - - 1P  
+Enchères OK
+-----------------------------------------
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RV86
+>>R32
+>>R32
+>>
+>>R= 1T - 1C - 1P - 1S - -
+>>***
+Enchère : 1T - 1C - 1P - 1S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>Rxx
+>>Rxx
+>>
+>>R= 1T - 1C - 1P - 2K - 2C - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2K - 2C - - (2S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AVxx
+>>A54
+>>xxx
+>>AV9
+>>
+>>xxx
+>>RD86
+>>RDV
+>>xxx
+>>
+>>R= 1T - 1C - 1P - 2S - 3S - -
+>>***
+Enchère : 1T - 1C - 1P - 2S - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>86
+>>RDX95
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1C - 2K - 2C - 3K - -
+>>***
+Enchère : 1C - 2K - 2C - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>RDX95
+>>86
+>>D7
+>>ARV7
+>>
+>>VX
+>>V
+>>ARVX643
+>>D42
+>>
+>>R= 1P - 2K - 2P - 3K - -
+>>***
+Enchère : 1P - 2K - 2P - 3S (3K)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>AR
+>>ARxx
+>>xx
+>>AVxxx
+>>
+>>DVxx
+>>Dxx
+>>Axxx
+>>RD
+>>
+>>R= 1T - 1K - 1C - 1P - 2S - 4S - 6S - -
+>>***
+Enchère : 1T - 1K - 1C - 1P - 2S - - (4S) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>xx
+>>Ax
+>>xx
+>>ARDVxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 3T - -
+>>***
+Enchère : 1T - 1C - 3T - 3S (-)- -  
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>xx
+>>Ax
+>>xx
+>>ARDxxxx
+>>
+>>RDxx
+>>Rxxx
+>>xxx
+>>xx
+>>
+>>R= 1T - 1C - 2T - -
+>>***
+Enchère : 1T - 1C - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>5
+>>A543
+>>RD5
+>>AV954
+>>
+>>D82
+>>RV862
+>>832
+>>R2
+>>
+>>R= 1T - 1C - 3C - 4C - - 
+>>***
+Enchère : 1T - 1C - 3C - - (4C) 
+Erreur enchères
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>5
+>>AV54
+>>RD5
+>>AV954
+>>
+>>RV862
+>>D82
+>>832
+>>X2
+>>
+>>R= 1T - 1P - 2T - - 
+>>***
+Enchère : 1T - 1P - 2T - -  
+Enchères OK
+-----------------------------------------
+>>
+>>*** 2j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>RV8652
+>>AV5
+>>5
+>>RD6
+>>
+>>3
+>>RDX6
+>>RDX62
+>>AV9
+>>
+>>R= 1P - 2K - 2P - 3S - -
+>>***
+Enchère : 1P - 2K - 2P - 3S - -  
+Enchères OK
+-----------------------------------------
+>>
+>>
+*** Erreurs détectées ***

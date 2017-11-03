@@ -1,0 +1,26 @@
+*** pb4j N P maj5,1SAforcing maj5,1SAforcing IMP
+ADX
+-
+-
+432
+
+V
+V
+-
+ARDV
+
+98
+D65
+4
+-
+
+R743
+X
+5
+-
+
+Atout= C
+Contrat= 6
+Joueur= S
+
+*** squeeze PK sur W

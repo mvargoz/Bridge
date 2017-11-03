@@ -1,0 +1,88 @@
+// Intervention du n° 2 sur le 2 faible
+
+?--- 2C
+   = 6P+ 18DH+ = 3P
+   = 5P+ 12H+ = 2P
+   = 5P+ N 10H+ = 2P
+?--- 2P
+   = 6C+ 14DH+ = 3C
+?--- 2M
+   = sa 3tsaM 17-18H = 2S
+   = 6m+ 14DH+ = 3m
+   = 5m 5m' 18DH+ = 3S
+   = 5M' 5m 18DH+ = 4m
+   = 7m hmARD 2tsaM- = 3M
+   = 4M'+ 14H+ = X
+   = 19H+ = X
+
+//  Réponse au contre 
+
+?--- 2C X ?
+   = 4P 0-7H = 2P
+   = 5P 8-10H = 3P
+
+?--- 2M X ?
+   = 4M' 0-7H = 3M'
+   = 4m 0-7H = 3m
+   = 5M' 11-13H = 4M'
+   = 3tsaM 11-13H = 3S
+   = 5M' 5m+ 9-10H = 4m
+   = 7m hmARD 2tsaM- = 3M
+   = 5m+ 5m'+ = 4S
+   = 8H+ = 2S
+   = = -
+
+//  Réponse couleur 
+
+?--- 2C 2P ?
+	= 3P+ 14SP+ = 4P
+	= 3P+ 11SP+ = 3P
+	= 5P+ = 4P
+	= 12HL+ 3tsaC = 3S
+	= 11HL 3tsaC = 2S
+	= 12HL+ = 3C
+	= = -
+* 3P ?
+	= 6P+ = 4P
+	= 16DH = 4P
+	= 15H+ = X
+	= = -
+* 2S ?
+	= 6P+ = 4P
+	= 13HL+ = 3S
+	= = -
+
+?--- 2C 3P ?
+	= 3P+ 14SP+ = 6P
+	= 2P+ 9SP+ = 4P
+	= 4P+ = 4P
+	= 9HL+ 3tsaC = 3S
+	= 9H+ = X
+	= = -
+
+?--- 2P 3C ?
+	= 2C+ 13SP+ = 0C
+	= 3C+ 10SP+ = 3C
+	= 4C+ = 4C
+	= 10HL+ 3tsaC = 3S
+	= 12H+ = 3P
+	= 12H+ = X
+	= = -
+
+
+//  developpement après contre et 2SA 
+
+?--- 2M X - 2S -
+   = 5M' 18H- = 3M'
+   = 19-20H 3tsaM = 3SA
+   = 18H+ = 3M  
+   = 6m = 4m
+   = = 3T
+
+?--- 2M X - 2S - 3T -
+   = 5M' 14H+ = 4M' 
+   = 4M' 3tsaM = 3M'
+   = 4M' = 3M
+   = 14H+ 3tsaM = 3SA
+   = 5K+ = 3K
+   = = - 

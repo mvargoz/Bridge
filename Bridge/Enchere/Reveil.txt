@@ -1,0 +1,189 @@
+// Reveil sur ouverture 1 couleur
+
+?--- 1m - -
+   = 7H+ 5M 4M'+ = 2m	// bicolore majeur
+?--- 1M - -
+   = 7H+ 5m 5M' = 2M     // bicolore maj-min
+?--- 1y - -
+   = 6-11H 5n+ = 0n
+   = 10-12H 6n = +1n
+   = 10-12H 7n = +2n
+   = 10-12H sa 2tsay = 1S
+   = 16-18H sa 3tsay = 2S
+   = 8-10H 3y- = X
+   = 12H+ = X
+   = = -
+
+// réponse au cue-bid = bicolore
+
+?--- 1m - - 2m -
+   = 4M+ 15SM+ = 4M 
+   = 2M+ = 2M
+   = 6n+ = 0n
+?--- 1M - - 2M -
+   = 2M'+ = 0M'
+   = 2m+ = 3m
+   = 6n+ = 0n
+
+// réponse au contre de reveil
+
+?--- 1y - - X -
+   = 0-14H 4M+ = 0M
+   = 14-16H 4M+ = +1M 
+   = 9-13H sa = 1S
+   = 14-15H sa 3tsay = 2S
+   = 4n+ = 0n
+   = 14H+ 5y+ = -
+   = 3z = 1z
+
+// redemande après contre de reveil
+
+* 0M -
+   = 4M+ 13-14H = 0M	// soutien
+   = 4M+ 15-18H = +1M
+   = 4M+ 19H+ = 0y
+   = 5M'+ M'<>y 13-15H = 0M'	// autre majeure 
+   = 5M'+ M'<>y 16-19H = +1M' 
+   = 5M'+ M'<>y 20H+   = 0y 
+   = 6m+ m<>y 2ghm 13-15H = 0M'	// belle mineure 6ème 
+   = 6m+ m<>y 2ghm 16-19H = +1M' 
+   = 6m+ m<>y 2ghm 20H+   = 0y 
+   = 13-15H 3tsay = 0S		// SA
+   = 19-21H 3tsay = +1S
+   = 13H+ = 0y
+   = = -   
+
+// réponse au 1SA de reveil
+
+?--- 1m - - 1S -
+   = 5C+ = 2K	// Texas
+   = 5P+ = 2C
+?--- 1C - - - 1S -
+   = 5P+ = 2C
+?--- 1P - - - 1S -
+   = 5C+ = 2K
+?--- 1y - - - 1S -
+   = 4M 12H+ = 2T  // Stayman
+   = 13-14HL = 2S
+   = 15HL+ = 3S
+   = = -   
+
+// Redemande
+
+* - 2S -
+   = 12HL+ = 3S
+   = = -
+
+// Staymann sur 1SA de reveil
+
+* - 2T -
+   = 4C 4P = 2S
+   = 4M = 2M
+   = = 2K 
+* - 2T - 2K -
+   = 15HL+ = 3S
+   = = 2S
+* - 2T - 2K - 2S
+   = 12HL+ = 3S
+   = = -
+* - 2T - 2M -
+   = 4M+ 12-14SM = 3M
+   = 4M+ 13SM+ = 4M
+   = 15HL+ = 3S
+   = = 2S
+* - 2T - 2M - 2S
+   = 12HL+ = 3S
+   = = -
+* - 2T - 2M - 3M
+   = 12SM+ = 4M
+   = = -
+* - 2T - 2S -
+   = 4C 15SC+ = 4T
+   = 4P 15SP+ = 4K
+   = 4C = 3T
+   = 4P = 3K
+* - 2T - 2S - 3T -
+   = 12HL+ = 4C
+   = = 3C
+* - 2T - 2S - 3K -
+   = 12HL+ = 4P
+   = = 3P
+* - 2T - 2S - 4T -
+   = = 4C
+* - 2T - 2S - 4K -
+   = = 4P
+
+// Texas sur 1SA de reveil
+
+* - 2K -
+   = = 2C
+* - 2C -
+   = = 2P
+* - ( 2K - 2C / 2C - 2P ) - 
+   = 6M+ 12-14HL = 3M
+   = 6M+ 15HL+ = 4M
+   = 12-14HL = 2S
+   = 15HL+ = 3S
+   = = -
+* - 2K - 2C - 2S -
+   = 3C+ 12SC+ = 4C
+   = 12HL+ = 3S
+   = = -
+* - 2C - 2P - 2S -
+   = 3P+ 12SP+ = 4P
+   = 12HL+ = 3S
+   = = -
+* - 2K - 2C - 3C -
+   = 12HL+ = 4C
+   = = - 
+* - 2C - 2P - 3P -
+   = 12HL+ = 4P
+   = = - 
+
+// réponse au 2SA de reveil
+
+?--- 1m - - 2S -
+   = 5C+ = 3K	// Texas
+   = 5P+ = 3C
+?--- 1C - - - 2S -
+   = 5P+ = 3C
+?--- 1P - - - 2S -
+   = 5C+ = 3K
+?--- 1y - - - 2S -
+   = 4M 8H+ = 3T  // Stayman
+   = 8HL+ = 3S
+   = = -   
+
+// Staymann sur 2SA de reveil
+
+* - 3T -
+   = 4C 4P = 3S
+   = 4M = 3M
+   = = 3K 
+* - 3T - 3K -
+   = = 3S
+* - 3T - 3M -
+   = 4M+ 8SM+ = 4M
+   = = 3S
+* - 3T - 3S -
+   = 4C = 4T
+   = 4P = 4K
+* - 3T - 3S - 4T -
+   =  = 4C
+* - 3T - 3S - 4K -
+   =  = 4P
+
+// Texas sur 2SA de reveil
+
+* - 3K -
+   = = 3C
+* - 3C -
+   = = 3P
+* - ( 3K - 3C / 3C - 3P ) - 
+   = 6M+ 9HL+ = 4M
+   = 9HL+ = 3S
+   = = -
+* - 3K - 3C - 3S -
+   = 3C+ = 4C
+   = = -
+ 

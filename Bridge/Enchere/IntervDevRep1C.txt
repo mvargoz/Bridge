@@ -1,0 +1,100 @@
+// Réponses à l'intervention 1 couleur après 1 couleur du répondant
+
+?--- 1x 1y 1z
+   = 3y 7-10Sy = 2y
+   = 4y 7-10Sy = 3y
+   = 5y+ 7-10Sy = 4y
+   = 3y+ 9H+ 5n+ 2ghn = +1n
+   = 4y 10-12H reg = 3x
+   = 3y+ 11Sy+ = 2x
+   = reg 3x+ 8-12H = 1S
+   = reg 3tsax 13-14H = 2S
+   = reg 3tsax 15-16H = 3S
+   = 10H+ = 2x
+   = = -
+
+// redemande sur soutien
+
+?--- 1x 1y 1z 2y -
+   = 20DH+ = 4y
+   = 18DH+ = 3y
+   = = - 
+?--- 1x 1y 1z 2y - 3y -
+   = 9Sy+ = 4y
+?--- 1x 1y 1z 3y -
+   = 20DH+ = 4y
+   = = -
+// redemande sur SA
+
+?--- 1x 1y 1z 1S -
+   = 17HL+ = 3S
+   = 15HL+ = 2S
+   = = -
+?--- 1x 1y 1z 1S - 2S -
+   = 10HL+ = 3S
+   = = -
+?--- 1x 1y 1z 2S -
+   = 12HL+ = 3S
+   = = - 
+
+// redemande sur cue-bid
+
+?--- 1T 1M 1z 2T -
+   = 13H- 4K+ = 2K	// bicolore économique 
+?--- 1m 1P - 2m -
+   = 13H- 4C+ = 2C 	// bicolore économique
+
+?--- 1x 1y 1z 2x -
+   = 13H- = 2y		// répétition
+   = 13-15H 6y = 3y	// répétition saut
+   = 13-15H 4z+ = 0n	// bicolore cher
+   = 13-15H 4n+ = +1n	// bicolore à saut
+   = 13-15H reg 3tsax = 2S
+   = 16H+ 6y = 4y
+   = 13H+ = 3x
+
+// dev. après cue-bid et redemande faible
+
+?--- 1x 1y 1z 2x - 2n - 
+   = 3y+ 18Sy+ = 4y
+   = 3y+ 15Sy+ = 3y
+   = 18H+ = 3S
+   = 15H+ = 2S
+   = = 2y
+?--- 1x 1y 1z - 2x - 2y - 
+   = 3y+ 18Sy+ = 4y
+   = 3y+ 15Sy+ = 3y
+   = 18H+ = 3S
+   = 15H+ = 2S
+   = = -
+
+// dev. après cue-bid et redemande forte
+
+?--- 1x 1y 1z 2x - 3y - 
+   = 3y+ = 4y
+   = = 3S
+?--- 1x 1y 1z 2x - 2S - 
+   = 3y+ = 4y
+   = = 3S
+?--- 1x 1y 1z 2x - 2z - 
+   = 3y+ = 4y
+   = = 3S
+?--- 1x 1y 1z 2x - 3n - 
+   = 3y+ = 4y
+   = = 3S
+?--- 1x 1y 1z 2x - 3x - 
+   = 3y+ = 4y
+   = = 3S
+?--- 1x 1y 1z 2x - 4y - 
+   = = -
+
+// redemande sur changement de couleur
+
+?--- 1x 1y 1z 1n -
+   = 3n+ = 2n
+   = = 2y 
+
+
+   
+ 
+

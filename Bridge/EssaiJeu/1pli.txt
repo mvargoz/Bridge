@@ -1,0 +1,26 @@
+*** pb4j N P maj5,1SAforcing maj5,1SAforcing IMP
+A
+-
+-
+-
+
+V
+-
+-
+-
+
+9
+-
+-
+-
+
+R
+-
+-
+-
+
+Atout= P
+Contrat= 1
+Joueur= S
+
+*** un pli gagnant

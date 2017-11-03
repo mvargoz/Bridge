@@ -1,0 +1,118 @@
+// Réponses au contre après passe du répondant
+
+?--- 1m X -
+   = 4M+ 0-7H = 1M
+   = 6m'+ 0-7H = 0m'
+   = 3M+ 0-7H = 1M
+   = 4m'+ 0-7H = 1m'
+   = 4C 4P 8-10H = 2m
+   = 6M+ 8-10H = 4M
+   = 5M 8-10H = 3M
+   = 4M 8-10H = 2M
+   = 4m'+ 8-10H = 2m'
+?--- 1M X -
+   = 3M'+ 0-7H = 0M'
+   = 4m+ 0-7H = 0m
+   = 6M'+ 8-10H = 4M'
+   = 5M' 8-10H = 3M'
+   = 4M'+ 8-10H = +1M'
+?--- 1y X -
+   = 2tsay 8-10H = 1S
+   = sa 3tsay 11-12HL = 2S
+   = sa 3tsay 13-15H = 3S
+   = 11H+ = 2y
+   = 5x+ = 2x
+   = = -
+
+// Réponses au contre après 1 couleur répondant
+
+?--- 1T X 1K
+   = 6M+ 8-10H = 4M
+?--- 1x X 1M
+   = 6M'+ 8-10H = 4M'
+?--- 1x X 1y
+   = 0-3H = -
+   = 4n+ 3-7H = 0n
+   = 5n+ 8-11H = +1n
+   = 4y 8H+ = X
+   = sa 2tsax 8-10H = 1S
+   = sa 2tsax 11-12H = 2S
+   = 9H+ = 2x
+   = = -
+
+// Réponses au contre après 1 SA répondant
+
+?--- 1m X 1S
+   = 6M+ 8-10H = 4M
+?--- 1M X 1S
+   = 6M'+ 8-10H = 4M'
+?--- 1x X 1S
+   = 5n+ 0-7H = 2n
+   = 8H+ 2tsaT 2tsaK = X
+   = = -
+
+// Réponses au contre après surcontre répondant
+
+?--- 1y X XX
+   = 8H+ = 2y
+   = 7n+ 0-7H = +2n 
+   = 6n 0-7H = +1n 
+   = 4n+ 0-7H = 0n
+   = = - 
+
+// Réponses au contre après soutien répondant
+
+?--- 1m X 2m
+   = 4M 4M' 8-10H = X
+?--- 1M X 2M
+   = 4m 4m' 8-10H = X
+?--- 1y X 2y
+   = 5n+ 9-10H = +1n
+   = 4z+ 5-9H = 2z
+   = 4x+ 5-9H = 3x
+   = 3tsay 10-11HL = 2S
+   = 3tsay 12HL+ = 3S
+   = 11H+ = 3y
+   = 8-10H = X
+   = = -
+?--- 1y X 3y
+   = 5n+ 9-10H = 0n
+   = 4z+ 5-9H = 3z
+   = 5x+ 5-9H = 4x
+   = 3tsay 12HL+ = 3S
+?--- 1C X 4C
+   = 5T 5K = 4S
+?--- 1P X 4P
+   = 5T 5K = 4S
+   = 5C 5m = 4S
+// conclusion: contre ou passe
+?--- 1x X 3+x
+   = 8H+ = X
+   = = -
+
+// Redemande après le contre sur réponse faible (0-7H)
+
+?--- 1T X - 1K -
+  = 22H+ = 2x
+  = 5M+ 17-21HL = 0M	// majeure 5ème 
+  = 3tsax 19-21H = 1S	// SA 
+  = 3tsax 22-23H = 2S
+  = 4K+ 17H+ = 2K	// soutien 
+  = = -   
+
+?--- 1x X - 1M -
+  = 22H+ = 2x
+  = 5n+ 17-21HL = 0n	// belle couleur 5ème 
+  = 4M+ 24SM+ = 4M	// soutien 
+  = 4M+ 18SM+ = 2M	// soutien 
+  = 3tsax 19-21H = 1S	// SA 
+  = 3tsax 22-23H = 2S
+  = = -   
+
+// Redemande après le contre sur 1SA (8-10H)
+
+?--- 1x X - 1S -
+  	= 22H+ = 2x
+  	= 5M+ 16-22HL = 0M	// majeure 5ème 
+	= 16HL+ = 3S
+	= = -

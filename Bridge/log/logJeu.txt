@@ -1,0 +1,41 @@
+>>*** pb4j N P maj5,1SAforcing maj5,1SAforcing IMP
+>>A
+>>-
+>>-
+>>-
+>>
+>>V
+>>-
+>>-
+>>-
+>>
+>>9
+>>-
+>>-
+>>-
+>>
+>>R
+>>-
+>>-
+>>-
+>>
+>>Atout= P
+>>Contrat= 1
+>>Joueur= S
+>>
+>>*** un pli gagnant
+Contrat à réaliser : 1 plis sur 1 à l'atout P par S, la main en S Pli en cours:
+--------------- Résultats ----------------
+Pli 1(nb pli NS=0) S joue du P pli: 9P RP AP VP
+------ Position gagnante ------
+--> Pli:1 S joue 9P(true) cpu=0ms
+Pli 1(nb pli NS=0) S joue du P pli: 9P RP AP VP
+------ Position perdante ------
+--> Pli:1 W joue RP(false) cpu=0ms
+Pli 1(nb pli NS=0) S joue du P pli: 9P RP AP VP
+------ Position gagnante ------
+--> Pli:1 N joue AP(true) cpu=0ms
+Pli 1(nb pli NS=0) S joue du P pli: 9P RP AP VP
+------ Position perdante ------
+--> Pli:1 E joue VP(false) cpu=0ms
+*** Fin ***

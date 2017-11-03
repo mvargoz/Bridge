@@ -1,0 +1,61 @@
+// ouvertures 2 majeures faibles en 1/2ème
+
+?-
+   = uni 6M 2hM 4M'- 8-12HL = 2M
+
+// ouvertures majeures faibles en 3/4ème
+
+--?-
+   = 6M 2hM 8-12HL = 2M
+   = 5M+ 8-12HL = 1M
+
+// ouvertures de barrage
+
+?---
+   = uni 8x+ V 8LJ 11H- = 4x
+   = uni 8x+ N 7LJ 11H- = 4x
+   = uni 7m 3ghm 11H- = 3S
+   = uni 7m+ 2ghm NV 5-7LJ 11H- = 3m
+   = uni 7m+ 2ghm MV 6-7LJ 11H- = 3m
+   = uni 7m+ 2ghm VN 7LJ 11H- = 3m
+   = uni 7M+ 2hM NV 5-7LJ 11H- = 3M
+   = uni 7M+ 2hM MV 6-7LJ 11H- = 3M
+   = uni 7M+ 2hM VN 7LJ 11H- = 3M
+
+// ouvertures
+
+?---
+   = 24HL+ = 2K
+   = 10LJ+ = 2K 
+   = uni 6M+ 9LJ+ = 2K
+   = uni 6m+ 10LJ+ = 2K
+
+   = uni 6M+ 20-23HL 17H+ = 2T
+   = uni 6M+ 8LJ 14H+ = 2T
+   = uni 6m+ 9LJ 14H+ = 2T
+   = bic 5C+ 5P+ 8-9LJ = 2T
+
+   = sa 22-23HL = 2T
+   = sa 20-21HL = 2S
+   = sa 5C- 5P- 15-17HL = 1S
+
+   = bic 5T 5P 12-19HL = 1T
+   = bic 6m+ 5M 12-19HL 17H+ = 1m
+   = bic 7m 6M 12-19HL 17H+ = 1m
+   = 5M+ 12-19HL = 1M
+   = 5m+ 12-19HL = 1m
+   
+   System K4
+?---
+   = 4K+ 12-19HL = 1K	  // carreau 4ème 
+   = 12-23HL = 1T
+   finSystem
+ 
+ ?---
+  = 4K+ 12-19HL = 1K	
+   = 3T+ 12-19HL = 1T	 
+   = 12-23HL = 1K
+  
+   =  = -
+
+

@@ -1,0 +1,41 @@
+// Intervention du n° 2 sur 1 couleur
+
+?--- 1T
+   = 4K+ 2C 12H+ = 1K
+   = 4K+ 2P 12H+ = 1K
+   = 5C 5K+ 7K- 7pe- = 2S	// bicolore Michael CK
+
+?--- 1K
+   = 5C 5T+ 7T- 7pe- = 2S	// bicolore Michael CT
+
+?--- 1m
+   = 4M 3M'+ 5M'- 12H+ = X
+   = 5M 5M'+ 7M'- 7pe- = 2K	// bicolore Michael majeure 
+
+?--- 1M
+   = 4M' 12H+ = X
+   = 5M' 5m+  7m-  7pe- V = 2M  // bicolore Michael maj-min
+   = 5m 5m'+ 7m'- 7pe- V = 2S	// bicolore Michael mineure 
+   = 5M' 5m+  7m-  9pe- NV = 2M  // bicolore Michael maj-min
+   = 5m 5m'+ 7m'- 9pe- NV = 2S	// bicolore Michael mineure 
+   = 5M' 5m+  7m-  8pe- N = 2M  // bicolore Michael maj-min
+   = 5m 5m'+ 7m'- 8pe- N = 2S	// bicolore Michael mineure 
+
+?--- 1P
+   = 5C 3ghC 14-17H = 2C 
+
+?--- 1y
+   = 5z 2ghz 8-17H = 1z
+   = 5z 2hz 10-17H = 1z
+   = 5z 12-17H = 1z
+   = 6x 2ghx 11-17H = 2x
+   = sa 3tsay 16-18H = 1S 
+   = sa y=T 2tsay 16-18H = 1S 
+   = sa y=K 2tsay 16-18H = 1S 
+   = sa 3tsay 19H+ = X 
+   = D4441 sy 11H+ = X 
+   = D5440 sy 11H+ = X
+   = 18H+ = X
+   = = -
+
+   

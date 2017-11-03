@@ -1,0 +1,52 @@
+revue sur les points
+H, HL pour SA
+PD déclarant couleur, 
+S répondant à revoir pb nb atouts
+J chelem
+
+problème :
+	comment savoir si l'attaque et la défense jouent au mieux ?
+	
+solution:
+	évaluer la valeur des jeux du camp après le coup
+	 et jouer la carte qui permet la meilleur valeur du jeu après ce pli qq soit le jeu adverse
+	valeur = nombre de plis faits + plis potentiels des deux mains
+	valeur potentielle de la main = 
+		valeur potentielle brute de chaque couleur =
+			pli honneur : la plus grosse carte restante vaut 1, si possède les suivantes +1, s'il en manque une 0.5, 2 0.5, ensuite rien 
+			pli de longueur potentiel de la main la plus longue = nb de cartes de plus que l'adversaire le plus long
+			le tout limité au nb de cartes de la main la plus longue
+			coupes
+			moins value par manque de reprise de main: par ex AD sans reprise en face ne vaut plus qu'un	
+			min( plis potentiels, plis restants - perdantes)
+	
+	ex: atout P
+		A
+		29
+		-
+		-
+	V			9
+	34			R5
+	-			-   
+	-			-   
+		2
+		AD
+		-
+		-
+		
+valeur NS
+2.5/2Ap=2.5/(2,9)Dc=3 meilleurs ligne
+	/A(2,9)c=2
+	/D(2,9)c=2   
+
+comment quantifier les manoeuvres de sacrifice?
+	
+	ex; 
+		coup à blanc ARxxx en face de xx = 3,3
+		jouer AR sans reprise: le jeu perd 2 de valeur car les plis maitres ne sont plus accessibles
+		jouer x le jeu garde sa valeur de 3.3   
+	
+
+	
+
+			

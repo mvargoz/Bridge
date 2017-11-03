@@ -1,0 +1,2603 @@
+>>// Système Majeure 5ème
+>>// options possibles: 1SAforcing, K4, 1T1K
+>>// 2SApuppet en dur pour l'instant
+>>System maj5
+>>
+>>include $Finale
+>>// Enchère finale pour un contrat en mineure
+>>$finaleMin
+>>   = 37J+ 5clx = 7x 
+>>   = 33J+ 4clx+ = 6x 
+>>   = 37H+ = 7S
+>>   = 33H+ = 6S
+>>   = 25HL+ = 3S
+>>   = 30DH+ = 5x
+>>   = = -
+>>
+>>// Enchère finale pour un contrat en majeure
+>>$finaleMaj
+>>   = 37J+ 5clx = 7x 
+>>   = 33J+ 4clx+ = 6x 
+>>   = 27DH+ = 4x
+>>   = = -
+>>
+>>// Enchère finale contrat sans-atout
+>>$finaleSA
+>>   = 37H+ = 7S
+>>   = 33H+ = 6S
+>>   = 25HL- = 2S
+>>   = 25-27HL = 3S
+>>   = 28-31HL = 4S
+>>   = 32HL+ = 5S
+>>    = = -
+>>
+>>// Réponse au Blackwood 5 clés
+>>$blackwood5c
+>>	= 0clx = 5T
+>>	= 1clx = 5K
+>>	= 2clx = 5C
+>>	= 3clx = 5T
+>>	= 4clx = 5K
+>>	= 5clx = 5C
+>>include $Ouverture
+>>// ouvertures 2 majeures faibles en 1/2ème
+>>
+>>?-
+>>   = uni 6M 2hM 4M'- 8-12HL = 2M
+>>
+>>// ouvertures majeures faibles en 3/4ème
+>>
+>>--?-
+>>   = 6M 2hM 8-12HL = 2M
+>>   = 5M+ 8-12HL = 1M
+>>
+>>// ouvertures de barrage
+>>
+>>?---
+>>   = uni 8x+ V 8LJ 11H- = 4x
+>>   = uni 8x+ N 7LJ 11H- = 4x
+>>   = uni 7m 3ghm 11H- = 3S
+>>   = uni 7m+ 2ghm NV 5-7LJ 11H- = 3m
+>>   = uni 7m+ 2ghm MV 6-7LJ 11H- = 3m
+>>   = uni 7m+ 2ghm VN 7LJ 11H- = 3m
+>>   = uni 7M+ 2hM NV 5-7LJ 11H- = 3M
+>>   = uni 7M+ 2hM MV 6-7LJ 11H- = 3M
+>>   = uni 7M+ 2hM VN 7LJ 11H- = 3M
+>>
+>>// ouvertures
+>>
+>>?---
+>>   = 24HL+ = 2K
+>>   = 10LJ+ = 2K 
+>>   = uni 6M+ 9LJ+ = 2K
+>>   = uni 6m+ 10LJ+ = 2K
+>>
+>>   = uni 6M+ 20-23HL 17H+ = 2T
+>>   = uni 6M+ 8LJ 14H+ = 2T
+>>   = uni 6m+ 9LJ 14H+ = 2T
+>>   = bic 5C+ 5P+ 8-9LJ = 2T
+>>
+>>   = sa 22-23HL = 2T
+>>   = sa 20-21HL = 2S
+>>   = sa 5C- 5P- 15-17HL = 1S
+>>
+>>   = bic 5T 5P 12-19HL = 1T
+>>   = bic 6m+ 5M 12-19HL 17H+ = 1m
+>>   = bic 7m 6M 12-19HL 17H+ = 1m
+>>   = 5M+ 12-19HL = 1M
+>>   = 5m+ 12-19HL = 1m
+>>   
+>>   System K4
+>>?---
+>>   = 4K+ 12-19HL = 1K	  // carreau 4ème 
+>>   = 12-23HL = 1T
+>>   finSystem
+>> 
+>> ?---
+>>  = 4K+ 12-19HL = 1K	
+>>   = 3T+ 12-19HL = 1T	 
+>>   = 12-23HL = 1K
+>>  
+>>   =  = -
+>>
+>>
+>>include 1MajRepOuv3
+>>// réponses ouverture 1 majeure après passe
+>>
+>>--?- 1M -
+>>   = 3M+ 6-10SM = 2M		// soutien simple
+>>   = 4M 6-10SM 10H- = 3M	// soutien saut
+>>   = 5M+ 6-10SM 10H- = 4M	// barrage avec 5 cartes
+>>   = 5M 10H+ = 3S		// soutien positif avec 5 cartes
+>>   = 3M+ 5m+ 2ghm+ 13SM+ = 3m	// soutien avec belle couleur
+>>   = 3M+ 11SM+ = 2T		// Convention Drury
+>>
+>>   = 5T+ 5K+ 9H+ = 2S		// bicolore mineure
+>>   = 5m+ 2ghm+ 10H+ = 2m  
+>>
+>>--?- 1C -
+>>   = 4P+ 5H+ = 1P
+>>
+>>--?- 1M -
+>>   = 2M 1ghM+ 11H+ = 2T		// Convention Drury
+>>   = 6T+ 9H+ = 2T		// Convention Drury
+>>   = 5H+ = 1S
+>>   = = -
+>>
+>>// redemande sur le 2T Drury
+>>
+>>--?- 1P - 2T -
+>>   = 5C 12H- = 2C
+>>
+>>--?- 1C - 2T -
+>>   = 4P 16H+ = 2P
+>>   
+>>--?- 1M - 2T -
+>>   = 6M+ 2ghM 15H+ = 3M 
+>>   = 6M+ 12-14H = 2M 
+>>   = 5m 2ghm 16H+ = 3m
+>>   = D5332 15-17H = 2S
+>>   = = 2K   
+>>
+>>// 2ème réponse sur le 2T Drury avec redemande 2K
+>>
+>>--?- 1M - 2T - 2K - 
+>>   = 3M+ = 2M		// soutien
+>>   = 4C = 2C
+>>   = = 2S
+>>   
+>>--?- 1P - 2T - 2C -
+>>	= 4P+ = 4P
+>>	= 4C+ = 4C
+>>	= 3P+ = 4P
+>>	= = 2P
+>>
+>>--?- 1M - 2T - 2M -
+>>	= = 4M
+>>
+>>--?- 1M - 2T - 3M -
+>>	= = 4M 
+>>
+>>--?- 1M - 2T - 2S -
+>>	= 3M+ = 4M
+>>	= = 3S 
+>>
+>>--?- 1C - 2T - 2P - 
+>> 
+>>
+>>
+>>// 2ème redemande sur le 2T Drury
+>>
+>>--?- 1P - 2T - 2K - 2P - 
+>>  = 4C 14HL+ = 3C
+>>  = = - 
+>>--?- 1C - 2T - 2K - 2C - 
+>>  = 4P 14HL+ = 2P 
+>>  = = - 
+>>--?- 1M - 2T - 2K - 2M - 
+>>  = D5332 13-14H = 2S
+>>  = 4m 14HL+ = 3m 
+>>  = = - 
+>>
+>>--?- 1M - 2T - 2K - 2S -
+>>  = 14HL+ 6M+ = 4M
+>>  = 14HL+ = 3S
+>>  = = -
+>>  
+>>// redemandes ouverture majeure en 3ème position
+>>
+>>--?- 1C - 1P -
+>>   = 4P+ 17SP- = 2P
+>>   = 4P+ 17-19SP- = 3P
+>>   = 4P+ 20-22SP+ = 4P     // + fragment bid
+>>   = 4M+ 4m+ 23SM+ = 3m    // à revoir
+>>   = 4M+ ctrm 23SM+ = 3m
+>>   = reg 12-15H = 1S
+>>   = 4m+ 12-16H = 2m 
+>>   = 4m+ 17H+ = 3m
+>>   = uni 6C+ 2ghC 17-19HL = 3C
+>>   = 5C 3P = -
+>>   = = 2C 
+>>   
+>>--?- 1C - 1S -
+>>   = 4P+ 16H+ = 2P
+>>
+>>--?- 1P - 1S -
+>>   = 4C+ 12-16H = 2C
+>>   = 4C+ 17H+ = 3C
+>>
+>>--?- 1M - 1S -
+>>   = 4m+ 17H- = 2m 
+>>   = 4m+ 17H+ = 3m
+>>   = uni 6M+ 2ghM 17-19HL = 3M
+>>   = 14HL+ 3m+ = 2m 
+>>   = = -    
+>>   
+>>--?- 1P - 2m -
+>>   = 4C+ 12-16HL = 2C 
+>>   = 4C+ 17HL+ = 3C
+>>--?- 1M - 2T -
+>>   = 3T+ 17ST+ = 3T
+>>   = 4K+ 12-16HL = 2K 
+>>   = 4K+ 17HL+ = 3K 
+>>--?- 1M - 2m -
+>>   = 3m+ 17Sm+ = 3m
+>>   = reg 15-17H = 2S
+>>   = reg 18-19H = 3S
+>>   = uni 6M+ 2ghM 17-19HL = 3M
+>>   = = -
+>>   
+>>--?- 1P - 2C -
+>>   = 3C+ 14-16SC = 4C
+>>   = 3C+ 17SC+ = 3C
+>>   = reg 15-17H = 2S
+>>   = reg 18-19H = 3S
+>>   = uni 6P+ 2ghP 17-19HL = 3P
+>>   = = -
+>>
+>>// redemande sur les soutiens directs
+>>   
+>>--?- 1M - 2M -
+>>   = D5332 15-19HL = 2S
+>>   = 4m+ 15-19HL = 3m   
+>>--?- 1C - 2C -
+>>   = 4P+ 15-19HL = 2P   
+>>   = = -   
+>>--?- 1P - 2P -
+>>   = 4C+ 15-19HL = 3C
+>>   = = -  
+>>
+>>// 2ème réponse
+>>
+>>--?- 1M - 1S - 2m -
+>>   = 11H = 2S
+>>
+>>// 2ème redemande sur le 1SA suivi de 2SA
+>>  
+>>--?- 1M - 1S - 2m - 2S -
+>>  = 14HL+ = 3S
+>>  = = -
+>>  
+>>--?- 1P - 1S - 2C - 2S - 
+>>  = 14HL+ = 3S
+>>  = = -
+>>  
+>>
+>>System 1SAforcing
+>>include 1Maj1SAforcing
+>>// réponse 1SA forcing
+>>
+>>?- 1M -
+>>   = 3M 6-10SM 5-7H = 1S	// 1SA forcing pour soutien simple faible
+>>   = 5M+ 6-10SM = 4M
+>>   = 3M+ 6-10SM = 2M
+>>   = 3M+ 5M'+ 2ghM'+ 11SM+ = 0M'
+>>   = M=C 3M+ 4P+ 11SM+ = 1P
+>>   = 3M+ 5m+ 2ghm+ 11SM+ = 2m
+>>   = 3M 11-12SM = 1S		// 1SA forcing pour soutien moyen
+>>   = 4M+ 11-12SM = 3M
+>>   = 3M 5m+ 2ghm+ 13-15SM+ = 2m
+>>   = 3M 13-15SM = 1S		// 1SA forcing pour soutien fort
+>>   = 4M+ 5m+ 2ghm+ 13-15SM+ = 3m
+>>   = 4M+ sm 13-15SM = 3S		// soutien conventionnel
+>>   = 4M+ sM' 13-15SM = 4T
+>>   = 4M+ 13-15SM = 4K
+>>   = 3M+ 5m+ 2ghm+ 16-19SM+ = 2m
+>>   = 3M+ 16-19SM = 2S		// soutien conventionnel
+>>   = 3M+ 5m+ 2ghm+ 20SM+ = 2m
+>>   = 3M+ 20SM+ = 4S
+>>
+>>   = 5m+ 11H+ = 2m
+>>
+>>   = 5-15H = 1S		// 1SA forcing pour 2SA et 3SA
+>>   = 5H- = -   
+>>
+>>// redemande sur le 1SA forcing
+>>
+>>?- 1C - 1S -
+>>   = 4P+ 16H+ = 2P
+>>
+>>?- 1P - 1S -
+>>   = 4C+ 12-16H = 2C
+>>   = 4C+ 17H+ = 3C
+>>
+>>?- 1M - 1S -
+>>   = 4m+ 17H- = 2m 
+>>   = 4m+ 17H+ = 3m
+>>   = uni 6M+ 2ghM 17-19HL = 3M
+>>   = 6M+ = 2M
+>>   = 3T+ = 2T	// SA forcing
+>>   = = 2K    
+>>
+>>// redemande sur soutien conventionnel 2SA
+>>
+>>?- 1M - 2S -
+>>   = 15DH- = 4M
+>>   = sT = 3K
+>>   = sK = 3C
+>>   = sM' = 3P
+>>   = 5m = 4m
+>>   = 5M' = 4M'
+>>   = 2HM+ = 3T
+>>   = = 3S      // mauvais atouts
+>>   
+>>* 3T -
+>>   = 3M 16-17SM = 3K
+>>   = 4M 16-17SM = 3C
+>>   = 4M 18-19SM = 3P
+>>   = 3M 18-19SM = 3S
+>>
+>>// redemande sur soutien conventionnel 3SA
+>>
+>>?- 1M - 3S -
+>>   = 18DH+ = 4T
+>>   
+>>* 4T -
+>>   = sT = 4K
+>>   = sK = 4C
+>>
+>>// redemande sur soutien conventionnel 4T (singleton M')
+>>
+>>?- 1M - 4T -
+>>   = 18DH+ = 4S
+>>   = = 4M
+>>     
+>>// redemande sur soutien conventionnel 4K (main régulière)
+>>
+>>?- 1M - 4K -
+>>   = 18DH+ = 4S
+>>   = = 4M
+>>     
+>>// 2ème réponse après 1SA forcing
+>>
+>>?- 1M - 1S - 2x -
+>>   = 3M+ 11SM- = 2M
+>>   = 3M 11-12SM = 3M
+>>   = 3M 13-15SM = 3S
+>>   = 10-11H = 2S
+>>   = 13-15H = 2M'      
+>>?- 1M - 1S - 2m -
+>>   = 5m+ 11SM+ = 3m
+>>   = 5m+ 10H- = -
+>>?- 1M - 1S - 2T -
+>>   = 5K+ 10H- = 2K
+>>?- 1P - 1S - 2m -
+>>   = 5C+ 10H- = 2C
+>>?- 1P - 1S - 2C -
+>>   = 4C+ 11SC+ = 3C
+>>   = 4C+ 10H- = -
+>>?- 1M - 1S - 2x -
+>>   = 2M+ 10H- = 2M
+>>   = 6m 10H- = 0m
+>>   =  = -
+>>finSystem
+>>
+>>include 1C1Rep
+>>// réponses sur ouverture de 1 couleur
+>>
+>>?--- 1T -
+>>   = 4M 4K+ 10H+ = 1K
+>>   = 4C- 4P- 5-7H = 1K	// pas de 1T-1SA avec moins de 8 pH
+>>
+>>?--- 1K -
+>>   = uni 5T+ 11H+ = 2T
+>>   = 5T 5P 11H+ = 2T
+>>
+>>?--- 1m -     
+>>   = 8M+ 10H- = 4M	// barrage
+>>   = 7M  10H- = 3M	// barrage
+>>   = 6M  10H- = 2M	// barrage
+>>
+>>   = 4M+  5H+ = 1M	// changement couleur: la plus longue, si 44 C sinon P
+>>   = 5M hMA 4H = 1M	// minimum majeure 5ème avec As
+>>      
+>>   = 8m+ 10H-   = 5m
+>>   = 7m  10H-   = 4m
+>>
+>>   = reg  5-10H = 1S
+>>   = reg 11-12H = 2S
+>>   = reg 13-15H = 3S
+>>   = reg 16-20H = 4S
+>>
+>>   = 5m+ 6-10Sm = 2m
+>>   = 5m+ 10-11H = 3m
+>>   = 5m+ 12H+ = 0m'      // soutien forcing
+>>   
+>>   = 0-4H = -
+>>   
+>>?- 1C -
+>>   = 4C+ 5P+ 13-15SC+ = 2P
+>>   = 3C+ 4P+ 11SC+ = 1P
+>>   = 3C- 4P+ 5H+ = 1P 
+>>?- 1P -
+>>   = 3P+ 5C+ 2ghC+ 11SP+ = 2C
+>>   = 4P+ 5C+ 2ghC+ 13-15SP+ = 3C
+>>
+>>?- 1M -			
+>>   = 3M+ 6-10SM = 2M
+>>   = 3M+ 5m+ 2ghm+ 11SM+ = 2m
+>>   = 3M 11-12SM = 2S			// soutien conventionnel avec 3 cartes
+>>   = 3M 13-15SM = 3S
+>>   = 4M+ 11-12SM = 3M
+>>   = 4M+ sx 13-19SM+ = 4x	// splinter
+>>   = 4M+ 13-15SM = 4M
+>>   = 3M+ 3m+ 16-19SM+ = 2m	// mineure 3ème+  ???
+>>   = 3M+ 20SM+ = 4S
+>>     
+>>   = 5m+ 11H+ = 2m		// chg de couleur
+>>
+>>   = 5-9H = 1S			// 1SA
+>>   = 10H+ 3tsaM' = $finaleSA 13-17HL
+>>   = 10H+ 3m+ = 2m		// couleur forcing
+>>   = 5H- = -   
+>>   
+>>
+>>
+>>   
+>>include 1C1RepInt
+>>// réponses sur ouverture de 1 couleur après intervention 1 couleur
+>>
+>>?--- 1T 1K
+>>   = 7H+ 5C+ = 1C
+>>   = 7H+ 5P+ = 1P
+>>   = 8H+ 4C+ = X
+>>   = 7H+ 4P+ = 1P
+>>
+>>?--- 1m 1C
+>>   = 7H+ 5P+ = 1P
+>>   = 8H+ 4P+ = X
+>>   
+>>?--- 1m 1P
+>>   = 8H+ 4C+ = X
+>>   = 5C 11HL = 2C
+>>  
+>>?--- 1m 1y
+>>   = 8-10H 1tsay = 1S
+>>   = 11-12H 3tsay = 2S
+>>   = 13-15H 3tsay = 3S
+>>   = 5m 8-10Sm = 2m
+>>   = 5m 13HL = 2C
+>>   = 5m' 11HL = 2m'
+>>   = 8H+ = X
+>>
+>>//  soutien compétitif en mineure
+>>
+>>?--- 1m 1y     
+>>   = 8M+ 10H- = 4M	// barrage
+>>   = 7M  10H- = 3M	// barrage
+>>   = 6M  10H- = 2M	// barrage
+>>    
+>>   = 8m+ 10H-   = 5m
+>>   = 7m  10H-   = 4m
+>>   = 5m+ 6-10Sm = 2m
+>>   = 5m+ 10-11H = 3m
+>>   = 5m+ 12H+ = 2y      // soutien forcing
+>>   
+>>   = 0-7H = -
+>>
+>>//  soutien compétitif en majeure après couleur
+>>   
+>>?- 1M ( 1y	/ 2y )		
+>>   = 5M+ 11H- 2A- = 4M
+>>   = 4M  11H- 2A- = 3M
+>>   = 3M  11H- 2A- = 2M
+>>   = 4M+ 5m+  m<>y 2ghm 11H+ = +1m	// rencontre   
+>>   = 5m+ m<>y 2ghm 11H+ = 0m				// chg de couleur   
+>>   = 3M 11H+ = X
+>>   = 3M 2A = X  
+>>   = 4M+ 13H+ 13SM+ ctry = +1y   
+>>   = 4M+ 13H+ 13SM+ = 0y     
+>>
+>>   = 8-10H 1tsay = 1S
+>>   = 10H+ 3tsay = $finaleSA 13-17HL
+>>   = 8H+ = X
+>>   =  = -   
+>>
+>> //  soutien compétitif en majeure après contre
+>>  
+>>?- 1M X
+>>   = 5M+ 6-10SM 9H- = 4M
+>>   = 4M  6-10SM 9H- = 3M
+>>   = 3M  6-10SM 9H- = 2M
+>>   = 4M+ 5m+ 2ghm 11-15SM = +1m	// rencontre 
+>>   = 4M+ 11-12SM = 2S  
+>>   = 4M+ 13-15SM = 3S  
+>>   = 3M 11SM+ = XX 
+>>   = 11H+ = XX 
+>>
+>> //  soutien compétitif en majeure après bicolore
+>>  
+>>?- 1M ( 2M / 2S )
+>>   = 4M+ 11-15SM = 4M  
+>>   = 4M  6-10SM  = 3M
+>>   = 3M  6-10SM  = 2M
+>>   = 4M+ 5m+ 2ghm 11-15SM = +1m	// rencontre 
+>>   = 9H+ = X  
+>>   =  = -
+>>   
+>>include 1C2Redem
+>>// redemandes après une ouverture mineure
+>>
+>>System 1T1K
+>>?--- 1T - 1K -
+>>   = 5T+ 4M+ = 1M		// on ne cite la majeure qu'avec 5T sinon on dit SA
+>>   = 4K+ 12-16SK = 2K
+>>   = 4K+ 17-20SK = 3K
+>>   = sa 12-15H = 1S
+>>   = sa 18-19H = 2S
+>>   = uni 6T+ 12-16HL = 2T
+>>   = uni 6T+ 2ghT 17-19HL = 3T
+>>finSystem
+>> 
+>>// soutien majeure
+>>      
+>>?--- 1m - 1M -
+>>   = 4M+ 12-16SM = 2M
+>>   = 4M+ 17-19SM = 3M
+>>   = 4M+ 20-22SM = 4M       // + fragment bid
+>>   = 4M+ 4m'+ 23SM+ = 3m'    // à revoir
+>>   = 4M+ 4M'+ 23SM+ = 3M'
+>>   = 4M+ 23SM+ = 3m'
+>> 
+>> //  bicolores
+>> 	
+>> ?--- 1m - 1C -
+>>   = 4P+ = 1P
+>>  
+>>?--- 1T - 1C -
+>>   = 5T+ 4K+ 17H+ = 2K
+>>   
+>>?--- 1T - 1P - 
+>>   = 5T+ 4C+ 16H+ = 2C
+>>   = 5T+ 4K+ 16H+ = 2K
+>>
+>>?--- 1K - 1C -
+>>   = 5K+ 4T+ 12-17H = 2T
+>>   
+>>?--- 1K - 1P - 
+>>   = 4C+ 16H+ = 2C
+>>   = 5K+ 4T+ 12-17H = 2T
+>>
+>>// 1/1, SA et unicolore mineure
+>>
+>>?--- 1m - 1x -
+>>   = 4y+ = 1y
+>>   = sa 12-15H = 1S
+>>   = sa 18-19H = 2S
+>>   = uni 5m+ 12-16HL = 2m
+>>   = uni 6m+ 2ghm 17-19HL = 3m
+>>
+>>//  1K 2T 
+>>   
+>>?--- 1K - 2T -
+>>   = sa 14-15H = 2S
+>>   = uni 6K+ 2ghK 17-19HL = 3K
+>>   = 4M+ 16H+ = 2M
+>>   = = 2K
+>>
+>>//  réponse SA
+>>   
+>>?--- 1T - 1S -
+>>   = reg 18-19HL = 3S 
+>>   
+>>?--- 1K - 1S -
+>>   = reg 18HL = 2S 
+>>   = reg 19HL = 3S
+>>   = 4T+ 12-17H = 2T
+>>   
+>>?--- 1m - 1S -
+>>   = reg 12-15HL = -
+>>   = 4M+ 16H+ = 2M
+>>   = uni 5m+ 12-16HL = 2m
+>>   = uni 6m+ 2ghx 17-19HL = 3m
+>>   
+>>?--- 1m - 2S -
+>>   = 14H+ = 3S
+>>   = = -
+>>   
+>>//  cas 2/1 avec saut
+>>   
+>> ?--- 1m - 2M -
+>>   =  = -         // sauf cas exceptionnels?
+>>  
+>>// après soutien
+>>
+>>?--- 1T - 2T -
+>>   = sa 3tsaK 3tsaC 3tsaP 18-20H = 2S     
+>>?--- 1K - 2K -
+>>   = sa 3tsaT 3tsaC 3tsaP 18-20H = 2S     
+>>?--- 1m - 2m -
+>>   = sa 3tsax 18-20H = 2x     
+>>?--- 1T - 3T -
+>>   = sa 3tsaK 3tsaC 3tsaP 15H+ = 3S     
+>>?--- 1K - 3K -
+>>   = sa 3tsaT 3tsaC 3tsaP 15H+ = 3S     
+>>?--- 1m - 3m -
+>>   = sa 3tsax 15H+ = 3x     
+>>
+>>   
+>>// redemandes ouverture majeure en 1/2ème position
+>>
+>>?- 1C - 1P -
+>>   = 4P+ 17SP- = 2P
+>>   = 4P+ 17-19SP- = 3P
+>>   = 4P+ 20-22SP+ = 4P     // + fragment bid
+>>   = 4M+ 4m+ 23SM+ = 3m    // à revoir
+>>   = 4M+ ctrm 23SM+ = 3m
+>>   = reg 12-15H = 1S
+>>   = 4m+ 12-16H = 2m 
+>>   = 4m+ 17H+ = 3m
+>>   = uni 6C+ 2ghC 17-19HL = 3C
+>>   = = 2C 
+>>   
+>>?- 1C - 1S -
+>>   = 4P+ 16H+ = 2P
+>>
+>>?- 1P - 1S -
+>>   = 4C+ 12-16H = 2C
+>>   = 4C+ 17H+ = 3C
+>>
+>>?- 1M - 1S -
+>>   = 4m+ 17H- = 2m 
+>>   = 4m+ 17H+ = 3m
+>>   = uni 6M+ 2ghM 17-19HL = 3M
+>>   = 4T+ = 2T
+>>   = = -    
+>>   
+>>?- 1P - 2m -
+>>   = 4C+ 12-16HL = 2C 
+>>   = 4C+ 17HL+ = 3C   // douteux car 2T est autoforcing 
+>>?- 1M - 2T -
+>>   = 3T+ 17ST+ = 3T
+>>   = 4K+ 12-16HL = 2K 
+>>   = 4K+ 17HL+ = 3K   // douteux car 2T est autoforcing 
+>>?- 1M - 2m -
+>>   = 3m+ 17Sm+ = 3m
+>>   = reg 15-17H = 2S
+>>   = reg 18-19H = 3S
+>>   = uni 6M+ 2ghM 17-19HL = 3M
+>>   = = 2M
+>>   
+>>?- 1P - 2C -
+>>   = 3C+ 14-16SC = 4C
+>>   = 3C+ 17SC+ = 3C
+>>   = reg 15-17H = 2S
+>>   = reg 18-19H = 3S
+>>   = uni 6P+ 2ghP 17-19HL = 3P
+>>   = = 2P
+>>
+>>// redemande et developpements sur les soutiens directs
+>>// enchères d'essai (à developper)
+>>   
+>>?- 1M - 2M -
+>>	= 20HL+ = 4M 
+>>   = D5332 15-19HL = 2S
+>>   = 4m+ 15-19HL = 3m
+>>?- 1C - 2C -
+>>   = 4P+ 15-19HL = 2P
+>>   = = -   
+>>?- 1P - 2P -
+>>   = 4C+ 15-19HL = 3C
+>>   = 15-19HL = 2S
+>>   = = -
+>>			// réponse enchère d'essai
+>>?- 1M - 2M - 2S - 
+>>	= 8SM- = 3M
+>>	= = 4M   
+>>?- 1M - 2M - 3x - 
+>>	= 8SM- = 3M
+>>	= = 4M   
+>>?- 1C - 2C - 2P - 
+>>	= 8SC- = 3C
+>>	= = 4C
+>>	   
+>>      
+>> 
+>>include 1C2RedemSpoutnik
+>>// redemande Spoutnik
+>>
+>>?--- 1T 1K X -
+>>	= 4C 13-15SC = 1C
+>>	= 4C 16-17SC = 2C
+>>	= 4C 18-19SC 19H- = 4C
+>>	= 4C 20SC+ = 2K
+>>	= 4C 18H+ = 2K
+>>	= 4P = 1P
+>>	= 15H+ 3tsaK = $finaleSA 8H+
+>>	= = 1S
+>>
+>>?--- 1x 1M X -
+>>	= 4M' 13-15SM = 0M'
+>>	= 4M' 16-17SM' = 1M'
+>>	= 4M' 18SM'+ = 2x
+>>	= M=C 4P = 1P
+>>	= 15H+ 3tsaM = $finaleSA 8H+
+>>	= = 1S
+>>
+>>?--- 1x 1y X - 2S -
+>>	= = $finaleSA 15H+
+>>include 1C3Rep2
+>>// 2ème réponse sur soutien et développements
+>>
+>>?--- 1x - 1M - 2M -
+>>	= 6-10DH 5M+ = 3M
+>>	= 11-12DH 4m+ = 3m	// enchère d'essai
+>>	= 11-12DH M=C 4P+ = 2P
+>>	= 11-12DH M=P 4C+ = 3C
+>>	= 11-12DH = 3M
+>>	= 13-15H pl = 2S	// enchère d'essai
+>>	= 13-15DH = 4M
+>>	= 16DH+ = 2S // enchère d'essai
+>>	= = -
+>>
+>>?--- 1x - 1M - 2M - 2S -
+>>	= pl = 3S
+>>	= 12-14SM = 3M
+>>	= 15-16SM = 4M
+>>	= = -
+>>	
+>>?--- 1x - 1M - 3M -
+>>	= 10-12DH = 4M
+>>	= 13DH+ = 3S	// enchère d'essai
+>>	= = -
+>>
+>>?--- 1x - 1M - 3M - 3S -
+>>	= = 6M // à développer
+>>	
+>>// 2ème réponse sur redemande 1 couleur
+>>
+>>?--- 1T - 1K - 1M -
+>>   = 4M+ 11-12SM = 2M
+>>   = 4M+ 13-15SM = 4M
+>>   = 4M+ 16SM+ = 3M
+>>
+>>?--- 1T - 1K - 1C -
+>>   = 5-10H = 1S		// ne peut pas avoir 4 piques
+>>   = 4P- 3tsaP 11-12H = 2S  
+>>   = 4P- 3tsaP 13-15H = 3S  
+>>   = 10H+ = 1P		// 4ème couleur forcing
+>>   
+>>?--- 1T - 1K - 1P -
+>>   = 5-10H = 1S
+>>   = 4C- 3tsaC 11-12H = 2S  
+>>   = 4C- 3tsaC 13-15H = 3S  
+>>   = 10H+ = 2C		// 4ème couleur forcing
+>>   
+>>?--- 1m - 1C - 1P -
+>>   = 4P+ 6-10SP = 2P
+>>   = 4P+ 11-12SP = 3P
+>>   = 4P+ 13-15SP = 4P
+>>   = 4P+ 16SP+ = 2K
+>>
+>>   = uni 6C+ 6-10HL = 2C 
+>>   = uni 6C+ 11-12HL = 3C
+>>
+>>   = reg 11-12H = 2S  
+>>   = reg 13-15H = 3S
+>>
+>>   = 5m+ 6-11Sm = 2m
+>>   = 5m+ 12-13Sm = 3m
+>>   = 5m+ 14Sm+ 11H- = 4m
+>>
+>>   = 5-10H = 1S
+>>   = 11H+ = 2m'		// 4ème couleur forcing
+>>
+>>// développement sur soutien mineur
+>>
+>>?--- 1T - 1K - 1M- 2T -
+>>	= 18H+ 3tsaM' = 2S
+>>	= 18H+ = 2M'	// 4ème couleur forcing
+>>	= = -
+>>
+>>?--- 1T - 1K - 1M- 2T - 2M' -
+>>	= 8H+ 3tsaM' = 3S
+>>	= = 3T
+>>	
+>>?--- 1T - 1K - 1M- 2T - 2S -
+>>	= 8H+ = 3S
+>>	= = -
+>>
+>>?--- 1m - 1C - 1P - 2m -
+>>	= 18H+ 3tsam' = 2S
+>>	= 18H+ m'>m = 2m'
+>>	= 18H+ = 3m'	
+>>	= = -
+>>
+>>?--- 1m - 1C - 1P - 2m - 2S -
+>>	= 8H+ = 3S
+>>	= = -
+>>
+>>?--- 1m - 1C - 1P - 2m - 2m' -
+>>	= 8H+ 3tsam' = 3S
+>>	= = 3m
+>>	
+>>?--- 1m - 1C - 1P - 2m - 3m' -
+>>	= 8H+ 3tsam' = 3S
+>>	= = -
+>>	
+>>// 2ème réponse sur redemande 1SA : 2T Roudi
+>>
+>>?--- 1m - 1M - 1S -
+>>   = 6M+ 12H+ = 3M
+>>   = 5T+ 4M 10H+ = 2S	// Texas T 
+>>   = 5M+ 10H+ = 2T		// Roudi
+>>   = 5M+ 5-9H = 2M
+>>   = m=T 5K+ 5-9H = 2K
+>>   =  = $finaleSA 12-15H
+>>
+>>//	réponse au 2T Roudi
+>>   
+>>* 2T - 
+>>   = 3M+ 14H- = 2C
+>>   = 3M+ 14H+ = 2P
+>>   = 14H+ = 2S
+>>   = = 2K
+>>   
+>>* 2T - 2K -
+>>   = 5M+ = 2M
+>>   =  = $finaleSA 12-13H
+>>    
+>>* 2T - 2C -
+>>   = M=P 14DH- = 2P	
+>>   = = $finaleMaj M 12-13H
+>>   
+>>* 2T - 2P -
+>>   = M=C 12DH- = 3C	
+>>   = = $finaleMaj M 14-15H
+>>
+>>* 2T - 2S -
+>>   = 6M+ = 4M
+>>   =  = $finaleSA 14-15H
+>>
+>>// développements sur 1T 1K 1SA  
+>>System 1T1K
+>>?--- 1T - 1K - 1S -
+>>   = 4M+ 10H+ = 2T	// Stayman
+>>	= 10HL- = -
+>>   =  = $finaleSA 12-15H
+>>
+>>* 2T - 
+>>   = 4M+ = 2M
+>>   = 14HL+ = 2S
+>>   = = 2K
+>>
+>>* 2T - 2K -  
+>>   = 12HL+ = 3S
+>>   = = 2S
+>>
+>>* 2T - 2M -  
+>>   = 4M+ 12HL+ = 4M
+>>   = 4M+ 12HL- = 3M
+>>   = 12HL+ = 3S
+>>   = = 2S
+>>
+>>* 2T - 2S -  
+>>   = 10HL+ = 3S
+>>   = = -
+>>finSystem
+>>
+>>?--- 1T - 1K - 1S -
+>>   = 4M+ 17H+ = 2M
+>>   =  = $finaleSA 12-15H
+>>
+>>// 2ème réponse sur bicolore économique après 1 sur 1
+>>
+>>?--- 1K - 1M - 2T -
+>>   = 3K+ sM' 12-15SK = 4K	// soutien
+>>   = 3K+ 10-11SK = 3K
+>>   = 4T+ 10-11H = 3T
+>>   = 4T+ 5-9H = -
+>>   = 6M+ 10-11HL = 3M	// répétition
+>>   = 6M+ 6-9HL = 2M
+>>
+>>   = 10H+ 3tsaM' = $finaleSA 13-17HL
+>>   = 10H+ = 0M'		// 4ème couleur forcing
+>>   = = 2K
+>>
+>>?--- 1C - 1P - 2m -
+>>   = 3C+ 12-15SC = 4C	// soutien
+>>   = 3C+ 10-11SC = 3C
+>>   = 4m+ 10-11H = 3m
+>>   = 4m+ 5-9H = -
+>>   = 6P+ 10-11HL = 3P	// répétition
+>>   = 6P+ 6-9HL = 2P
+>>
+>>   = 10H+ 3tsam' = $finaleSA 13-17HL
+>>   = 10H+ = 0m'		// 4ème couleur forcing
+>>   = = 2C
+>>  
+>>// 2ème réponse sur bicolore économique après 2 sur 1
+>>
+>>?--- 1M - 2T - 2K -
+>>   = 3M+ 16SM+ 2hM = 3M		// soutien
+>>   = 3M+ 12-15SM = 4M
+>>   = 3M+ 10-11SM = 2M
+>>   = 4K+ = 3K
+>>   = 6T+ 10-11HL = 3T		// répétition
+>>   = 3tsaC = $finaleSA 13-19HL
+>>   = = 2C						// 4ème couleur forcing
+>>* 2M -
+>> 	=	= $finaleMaj M 10-11DH
+>>* 3M -
+>> 	=	= $finaleMaj M 16DH+
+>>
+>>?--- 1P - 2m - 2C -
+>>   = 3P+ 16SP+ 2hP = 3P		// soutien P
+>>   = 3P+ 12-15SP = 4P
+>>   = 3P+ 10-11SP = 2P
+>>   = 4C+ 10-15SC = 4C		// soutien C
+>>   = 4C+ 16SC+ = 3C
+>>   = 6m+ 10-11HL = 3m		// répétition
+>>   = 3tsam' = $finaleSA 13-19HL
+>>   = = 0m'						// 4ème couleur forcing
+>> * 2P -
+>> 	=	= $finaleMaj P 10-11DH
+>>* 3M -
+>> 	=	= $finaleMaj M 16DH+ 
+>>  
+>>// 2ème réponse sur répétition simple en mineure
+>>
+>>?--- 1T - 1M - 2T -
+>>   = 5M 10-11HL = 2K
+>>?--- 1K - 1M - 2K -
+>>   = 5M 10-11HL = 2M'
+>>?--- 1m - 1M - 2m -
+>>   = 5M+ 12HL+ = 0m'
+>>   = 6M+ 10-11HL = 3M
+>>   = 6M+ 6-9HL = 2M
+>>   = 12H+ 2tsaM' 2tsaK = 3S
+>>   = 10-11H 2tsaM' 2tsaK = 2S
+>>   = 10H+ 2tsaM' = 2M'
+>>   = 10H+ 2tsam' = 0m'
+>>   = = -  
+>>
+>>// 2ème réponse sur répétition simple en majeure
+>>
+>>?--- 1C - 1P - 2C -
+>>   = 3C+ 10-11SC = 3C
+>>   = 3C+ 12-15SC = 4C
+>>   = 3C+ 16SC+ = 6C     // à revoir
+>>   = 5P+ 12HL+ = 3T
+>>   = 6P+ 10-11HL = 3P
+>>   = 6P+ 6-9HL = 2P
+>>   = 12H+ 2tsaT  2tsaK = 3S
+>>   = 10-11H 2tsaT  2tsaK = 2S
+>>   = 10H+ 2tsaT = 2T
+>>   = 10H+ 2tsaK = 2K
+>>   = = -  
+>>?--- 1M - 2x - 2M -
+>>   = 3M+ 10-11SM = 3M
+>>   = 3M+ 12-15SM = 4M
+>>   = 3M+ 16SM+ = 6M     // à revoir
+>>   = x=C 6x+ 10-11HL = 3x
+>> ?--- 1M - 2m - 2M -  
+>>   = 12H+ 2tsaM' 2tsam' = 3S
+>>   = 10-11H 2tsaM' 2tsam' = 2S
+>>   = 10H+ 2tsaM' = 0M'
+>>   = 10H+ 2tsam' = 0m'
+>>   = = 3x  
+>> ?--- 1P - 2C - 2P -  
+>>   = 12H+ 2tsaT 2tsaK = 3S
+>>   = 10-11H 2tsaT 2tsaK = 2S
+>>   = 10H+ 2tsaT = 3T
+>>   = 10H+ 2tsaK = 3K
+>>   = = 3C 
+>>   
+>>// 2e réponse à la 3e couleur, soutien oo demande de tenue pour déclarer SA
+>>
+>>?--- 1C - 1P - 2C - 3m -
+>>	=	3P+  = 3P
+>>	=	2tsam' = 3S 
+>>	=  = 3C
+>>?--- 1C - 1P - 2C - 3m - 3P -
+>>	= 5P+ = $finaleMaj P 12-14H
+>>	= = -
+>>?--- 1M - 2m - 2M - 3x -
+>>	= 2tsan = 3S 
+>>	= m<x 2m+ = 3m
+>>	= 4x+ = -
+>>	=   =	3M
+>>?--- 1P - 2C - 2P - 3m -
+>>	=	3C+ = 3C
+>>	=	2tsam' = 3S 
+>>	=	=	3P
+>>?--- 1P - 2C - 2P - 3m - 3C -
+>>	= 5C+ = $finaleMaj C 12-14H
+>>	= = -
+>>	
+>>// développements sur redemande 2SA après 1/1
+>>
+>>?--- 1m - 1P - 2S -
+>>	= 5C 5P = 3C
+>>?--- 1x - 1M - 2S -
+>>	= 6M+ 14HL+ = 3M
+>>	= 6M+ 8-13HL = 3M
+>>	= 5M+ = 3m'
+>>?--- 1x - 1y - 2S -
+>>	= 3x+ 14HL+ = 3x
+>>	= reg 13-15H = 4S
+>>	= reg 16-17H = 6S
+>>	= reg 18H+ = 7S
+>>
+>>// développement après redemande 2S après 2/1M
+>>
+>>?- 1M - 2m - 2S -
+>>	= 11-16SM = 4M
+>>	= 17SM+ = 3M
+>>	
+>>?- 1P - 2C - 2S -
+>>	= 11-16SP = 4P
+>>	= 17SP+ = 3P
+>>
+>>// développements sur bicolore cher
+>>
+>>?--- 1m - 1P - 2C -
+>>	= 4C+ 8SC- = 2S
+>>	= 4C+ 8-10SC = 4C
+>>	= 4C+ 11SC+ = 3C
+>>	= 3x+ 8-10SC = 4C
+>>	
+>>?--- 1C - 2m - 2P -
+>>	= 4P+ = 3P
+>>	= 3C+ = 3C
+>>	= 3tsam' 12H- = 3S
+>>	
+>>?--- 1x - 1z - 2y -
+>>	= 8H- = 2S
+>>	= 5z 6-10H = 0z
+>>	= 6z+ 9H+ = +1z
+>>	= 3x+ 9H+ = 3x
+>>	= 3tsan 8-11H = 3S 
+>>  
+>>// 2ème réponse sur répétition avec saut en mineure
+>>
+>>?--- 1T - 1K - 3T -
+>>   = 8H+ 2tsaC 2tsaP = $finaleSA 17-19HL
+>>   = 8H+ 2tsaC = 3C
+>>   = 8H+ 2tsaP = 3P
+>>   = 3T+ 10-12ST+ = 5T
+>>   = 3T+ 13ST+ = 6T			// à revoir
+>>   = 6K+ 8HL+ = 3K
+>>   = = -  
+>>?--- 1T - 1K - 3T - 3C -
+>>	= 2tsaP = 3S
+>>	= = 5T
+>>?--- 1T - 1K - 3T - 3P -
+>>	= 2tsaC = 3S
+>>	= = 5T
+>>?--- 1T - 1K - 3T - 3K -
+>>   = 2tsaC 2tsaP = 3S
+>>   = 2K+ = 5K
+>>	= = -
+>>?--- 1m - 1M - 3m -
+>>   = 5M+ 8HL+ = 3n
+>>   = 6M+ 8HL+ = 3M
+>>   = 8H+ 2tsaM' 2tsam' = $finaleSA 17-19HL
+>>   = 3m+ 10-12Sm+ = 5m
+>>   = 3m+ 13Sm+ = $finaleMin m 17-19DH
+>>   = 8H+ = 3n
+>>   = = -  
+>>?--- 1m - 1M - 3m - 3x -
+>>	= 3M+ = 4M
+>>	= 2tsan = 3S
+>>	= = 4m
+>>?--- 1m - 1M - 3m - 3M -
+>>	= 2M+ = 4M
+>>	= 2tsaM' 2tsam' = 3S
+>>	= = -
+>>
+>>// 2ème réponse sur répétition avec saut en majeure
+>>
+>>?--- 1M - 2x - 3M -
+>>   = 2M+ 8-12SM = 4M
+>>   = 3M+ 13SM+ = $finaleMaj M 17-19DH
+>>   = 6x+ 8HL = 3x
+>>   = 8H+ = $finaleSA 17-19HL
+>>   = = -  
+>>?--- 1M - 2C - 3M - 3C -
+>>	= 2C+ = 4C
+>>	= = 3S
+>>?--- 1M - 2m - 3M - 3m -
+>>	= 3m+ = 5m
+>>	= = 3S
+>>	
+>>
+>>
+>>
+>>   
+>>include 1C4CoulForc
+>>// réponse 4ème couleur forcing après bicolore économique
+>>
+>>// 10H+ 4P?
+>>
+>>?--- 1T - 1K - 1C - 1P -	
+>>   = 4P+ 12-16SP = 2P
+>>   = 4P+ 17SP+ = 3P
+>>   = 16H- 3tsaP = 1S
+>>   = 16H+ 3tsaP = 2S
+>>   = 5C+ = 2C 
+>>   = 4K+ = 3K 
+>>   = = 2T
+>>* 2P -
+>>	= = $finaleMaj P 14-16SP
+>>* 3P -
+>>	= = $finaleMaj P 17-19SP
+>>* 1S -
+>>	= = $finaleSA 12-15H
+>>* 2S -
+>>	= = $finaleSA 16-18H
+>>* 2C -
+>>	= 3C+ = $finaleMaj C 14-16DH
+>>* 3K -
+>>	= 2tsaP = 3S
+>>	= = -
+>>* 2T -	
+>>	= 2tsaP = 3S
+>>	= = -
+>>
+>>// 10H+ 5K+ 4C
+>>
+>>?--- 1T - 1K - 1P - 2C -	
+>>   = 4C+ = 3C
+>>   = 16H- 3tsaC = 2S
+>>   = 16H+ 3tsaC = 3S
+>>   = 5P+ = 2P 
+>>   = 3K+ = 3K 
+>>   = = 2T
+>>* 3C -
+>>	= = $finaleMaj C 14-16SP
+>>* 2S -
+>>	= = $finaleSA 12-15H
+>>* 3S -
+>>	= = $finaleSA 16-18H
+>>* 2P -
+>>	= 3P+ = $finaleMaj P 14-16DH
+>>* 3K -
+>>	= 2tsaC = 3S
+>>	= = -
+>>* 2T -	
+>>	= 2tsaC = 3S
+>>	= = -
+>>
+>>?--- 1T - 1C - 1P - 2K -
+>>   = 3C+ 12-16SC = 2C
+>>   = 3C+ 17-19SC = 3C
+>>   = 16H- 3tsaK = 2S
+>>   = 16H+ 3tsaK = 3S
+>>   = 5P+ = 2P 
+>>   = 4K+ = 3K 
+>>   = = 3T
+>>
+>>?--- 1K - 1C - 1P - 2T -
+>>   = 3C+ 12-16SC = 2C
+>>   = 3C+ 17-19SC = 3C
+>>   = 16H- 3tsaT = 2S
+>>   = 16H+ 3tsaT = 3S
+>>   = 5P+ = 2P 
+>>   = 4T+ = 3T
+>>   = = 2K
+>>
+>>?--- 1K - 1C - 2T - 2P -
+>>   = 3C+ 12-16SC = 2C
+>>   = 3C+ 17-19SC = 3C
+>>   = 16H- 3tsaP = 2S
+>>   = 16H+ 3tsaP = 3S
+>>   = 4P+ = 3P 
+>>   = 5T+ = 3T 
+>>   = = 2K
+>>
+>>?--- 1K - 1P - 2T - 2C -
+>>   = 3P+ 12-16SP = 2P
+>>   = 3P+ 17-19SP = 3P
+>>   = 16H- 3tsaC = 2S
+>>   = 16H+ 3tsaC = 3S
+>>   = 4C+ = 3C 
+>>   = 5T+ = 3T 
+>>   = = 2K
+>>	
+>>?- 1C - 1P - 2T - 2K -
+>>   = 3P+ 12-16SP = 2P
+>>   = 3P+ 17-19SP = 3P
+>>   = 16H- 3tsaK = 2S
+>>   = 16H+ 3tsaK = 3S
+>>   = 5T+ = 3T 
+>>   = 4K+ = 3K 
+>>   = = 2C
+>>	
+>>?- 1C - 1P - 2K - 3T -
+>>   = 3P+ = 3P
+>>   = 3tsaT = $finaleSA 12-16H
+>>   = 5K+ = 3K 
+>>   = 4T+ = 4T 
+>>   = = 3C
+>>
+>>?- 1C - 2T - 2K - 2P -
+>>   = 4P+ = 3P
+>>   = 16H- 3tsaP = 2S
+>>   = 16H+ 3tsaP = 3S
+>>   = 5K+ = 2K 
+>>   = 3T+ = 3T 
+>>   = = 3C
+>>
+>>?- 1P - 2T - 2K - 2C -
+>>   = 4C+ = 3C
+>>   = 16H- 3tsaC = 2S
+>>   = 16H+ 3tsaC = 3S
+>>   = 5K+ = 3K 
+>>   = 3T+ = 3T 
+>>   = = 2P
+>>
+>>?- 1P - 2m - 2C - 3m' -
+>>   = 3tsam' = $finaleSA 12-16H
+>>   = 5C+ = 3C 
+>>   = 3m+ = 0m 
+>>   = = 3P
+>>?- 1P - 2m - 2C - 3m' - 3P -
+>>	= 3P+ = $finaleMaj P 12-19DH
+>>   = 3tsam' = $finaleSA 12-16H
+>>   = 2P+ = 4P
+>>   = 2tsam' = 3S
+>>   = = -
+>>?- 1P - 2m - 2C - 3m' - 3C -
+>>	= 3P+ = $finaleMaj P 12-19DH
+>>	= 3C+ = $finaleMaj C 12-19DH
+>>   = 3tsam' = $finaleSA 12-16H
+>>   = 2P+ = 4P
+>>   = 2C+ = 4C
+>>   = 2tsam' = 3S
+>>   = = -
+>>?- 1P - 2m - 2C - 3m' - 3m -
+>>   = 3tsam' = $finaleSA 12-16H
+>>	= = $finaleMin m 12-19DH
+>>?- 1P - 2m - 2C - 3m' - 4m -
+>>	= = $finaleMin m 12-19DH
+>>		
+>>
+>>	
+>>	
+>>	
+>>	
+>>include 1C4Redem2SA
+>>	
+>>// réponse à 2SA
+>>
+>>?--- 1x - 1y - 1z - 2S -
+>>	= = $finaleSA 11H
+>>
+>>?--- 1y - 1z - 2x - 2S -
+>>	= = $finaleSA 11H
+>>				
+>>
+>>	
+>>	
+>>	
+>>	
+>>
+>>include 1SAdev
+>>// Développement sur ouverture de 1 SA avec Stayman + Texas majeure/mineure
+>>
+>>// réponses
+>>
+>>?--- 1S -     
+>>   = 4M 8HL+ = 2T	* Staymann
+>>   = 5M sx 7-8H = 2T	* Staymann
+>>     
+>>   = 5P 5C 0-7HL = 2K	* Texas	// bicolore majeure faible 
+>>   = 5P 5C 8-13HL = 4K 	// bicolore majeure manche
+>>   = 5P 5C 14HL+ = 2C	* Texas	// bicolore majeure fort
+>>     
+>>   = uni 6x+ 2ghx 15HL+ = 3x	// unicolore fort
+>>      
+>>   = 6P+ = 2C	* Texas
+>>   = 6C+ = 2K	* Texas
+>>   = 5P+ = 2C	* Texas
+>>   = 5C+ = 2K	* Texas
+>>   = 6T+ 0-6H = 2P		* TexasMin // 6 Trèfles faible
+>>   = 6T+ sx 10-15HL = 2P	* TexasMin // 6 Trèfles fort
+>>   = 6K+ 0-6H = 2S		* TexasMin // 6 Carreaux faible
+>>   = 6K+ sx 10-15HL = 2S	* TexasMin // 6 Carreaux faible
+>>   = 5T 5K 10HL+ = 2P		* TexasMin // 5-5 mineure fort
+>>   = 5m D5332 15-16H = 2P	* TexasMin // limite chelem (4SA après)
+>>
+>>   = 0-7HL = -
+>>   = 8-9HL = 2T		* Staymann
+>>   = sM 10-15HL = 2T	* Staymann 
+>>   = 10-15HL = 3S 
+>>   = 16H = 4S 
+>>   = 17H = 5S 
+>>   = 18H+ = 6S
+>>   = 16HL+ = 4T		* Gerber
+>>   
+>>// redemande Staymann
+>>
+>>* 2T - 
+>>   = 4C 4P 17H- = 3S
+>>   = 4C 4P = 2S
+>>   = 4C = 2C
+>>   = 4P = 2P
+>>   =    = 2K
+>>
+>>// redemande Texas
+>>
+>>* 2K -
+>>   = 4C 2ghC 17H = 3C
+>>   = 3C 2ghC 17H = 2S
+>>   =  = 2C 
+>>
+>>* 2C -
+>>   = 4P 2ghC 17H = 3P
+>>   = 3P 2ghC 17H = 2S
+>>   =  = 2P 
+>>
+>>* 2P -
+>>   =  = 3T
+>>* 2S -
+>>   =  = 3K
+>>   
+>>
+>>// 2eme réponse Staymann
+>>
+>>* 2T - 2K -
+>>   = 5M sx 7-8H = 2M
+>>   = 5M+ = 3M
+>>   = 6M+ = 4M
+>>   = 8-9HL = 2S
+>>   = 5m+ 15DH+ = 3m
+>>   = 10-15HL = 3S 
+>>   = 16H = 4S 
+>>   = 17H = 5S 
+>>   = 18H+ = 6S
+>>   = 16HL+ = 4T
+>>
+>>* 2T - 2K - 2M - 
+>>   = 3M+ 17HL = 4M
+>>   = 17HL = 3S
+>>
+>>* 2T - 2K - 3m - 
+>>	= 4m+ 16Sm+ = 6m
+>>	= = 3S
+>>
+>>* 2T - 2K - 3M - 
+>>   = 3M+ = 4M
+>>   =  = 3S
+>>
+>>* 2T - 2C -
+>>   = 5P sx 7-8H = 2P
+>>
+>>* 2T - 2M -
+>>   = 4M+ 8-9HL = 3M
+>>   = 4M+ 10-15HL = 4M
+>>   = 4M+ ctrx 16HL = 3x 
+>>   = 8-9HL = 2S
+>>   = 10-15HL = 3S 
+>>   = 16H = 4S 
+>>   = 17H = 5S 
+>>   = 18H+ = 6S
+>>   = 18HL+ = 4T
+>>
+>>* 2T - 2M - 3M - 
+>>   = 17HL = 4M
+>>
+>>* 2T - 2M - 3x - 
+>>   =   = 4M
+>>
+>>* 2T - 2S -
+>>   = 4P+ 8-9HL = 3K
+>>   = 4C+ 8-9HL = 3T
+>>   = 4P+ 10-15HL = 4K
+>>   = 4C+ 10-15HL = 4T
+>>   = 8-9HL = -
+>>   = 10-17HL = 3S 
+>>   = 17H = 4S 
+>>   = 18H+ = 6S
+>>   = 18HL+ = 4T
+>>
+>>* 2T - 3S -
+>>   = 4P+ 10-15HL = 4K
+>>   = 4C+ 10-15HL = 4T
+>>   = 8-15HL = 3S 
+>>   = 16H+ = 6S
+>>   = 16HL+ = 4T
+>>   
+>>// 2ème réponse Texas
+>>
+>>* 2K - 2C -
+>>   = 0-7HL = -
+>>   = 6C+ 7-8HL = 3C
+>>   = 6C+ 9-15HL = 4C
+>>   = 5C 8-9HL = 2S
+>>   = 5C sx 4m+ 10-15HL = 3m
+>>   = 5C 10-15HL = 3S
+>>   = 16HL+ 4x+ = 3x
+>>   = 16HL+ = 4S
+>>
+>>* 2C - 2P -
+>>   = 0-7HL = -
+>>   = 6P+ 7-8HL = 3P
+>>   = 6P+ 9-15HL = 4P
+>>   = 5P 8-9HL = 2S
+>>   = 5P sx 4m+ 10-15HL = 3m
+>>   = 5P 10-15HL = 3S
+>>   = 16HL+ 4x+ = 3x
+>>   = 16HL+ = 4S
+>>
+>>* 2P - 3T -
+>>   = 0-9HL = -
+>>   = 5T 5K = 3K
+>>   = sK = 3S
+>>   = sC = 3P
+>>   = sP = 3C
+>>   = D5332 15-16H = 4S
+>>
+>>* 2S - 3K -
+>>   = 0-9HL = -
+>>   = sT = 3S
+>>   = sC = 3P
+>>   = sP = 3C
+>>   = D5332 15-16H = 4S
+>>
+>>// suite des enchères
+>>// Texas majeure 
+>>
+>>* 2K - 2C - 2S -
+>>   = 3C+ 17H = 4C
+>>   = 17H = 3S
+>>   = = -
+>>
+>>* 2K - 2C - 3S -
+>>   = 3C+ = 4C
+>>   = = -
+>>
+>>* 2K - 2C - 3C -
+>>   = 17H = 4C
+>>   = = -
+>>
+>>* 2K - 2C - 4S -
+>>   = 3C+ 17H = 6C
+>>   = 17H = 6S
+>>   = = -
+>>
+>>* 2K - 2C - 3x -
+>>   = 3C+ = 4C
+>>   =  = 3S		// ++
+>>
+>>* 2C - 2P - 2S -
+>>   = 3P+ 17H = 4P
+>>   = 17H = 3S
+>>   = = -
+>>
+>>* 2C - 2P - 3P -
+>>   = 17H = 4P
+>>   = = -
+>>   
+>>* 2C - 2P - 4S -
+>>   = 3P+ 17H = 6P
+>>   = 17H = 6S
+>>   = = -
+>>
+>>* 2C - 2P - 3x -
+>>   = 3P+ = 4P
+>>   =  = 3S		// ++
+>>
+>>// Texas mineure 
+>>
+>>
+>>// bicolore 55  ++
+>>* 2P - 3T - 3K -    
+>>   =  = 3S
+>>
+>>// singleton P
+>>* 2P - 3T - 3C -    
+>>   = 4P 2ghP = 3S
+>>   =  = 5T
+>>// singleton C
+>>* 2P - 3T - 3P -    
+>>   = 4C 2ghC = 3S
+>>   =  = 5T
+>>// singleton K
+>>* 2P - 3T - 3S -    
+>>   = 4K 2ghK = -
+>>   = 5K+ 2hK = -
+>>   =  = 5T
+>>// singleton P
+>>* 2S - 3K - 3C -    
+>>   = 4P 2ghP = 3S
+>>   =  = 5K
+>>// singleton C
+>>* 2S - 3K - 3P -    
+>>   = 4C 2ghC = 3S
+>>   =  = 5K
+>>// singleton T
+>>* 2S - 3K - 3S -    
+>>   = 4T 2ghT = -
+>>   = 5T+ 2hT = -
+>>   =  = 5K
+>>
+>>// 5332 15-16H
+>>* 2P - 3T - 4S -    
+>>   = 17H = 6S
+>>   = = -
+>>
+>>// 5332 15-16H
+>>* 2S - 3K - 4S -    
+>>   = 17H = 6S
+>>   = = -
+>>   
+>>// Staymann   
+>>
+>>* 2T - 2S - 3T - 
+>>   =  = 3C
+>>* 2T - 2S - 4T - 
+>>   =  = 4C
+>>* 2T - 2S - 3K - 
+>>   =  = 3P
+>>* 2T - 2S - 4K - 
+>>   =  = 4P
+>>
+>>* 2T - 2x - 2S - 
+>>   = 17HL = 3S
+>>   = = -
+>>
+>>// Staymann éventuel   
+>>
+>>* ( 2T - 2x - ) 4S - 
+>>   = 17HL = 6S
+>>   = = -
+>>
+>>* ( 2T - 2x - ) 5S - 
+>>   = 16HL+ = 6S
+>>   = = -
+>>   
+>>* ( 2T - 2x - ) 4T - 
+>>   = 3A+ = 6S
+>>   = 2A = 4P		// réponse Gerber
+>>   = 1A = 4C
+>>   = = 4K
+>>
+>>* ( 2T - 2x - ) 4T - 4K - 
+>>   =  3A+ = 6S
+>>   =  = 4S
+>>* ( 2T - 2x - ) 4T - 4C - 
+>>   =  2A+ = 6S
+>>   =  = 4S
+>>* ( 2T - 2x - ) 4T - 4P - 
+>>   =  1A+ = 6S
+>>   =  = 4S
+>> 
+>>
+>>include 2Tdev
+>>// réponses sur 2T
+>>
+>>?--- 2T -
+>>   = 5M+ 2ghM 8H+ = 2M
+>>   = 5T 5K = 2SA 
+>>   = = 2K
+>>   
+>>?--- 2T - 2K - 
+>>   = 8M+ 2A = 4M
+>>   = uni 7M hMARD = 3M
+>>   = uni 6M+ = 2M
+>>   = uni 6m+ = 3m
+>>   = 5P 5C = 3S
+>>   = 6C 5P = 4T
+>>   = 5C 6P = 4K
+>>   = sa 22-23HL = 2S
+>>   
+>>?--- 2T - 2K - 2C -  
+>>   = 4P+ 4H+ = 2P
+>>?--- 2T - 2K - 2P -  
+>>   = 5C+ 10HL+ = 3C
+>>   = 5C+ 10SM+ = 3C
+>>?--- 2T - 2K - 2M -  
+>>   = 2M+ 7-9SM = 4M
+>>   = 2M+ 5m+ 10SM+ = 3m
+>>   = 2M+ 10SM = 3M
+>>   = 2M+ 5-6SM = 2S
+>>   = 4-7H = 2S
+>>   = 5m+ 10HL+ = 3m  
+>>        
+>>include 2Kdev
+>>// 2K forcing de manche
+>>
+>>?--- 2K - 
+>>   = 0A 2R- 8H- = 2C
+>>   = 1A 0R = 2P
+>>   = 0A 2R = 2S
+>>   = 0A 8H+ = 2S
+>>   = = 3T	// un as et plus, 2 rois ou plus de 8H
+>>
+>>// redemande
+>>
+>>* 2M -
+>>   = 6M+ = 3M
+>>   = 6M'+ M'>M = 2M'
+>>   = 6M'+ = 3M' 
+>>   = = 2S
+>>
+>>* 2S -
+>>   = 6M+ = 3M
+>>   = = 3S
+>>
+>>* 3T -
+>>   = 6M+ = 3M
+>>   = = 3S
+>>	
+>>// 2e réponse
+>>
+>>* 2C - 2P -
+>>	= 5C+ 6HL+ = 3C
+>>	= 5m+ 6HL+ = 3m
+>>	= 3P+ 6SP+ = 3P
+>>	= 3P+ 3SP+ = 4P
+>>	= = 2S
+>>	
+>>* ? - 3M -
+>>	= M=C 5P+ 6HL+ = 3P
+>>	= M=P 5C+ 6HL = 4C
+>>	= 5m+ 6HL+ = 4m
+>>	= 3M+ 3SM+ = 4M
+>>	= = 3S
+>>	
+>>* ( 2S / 3T ) - 3S -
+>>	= = $finaleSA 24-25H
+>>		
+>>// 2e redemande
+>>	
+>>* 2C - 2P - 2S -
+>>	= = $finaleMaj P 0-2HL	
+>>* 2C - 2P - 3m -
+>>	= 3m+ = 4m
+>>	= = 3S
+>>* 2C - 2P - 3C -
+>>	= 3C+ = 4C
+>>	= = 3S
+>>* 2C - 2P - 3P -
+>>	= = $finaleMaj P 6-8HL
+>>* 2C - 2P - 4P -
+>>	= = $finaleMaj P 3-5HL
+>>
+>>* ? - 3C - 3P -
+>>	= 3P+ = $finaleMaj P 6-8HL
+>>	= = 3S
+>>
+>>* ? - 3P - 4C -
+>>	= 3C+ = $finaleMaj C 6-8HL
+>>	= = 4P
+>>
+>>* ? - 3M - 4m -
+>>	= 3M+ = $finaleMaj M 6-8HL
+>>
+>>
+>>
+>>	
+>>include 2SAdev
+>>// Développement sur l'ouverture de 2SA
+>>//   ou 2T-2K-2SA ou 2K-2C-2SA ou 2K-2P-2SA
+>>
+>>//	réponse
+>>
+>>?--- ( 2T - 2K - )2 ( 2K - 2n - )5 2S -     
+>>   = 5C 5P 0-10HL = 4K	// texas majeure
+>>   = 4C 5P 0-10HL = 3S
+>>   = 5C = 3K
+>>   = 5P = 3C
+>>     
+>>   = 4M 5H+ = 3T	// Stayman
+>>     
+>>   = 6T 12HL+ = 3P	// texas mineure
+>>   = 6T 5HL- = 3P
+>>   = 6K 12HL+ = 4T
+>>   = 6K 7HL- = 4T
+>>   = 5T 5K 12HL+ = 3P
+>>     
+>>   = 0-4HL = -
+>>   = 5-10HL = 3T
+>>   = 11-12HL = 4S
+>>   = 13HL+ = 5S
+>>   = = -
+>>
+>>// redemande sur Stayman 
+>>   
+>>* 3T -
+>>   = 5M = 3M
+>>   = 4M = 3K
+>>   = = 3S
+>>   
+>>// 2e réponse sur Stayman 
+>>
+>>* 3T - 3K -
+>>   = 4C 4P = 4K
+>>   = 4C 5P = 4C
+>>   = 4M = 3M'
+>>   = 12HL- = 3S
+>>   = 12HL+ 5T = 4T
+>>   = 11-12H = 4S
+>>   = 13H+ = 6S
+>>
+>>* 3T - 3M -
+>>   = 3M+ ctrT 12HL+ = 4T
+>>   = 3M+ ctrK 12HL+ = 4K
+>>   = 5m+ 2ghm 12HL+ = 4m
+>>   = 11-12H = 4S
+>>   = 3M+ = 4M
+>>   = = 3S
+>>
+>>* 3T - 3S -
+>>   = 5P 4C = 4C  //  Texas pique
+>>   = 11-12H = 4S //  quantitatif
+>>   = 13H+ = 6S
+>>   = = -
+>>   
+>> // 2e redemande et suite sur Stayman
+>> 
+>> * 3T - 3K - 3M -
+>>   = 4M' = 4M'
+>>   = = 3S
+>>* 3T - 3K - 3M - 4M' -
+>>	= = $finaleMaj M' 20-21H
+>>* 3T - 3K - 3M - 3S -
+>>	= = $finaleSA 20-21H
+>>	
+>>* 3T - 3K - 4T -
+>>	= 4T+ = 6T	// manque les contrôles
+>>	= = 4S	// refus
+>> * 3T - 3K - 4K -
+>> 	= 4C+ = 4C
+>> 	= = 4P
+>> * 3T - 3K - 4C -
+>> 	= 4P+ = 4P
+>> 	= = -
+>> * 3T - 3? - 4S -
+>> 	= 21HL+ = 6S
+>> 	= = -
+>> 
+>>* 3T - 3M - 4m -
+>>	= = 6M	// manque les contrôles
+>>  
+>>// redemande Texas majeure
+>>
+>>* 3K -
+>>   = 4C+ ctrT 21H = 4T
+>>   = 4C+ ctrK 21H = 4K
+>>   = 4C+ = 4C
+>>   = 5P 2C = 3P
+>>   = = 3C
+>>
+>>* 3K - 3C -
+>>   = 6C+ 7-11HL = 4C
+>>   = 4P 7-11HL = 3P 
+>>   = 7-11HL = 3S
+>>   = 6C+ ctrT 12HL+ = 4T
+>>   = 6C+ ctrK 12HL+ = 4K
+>>   = 5m+ 2ghm 12HL+ = 4m
+>>   = 6C 5P 12HL+ = 4P
+>>   = 11-12H = 4S
+>>
+>>* 3K - 3C - 3P -
+>>   = 4P+ = 4P
+>>   = 3C+ = 4C
+>>   = = 3S 
+>>
+>>* 3K - 3C - 3S -
+>>   = 3C+ = 4C
+>>
+>>* 3K - 3P -
+>>   = 6C+ 7-11HL = 4C
+>>   = 3P+ 7-11HL = 4P 
+>>   = 6C+ ctrT 12HL+ = 4T
+>>   = 6C+ ctrK 12HL+ = 4K
+>>   = 3P+ ctrT 12HL+ = 4T
+>>   = 3P+ ctrK 12HL+ = 4K
+>>   = 5m+ 2ghm 12HL+ = 4m
+>>   = 11-12H = 4S
+>>
+>>* 3C -
+>>   = 4P+ ctrT 21H = 4T
+>>   = 4P+ ctrK 21H = 4K
+>>   = 4P+ = 4P
+>>   = 5C 2P = 3S
+>>   = = 3P
+>>
+>>* 3C - 3P -
+>>   = 6P+ 7-11HL = 4P
+>>   = 6P+ ctrT 12HL+ = 4T
+>>   = 6P+ ctrK 12HL+ = 4K
+>>   = 5m+ 2ghm 12HL+ = 4m
+>>   = 5C 5P 12HL+ = 4C
+>>   = 11-12H = 4S
+>>
+>>* 3C - 3S -
+>>   = 6P+ 7-11HL = 4P
+>>   = 3C+ 7-11HL = 4C 
+>>   = 6P+ ctrT 12HL+ = 4T
+>>   = 6P+ ctrK 12HL+ = 4K
+>>   = 3C+ ctrT 12HL+ = 4T
+>>   = 3C+ ctrK 12HL+ = 4K
+>>   = 5m+ 2ghm 12HL+ = 4m
+>>   = 11-12H = 4S
+>>    
+>> // suite mineure sur Texas majeure
+>>
+>>* 3K - 3M - 4m -
+>>	= 4C+ = 6C
+>>	= 4m+ = 6m
+>>	= = 4S  // refus
+>>	
+>>* 3K - 3M - 4m - 6C -
+>>	= 6C- = 6P
+>>	= = -
+>>	
+>>* 3C - 3P - 4m -
+>>	= 4P+ = 6P
+>>	= 4m+ = 6m
+>>	= = 4S  // refus
+>>	
+>>* 3C - 4m -
+>>	= 12J+ = 6P
+>>	= = 4P
+>>
+>>
+>>	  
+>>// redemande Texas mineure
+>>
+>>* 3P -
+>>  = = 4T
+>>* 3P - 4T -
+>>  = 5K 5T = 4K
+>>* 3P - 4T -
+>>  = 12HL+ = 4S
+>>  = = -  
+>>   
+>>* 4T -
+>>  = = 4K 
+>>* 4T - 4K -
+>>  = 12HL+ = 4S  
+>>  = = -  
+>>   
+>>
+>> 
+>>// à complèter pour les chelems
+>>   
+>>       
+>>
+>>include 2faibledev
+>>// réponses sur ouverture d'un 2 faible
+>>
+>>?--- 2M -
+>>	= 15H+ = 2S
+>>?--- 2M X
+>>	= 15H+ = XX
+>>?--- 2M ?
+>>	= 3M 10-12H = 3M
+>>	= 4M+ 13-14H = 4M
+>>	= N 3M = 3M
+>>	= N 4M+ = 4M
+>>	= 6n+ 16DH+ = 0n
+>>	= 15H+ = X
+>>	= = -
+>>
+>>//	redemandes sur enchère forcing
+>>
+>>?--- 2M - 2S -
+>>	= 8H+ hnA = 3n	
+>>	= 8H+ hnR = 3n	
+>>	= 8H+ ctrn = 4n	
+>>	= = 3M
+>>?--- 2M X XX -
+>>	= 8H+ hnA = 3n	
+>>	= 8H+ hnR = 3n	
+>>	= 8H+ ctrn = 4n	
+>>	= = 3M
+>>?--- 2M ? X -
+>>	= 8H+ hnA = 3n	
+>>	= 8H+ hnR = 3n	
+>>	= 8H+ ctrn = 4n	
+>>	= = 3M
+>>?--- 2M ? X ?
+>>	= 8H+ = 4M	
+>>	
+>>// 2ème réponse après enchère forcing
+>>
+>>?--- 2M - 2S - 3M -
+>>	= = -
+>>?--- 2M - 2S - 3x -
+>>	= = 4M
+>>?--- 2M - 2S - 4x -
+>>	= = 4M
+>>	
+>>?--- 2M X XX - 3M -
+>>	=	= -
+>>?--- 2M X XX - 3x -
+>>	= = 4M
+>>?--- 2M X XX - 4x -
+>>	= = 4M
+>>	
+>>?--- 2M ? X - 3M -
+>>	=	= -
+>>?--- 2M ? X - 3x -
+>>	=	= 4M
+>>?--- 2M ? X - 4x -
+>>	=	= 4M
+>>
+>>	
+>>
+>>	
+>>
+>>
+>>include Interv
+>>// Intervention du n° 2 sur 1 couleur
+>>
+>>?--- 1T
+>>   = 4K+ 2C 12H+ = 1K
+>>   = 4K+ 2P 12H+ = 1K
+>>   = 5C 5K+ 7K- 7pe- = 2S	// bicolore Michael CK
+>>
+>>?--- 1K
+>>   = 5C 5T+ 7T- 7pe- = 2S	// bicolore Michael CT
+>>
+>>?--- 1m
+>>   = 4M 3M'+ 5M'- 12H+ = X
+>>   = 5M 5M'+ 7M'- 7pe- = 2K	// bicolore Michael majeure 
+>>
+>>?--- 1M
+>>   = 4M' 12H+ = X
+>>   = 5M' 5m+  7m-  7pe- V = 2M  // bicolore Michael maj-min
+>>   = 5m 5m'+ 7m'- 7pe- V = 2S	// bicolore Michael mineure 
+>>   = 5M' 5m+  7m-  9pe- NV = 2M  // bicolore Michael maj-min
+>>   = 5m 5m'+ 7m'- 9pe- NV = 2S	// bicolore Michael mineure 
+>>   = 5M' 5m+  7m-  8pe- N = 2M  // bicolore Michael maj-min
+>>   = 5m 5m'+ 7m'- 8pe- N = 2S	// bicolore Michael mineure 
+>>
+>>?--- 1P
+>>   = 5C 3ghC 14-17H = 2C 
+>>
+>>?--- 1y
+>>   = 5z 2ghz 8-17H = 1z
+>>   = 5z 2hz 10-17H = 1z
+>>   = 5z 12-17H = 1z
+>>   = 6x 2ghx 11-17H = 2x
+>>   = sa 3tsay 16-18H = 1S 
+>>   = sa y=T 2tsay 16-18H = 1S 
+>>   = sa y=K 2tsay 16-18H = 1S 
+>>   = sa 3tsay 19H+ = X 
+>>   = D4441 sy 11H+ = X 
+>>   = D5440 sy 11H+ = X
+>>   = 18H+ = X
+>>   = = -
+>>
+>>   
+>>include IntervDevContre
+>>// Réponses au contre après passe du répondant
+>>
+>>?--- 1m X -
+>>   = 4M+ 0-7H = 1M
+>>   = 6m'+ 0-7H = 0m'
+>>   = 3M+ 0-7H = 1M
+>>   = 4m'+ 0-7H = 1m'
+>>   = 4C 4P 8-10H = 2m
+>>   = 6M+ 8-10H = 4M
+>>   = 5M 8-10H = 3M
+>>   = 4M 8-10H = 2M
+>>   = 4m'+ 8-10H = 2m'
+>>?--- 1M X -
+>>   = 3M'+ 0-7H = 0M'
+>>   = 4m+ 0-7H = 0m
+>>   = 6M'+ 8-10H = 4M'
+>>   = 5M' 8-10H = 3M'
+>>   = 4M'+ 8-10H = +1M'
+>>?--- 1y X -
+>>   = 2tsay 8-10H = 1S
+>>   = sa 3tsay 11-12HL = 2S
+>>   = sa 3tsay 13-15H = 3S
+>>   = 11H+ = 2y
+>>   = 5x+ = 2x
+>>   = = -
+>>
+>>// Réponses au contre après 1 couleur répondant
+>>
+>>?--- 1T X 1K
+>>   = 6M+ 8-10H = 4M
+>>?--- 1x X 1M
+>>   = 6M'+ 8-10H = 4M'
+>>?--- 1x X 1y
+>>   = 0-3H = -
+>>   = 4n+ 3-7H = 0n
+>>   = 5n+ 8-11H = +1n
+>>   = 4y 8H+ = X
+>>   = sa 2tsax 8-10H = 1S
+>>   = sa 2tsax 11-12H = 2S
+>>   = 9H+ = 2x
+>>   = = -
+>>
+>>// Réponses au contre après 1 SA répondant
+>>
+>>?--- 1m X 1S
+>>   = 6M+ 8-10H = 4M
+>>?--- 1M X 1S
+>>   = 6M'+ 8-10H = 4M'
+>>?--- 1x X 1S
+>>   = 5n+ 0-7H = 2n
+>>   = 8H+ 2tsaT 2tsaK = X
+>>   = = -
+>>
+>>// Réponses au contre après surcontre répondant
+>>
+>>?--- 1y X XX
+>>   = 8H+ = 2y
+>>   = 7n+ 0-7H = +2n 
+>>   = 6n 0-7H = +1n 
+>>   = 4n+ 0-7H = 0n
+>>   = = - 
+>>
+>>// Réponses au contre après soutien répondant
+>>
+>>?--- 1m X 2m
+>>   = 4M 4M' 8-10H = X
+>>?--- 1M X 2M
+>>   = 4m 4m' 8-10H = X
+>>?--- 1y X 2y
+>>   = 5n+ 9-10H = +1n
+>>   = 4z+ 5-9H = 2z
+>>   = 4x+ 5-9H = 3x
+>>   = 3tsay 10-11HL = 2S
+>>   = 3tsay 12HL+ = 3S
+>>   = 11H+ = 3y
+>>   = 8-10H = X
+>>   = = -
+>>?--- 1y X 3y
+>>   = 5n+ 9-10H = 0n
+>>   = 4z+ 5-9H = 3z
+>>   = 5x+ 5-9H = 4x
+>>   = 3tsay 12HL+ = 3S
+>>?--- 1C X 4C
+>>   = 5T 5K = 4S
+>>?--- 1P X 4P
+>>   = 5T 5K = 4S
+>>   = 5C 5m = 4S
+>>// conclusion: contre ou passe
+>>?--- 1x X 3+x
+>>   = 8H+ = X
+>>   = = -
+>>
+>>// Redemande après le contre sur réponse faible (0-7H)
+>>
+>>?--- 1T X - 1K -
+>>  = 22H+ = 2x
+>>  = 5M+ 17-21HL = 0M	// majeure 5ème 
+>>  = 3tsax 19-21H = 1S	// SA 
+>>  = 3tsax 22-23H = 2S
+>>  = 4K+ 17H+ = 2K	// soutien 
+>>  = = -   
+>>
+>>?--- 1x X - 1M -
+>>  = 22H+ = 2x
+>>  = 5n+ 17-21HL = 0n	// belle couleur 5ème 
+>>  = 4M+ 24SM+ = 4M	// soutien 
+>>  = 4M+ 18SM+ = 2M	// soutien 
+>>  = 3tsax 19-21H = 1S	// SA 
+>>  = 3tsax 22-23H = 2S
+>>  = = -   
+>>
+>>// Redemande après le contre sur 1SA (8-10H)
+>>
+>>?--- 1x X - 1S -
+>>  	= 22H+ = 2x
+>>  	= 5M+ 16-22HL = 0M	// majeure 5ème 
+>>	= 16HL+ = 3S
+>>	= = -
+>>include IntervDev1C
+>>// Réponses à l'intervention 1 couleur après passe du répondant
+>>
+>>
+>>?--- 1x 1y -
+>>   = 3y 7-10Sy = 2y
+>>   = 4y 7-10Sy = 3y
+>>   = 5y+ 7-10Sy = 4y
+>>   = 3y+ 9H+ 5n+ 2ghn = +1n
+>>   = 4y 10-12H reg = 3x
+>>   = 3y+ 11Sy+ = 2x
+>> 
+>>?--- 1m 1M -
+>>   = 6m'+ 8-10H = 2m'
+>>   = M=P 6C+ 8-10H = 2C
+>>
+>>?--- 1x 1y -
+>>   = 4z+ 8H+ = 1z
+>>   = reg 3x+ 8-12H = 1S
+>>   = reg 3tsax 13-14H = 2S
+>>   = reg 3tsax 15-16H = 3S
+>>   = 10H+ = 2x
+>>   = = -
+>>
+>>// redemande sur soutien
+>>
+>>?--- 1x 1y - 2y -
+>>   = 20DH+ = 4y
+>>   = 18DH+ = 3y
+>>   = = - 
+>>?--- 1x 1y - 2y - 3y -
+>>   = 9Sy+ = 4y
+>>?--- 1x 1y - 3y -
+>>   = 20DH+ = 4y
+>>   = = -
+>>// redemande sur SA
+>>
+>>?--- 1x 1y - 1S -
+>>   = 17HL+ = 3S
+>>   = 15HL+ = 2S
+>>   = = -
+>>?--- 1x 1y - 1S - 2S -
+>>   = 10HL+ = 3S
+>>   = = -
+>>?--- 1x 1y - 2S -
+>>   = 12HL+ = 3S
+>>   = = - 
+>>
+>>// redemande sur cue-bid
+>>
+>>?--- 1T 1M - 2T -
+>>   = 13H- 4K+ = 2K	// bicolore économique 
+>>?--- 1m 1P - 2m -
+>>   = 13H- 4C+ = 2C 	// bicolore économique
+>>
+>>?--- 1x 1y - 2x -
+>>   = 13H- = 2y		// répétition
+>>   = 13-15H 6y = 3y	// répétition saut
+>>   = 13-15H 4z+ = 0n	// bicolore cher
+>>   = 13-15H 4n+ = +1n	// bicolore à saut
+>>   = 13-15H reg 3tsax = 2S
+>>   = 16H+ 6y = 4y
+>>   = 13H+ = 3x
+>>
+>>// dev. après cue-bid et redemande faible
+>>
+>>?--- 1x 1z - 2x - 2y - 
+>>   = 3z+ 18Sz+ = 4z
+>>   = 3z+ 15Sz+ = 3z
+>>   = 18H+ = 3S
+>>   = 15H+ = 2S
+>>   = = 2z
+>>?--- 1x 1z - 2x - 2z - 
+>>   = 3z+ 18Sz+ = 4z
+>>   = 3z+ 15Sz+ = 3z
+>>   = 18H+ = 3S
+>>   = 15H+ = 2S
+>>   = = -
+>>
+>>// dev. après cue-bid et redemande forte
+>>
+>>?--- 1x 1y - 2x - 3y - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y - 2x - 2S - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y - 2x - 2z - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y - 2x - 3n - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y - 2x - 3x - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y - 2x - 4y - 
+>>   = = -
+>>
+>>// redemande sur changement de couleur
+>>
+>>?--- 1x 1y - 1z -
+>>   = 3z+ = 2z
+>>   = = 2y 
+>>
+>>
+>>   
+>> 
+>>
+>>include IntervDevRep1C
+>>// Réponses à l'intervention 1 couleur après 1 couleur du répondant
+>>
+>>?--- 1x 1y 1z
+>>   = 3y 7-10Sy = 2y
+>>   = 4y 7-10Sy = 3y
+>>   = 5y+ 7-10Sy = 4y
+>>   = 3y+ 9H+ 5n+ 2ghn = +1n
+>>   = 4y 10-12H reg = 3x
+>>   = 3y+ 11Sy+ = 2x
+>>   = reg 3x+ 8-12H = 1S
+>>   = reg 3tsax 13-14H = 2S
+>>   = reg 3tsax 15-16H = 3S
+>>   = 10H+ = 2x
+>>   = = -
+>>
+>>// redemande sur soutien
+>>
+>>?--- 1x 1y 1z 2y -
+>>   = 20DH+ = 4y
+>>   = 18DH+ = 3y
+>>   = = - 
+>>?--- 1x 1y 1z 2y - 3y -
+>>   = 9Sy+ = 4y
+>>?--- 1x 1y 1z 3y -
+>>   = 20DH+ = 4y
+>>   = = -
+>>// redemande sur SA
+>>
+>>?--- 1x 1y 1z 1S -
+>>   = 17HL+ = 3S
+>>   = 15HL+ = 2S
+>>   = = -
+>>?--- 1x 1y 1z 1S - 2S -
+>>   = 10HL+ = 3S
+>>   = = -
+>>?--- 1x 1y 1z 2S -
+>>   = 12HL+ = 3S
+>>   = = - 
+>>
+>>// redemande sur cue-bid
+>>
+>>?--- 1T 1M 1z 2T -
+>>   = 13H- 4K+ = 2K	// bicolore économique 
+>>?--- 1m 1P - 2m -
+>>   = 13H- 4C+ = 2C 	// bicolore économique
+>>
+>>?--- 1x 1y 1z 2x -
+>>   = 13H- = 2y		// répétition
+>>   = 13-15H 6y = 3y	// répétition saut
+>>   = 13-15H 4z+ = 0n	// bicolore cher
+>>   = 13-15H 4n+ = +1n	// bicolore à saut
+>>   = 13-15H reg 3tsax = 2S
+>>   = 16H+ 6y = 4y
+>>   = 13H+ = 3x
+>>
+>>// dev. après cue-bid et redemande faible
+>>
+>>?--- 1x 1y 1z 2x - 2n - 
+>>   = 3y+ 18Sy+ = 4y
+>>   = 3y+ 15Sy+ = 3y
+>>   = 18H+ = 3S
+>>   = 15H+ = 2S
+>>   = = 2y
+>>?--- 1x 1y 1z - 2x - 2y - 
+>>   = 3y+ 18Sy+ = 4y
+>>   = 3y+ 15Sy+ = 3y
+>>   = 18H+ = 3S
+>>   = 15H+ = 2S
+>>   = = -
+>>
+>>// dev. après cue-bid et redemande forte
+>>
+>>?--- 1x 1y 1z 2x - 3y - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y 1z 2x - 2S - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y 1z 2x - 2z - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y 1z 2x - 3n - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y 1z 2x - 3x - 
+>>   = 3y+ = 4y
+>>   = = 3S
+>>?--- 1x 1y 1z 2x - 4y - 
+>>   = = -
+>>
+>>// redemande sur changement de couleur
+>>
+>>?--- 1x 1y 1z 1n -
+>>   = 3n+ = 2n
+>>   = = 2y 
+>>
+>>
+>>   
+>> 
+>>
+>>include Interv2faible
+>>// Intervention du n° 2 sur le 2 faible
+>>
+>>?--- 2C
+>>   = 6P+ 18DH+ = 3P
+>>   = 5P+ 12H+ = 2P
+>>   = 5P+ N 10H+ = 2P
+>>?--- 2P
+>>   = 6C+ 14DH+ = 3C
+>>?--- 2M
+>>   = sa 3tsaM 17-18H = 2S
+>>   = 6m+ 14DH+ = 3m
+>>   = 5m 5m' 18DH+ = 3S
+>>   = 5M' 5m 18DH+ = 4m
+>>   = 7m hmARD 2tsaM- = 3M
+>>   = 4M'+ 14H+ = X
+>>   = 19H+ = X
+>>
+>>//  Réponse au contre 
+>>
+>>?--- 2C X ?
+>>   = 4P 0-7H = 2P
+>>   = 5P 8-10H = 3P
+>>
+>>?--- 2M X ?
+>>   = 4M' 0-7H = 3M'
+>>   = 4m 0-7H = 3m
+>>   = 5M' 11-13H = 4M'
+>>   = 3tsaM 11-13H = 3S
+>>   = 5M' 5m+ 9-10H = 4m
+>>   = 7m hmARD 2tsaM- = 3M
+>>   = 5m+ 5m'+ = 4S
+>>   = 8H+ = 2S
+>>   = = -
+>>
+>>//  Réponse couleur 
+>>
+>>?--- 2C 2P ?
+>>	= 3P+ 14SP+ = 4P
+>>	= 3P+ 11SP+ = 3P
+>>	= 5P+ = 4P
+>>	= 12HL+ 3tsaC = 3S
+>>	= 11HL 3tsaC = 2S
+>>	= 12HL+ = 3C
+>>	= = -
+>>* 3P ?
+>>	= 6P+ = 4P
+>>	= 16DH = 4P
+>>	= 15H+ = X
+>>	= = -
+>>* 2S ?
+>>	= 6P+ = 4P
+>>	= 13HL+ = 3S
+>>	= = -
+>>
+>>?--- 2C 3P ?
+>>	= 3P+ 14SP+ = 6P
+>>	= 2P+ 9SP+ = 4P
+>>	= 4P+ = 4P
+>>	= 9HL+ 3tsaC = 3S
+>>	= 9H+ = X
+>>	= = -
+>>
+>>?--- 2P 3C ?
+>>	= 2C+ 13SP+ = 0C
+>>	= 3C+ 10SP+ = 3C
+>>	= 4C+ = 4C
+>>	= 10HL+ 3tsaC = 3S
+>>	= 12H+ = 3P
+>>	= 12H+ = X
+>>	= = -
+>>
+>>
+>>//  developpement après contre et 2SA 
+>>
+>>?--- 2M X - 2S -
+>>   = 5M' 18H- = 3M'
+>>   = 19-20H 3tsaM = 3SA
+>>   = 18H+ = 3M  
+>>   = 6m = 4m
+>>   = = 3T
+>>
+>>?--- 2M X - 2S - 3T -
+>>   = 5M' 14H+ = 4M' 
+>>   = 4M' 3tsaM = 3M'
+>>   = 4M' = 3M
+>>   = 14H+ 3tsaM = 3SA
+>>   = 5K+ = 3K
+>>   = = - 
+>>
+>>include Reveil
+>>// Reveil sur ouverture 1 couleur
+>>
+>>?--- 1m - -
+>>   = 7H+ 5M 4M'+ = 2m	// bicolore majeur
+>>?--- 1M - -
+>>   = 7H+ 5m 5M' = 2M     // bicolore maj-min
+>>?--- 1y - -
+>>   = 6-11H 5n+ = 0n
+>>   = 10-12H 6n = +1n
+>>   = 10-12H 7n = +2n
+>>   = 10-12H sa 2tsay = 1S
+>>   = 16-18H sa 3tsay = 2S
+>>   = 8-10H 3y- = X
+>>   = 12H+ = X
+>>   = = -
+>>
+>>// réponse au cue-bid = bicolore
+>>
+>>?--- 1m - - 2m -
+>>   = 4M+ 15SM+ = 4M 
+>>   = 2M+ = 2M
+>>   = 6n+ = 0n
+>>?--- 1M - - 2M -
+>>   = 2M'+ = 0M'
+>>   = 2m+ = 3m
+>>   = 6n+ = 0n
+>>
+>>// réponse au contre de reveil
+>>
+>>?--- 1y - - X -
+>>   = 0-14H 4M+ = 0M
+>>   = 14-16H 4M+ = +1M 
+>>   = 9-13H sa = 1S
+>>   = 14-15H sa 3tsay = 2S
+>>   = 4n+ = 0n
+>>   = 14H+ 5y+ = -
+>>   = 3z = 1z
+>>
+>>// redemande après contre de reveil
+>>
+>>* 0M -
+>>   = 4M+ 13-14H = 0M	// soutien
+>>   = 4M+ 15-18H = +1M
+>>   = 4M+ 19H+ = 0y
+>>   = 5M'+ M'<>y 13-15H = 0M'	// autre majeure 
+>>   = 5M'+ M'<>y 16-19H = +1M' 
+>>   = 5M'+ M'<>y 20H+   = 0y 
+>>   = 6m+ m<>y 2ghm 13-15H = 0M'	// belle mineure 6ème 
+>>   = 6m+ m<>y 2ghm 16-19H = +1M' 
+>>   = 6m+ m<>y 2ghm 20H+   = 0y 
+>>   = 13-15H 3tsay = 0S		// SA
+>>   = 19-21H 3tsay = +1S
+>>   = 13H+ = 0y
+>>   = = -   
+>>
+>>// réponse au 1SA de reveil
+>>
+>>?--- 1m - - 1S -
+>>   = 5C+ = 2K	// Texas
+>>   = 5P+ = 2C
+>>?--- 1C - - - 1S -
+>>   = 5P+ = 2C
+>>?--- 1P - - - 1S -
+>>   = 5C+ = 2K
+>>?--- 1y - - - 1S -
+>>   = 4M 12H+ = 2T  // Stayman
+>>   = 13-14HL = 2S
+>>   = 15HL+ = 3S
+>>   = = -   
+>>
+>>// Redemande
+>>
+>>* - 2S -
+>>   = 12HL+ = 3S
+>>   = = -
+>>
+>>// Staymann sur 1SA de reveil
+>>
+>>* - 2T -
+>>   = 4C 4P = 2S
+>>   = 4M = 2M
+>>   = = 2K 
+>>* - 2T - 2K -
+>>   = 15HL+ = 3S
+>>   = = 2S
+>>* - 2T - 2K - 2S
+>>   = 12HL+ = 3S
+>>   = = -
+>>* - 2T - 2M -
+>>   = 4M+ 12-14SM = 3M
+>>   = 4M+ 13SM+ = 4M
+>>   = 15HL+ = 3S
+>>   = = 2S
+>>* - 2T - 2M - 2S
+>>   = 12HL+ = 3S
+>>   = = -
+>>* - 2T - 2M - 3M
+>>   = 12SM+ = 4M
+>>   = = -
+>>* - 2T - 2S -
+>>   = 4C 15SC+ = 4T
+>>   = 4P 15SP+ = 4K
+>>   = 4C = 3T
+>>   = 4P = 3K
+>>* - 2T - 2S - 3T -
+>>   = 12HL+ = 4C
+>>   = = 3C
+>>* - 2T - 2S - 3K -
+>>   = 12HL+ = 4P
+>>   = = 3P
+>>* - 2T - 2S - 4T -
+>>   = = 4C
+>>* - 2T - 2S - 4K -
+>>   = = 4P
+>>
+>>// Texas sur 1SA de reveil
+>>
+>>* - 2K -
+>>   = = 2C
+>>* - 2C -
+>>   = = 2P
+>>* - ( 2K - 2C / 2C - 2P ) - 
+>>   = 6M+ 12-14HL = 3M
+>>   = 6M+ 15HL+ = 4M
+>>   = 12-14HL = 2S
+>>   = 15HL+ = 3S
+>>   = = -
+>>* - 2K - 2C - 2S -
+>>   = 3C+ 12SC+ = 4C
+>>   = 12HL+ = 3S
+>>   = = -
+>>* - 2C - 2P - 2S -
+>>   = 3P+ 12SP+ = 4P
+>>   = 12HL+ = 3S
+>>   = = -
+>>* - 2K - 2C - 3C -
+>>   = 12HL+ = 4C
+>>   = = - 
+>>* - 2C - 2P - 3P -
+>>   = 12HL+ = 4P
+>>   = = - 
+>>
+>>// réponse au 2SA de reveil
+>>
+>>?--- 1m - - 2S -
+>>   = 5C+ = 3K	// Texas
+>>   = 5P+ = 3C
+>>?--- 1C - - - 2S -
+>>   = 5P+ = 3C
+>>?--- 1P - - - 2S -
+>>   = 5C+ = 3K
+>>?--- 1y - - - 2S -
+>>   = 4M 8H+ = 3T  // Stayman
+>>   = 8HL+ = 3S
+>>   = = -   
+>>
+>>// Staymann sur 2SA de reveil
+>>
+>>* - 3T -
+>>   = 4C 4P = 3S
+>>   = 4M = 3M
+>>   = = 3K 
+>>* - 3T - 3K -
+>>   = = 3S
+>>* - 3T - 3M -
+>>   = 4M+ 8SM+ = 4M
+>>   = = 3S
+>>* - 3T - 3S -
+>>   = 4C = 4T
+>>   = 4P = 4K
+>>* - 3T - 3S - 4T -
+>>   =  = 4C
+>>* - 3T - 3S - 4K -
+>>   =  = 4P
+>>
+>>// Texas sur 2SA de reveil
+>>
+>>* - 3K -
+>>   = = 3C
+>>* - 3C -
+>>   = = 3P
+>>* - ( 3K - 3C / 3C - 3P ) - 
+>>   = 6M+ 9HL+ = 4M
+>>   = 9HL+ = 3S
+>>   = = -
+>>* - 3K - 3C - 3S -
+>>   = 3C+ = 4C
+>>   = = -
+>> 
+>>include Barrage
+>>// Interventions de barrage
+>>
+>>??
+>>   = uni 8x+ V 8LJ 11H- = 4x
+>>   = uni 8x+ N 7LJ 11H- = 4x
+>>   = uni 7m 3ghm 11H- = 3S
+>>   = uni 7m+ 2ghm NV 5-7LJ 11H- = 3m
+>>   = uni 7m+ 2ghm MV 6-7LJ 11H- = 3m
+>>   = uni 7m+ 2ghm VN 7LJ 11H- = 3m
+>>   = uni 7M+ 2hM NV 5-7LJ 11H- = 3M
+>>   = uni 7M+ 2hM MV 6-7LJ 11H- = 3M
+>>   = uni 7M+ 2hM VN 7LJ 11H- = 3M
+>>   = 6M 2hM 8-12HL = 2M
+>>
+>>
+>>
+>>include Alertes
+>>Alerte
+>>Staymann = 2T
+>>Texas = 2K pour C, 2C pour P
+>>TexasMin = 2P pour T, 2SA pour K
+>>Gerber = 4T 
+>>finAlerte
+>>
+>>finSystem

@@ -1,0 +1,80 @@
+// réponses sur ouverture de 1 couleur après intervention 1 couleur
+
+?--- 1T 1K
+   = 7H+ 5C+ = 1C
+   = 7H+ 5P+ = 1P
+   = 8H+ 4C+ = X
+   = 7H+ 4P+ = 1P
+
+?--- 1m 1C
+   = 7H+ 5P+ = 1P
+   = 8H+ 4P+ = X
+   
+?--- 1m 1P
+   = 8H+ 4C+ = X
+   = 5C 11HL = 2C
+  
+?--- 1m 1y
+   = 8-10H 1tsay = 1S
+   = 11-12H 3tsay = 2S
+   = 13-15H 3tsay = 3S
+   = 5m 8-10Sm = 2m
+   = 5m 13HL = 2C
+   = 5m' 11HL = 2m'
+   = 8H+ = X
+
+//  soutien compétitif en mineure
+
+?--- 1m 1y     
+   = 8M+ 10H- = 4M	// barrage
+   = 7M  10H- = 3M	// barrage
+   = 6M  10H- = 2M	// barrage
+    
+   = 8m+ 10H-   = 5m
+   = 7m  10H-   = 4m
+   = 5m+ 6-10Sm = 2m
+   = 5m+ 10-11H = 3m
+   = 5m+ 12H+ = 2y      // soutien forcing
+   
+   = 0-7H = -
+
+//  soutien compétitif en majeure après couleur
+   
+?- 1M ( 1y	/ 2y )		
+   = 5M+ 11H- 2A- = 4M
+   = 4M  11H- 2A- = 3M
+   = 3M  11H- 2A- = 2M
+   = 4M+ 5m+  m<>y 2ghm 11H+ = +1m	// rencontre   
+   = 5m+ m<>y 2ghm 11H+ = 0m				// chg de couleur   
+   = 3M 11H+ = X
+   = 3M 2A = X  
+   = 4M+ 13H+ 13SM+ ctry = +1y   
+   = 4M+ 13H+ 13SM+ = 0y     
+
+   = 8-10H 1tsay = 1S
+   = 10H+ 3tsay = $finaleSA 13-17HL
+   = 8H+ = X
+   =  = -   
+
+ //  soutien compétitif en majeure après contre
+  
+?- 1M X
+   = 5M+ 6-10SM 9H- = 4M
+   = 4M  6-10SM 9H- = 3M
+   = 3M  6-10SM 9H- = 2M
+   = 4M+ 5m+ 2ghm 11-15SM = +1m	// rencontre 
+   = 4M+ 11-12SM = 2S  
+   = 4M+ 13-15SM = 3S  
+   = 3M 11SM+ = XX 
+   = 11H+ = XX 
+
+ //  soutien compétitif en majeure après bicolore
+  
+?- 1M ( 2M / 2S )
+   = 4M+ 11-15SM = 4M  
+   = 4M  6-10SM  = 3M
+   = 3M  6-10SM  = 2M
+   = 4M+ 5m+ 2ghm 11-15SM = +1m	// rencontre 
+   = 9H+ = X  
+   =  = -
+   

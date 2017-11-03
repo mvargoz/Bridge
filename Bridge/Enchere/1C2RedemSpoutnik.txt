@@ -1,0 +1,22 @@
+// redemande Spoutnik
+
+?--- 1T 1K X -
+	= 4C 13-15SC = 1C
+	= 4C 16-17SC = 2C
+	= 4C 18-19SC 19H- = 4C
+	= 4C 20SC+ = 2K
+	= 4C 18H+ = 2K
+	= 4P = 1P
+	= 15H+ 3tsaK = $finaleSA 8H+
+	= = 1S
+
+?--- 1x 1M X -
+	= 4M' 13-15SM = 0M'
+	= 4M' 16-17SM' = 1M'
+	= 4M' 18SM'+ = 2x
+	= M=C 4P = 1P
+	= 15H+ 3tsaM = $finaleSA 8H+
+	= = 1S
+
+?--- 1x 1y X - 2S -
+	= = $finaleSA 15H+

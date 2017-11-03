@@ -1,0 +1,61 @@
+// réponses sur ouverture de 1 couleur
+
+?--- 1T -
+   = 4M 4K+ 10H+ = 1K
+   = 4C- 4P- 5-7H = 1K	// pas de 1T-1SA avec moins de 8 pH
+
+?--- 1K -
+   = uni 5T+ 11H+ = 2T
+   = 5T 5P 11H+ = 2T
+
+?--- 1m -     
+   = 8M+ 10H- = 4M	// barrage
+   = 7M  10H- = 3M	// barrage
+   = 6M  6H- = 2M	// barrage
+
+   = 4M+  5H+ = 1M	// changement couleur: la plus longue, si 44 C sinon P
+   = 5M hMA 4H = 1M	// minimum majeure 5ème avec As
+      
+   = 8m+ 10H-   = 5m
+   = 7m  10H-   = 4m
+
+   = reg  5-10H = 1S
+   = reg 11-12H = 2S
+   = reg 13-15H = 3S
+   = reg 16-20H = 4S
+
+   = 5m+ 6-10Sm = 2m
+   = 5m+ 10-11H = 3m
+   = 5m+ 12H+ = 0m'      // soutien forcing
+   
+   = 0-4H = -
+   
+?- 1C -
+   = 4C+ 5P+ 13-15SC+ = 2P
+   = 3C+ 4P+ 11SC+ = 1P
+   = 3C- 4P+ 5H+ = 1P 
+?- 1P -
+   = 3P+ 5C+ 2ghC+ 11SP+ = 2C
+   = 4P+ 5C+ 2ghC+ 13-15SP+ = 3C
+
+?- 1M -			
+   = 3M+ 6-10SM = 2M
+   = 3M+ 5m+ 2ghm+ 11SM+ = 2m
+   = 3M 11-12SM = 2S			// soutien conventionnel avec 3 cartes
+   = 3M 13-15SM = 3S
+   = 4M+ 11-12SM = 3M
+   = 4M+ sx 13-19SM+ = 4x	// splinter
+   = 4M+ 13-15SM = 4M
+   = 3M+ 3m+ 16-19SM+ = 2m	// mineure 3ème+  ???
+   = 3M+ 20SM+ = 4S
+     
+   = 5m+ 11H+ = 2m		// chg de couleur
+
+   = 5-9H = 1S			// 1SA
+   = 10H+ 3tsaM' = $finaleSA 13-17HL
+   = 10H+ 3m+ = 2m		// couleur forcing
+   = 5H- = -   
+   
+
+
+   

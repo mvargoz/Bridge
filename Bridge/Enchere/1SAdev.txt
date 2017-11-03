@@ -1,0 +1,290 @@
+// Développement sur ouverture de 1 SA avec Stayman + Texas majeure/mineure
+
+// réponses
+
+?--- 1S -     
+   = 4M 8HL+ = 2T	* Staymann
+   = 5M sx 7-8H = 2T	* Staymann
+     
+   = 5P 5C 0-7HL = 2K	* Texas	// bicolore majeure faible 
+   = 5P 5C 8-13HL = 4K 	// bicolore majeure manche
+   = 5P 5C 14HL+ = 2C	* Texas	// bicolore majeure fort
+     
+   = uni 6x+ 2ghx 15HL+ = 3x	// unicolore fort
+      
+   = 6P+ = 2C	* Texas
+   = 6C+ = 2K	* Texas
+   = 5P+ = 2C	* Texas
+   = 5C+ = 2K	* Texas
+   = 6T+ 0-6H = 2P		* TexasMin // 6 Trèfles faible
+   = 6T+ sx 10-15HL = 2P	* TexasMin // 6 Trèfles fort
+   = 6K+ 0-6H = 2S		* TexasMin // 6 Carreaux faible
+   = 6K+ sx 10-15HL = 2S	* TexasMin // 6 Carreaux faible
+   = 5T 5K 10HL+ = 2P		* TexasMin // 5-5 mineure fort
+   = 5m D5332 15-16H = 2P	* TexasMin // limite chelem (4SA après)
+
+   = 0-7HL = -
+   = 8-9HL = 2T		* Staymann
+   = sM 10-15HL = 2T	* Staymann 
+   = 10-15HL = 3S 
+   = 16H = 4S 
+   = 17H = 5S 
+   = 18H+ = 6S
+   = 16HL+ = 4T		* Gerber
+   
+// redemande Staymann
+
+* 2T - 
+   = 4C 4P 17H- = 3S
+   = 4C 4P = 2S
+   = 4C = 2C
+   = 4P = 2P
+   =    = 2K
+
+// redemande Texas
+
+* 2K -
+   = 4C 2ghC 17H = 3C
+   = 3C 2ghC 17H = 2S
+   =  = 2C 
+
+* 2C -
+   = 4P 2ghC 17H = 3P
+   = 3P 2ghC 17H = 2S
+   =  = 2P 
+
+* 2P -
+   =  = 3T
+* 2S -
+   =  = 3K
+   
+
+// 2eme réponse Staymann
+
+* 2T - 2K -
+   = 5M sx 7-8H = 2M
+   = 5M+ = 3M
+   = 6M+ = 4M
+   = 8-9HL = 2S
+   = 5m+ 15DH+ = 3m
+   = 10-15HL = 3S 
+   = 16H = 4S 
+   = 17H = 5S 
+   = 18H+ = 6S
+   = 16HL+ = 4T
+
+* 2T - 2K - 2M - 
+   = 3M+ 17HL = 4M
+   = 17HL = 3S
+
+* 2T - 2K - 3m - 
+	= 4m+ 16Sm+ = 6m
+	= = 3S
+
+* 2T - 2K - 3M - 
+   = 3M+ = 4M
+   =  = 3S
+
+* 2T - 2C -
+   = 5P sx 7-8H = 2P
+
+* 2T - 2M -
+   = 4M+ 8-9HL = 3M
+   = 4M+ 10-15HL = 4M
+   = 4M+ ctrx 16HL = 3x 
+   = 8-9HL = 2S
+   = 10-15HL = 3S 
+   = 16H = 4S 
+   = 17H = 5S 
+   = 18H+ = 6S
+   = 18HL+ = 4T
+
+* 2T - 2M - 3M - 
+   = 17HL = 4M
+
+* 2T - 2M - 3x - 
+   =   = 4M
+
+* 2T - 2S -
+   = 4P+ 8-9HL = 3K
+   = 4C+ 8-9HL = 3T
+   = 4P+ 10-15HL = 4K
+   = 4C+ 10-15HL = 4T
+   = 8-9HL = -
+   = 10-17HL = 3S 
+   = 17H = 4S 
+   = 18H+ = 6S
+   = 18HL+ = 4T
+
+* 2T - 3S -
+   = 4P+ 10-15HL = 4K
+   = 4C+ 10-15HL = 4T
+   = 8-15HL = 3S 
+   = 16H+ = 6S
+   = 16HL+ = 4T
+   
+// 2ème réponse Texas
+
+* 2K - 2C -
+   = 0-7HL = -
+   = 6C+ 7-8HL = 3C
+   = 6C+ 9-15HL = 4C
+   = 5C 8-9HL = 2S
+   = 5C sx 4m+ 10-15HL = 3m
+   = 5C 10-15HL = 3S
+   = 16HL+ 4x+ = 3x
+   = 16HL+ = 4S
+
+* 2C - 2P -
+   = 0-7HL = -
+   = 6P+ 7-8HL = 3P
+   = 6P+ 9-15HL = 4P
+   = 5P 8-9HL = 2S
+   = 5P sx 4m+ 10-15HL = 3m
+   = 5P 10-15HL = 3S
+   = 16HL+ 4x+ = 3x
+   = 16HL+ = 4S
+
+* 2P - 3T -
+   = 0-9HL = -
+   = 5T 5K = 3K
+   = sK = 3S
+   = sC = 3P
+   = sP = 3C
+   = D5332 15-16H = 4S
+
+* 2S - 3K -
+   = 0-9HL = -
+   = sT = 3S
+   = sC = 3P
+   = sP = 3C
+   = D5332 15-16H = 4S
+
+// suite des enchères
+// Texas majeure 
+
+* 2K - 2C - 2S -
+   = 3C+ 17H = 4C
+   = 17H = 3S
+   = = -
+
+* 2K - 2C - 3S -
+   = 3C+ = 4C
+   = = -
+
+* 2K - 2C - 3C -
+   = 17H = 4C
+   = = -
+
+* 2K - 2C - 4S -
+   = 3C+ 17H = 6C
+   = 17H = 6S
+   = = -
+
+* 2K - 2C - 3x -
+   = 3C+ = 4C
+   =  = 3S		// ++
+
+* 2C - 2P - 2S -
+   = 3P+ 17H = 4P
+   = 17H = 3S
+   = = -
+
+* 2C - 2P - 3P -
+   = 17H = 4P
+   = = -
+   
+* 2C - 2P - 4S -
+   = 3P+ 17H = 6P
+   = 17H = 6S
+   = = -
+
+* 2C - 2P - 3x -
+   = 3P+ = 4P
+   =  = 3S		// ++
+
+// Texas mineure 
+
+
+// bicolore 55  ++
+* 2P - 3T - 3K -    
+   =  = 3S
+
+// singleton P
+* 2P - 3T - 3C -    
+   = 4P 2ghP = 3S
+   =  = 5T
+// singleton C
+* 2P - 3T - 3P -    
+   = 4C 2ghC = 3S
+   =  = 5T
+// singleton K
+* 2P - 3T - 3S -    
+   = 4K 2ghK = -
+   = 5K+ 2hK = -
+   =  = 5T
+// singleton P
+* 2S - 3K - 3C -    
+   = 4P 2ghP = 3S
+   =  = 5K
+// singleton C
+* 2S - 3K - 3P -    
+   = 4C 2ghC = 3S
+   =  = 5K
+// singleton T
+* 2S - 3K - 3S -    
+   = 4T 2ghT = -
+   = 5T+ 2hT = -
+   =  = 5K
+
+// 5332 15-16H
+* 2P - 3T - 4S -    
+   = 17H = 6S
+   = = -
+
+// 5332 15-16H
+* 2S - 3K - 4S -    
+   = 17H = 6S
+   = = -
+   
+// Staymann   
+
+* 2T - 2S - 3T - 
+   =  = 3C
+* 2T - 2S - 4T - 
+   =  = 4C
+* 2T - 2S - 3K - 
+   =  = 3P
+* 2T - 2S - 4K - 
+   =  = 4P
+
+* 2T - 2x - 2S - 
+   = 17HL = 3S
+   = = -
+
+// Staymann éventuel   
+
+* ( 2T - 2x - ) 4S - 
+   = 17HL = 6S
+   = = -
+
+* ( 2T - 2x - ) 5S - 
+   = 16HL+ = 6S
+   = = -
+   
+* ( 2T - 2x - ) 4T - 
+   = 3A+ = 6S
+   = 2A = 4P		// réponse Gerber
+   = 1A = 4C
+   = = 4K
+
+* ( 2T - 2x - ) 4T - 4K - 
+   =  3A+ = 6S
+   =  = 4S
+* ( 2T - 2x - ) 4T - 4C - 
+   =  2A+ = 6S
+   =  = 4S
+* ( 2T - 2x - ) 4T - 4P - 
+   =  1A+ = 6S
+   =  = 4S
+ 

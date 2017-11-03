@@ -1,0 +1,14 @@
+	
+// réponse à 2SA
+
+?--- 1x - 1y - 1z - 2S -
+	= = $finaleSA 11H
+
+?--- 1y - 1z - 2x - 2S -
+	= = $finaleSA 11H
+				
+
+	
+	
+	
+	

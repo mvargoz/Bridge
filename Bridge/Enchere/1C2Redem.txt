@@ -1,0 +1,179 @@
+// redemandes après une ouverture mineure
+
+System 1T1K
+?--- 1T - 1K -
+   = 5T+ 4M+ = 1M		// on ne cite la majeure qu'avec 5T sinon on dit SA
+   = 4K+ 12-16SK = 2K
+   = 4K+ 17-20SK = 3K
+   = sa 12-15H = 1S
+   = sa 18-19H = 2S
+   = uni 6T+ 12-16HL = 2T
+   = uni 6T+ 2ghT 17-19HL = 3T
+finSystem
+ 
+// soutien majeure
+      
+?--- 1m - 1M -
+   = 4M+ 12-16SM = 2M
+   = 4M+ 17-19SM = 3M
+   = 4M+ 20-22SM = 4M       // + fragment bid
+   = 4M+ 4m'+ 23SM+ = 3m'    // à revoir
+   = 4M+ 4M'+ 23SM+ = 3M'
+   = 4M+ 23SM+ = 3m'
+ 
+ //  bicolores
+ 	
+ ?--- 1m - 1C -
+   = 4P+ = 1P
+  
+?--- 1T - 1C -
+   = 5T+ 4K+ 17H+ = 2K
+   
+?--- 1T - 1P - 
+   = 5T+ 4C+ 16H+ = 2C
+   = 5T+ 4K+ 16H+ = 2K
+
+?--- 1K - 1C -
+   = 5K+ 4T+ 12-17H = 2T
+   
+?--- 1K - 1P - 
+   = 4C+ 16H+ = 2C
+   = 5K+ 4T+ 12-17H = 2T
+
+// 1/1, SA et unicolore mineure
+
+?--- 1m - 1x -
+   = 4y+ = 1y
+   = sa 12-15H = 1S
+   = sa 18-19H = 2S
+   = uni 5m+ 12-16HL = 2m
+   = uni 6m+ 2ghm 17-19HL = 3m
+
+//  1K 2T 
+   
+?--- 1K - 2T -
+   = sa 14-15H = 2S
+   = uni 6K+ 2ghK 17-19HL = 3K
+   = 4M+ 16H+ = 2M
+   = = 2K
+
+//  réponse SA
+   
+?--- 1T - 1S -
+   = reg 18-19HL = 3S 
+   
+?--- 1K - 1S -
+   = reg 18HL = 2S 
+   = reg 19HL = 3S
+   = 4T+ 12-17H = 2T
+   
+?--- 1m - 1S -
+   = reg 12-15HL = -
+   = 4M+ 16H+ = 2M
+   = uni 5m+ 12-16HL = 2m
+   = uni 6m+ 2ghx 17-19HL = 3m
+   
+?--- 1m - 2S -
+   = 14H+ = 3S
+   = = -
+   
+//  cas 2/1 avec saut
+   
+ ?--- 1m - 2M -
+   =  = -         // sauf cas exceptionnels?
+  
+// après soutien
+
+?--- 1T - 2T -
+   = sa 3tsaK 3tsaC 3tsaP 18-20H = 2S     
+?--- 1K - 2K -
+   = sa 3tsaT 3tsaC 3tsaP 18-20H = 2S     
+?--- 1m - 2m -
+   = sa 3tsax 18-20H = 2x     
+?--- 1T - 3T -
+   = sa 3tsaK 3tsaC 3tsaP 15H+ = 3S     
+?--- 1K - 3K -
+   = sa 3tsaT 3tsaC 3tsaP 15H+ = 3S     
+?--- 1m - 3m -
+   = sa 3tsax 15H+ = 3x     
+
+   
+// redemandes ouverture majeure en 1/2ème position
+
+?- 1C - 1P -
+   = 4P+ 17SP- = 2P
+   = 4P+ 17-19SP- = 3P
+   = 4P+ 20-22SP+ = 4P     // + fragment bid
+   = 4M+ 4m+ 23SM+ = 3m    // à revoir
+   = 4M+ ctrm 23SM+ = 3m
+   = reg 12-15H = 1S
+   = 4m+ 12-16H = 2m 
+   = 4m+ 17H+ = 3m
+   = uni 6C+ 2ghC 17-19HL = 3C
+   = = 2C 
+   
+?- 1C - 1S -
+   = 4P+ 16H+ = 2P
+
+?- 1P - 1S -
+   = 4C+ 12-16H = 2C
+   = 4C+ 17H+ = 3C
+
+?- 1M - 1S -
+   = 4m+ 17H- = 2m 
+   = 4m+ 17H+ = 3m
+   = uni 6M+ 2ghM 17-19HL = 3M
+   = 4T+ = 2T
+   = = -    
+   
+?- 1P - 2m -
+   = 4C+ 12-16HL = 2C 
+   = 4C+ 17HL+ = 3C   // douteux car 2T est autoforcing 
+?- 1M - 2T -
+   = 3T+ 17ST+ = 3T
+   = 4T+ = 3T
+   = 4K+ 12-16HL = 2K 
+   = 4K+ 17HL+ = 3K   // douteux car 2T est autoforcing 
+?- 1M - 2m -
+   = 3m+ 17Sm+ = 3m
+   = 4m+ = 3m
+   = reg 15-17H = 2S
+   = reg 18-19H = 3S
+   = uni 6M+ 2ghM 17-19HL = 3M
+   = = 2M
+   
+?- 1P - 2C -
+   = 3C+ 14-16SC = 4C
+   = 3C+ 17SC+ = 3C
+   = reg 15-17H = 2S
+   = reg 18-19H = 3S
+   = uni 6P+ 2ghP 17-19HL = 3P
+   = = 2P
+
+// redemande et developpements sur les soutiens directs
+// enchères d'essai (à developper)
+   
+?- 1M - 2M -
+	= 20HL+ = 4M 
+   = D5332 15-19HL = 2S
+   = 4m+ 15-19HL = 3m
+?- 1C - 2C -
+   = 4P+ 15-19HL = 2P
+   = = -   
+?- 1P - 2P -
+   = 4C+ 15-19HL = 3C
+   = 15-19HL = 2S
+   = = -
+			// réponse enchère d'essai
+?- 1M - 2M - 2S - 
+	= 8SM- = 3M
+	= = 4M   
+?- 1M - 2M - 3x - 
+	= 8SM- = 3M
+	= = 4M   
+?- 1C - 2C - 2P - 
+	= 8SC- = 3C
+	= = 4C
+	   
+      
+ 

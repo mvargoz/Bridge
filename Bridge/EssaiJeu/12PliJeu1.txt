@@ -1,0 +1,27 @@
+*** pb4j N P maj5,1SAforcing maj5,1SAforcing IMP
+853
+ARD92
+V7
+A54
+
+V9762
+753
+2
+RX82
+
+ARDX4
+V8
+A93
+DV3
+
+-
+X64
+RDX8654
+976
+
+Atout= P
+Contrat= 12
+Joueur= W
+Pli= RK
+
+*** AK,AP, 3 pli C, RP DP et petit P

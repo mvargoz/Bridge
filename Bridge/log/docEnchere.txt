@@ -1,0 +1,2003 @@
+ 
+
+     Système Majeure 5ème
+
+
+ 
+
+     Enchère finale pour un contrat en mineure
+
+$finaleMin 
+  - 37J+, 5 clefs atout x,  --> enchère: 7x
+  - 33J+, +4 clefs atout x,  --> enchère: 6x
+  - 37H+,  --> enchère: 7S
+  - 33H+,  --> enchère: 6S
+  - 25HL+,  --> enchère: 3S
+  - 30DH+,  --> enchère: 5x
+  -  --> enchère: -
+ 
+
+     Enchère finale pour un contrat en majeure
+
+$finaleMaj 
+  - 37J+, 5 clefs atout x,  --> enchère: 7x
+  - 33J+, +4 clefs atout x,  --> enchère: 6x
+  - 27DH+,  --> enchère: 4x
+  -  --> enchère: -
+ 
+
+     Enchère finale contrat sans-atout
+
+$finaleSA 
+  - 25HL-,  --> enchère: 2S
+  - 25-32HL,  --> enchère: 3S
+  - 37H+,  --> enchère: 7S
+  - 33H+,  --> enchère: 6S
+  - 33HL+,  --> enchère: 5S
+  - 28HL+,  --> enchère: 4S
+  -  --> enchère: -
+ 
+
+     ouvertures 2 majeures faibles en 1/2ème
+
+?-  
+  - unicolore, 6 cartes M, 2 honneurs mini M, -4 cartes M', 8-12HL,  --> enchère: 2M
+ 
+
+     ouvertures majeures faibles en 3/4ème
+
+--?-  
+  - 6 cartes M, 2 honneurs mini M, 8-12HL,  --> enchère: 2M
+  - +5 cartes M, 8-12HL,  --> enchère: 1M
+ 
+
+     ouvertures de barrage
+
+?---  
+  - unicolore, +8 cartes x,  vulnérable, 8LJ, 11H-,  --> enchère: 4x
+  - unicolore, +8 cartes x,  non vulnérable, 7LJ, 11H-,  --> enchère: 4x
+  - unicolore, 7 cartes m, 3 gros honneurs mini m, 11H-,  --> enchère: 3S
+  - unicolore, +7 cartes m, 2 gros honneurs mini m,  non vulnérable contre vulnérable, 5-7LJ, 11H-,  --> enchère: 3m
+  - unicolore, +7 cartes m, 2 gros honneurs mini m,  même vulnérablilité, 6-7LJ, 11H-,  --> enchère: 3m
+  - unicolore, +7 cartes m, 2 gros honneurs mini m,  vulnérable contre non vulnérable, 7LJ, 11H-,  --> enchère: 3m
+  - unicolore, +7 cartes M, 2 honneurs mini M,  non vulnérable contre vulnérable, 5-7LJ, 11H-,  --> enchère: 3M
+  - unicolore, +7 cartes M, 2 honneurs mini M,  même vulnérablilité, 6-7LJ, 11H-,  --> enchère: 3M
+  - unicolore, +7 cartes M, 2 honneurs mini M,  vulnérable contre non vulnérable, 7LJ, 11H-,  --> enchère: 3M
+ 
+
+     ouvertures
+
+?---  
+  - 24HL+,  --> enchère: 2K
+  - 10LJ+,  --> enchère: 2K
+  - unicolore, +6 cartes M, 9LJ+,  --> enchère: 2K
+  - unicolore, +6 cartes m, 10LJ+,  --> enchère: 2K
+  - unicolore, +6 cartes M, 20-23HL, 17H+,  --> enchère: 2T
+  - unicolore, +6 cartes M, 8LJ, 14H+,  --> enchère: 2T
+  - unicolore, +6 cartes m, 9LJ, 14H+,  --> enchère: 2T
+  - bicolore, +5 cartes C, +5 cartes P, 8-9LJ,  --> enchère: 2T
+  - sans-atout, 22-23H,  --> enchère: 2T
+  - sans-atout, 20-21HL,  --> enchère: 2S
+  - sans-atout, -5 cartes C, -5 cartes P, 15-17HL,  --> enchère: 1S
+  - bicolore, 5 cartes T, 5 cartes P, 12-19HL,  --> enchère: 1T
+  - bicolore, +6 cartes m, 5 cartes M, 12-19HL, 17H+,  --> enchère: 1m
+  - bicolore, 7 cartes m, 6 cartes M, 12-19HL, 17H+,  --> enchère: 1m
+  - +5 cartes M, 12-19HL,  --> enchère: 1M
+  - +5 cartes m, 12-19HL,  --> enchère: 1m
+  - +4 cartes K, 12-19HL,  --> enchère: 1K carreau 4ème
+  - 12-23HL,  --> enchère: 1T
+  -  --> enchère: -
+ 
+
+     réponses ouverture 1 majeure après passe
+
+--?- 1M -  
+  - +3 cartes M, 6-10SM,  --> enchère: 2M soutien simple
+  - 4 cartes M, 6-10SM, 10H-,  --> enchère: 3M soutien saut
+  - +5 cartes M, 6-10SM, 10H-,  --> enchère: 4M barrage avec 5 cartes
+  - 5 cartes M, 10H+,  --> enchère: 3S soutien positif avec 5 cartes
+  - +3 cartes M, +5 cartes m, 2 gros honneurs mini m, 13SM+,  --> enchère: 3m soutien avec belle couleur
+  - +3 cartes M, 11SM+,  --> enchère: 2T Convention Drury
+  - +5 cartes T, +5 cartes K, 9H+,  --> enchère: 2S bicolore mineure
+  - +5 cartes m, 2 gros honneurs mini m, 10H+,  --> enchère: 2m
+--?- 1C -  
+  - +4 cartes P, 5H+,  --> enchère: 1P
+--?- 1M -  
+  - 2 cartes M, 1 gros honneurs mini M, 11H+,  --> enchère: 2T Convention Drury
+  - +6 cartes T, 9H+,  --> enchère: 2T Convention Drury
+  - 5H+,  --> enchère: 1S
+  -  --> enchère: -
+ 
+
+     redemande sur le 2T Drury
+
+--?- 1P - 2T -  
+  - 5 cartes C, 12H-,  --> enchère: 2C
+--?- 1C - 2T -  
+  - 4 cartes P, 16H+,  --> enchère: 2P
+--?- 1M - 2T -  
+  - +6 cartes M, 2 gros honneurs mini M, 15H+,  --> enchère: 3M
+  - +6 cartes M, 12-14H,  --> enchère: 2M
+  - 5 cartes m, 2 gros honneurs mini m, 16H+,  --> enchère: 3m
+  - distribution5332, 15-17H,  --> enchère: 2S
+  -  --> enchère: 2K
+ 
+
+     2ème réponse sur le 2T Drury avec redemande 2K
+
+--?- 1M - 2T - 2K -  
+  - +3 cartes M,  --> enchère: 2M soutien
+  - 4 cartes C,  --> enchère: 2C
+  -  --> enchère: 2S
+--?- 1P - 2T - 2C -  
+  - +4 cartes P,  --> enchère: 4P
+  - +4 cartes C,  --> enchère: 4C
+  - +3 cartes P,  --> enchère: 4P
+  -  --> enchère: 2P
+--?- 1M - 2T - 2M -  
+  -  --> enchère: 4M
+--?- 1M - 2T - 3M -  
+  -  --> enchère: 4M
+--?- 1M - 2T - 2S -  
+  - +3 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+--?- 1C - 2T - 2P -  
+ 
+
+     2ème redemande sur le 2T Drury
+
+--?- 1P - 2T - 2K - 2P -  
+  - 4 cartes C, 14HL+,  --> enchère: 3C
+  -  --> enchère: -
+--?- 1C - 2T - 2K - 2C -  
+  - 4 cartes P, 14HL+,  --> enchère: 2P
+  -  --> enchère: -
+--?- 1M - 2T - 2K - 2M -  
+  - distribution5332, 13-14H,  --> enchère: 2S
+  - 4 cartes m, 14HL+,  --> enchère: 3m
+  -  --> enchère: -
+--?- 1M - 2T - 2K - 2S -  
+  - 14HL+, +6 cartes M,  --> enchère: 4M
+  - 14HL+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     redemandes ouverture majeure en 3ème position
+
+--?- 1C - 1P -  
+  - +4 cartes P, 17SP-,  --> enchère: 2P
+  - +4 cartes P, 17-19SP,  --> enchère: 3P
+  - +4 cartes P, 20-22SP,  --> enchère: 4P + fragment bid
+  - +4 cartes M, +4 cartes m, 23SM+,  --> enchère: 3m à revoir
+  - +4 cartes M, contrôle m, 23SM+,  --> enchère: 3m
+  - régulier, 12-15H,  --> enchère: 1S
+  - +4 cartes m, 12-16H,  --> enchère: 2m
+  - +4 cartes m, 17H+,  --> enchère: 3m
+  - unicolore, +6 cartes C, 2 gros honneurs mini C, 17-19HL,  --> enchère: 3C
+  - 5 cartes C, 3 cartes P,  --> enchère: -
+  -  --> enchère: 2C
+--?- 1C - 1S -  
+  - +4 cartes P, 16H+,  --> enchère: 2P
+--?- 1P - 1S -  
+  - +4 cartes C, 12-16H,  --> enchère: 2C
+  - +4 cartes C, 17H+,  --> enchère: 3C
+--?- 1M - 1S -  
+  - +4 cartes m, 17H-,  --> enchère: 2m
+  - +4 cartes m, 17H+,  --> enchère: 3m
+  - unicolore, +6 cartes M, 2 gros honneurs mini M, 17-19HL,  --> enchère: 3M
+  - 14HL+, +3 cartes m,  --> enchère: 2m
+  -  --> enchère: -
+--?- 1P - 2m -  
+  - +4 cartes C, 12-16HL,  --> enchère: 2C
+  - +4 cartes C, 17HL+,  --> enchère: 3C
+--?- 1M - 2T -  
+  - +3 cartes T, 17ST+,  --> enchère: 3T
+  - +4 cartes K, 12-16HL,  --> enchère: 2K
+  - +4 cartes K, 17HL+,  --> enchère: 3K
+--?- 1M - 2m -  
+  - +3 cartes m, 17Sm+,  --> enchère: 3m
+  - régulier, 15-17H,  --> enchère: 2S
+  - régulier, 18-19H,  --> enchère: 3S
+  - unicolore, +6 cartes M, 2 gros honneurs mini M, 17-19HL,  --> enchère: 3M
+  -  --> enchère: -
+--?- 1P - 2C -  
+  - +3 cartes C, 14-16SC,  --> enchère: 4C
+  - +3 cartes C, 17SC+,  --> enchère: 3C
+  - régulier, 15-17H,  --> enchère: 2S
+  - régulier, 18-19H,  --> enchère: 3S
+  - unicolore, +6 cartes P, 2 gros honneurs mini P, 17-19HL,  --> enchère: 3P
+  -  --> enchère: -
+ 
+
+     redemande sur les soutiens directs
+
+--?- 1M - 2M -  
+  - distribution5332, 15-19HL,  --> enchère: 2S
+  - +4 cartes m, 15-19HL,  --> enchère: 3m
+--?- 1C - 2C -  
+  - +4 cartes P, 15-19HL,  --> enchère: 2P
+  -  --> enchère: -
+--?- 1P - 2P -  
+  - +4 cartes C, 15-19HL,  --> enchère: 3C
+  -  --> enchère: -
+ 
+
+     2ème réponse
+
+--?- 1M - 1S - 2m -  
+  - 11H,  --> enchère: 2S
+ 
+
+     2ème redemande sur le 1SA suivi de 2SA
+
+--?- 1M - 1S - 2m - 2S -  
+  - 14HL+,  --> enchère: 3S
+  -  --> enchère: -
+--?- 1P - 1S - 2C - 2S -  
+  - 14HL+,  --> enchère: 3S
+  -  --> enchère: -
+
+ 
+
+     réponse 1SA forcing
+
+?- 1M -  
+  - 3 cartes M, 6-10SM, 5-7H,  --> enchère: 1S 1SA forcing pour soutien simple faible
+  - +5 cartes M, 6-10SM,  --> enchère: 4M
+  - +3 cartes M, 6-10SM,  --> enchère: 2M
+  - +3 cartes M, +5 cartes m, 2 gros honneurs mini m, 11-12SM,  --> enchère: 2m
+  - 3 cartes M, 11-12SM,  --> enchère: 1S 1SA forcing pour soutien moyen
+  - +4 cartes M, 11-12SM,  --> enchère: 3M
+  - 3 cartes M, +5 cartes m, 2 gros honneurs mini m, 13-15SM,  --> enchère: 2m
+  - 3 cartes M, 13-15SM,  --> enchère: 1S 1SA forcing pour soutien fort
+  - +4 cartes M, +5 cartes m, 2 gros honneurs mini m, 13-15SM,  --> enchère: 3m
+  - +4 cartes M, singleton m, 13-15SM,  --> enchère: 3S soutien conventionnel
+  - +4 cartes M, singleton M', 13-15SM,  --> enchère: 4T
+  - +4 cartes M, 13-15SM,  --> enchère: 4K
+  - +3 cartes M, +5 cartes m, 2 gros honneurs mini m, 16-19SM,  --> enchère: 2m
+  - +3 cartes M, 16-19SM,  --> enchère: 2S soutien conventionnel
+  - +3 cartes M, +5 cartes m, 2 gros honneurs mini m, 20SM+,  --> enchère: 2m
+  - +3 cartes M, 20SM+,  --> enchère: 4S
+  - +5 cartes m, 11H+,  --> enchère: 2m
+  - 5-15H,  --> enchère: 1S 1SA forcing pour 2SA et 3SA
+  - 5H-,  --> enchère: -
+ 
+
+     redemande sur le 1SA forcing
+
+?- 1C - 1S -  
+  - +4 cartes P, 16H+,  --> enchère: 2P
+?- 1P - 1S -  
+  - +4 cartes C, 12-16H,  --> enchère: 2C
+  - +4 cartes C, 17H+,  --> enchère: 3C
+?- 1M - 1S -  
+  - +4 cartes m, 17H-,  --> enchère: 2m
+  - +4 cartes m, 17H+,  --> enchère: 3m
+  - unicolore, +6 cartes M, 2 gros honneurs mini M, 17-19HL,  --> enchère: 3M
+  - +6 cartes M,  --> enchère: 2M
+  - +3 cartes T,  --> enchère: 2T SA forcing
+  -  --> enchère: 2K
+ 
+
+     redemande sur soutien conventionnel 2SA
+
+?- 1M - 2S -  
+  - 15DH-,  --> enchère: 4M
+  - singleton T,  --> enchère: 3K
+  - singleton K,  --> enchère: 3C
+  - singleton M',  --> enchère: 3P
+  - 5 cartes m,  --> enchère: 4m
+  - 5 cartes M',  --> enchère: 4M'
+  - 2HM+,  --> enchère: 3T
+  -  --> enchère: 3S mauvais atouts
+* 3T -  
+  - 3 cartes M, 16-17SM,  --> enchère: 3K
+  - 4 cartes M, 16-17SM,  --> enchère: 3C
+  - 4 cartes M, 18-19SM,  --> enchère: 3P
+  - 3 cartes M, 18-19SM,  --> enchère: 3S
+ 
+
+     redemande sur soutien conventionnel 3SA
+
+?- 1M - 3S -  
+  - 18DH+,  --> enchère: 4T
+* 4T -  
+  - singleton T,  --> enchère: 4K
+  - singleton K,  --> enchère: 4C
+ 
+
+     redemande sur soutien conventionnel 4T (singleton M')
+
+?- 1M - 4T -  
+  - 18DH+,  --> enchère: 4S
+  -  --> enchère: 4M
+ 
+
+     redemande sur soutien conventionnel 4K (main régulière)
+
+?- 1M - 4K -  
+  - 18DH+,  --> enchère: 4S
+  -  --> enchère: 4M
+ 
+
+     2ème réponse après 1SA forcing
+
+?- 1M - 1S - 2x -  
+  - +3 cartes M, 11SM-,  --> enchère: 2M
+  - 3 cartes M, 11-12SM,  --> enchère: 3M
+  - 3 cartes M, 13-15SM,  --> enchère: 3S
+  - 10-11H,  --> enchère: 2S
+  - 13-15H,  --> enchère: 2M'
+?- 1M - 1S - 2m -  
+  - +5 cartes m, 11SM+,  --> enchère: 3m
+  - +5 cartes m, 10H-,  --> enchère: -
+?- 1M - 1S - 2T -  
+  - +5 cartes K, 10H-,  --> enchère: 2K
+?- 1P - 1S - 2m -  
+  - +5 cartes C, 10H-,  --> enchère: 2C
+?- 1P - 1S - 2C -  
+  - +4 cartes C, 11SC+,  --> enchère: 3C
+  - +4 cartes C, 10H-,  --> enchère: -
+?- 1M - 1S - 2x -  
+  - +2 cartes M, 10H-,  --> enchère: 2M
+  - 6 cartes m, 10H-,  --> enchère: 0m
+  -  --> enchère: -
+
+ 
+
+     réponses sur ouverture de 1 couleur
+
+?--- 1T -  
+  - 4 cartes M, +4 cartes K, 10H+,  --> enchère: 1K
+  - -4 cartes C, -4 cartes P, 5-7H,  --> enchère: 1K pas de 1T-1SA avec moins de 8 pH
+?--- 1K -  
+  - unicolore, +5 cartes T, 11H+,  --> enchère: 2T
+  - 5 cartes T, 5 cartes P, 11H+,  --> enchère: 2T
+?--- 1m -  
+  - +8 cartes M, 10H-,  --> enchère: 4M barrage
+  - 7 cartes M, 10H-,  --> enchère: 3M barrage
+  - 6 cartes M, 10H-,  --> enchère: 2M barrage
+  - +4 cartes M, 5H+,  --> enchère: 1M changement couleur: la plus longue, si 44 C sinon P
+  - 5 cartes M, honneur M: As, 4H,  --> enchère: 1M minimum majeure 5ème avec As
+  - +8 cartes m, 10H-,  --> enchère: 5m
+  - 7 cartes m, 10H-,  --> enchère: 4m
+  - régulier, 5-10H,  --> enchère: 1S
+  - régulier, 11-12H,  --> enchère: 2S
+  - régulier, 13-15H,  --> enchère: 3S
+  - régulier, 16-20H,  --> enchère: 4S
+  - +5 cartes m, 6-10Sm,  --> enchère: 2m
+  - +5 cartes m, 10-11H,  --> enchère: 3m
+  - +5 cartes m, 12H+,  --> enchère: 0m' soutien forcing
+  - 5H-,  --> enchère: -
+?- 1C -  
+  - +4 cartes C, +5 cartes P, 13-15SC,  --> enchère: 2P
+  - +3 cartes C, +4 cartes P, 11SC+,  --> enchère: 1P
+  - -3 cartes C, +4 cartes P, 5H+,  --> enchère: 1P
+?- 1P -  
+  - +3 cartes P, +5 cartes C, 2 gros honneurs mini C, 11SP+,  --> enchère: 2C
+  - +4 cartes P, +5 cartes C, 2 gros honneurs mini C, 13-15SP,  --> enchère: 3C
+?- 1M -  
+  - +3 cartes M, 6-10SM,  --> enchère: 2M
+  - +3 cartes M, +5 cartes m, 2 gros honneurs mini m, 11SM+,  --> enchère: 2m
+  - 3 cartes M, 11-12SM,  --> enchère: 2S soutien conventionnel avec 3 cartes
+  - 3 cartes M, 13-15SM,  --> enchère: 3S
+  - +4 cartes M, 11-12SM,  --> enchère: 3M
+  - +4 cartes M, singleton x, 13-19SM,  --> enchère: 4x splinter
+  - +4 cartes M, 13-15SM,  --> enchère: 4M
+  - +3 cartes M, +3 cartes m, 16-19SM,  --> enchère: 2m mineure 3ème+  ???
+  - +3 cartes M, 20SM+,  --> enchère: 4S
+  - +5 cartes m, 11H+,  --> enchère: 2m chg de couleur
+  - 5-9H,  --> enchère: 1S 1SA
+  - 10H+, 2 tenues SA M',  --> enchère: $finaleSA S   - 13-17HL, 
+  - 10H+, +3 cartes m,  --> enchère: 2m couleur forcing
+  - 5H-,  --> enchère: -
+ 
+
+     redemandes après une ouverture mineure
+
+?--- 1T - 1K -  
+  - +5 cartes T, +4 cartes M,  --> enchère: 1M
+  - +4 cartes K, 12-16SK,  --> enchère: 2K
+  - +4 cartes K, 17-20SK,  --> enchère: 3K
+  - sans-atout, 12-15H,  --> enchère: 1S
+  - sans-atout, 18-19H,  --> enchère: 2S
+  - unicolore, +6 cartes T, 12-16HL,  --> enchère: 2T
+  - unicolore, +6 cartes T, 2 gros honneurs mini T, 17-19HL,  --> enchère: 3T
+?--- 1m - 1C -  
+  - +4 cartes P,  --> enchère: 1P
+?--- 1m - 1M -  
+  - +4 cartes M, 12-16SM,  --> enchère: 2M
+  - +4 cartes M, 17-19SM,  --> enchère: 3M
+  - +4 cartes M, 20-22SM,  --> enchère: 4M + fragment bid
+  - +4 cartes M, +4 cartes m', 23SM+,  --> enchère: 3m' à revoir
+  - +4 cartes M, +4 cartes M', 23SM+,  --> enchère: 3M'
+  - +4 cartes M, 23SM+,  --> enchère: 3m'
+?--- 1T - 1C -  
+  - +4 cartes K, 16H+,  --> enchère: 2K
+?--- 1T - 1P -  
+  - +4 cartes C, 16H+,  --> enchère: 2C
+  - +4 cartes K, 16H+,  --> enchère: 2K
+?--- 1K - 1C -  
+  - +4 cartes T, 12-17H,  --> enchère: 2T
+?--- 1K - 1P -  
+  - +4 cartes C, 16H+,  --> enchère: 2C
+  - +4 cartes T, 12-17H,  --> enchère: 2T
+?--- 1m - 1x -  
+  - sans-atout, 12-15H,  --> enchère: 1S
+  - sans-atout, 18-19H,  --> enchère: 2S
+  - unicolore, +5 cartes m, 12-16HL,  --> enchère: 2m
+  - unicolore, +6 cartes m, 2 gros honneurs mini m, 17-19HL,  --> enchère: 3m
+?--- 1K - 2T -  
+  - sans-atout, 14-15H,  --> enchère: 2S
+  - unicolore, +6 cartes K, 2 gros honneurs mini K, 17-19HL,  --> enchère: 3K
+  - +4 cartes M, 16H+,  --> enchère: 2M
+  -  --> enchère: 2K
+?--- 1T - 1S -  
+  - régulier, 18-19HL,  --> enchère: 3S
+?--- 1K - 1S -  
+  - régulier, 18HL,  --> enchère: 2S
+  - régulier, 19HL,  --> enchère: 3S
+  - +4 cartes T, 12-17H,  --> enchère: 2T
+?--- 1m - 1S -  
+  - régulier, 12-15HL,  --> enchère: -
+  - +4 cartes M, 16H+,  --> enchère: 2M
+  - unicolore, +5 cartes m, 12-16HL,  --> enchère: 2m
+  - unicolore, +6 cartes m, 2 gros honneurs mini x, 17-19HL,  --> enchère: 3m
+?--- 1m - 2M -  
+  -  --> enchère: - sauf cas exceptionnels?
+?--- 1m - 2S -  
+  - 14H+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     soutiens
+
+?--- 1T - 2T -  
+  - sans-atout, 2 tenues SA K, 2 tenues SA C, 2 tenues SA P, 18-20H,  --> enchère: 2S
+?--- 1K - 2K -  
+  - sans-atout, 2 tenues SA T, 2 tenues SA C, 2 tenues SA P, 18-20H,  --> enchère: 2S
+?--- 1m - 2m -  
+  - sans-atout, 2 tenues SA x, 18-20H,  --> enchère: 2x
+?--- 1T - 3T -  
+  - sans-atout, 2 tenues SA K, 2 tenues SA C, 2 tenues SA P, 15H+,  --> enchère: 3S
+?--- 1K - 3K -  
+  - sans-atout, 2 tenues SA T, 2 tenues SA C, 2 tenues SA P, 15H+,  --> enchère: 3S
+?--- 1m - 3m -  
+  - sans-atout, 2 tenues SA x, 15H+,  --> enchère: 3x
+ 
+
+     redemandes ouverture majeure en 1/2ème position
+
+?- 1C - 1P -  
+  - +4 cartes P, 17SP-,  --> enchère: 2P
+  - +4 cartes P, 17-19SP,  --> enchère: 3P
+  - +4 cartes P, 20-22SP,  --> enchère: 4P + fragment bid
+  - +4 cartes M, +4 cartes m, 23SM+,  --> enchère: 3m à revoir
+  - +4 cartes M, contrôle m, 23SM+,  --> enchère: 3m
+  - régulier, 12-15H,  --> enchère: 1S
+  - +4 cartes m, 12-16H,  --> enchère: 2m
+  - +4 cartes m, 17H+,  --> enchère: 3m
+  - unicolore, +6 cartes C, 2 gros honneurs mini C, 17-19HL,  --> enchère: 3C
+  -  --> enchère: 2C
+?- 1C - 1S -  
+  - +4 cartes P, 16H+,  --> enchère: 2P
+?- 1P - 1S -  
+  - +4 cartes C, 12-16H,  --> enchère: 2C
+  - +4 cartes C, 17H+,  --> enchère: 3C
+?- 1M - 1S -  
+  - +4 cartes m, 17H-,  --> enchère: 2m
+  - +4 cartes m, 17H+,  --> enchère: 3m
+  - unicolore, +6 cartes M, 2 gros honneurs mini M, 17-19HL,  --> enchère: 3M
+  - +4 cartes T,  --> enchère: 2T
+  -  --> enchère: -
+?- 1P - 2m -  
+  - +4 cartes C, 12-16HL,  --> enchère: 2C
+  - +4 cartes C, 17HL+,  --> enchère: 3C douteux car 2T est autoforcing
+?- 1M - 2T -  
+  - +3 cartes T, 17ST+,  --> enchère: 3T
+  - +4 cartes K, 12-16HL,  --> enchère: 2K
+  - +4 cartes K, 17HL+,  --> enchère: 3K douteux car 2T est autoforcing
+?- 1M - 2m -  
+  - +3 cartes m, 17Sm+,  --> enchère: 3m
+  - régulier, 15-17H,  --> enchère: 2S
+  - régulier, 18-19H,  --> enchère: 3S
+  - unicolore, +6 cartes M, 2 gros honneurs mini M, 17-19HL,  --> enchère: 3M
+  -  --> enchère: 2M
+?- 1P - 2C -  
+  - +3 cartes C, 14-16SC,  --> enchère: 4C
+  - +3 cartes C, 17SC+,  --> enchère: 3C
+  - régulier, 15-17H,  --> enchère: 2S
+  - régulier, 18-19H,  --> enchère: 3S
+  - unicolore, +6 cartes P, 2 gros honneurs mini P, 17-19HL,  --> enchère: 3P
+  -  --> enchère: 2P
+ 
+
+     redemande et developpements sur les soutiens directs
+
+ 
+
+     enchères d'essai (à developper)
+
+?- 1M - 2M -  
+  - 20DH+,  --> enchère: 4M
+  - distribution5332, 15-19HL,  --> enchère: 2S
+  - +4 cartes m, 15-19HL,  --> enchère: 3m
+?- 1C - 2C -  
+  - +4 cartes P, 15-19HL,  --> enchère: 2P
+  -  --> enchère: -
+?- 1P - 2P -  
+  - +4 cartes C, 15-19HL,  --> enchère: 3C
+  - 15-19HL,  --> enchère: 2S
+  -  --> enchère: -
+ 
+
+     réponse enchère d'essai
+
+?- 1M - 2M - 2S -  
+  - 8SM-,  --> enchère: 3M
+  -  --> enchère: 4M
+?- 1M - 2M - 3x -  
+  - 8SM-,  --> enchère: 3M
+  -  --> enchère: 4M
+?- 1C - 2C - 2P -  
+  - 8SC-,  --> enchère: 3C
+  -  --> enchère: 4C
+ 
+
+     2ème réponse sur redemande 1 couleur
+
+?--- 1T - 1K - 1M -  
+  - +4 cartes M, 11-12SM,  --> enchère: 2M
+  - +4 cartes M, 13-15SM,  --> enchère: 4M
+  - +4 cartes M, 16SM+,  --> enchère: 3M
+?--- 1T - 1K - 1C -  
+  - 5-10H,  --> enchère: 1S ne peut pas avoir 4 piques
+  - -4 cartes P, 2 tenues SA P, 11-12H,  --> enchère: 2S
+  - -4 cartes P, 2 tenues SA P, 13-15H,  --> enchère: 3S
+  - 10H+,  --> enchère: 1P 4ème couleur forcing
+?--- 1T - 1K - 1P -  
+  - 5-10H,  --> enchère: 1S
+  - -4 cartes C, 2 tenues SA C, 11-12H,  --> enchère: 2S
+  - -4 cartes C, 2 tenues SA C, 13-15H,  --> enchère: 3S
+  - 10H+,  --> enchère: 2C 4ème couleur forcing
+?--- 1m - 1C - 1P -  
+  - +4 cartes P, 6-10SP,  --> enchère: 2P
+  - +4 cartes P, 11-12SP,  --> enchère: 3P
+  - +4 cartes P, 13-15SP,  --> enchère: 4P
+  - +4 cartes P, 16SP+,  --> enchère: 2K
+  - unicolore, +6 cartes C, 6-10HL,  --> enchère: 2C
+  - unicolore, +6 cartes C, 11-12HL,  --> enchère: 3C
+  - régulier, 2 tenues SA K, 11-12H,  --> enchère: 2S
+  - régulier, 2 tenues SA K, 13-15H,  --> enchère: 3S
+  - +5 cartes m, 6-10Sm,  --> enchère: 2m
+  - +5 cartes m, 11-12Sm,  --> enchère: 3m
+  - +5 cartes m, 13Sm+, 11H-,  --> enchère: 4m
+  - 5-10H,  --> enchère: 1S
+  - 11H+,  --> enchère: 2m' 4ème couleur forcing
+ 
+
+     2ème réponse sur redemande 1SA : 2T Roudi
+
+?--- 1T - 1M - 1S -  
+  - +6 cartes M, 12H+,  --> enchère: 3M
+  - +5 cartes T, 4 cartes M, 10H+,  --> enchère: 2S Texas T
+  - 10H+,  --> enchère: 2T Roudi
+  - +5 cartes M, 5-9H,  --> enchère: 2M
+  - +5 cartes K, 5-9H,  --> enchère: 2K
+?--- 1K - 1M - 1S -  
+  - +6 cartes M, 12H+,  --> enchère: 3M
+  - +5 cartes T, 4 cartes M, 10H+,  --> enchère: 2S Texas T
+  - 10H+,  --> enchère: 2T Roudi
+  - +5 cartes M, 5-9H,  --> enchère: 2M
+ 
+
+     développements sur 1T 1K 1SA
+
+?--- 1T - 1K - 1S -  
+  - +4 cartes M, 10H+,  --> enchère: 2T Stayman
+  - 10HL-,  --> enchère: -
+  - 10-11HL,  --> enchère: 2S
+  - 12-19HL,  --> enchère: 3S
+* 2T -  
+  - +4 cartes M,  --> enchère: 2M
+  - 14HL+,  --> enchère: 2S
+  -  --> enchère: 2K
+* 2T - 2K -  
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: 2S
+* 2T - 2M -  
+  - +4 cartes M, 12HL+,  --> enchère: 4M
+  - +4 cartes M, 12HL-,  --> enchère: 3M
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: 2S
+* 2T - 2S -  
+  - 10HL+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     2ème réponse sur bicolore économique après 1 sur 1
+
+?--- 1K - 1M - 2T -  
+  - +3 cartes K, singleton M', 12-15SK,  --> enchère: 4K soutien
+  - +3 cartes K, 10-11SK,  --> enchère: 3K
+  - +4 cartes T, 10-11H,  --> enchère: 3T
+  - +4 cartes T, 5-9H,  --> enchère: -
+  - +6 cartes M, 10-11HL,  --> enchère: 3M répétition
+  - +6 cartes M, 6-9HL,  --> enchère: 2M
+  - 10H+, 2 tenues SA M',  --> enchère: $finaleSA S   - 13-17HL, 
+  - 10H+,  --> enchère: 0M' 4ème couleur forcing
+  -  --> enchère: 2K
+?--- 1C - 1P - 2m -  
+  - +3 cartes C, 12-15SC,  --> enchère: 4C soutien
+  - +3 cartes C, 10-11SC,  --> enchère: 3C
+  - +4 cartes m, 10-11H,  --> enchère: 3m
+  - +4 cartes m, 5-9H,  --> enchère: -
+  - +6 cartes P, 10-11HL,  --> enchère: 3P répétition
+  - +6 cartes P, 6-9HL,  --> enchère: 2P
+  - 10H+, 2 tenues SA m',  --> enchère: $finaleSA S   - 13-17HL, 
+  - 10H+,  --> enchère: 0m' 4ème couleur forcing
+  -  --> enchère: 2C
+ 
+
+     2ème réponse sur bicolore économique après 2 sur 1
+
+?--- 1M - 2T - 2K -  
+  - +3 cartes M, 16SM+, 2 honneurs mini M,  --> enchère: 3M soutien
+  - +3 cartes M, 12-15SM,  --> enchère: 4M
+  - +3 cartes M, 10-11SM,  --> enchère: 2M
+  - +4 cartes K,  --> enchère: 3K
+  - +6 cartes T, 10-11HL,  --> enchère: 3T répétition
+  - 2 tenues SA C,  --> enchère: $finaleSA S   - 13-19HL, 
+  -  --> enchère: 2C 4ème couleur forcing
+?--- 1P - 2m - 2C -  
+  - +3 cartes P, 16SP+, 2 honneurs mini P,  --> enchère: 3P soutien P
+  - +3 cartes P, 12-15SP,  --> enchère: 4P
+  - +3 cartes P, 10-11SP,  --> enchère: 2P
+  - +4 cartes C, 10-15SC,  --> enchère: 4C soutien C
+  - +4 cartes C, 16SC+,  --> enchère: 3C
+  - +6 cartes m, 10-11HL,  --> enchère: 3m répétition
+  - 2 tenues SA m',  --> enchère: $finaleSA S   - 13-19HL, 
+  -  --> enchère: 0m' 4ème couleur forcing
+ 
+
+     2ème réponse sur répétition simple en mineure
+
+?--- 1T - 1M - 2T -  
+  - 5 cartes M, 10-11HL,  --> enchère: 2K
+?--- 1K - 1M - 2K -  
+  - 5 cartes M, 10-11HL,  --> enchère: 2M'
+?--- 1m - 1M - 2m -  
+  - +5 cartes M, 12HL+,  --> enchère: 0m'
+  - +6 cartes M, 10-11HL,  --> enchère: 3M
+  - +6 cartes M, 6-9HL,  --> enchère: 2M
+  - 12H+,  --> enchère: 3S
+  - 10-11H,  --> enchère: 2S
+  -  --> enchère: -
+ 
+
+     2ème réponse sur répétition simple en majeure
+
+?--- 1C - 1P - 2C -  
+  - +3 cartes C, 10-11SC,  --> enchère: 3C
+  - +3 cartes C, 12-15SC,  --> enchère: 4C
+  - +3 cartes C, 16SC+,  --> enchère: 6C à revoir
+  - +5 cartes P, 12HL+,  --> enchère: 3T
+  - +6 cartes P, 10-11HL,  --> enchère: 3P
+  - +6 cartes P, 6-9HL,  --> enchère: 2P
+  - 12H+,  --> enchère: 3S
+  - 10-11H,  --> enchère: 2S
+  -  --> enchère: -
+?--- 1M - 2x - 2M -  
+  - +3 cartes M, 10-11SM,  --> enchère: 3M
+  - +3 cartes M, 12-15SM,  --> enchère: 4M
+  - +3 cartes M, 16SM+,  --> enchère: 6M à revoir
+  - +6 cartes x, 10-11HL,  --> enchère: 3x
+  - 12H+,  --> enchère: 3S
+  - 10-11H,  --> enchère: 2S
+  -  --> enchère: -
+ 
+
+     développements sur redemande 2SA
+
+?--- 1m - 1P - 2S -  
+  - 5 cartes C, 5 cartes P,  --> enchère: 3C
+?--- 1x - 1M - 2S -  
+  - +6 cartes M, 14HL+,  --> enchère: 3M
+  - +6 cartes M, 8-13HL,  --> enchère: 3M
+  - +5 cartes M,  --> enchère: 3m'
+?--- 1x - 1y - 2S -  
+  - +3 cartes x, 14HL+,  --> enchère: 3x
+  - régulier, 13-15H,  --> enchère: 4S
+  - régulier, 16-17H,  --> enchère: 6S
+  - régulier, 18H+,  --> enchère: 7S
+ 
+
+     développements sur bicolore cher
+
+?--- 1m - 1P - 2C -  
+  - +4 cartes C, 8SC-,  --> enchère: 2S
+  - +4 cartes C, 8-10SC,  --> enchère: 4C
+  - +4 cartes C, 11SC+,  --> enchère: 3C
+  - +3 cartes x, 8-10SC,  --> enchère: 4C
+?--- 1C - 2m - 2P -  
+  - +4 cartes P,  --> enchère: 3P
+  - +3 cartes C,  --> enchère: 3C
+  - 2 tenues SA m', 12H-,  --> enchère: 3S
+?--- 1x - 1z - 2y -  
+  - 8H-,  --> enchère: 2S
+  - 5 cartes z, 6-10H,  --> enchère: 0z
+  - +6 cartes z, 9H+,  --> enchère: +1z
+  - +3 cartes x, 9H+,  --> enchère: 3x
+  - 2 tenues SA n, 8-11H,  --> enchère: 3S
+ 
+
+     2ème réponse sur répétition avec saut en mineure
+
+?--- 1T - 1K - 3T -  
+  - 8H+, 1 tenues SA C, 1 tenues SA P,  --> enchère: $finaleSA S   - 17-19HL, 
+  - 8H+, 1 tenues SA C,  --> enchère: 3C
+  - 8H+, 1 tenues SA P,  --> enchère: 3P
+  - +3 cartes T, 10-12ST,  --> enchère: 5T
+  - +3 cartes T, 13ST+,  --> enchère: 6T à revoir
+  - +6 cartes K, 8HL+,  --> enchère: 3K
+  -  --> enchère: -
+?--- 1T - 1K - 3T - 3C -  
+  - 1 tenues SA P,  --> enchère: 3S
+  -  --> enchère: 5T
+?--- 1T - 1K - 3T - 3P -  
+  - 1 tenues SA C,  --> enchère: 3S
+  -  --> enchère: 5T
+?--- 1T - 1K - 3T - 3K -  
+  - 1 tenues SA C, 1 tenues SA P,  --> enchère: 3S
+  - +2 cartes K,  --> enchère: 5K
+  -  --> enchère: -
+?--- 1m - 1M - 3m -  
+  - +5 cartes M, 8HL+,  --> enchère: 3n
+  - +6 cartes M, 8HL+,  --> enchère: 3M
+  - 8H+, 1 tenues SA M',  --> enchère: $finaleSA S   - 17-19HL, 
+  - +3 cartes m, 10-12Sm,  --> enchère: 5m
+  - +3 cartes m, 13Sm+,  --> enchère: $finaleMin m   - 17-19DH, 
+  - 8H+,  --> enchère: 3n
+  -  --> enchère: -
+?--- 1m - 1M - 3m - 3n -  
+  - +3 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+?--- 1m - 1M - 3m - 3M -  
+  - +2 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+ 
+
+     2ème réponse sur répétition avec saut en majeure
+
+?--- 1M - 2x - 3M -  
+  - +2 cartes M, 8-12SM,  --> enchère: 4M
+  - +3 cartes M, 13SM+,  --> enchère: $finaleMaj M   - 17-19DH, 
+  - +6 cartes x, 8HL,  --> enchère: 3x
+  - 8H+,  --> enchère: $finaleSA S   - 17-19HL, 
+  -  --> enchère: -
+?--- 1M - 2C - 3M - 3C -  
+  - +2 cartes C,  --> enchère: 4C
+  -  --> enchère: 3S
+?--- 1M - 2m - 3M - 3m -  
+  - +3 cartes m,  --> enchère: 5m
+  -  --> enchère: 3S
+ 
+
+     réponse 4ème couleur forcing après bicolore économique
+
+ 
+
+     10H+ 4P?
+
+?--- 1T - 1K - 1C - 1P -  
+  - +4 cartes P, 12-16SP,  --> enchère: 2P
+  - +4 cartes P, 17SP+,  --> enchère: 3P
+  - 16H-, 2 tenues SA P,  --> enchère: 1S
+  - 16H+, 2 tenues SA P,  --> enchère: 2S
+  - +5 cartes C,  --> enchère: 2C
+  - +4 cartes K,  --> enchère: 3K
+  -  --> enchère: 2T
+ 
+
+     10H+ 5K+ 4C
+
+?--- 1T - 1K - 1P - 2C -  
+  - +4 cartes C,  --> enchère: 3C
+  - 16H-, 2 tenues SA C,  --> enchère: 2S
+  - 16H+, 2 tenues SA C,  --> enchère: 3S
+  - +5 cartes P,  --> enchère: 2P
+  - +3 cartes K,  --> enchère: 3K
+  -  --> enchère: 2T
+?--- 1T - 1C - 1P - 2K -  
+  - +3 cartes C, 12-16SC,  --> enchère: 2C
+  - +3 cartes C, 17-19SC,  --> enchère: 3C
+  - 16H-, 2 tenues SA K,  --> enchère: 2S
+  - 16H+, 2 tenues SA K,  --> enchère: 3S
+  - +5 cartes P,  --> enchère: 2P
+  - +4 cartes K,  --> enchère: 3K
+  -  --> enchère: 3T
+?--- 1K - 1C - 1P - 2T -  
+  - +3 cartes C, 12-16SC,  --> enchère: 2C
+  - +3 cartes C, 17-19SC,  --> enchère: 3C
+  - 16H-, 2 tenues SA T,  --> enchère: 2S
+  - 16H+, 2 tenues SA T,  --> enchère: 3S
+  - +5 cartes P,  --> enchère: 2P
+  - +4 cartes T,  --> enchère: 3T
+  -  --> enchère: 2K
+?--- 1K - 1C - 2T - 2P -  
+  - +3 cartes C, 12-16SC,  --> enchère: 2C
+  - +3 cartes C, 17-19SC,  --> enchère: 3C
+  - 16H-, 2 tenues SA P,  --> enchère: 2S
+  - 16H+, 2 tenues SA P,  --> enchère: 3S
+  - +4 cartes P,  --> enchère: 3P
+  - +5 cartes T,  --> enchère: 3T
+  -  --> enchère: 2K
+?--- 1K - 1P - 2T - 2C -  
+  - +3 cartes P, 12-16SP,  --> enchère: 2P
+  - +3 cartes P, 17-19SP,  --> enchère: 3P
+  - 16H-, 2 tenues SA C,  --> enchère: 2S
+  - 16H+, 2 tenues SA C,  --> enchère: 3S
+  - +4 cartes C,  --> enchère: 3C
+  - +5 cartes T,  --> enchère: 3T
+  -  --> enchère: 2K
+?- 1C - 1P - 2T - 2K -  
+  - +3 cartes P, 12-16SP,  --> enchère: 2P
+  - +3 cartes P, 17-19SP,  --> enchère: 3P
+  - 16H-, 2 tenues SA K,  --> enchère: 2S
+  - 16H+, 2 tenues SA K,  --> enchère: 3S
+  - +5 cartes T,  --> enchère: 3T
+  - +4 cartes K,  --> enchère: 3K
+  -  --> enchère: 2C
+?- 1C - 1P - 2K - 3T -  
+  - +3 cartes P,  --> enchère: 3P
+  - 2 tenues SA T,  --> enchère: $finaleSA S   - 12-16H, 
+  - +5 cartes K,  --> enchère: 3K
+  - +4 cartes T,  --> enchère: 4T
+  -  --> enchère: 3C
+?- 1C - 2T - 2K - 2P -  
+  - +4 cartes P,  --> enchère: 3P
+  - 16H-, 2 tenues SA P,  --> enchère: 2S
+  - 16H+, 2 tenues SA P,  --> enchère: 3S
+  - +5 cartes K,  --> enchère: 2K
+  - +3 cartes T,  --> enchère: 3T
+  -  --> enchère: 3C
+?- 1P - 2T - 2K - 2C -  
+  - +4 cartes C,  --> enchère: 3C
+  - 16H-, 2 tenues SA C,  --> enchère: 2S
+  - 16H+, 2 tenues SA C,  --> enchère: 3S
+  - +5 cartes K,  --> enchère: 3K
+  - +3 cartes T,  --> enchère: 3T
+  -  --> enchère: 2P
+?- 1P - 2m - 2C - 3m' -  
+  - 2 tenues SA m',  --> enchère: $finaleSA S   - 12-16H, 
+  - +5 cartes C,  --> enchère: 3C
+  - +3 cartes m,  --> enchère: 0m
+  -  --> enchère: 3P
+?- 1P - 2m - 2C - 3m' - 3P -  
+  - +3 cartes P,  --> enchère: $finaleMaj P   - 12-19DH, 
+  - 2 tenues SA m',  --> enchère: $finaleSA S   - 12-16H, 
+  - +2 cartes P,  --> enchère: 4P
+  - 1 tenues SA m',  --> enchère: 3S
+  -  --> enchère: -
+?- 1P - 2m - 2C - 3m' - 3C -  
+  - +3 cartes P,  --> enchère: $finaleMaj P   - 12-19DH, 
+  - +3 cartes C,  --> enchère: $finaleMaj C   - 12-19DH, 
+  - 2 tenues SA m',  --> enchère: $finaleSA S   - 12-16H, 
+  - +2 cartes P,  --> enchère: 4P
+  - +2 cartes C,  --> enchère: 4C
+  - 1 tenues SA m',  --> enchère: 3S
+  -  --> enchère: -
+?- 1P - 2m - 2C - 3m' - 3m -  
+  - 2 tenues SA m',  --> enchère: $finaleSA S   - 12-16H, 
+  -  --> enchère: $finaleMin m   - 12-19DH, 
+?- 1P - 2m - 2C - 3m' - 4m -  
+  -  --> enchère: $finaleMin m   - 12-19DH, 
+ 
+
+     réponse à 2SA
+
+?--- 1x - 1y - 1z - 2S -  
+  -  --> enchère: $finaleSA S   - 11H, 
+ 
+
+     Développement sur ouverture de 1 SA avec Stayman + Texas majeure/mineure
+
+ 
+
+     réponses
+
+?--- 1S -  
+  - 4 cartes M, 8HL+,  --> enchère: 2T *Staymann
+  - 5 cartes M, singleton x, 7-8H,  --> enchère: 2T *Staymann
+  - 5 cartes P, 5 cartes C, 8HL-,  --> enchère: 2K *Texas bicolore majeure faible
+  - 5 cartes P, 5 cartes C, 8-13HL,  --> enchère: 4K bicolore majeure manche
+  - 5 cartes P, 5 cartes C, 14HL+,  --> enchère: 2C *Texas bicolore majeure fort
+  - unicolore, +6 cartes x, 2 gros honneurs mini x, 15HL+,  --> enchère: 3x unicolore fort
+  - +6 cartes P,  --> enchère: 2C *Texas
+  - +6 cartes C,  --> enchère: 2K *Texas
+  - +5 cartes P,  --> enchère: 2C *Texas
+  - +5 cartes C,  --> enchère: 2K *Texas
+  - +6 cartes T, 7H-,  --> enchère: 2P *TexasMin 6 Trèfles faible
+  - +6 cartes T, singleton x, 10-15HL,  --> enchère: 2P *TexasMin 6 Trèfles fort
+  - +6 cartes K, 7H-,  --> enchère: 2S *TexasMin 6 Carreaux faible
+  - +6 cartes K, singleton x, 10-15HL,  --> enchère: 2S *TexasMin 6 Carreaux faible
+  - 5 cartes T, 5 cartes K, 10HL+,  --> enchère: 2P *TexasMin 5-5 mineure fort
+  - 5 cartes m, distribution5332, 15-16H,  --> enchère: 2P *TexasMin limite chelem (4SA après)
+  - 8HL-,  --> enchère: -
+  - 8-9HL,  --> enchère: 2T *Staymann
+  - singleton M, 10-15HL,  --> enchère: 2T *Staymann
+  - 10-15HL,  --> enchère: 3S
+  - 16H,  --> enchère: 4S
+  - 17H,  --> enchère: 5S
+  - 18H+,  --> enchère: 6S
+  - 16HL+,  --> enchère: 4T *Gerber
+ 
+
+     redemande Staymann
+
+* 2T -  
+  - 4 cartes C, 4 cartes P, 17H-,  --> enchère: 3S
+  - 4 cartes C, 4 cartes P,  --> enchère: 2S
+  - 4 cartes C,  --> enchère: 2C
+  - 4 cartes P,  --> enchère: 2P
+  -  --> enchère: 2K
+ 
+
+     redemande Texas
+
+* 2K -  
+  - 4 cartes C, 2 gros honneurs mini C, 17H,  --> enchère: 3C
+  - 3 cartes C, 2 gros honneurs mini C, 17H,  --> enchère: 2S
+  -  --> enchère: 2C
+* 2C -  
+  - 4 cartes P, 2 gros honneurs mini C, 17H,  --> enchère: 3P
+  - 3 cartes P, 2 gros honneurs mini C, 17H,  --> enchère: 2S
+  -  --> enchère: 2P
+* 2P -  
+  -  --> enchère: 3T
+* 2S -  
+  -  --> enchère: 3K
+ 
+
+     2eme réponse Staymann
+
+* 2T - 2K -  
+  - 5 cartes M, singleton x, 7-8H,  --> enchère: 2M
+  - +5 cartes M,  --> enchère: 3M
+  - +6 cartes M,  --> enchère: 4M
+  - 8-9HL,  --> enchère: 2S
+  - 10-15HL,  --> enchère: 3S
+  - 16H,  --> enchère: 4S
+  - 17H,  --> enchère: 5S
+  - 18H+,  --> enchère: 6S
+  - 16HL+,  --> enchère: 4T
+* 2T - 2K - 2M -  
+  - +3 cartes M, 17HL,  --> enchère: 4M
+  - 17HL,  --> enchère: 3S
+* 2T - 2K - 3M -  
+  - +3 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+* 2T - 2C -  
+  - 5 cartes P, singleton x, 7-8H,  --> enchère: 2P
+* 2T - 2M -  
+  - +4 cartes M, 8-9HL,  --> enchère: 3M
+  - +4 cartes M, 10-15HL,  --> enchère: 4M
+  - +4 cartes M, contrôle x, 16HL,  --> enchère: 3x
+  - 8-9HL,  --> enchère: 2S
+  - 10-15HL,  --> enchère: 3S
+  - 16H,  --> enchère: 4S
+  - 17H,  --> enchère: 5S
+  - 18H+,  --> enchère: 6S
+  - 18HL+,  --> enchère: 4T
+* 2T - 2M - 3M -  
+  - 17HL,  --> enchère: 4M
+* 2T - 2M - 3x -  
+  -  --> enchère: 4M
+* 2T - 2S -  
+  - +4 cartes P, 8-9HL,  --> enchère: 3K
+  - +4 cartes C, 8-9HL,  --> enchère: 3T
+  - +4 cartes P, 10-15HL,  --> enchère: 4K
+  - +4 cartes C, 10-15HL,  --> enchère: 4T
+  - 8-9HL,  --> enchère: -
+  - 10-17HL,  --> enchère: 3S
+  - 17H,  --> enchère: 4S
+  - 18H+,  --> enchère: 6S
+  - 18HL+,  --> enchère: 4T
+* 2T - 3S -  
+  - +4 cartes P, 10-15HL,  --> enchère: 4K
+  - +4 cartes C, 10-15HL,  --> enchère: 4T
+  - 8-15HL,  --> enchère: 3S
+  - 16H+,  --> enchère: 6S
+  - 16HL+,  --> enchère: 4T
+ 
+
+     2ème réponse Texas
+
+* 2K - 2C -  
+  - 8HL-,  --> enchère: -
+  - +6 cartes C, 7-8HL,  --> enchère: 3C
+  - +6 cartes C, 9-15HL,  --> enchère: 4C
+  - 5 cartes C, 8-9HL,  --> enchère: 2S
+  - 5 cartes C, singleton x, +4 cartes m, 10-15HL,  --> enchère: 3m
+  - 5 cartes C, 10-15HL,  --> enchère: 3S
+  - 16HL+, +4 cartes x,  --> enchère: 3x
+  - 16HL+,  --> enchère: 4S
+* 2C - 2P -  
+  - 8HL-,  --> enchère: -
+  - +6 cartes P, 7-8HL,  --> enchère: 3P
+  - +6 cartes P, 9-15HL,  --> enchère: 4P
+  - 5 cartes P, 8-9HL,  --> enchère: 2S
+  - 5 cartes P, singleton x, +4 cartes m, 10-15HL,  --> enchère: 3m
+  - 5 cartes P, 10-15HL,  --> enchère: 3S
+  - 16HL+, +4 cartes x,  --> enchère: 3x
+  - 16HL+,  --> enchère: 4S
+* 2P - 3T -  
+  - 10HL-,  --> enchère: -
+  - 5 cartes T, 5 cartes K,  --> enchère: 3K
+  - singleton K,  --> enchère: 3S
+  - singleton C,  --> enchère: 3P
+  - singleton P,  --> enchère: 3C
+  - distribution5332, 15-16H,  --> enchère: 4S
+* 2S - 3K -  
+  - 10HL-,  --> enchère: -
+  - singleton T,  --> enchère: 3S
+  - singleton C,  --> enchère: 3P
+  - singleton P,  --> enchère: 3C
+  - distribution5332, 15-16H,  --> enchère: 4S
+ 
+
+     suite des enchères
+
+ 
+
+     Texas majeure
+
+* 2K - 2C - 2S -  
+  - +3 cartes C, 17H,  --> enchère: 4C
+  - 17H,  --> enchère: 3S
+  -  --> enchère: -
+* 2K - 2C - 3S -  
+  - +3 cartes C,  --> enchère: 4C
+  -  --> enchère: -
+* 2K - 2C - 3C -  
+  - 17H,  --> enchère: 4C
+  -  --> enchère: -
+* 2K - 2C - 4S -  
+  - +3 cartes C, 17H,  --> enchère: 6C
+  - 17H,  --> enchère: 6S
+  -  --> enchère: -
+* 2K - 2C - 3x -  
+  - +3 cartes C,  --> enchère: 4C
+  -  --> enchère: 3S ++
+* 2C - 2P - 2S -  
+  - +3 cartes P, 17H,  --> enchère: 4P
+  - 17H,  --> enchère: 3S
+  -  --> enchère: -
+* 2C - 2P - 3P -  
+  - 17H,  --> enchère: 4P
+  -  --> enchère: -
+* 2C - 2P - 4S -  
+  - +3 cartes P, 17H,  --> enchère: 6P
+  - 17H,  --> enchère: 6S
+  -  --> enchère: -
+* 2C - 2P - 3x -  
+  - +3 cartes P,  --> enchère: 4P
+  -  --> enchère: 3S ++
+ 
+
+     Texas mineure
+
+ 
+
+     bicolore 55  ++
+
+* 2P - 3T - 3K -  
+  -  --> enchère: 3S
+ 
+
+     singleton P
+
+* 2P - 3T - 3C -  
+  - 4 cartes P, 2 gros honneurs mini P,  --> enchère: 3S
+  -  --> enchère: 5T
+ 
+
+     singleton C
+
+* 2P - 3T - 3P -  
+  - 4 cartes C, 2 gros honneurs mini C,  --> enchère: 3S
+  -  --> enchère: 5T
+ 
+
+     singleton K
+
+* 2P - 3T - 3S -  
+  - 4 cartes K, 2 gros honneurs mini K,  --> enchère: -
+  - +5 cartes K, 2 honneurs mini K,  --> enchère: -
+  -  --> enchère: 5T
+ 
+
+     singleton P
+
+* 2S - 3K - 3C -  
+  - 4 cartes P, 2 gros honneurs mini P,  --> enchère: 3S
+  -  --> enchère: 5K
+ 
+
+     singleton C
+
+* 2S - 3K - 3P -  
+  - 4 cartes C, 2 gros honneurs mini C,  --> enchère: 3S
+  -  --> enchère: 5K
+ 
+
+     singleton T
+
+* 2S - 3K - 3S -  
+  - 4 cartes T, 2 gros honneurs mini T,  --> enchère: -
+  - +5 cartes T, 2 honneurs mini T,  --> enchère: -
+  -  --> enchère: 5K
+ 
+
+     5332 15-16H
+
+* 2P - 3T - 4S -  
+  - 17H,  --> enchère: 6S
+  -  --> enchère: -
+ 
+
+     5332 15-16H
+
+* 2S - 3K - 4S -  
+  - 17H,  --> enchère: 6S
+  -  --> enchère: -
+ 
+
+     Staymann
+
+* 2T - 2S - 3T -  
+  -  --> enchère: 3C
+* 2T - 2S - 4T -  
+  -  --> enchère: 4C
+* 2T - 2S - 3K -  
+  -  --> enchère: 3P
+* 2T - 2S - 4K -  
+  -  --> enchère: 4P
+* 2T - 2x - 2S -  
+  - 17HL,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     Staymann éventuel
+
+* ( 2T - 2x - )0 4S -  
+  - 17HL,  --> enchère: 6S
+  -  --> enchère: -
+* ( 2T - 2x - )0 5S -  
+  - 16HL+,  --> enchère: 6S
+  -  --> enchère: -
+* ( 2T - 2x - )0 4T -  
+  - +3 As,  --> enchère: 6S
+  - 2 As,  --> enchère: 4P réponse Gerber
+  - 1 As,  --> enchère: 4C
+  -  --> enchère: 4K
+* ( 2T - 2x - )0 4T - 4K -  
+  - +3 As,  --> enchère: 6S
+  -  --> enchère: 4S
+* ( 2T - 2x - )0 4T - 4C -  
+  - +2 As,  --> enchère: 6S
+  -  --> enchère: 4S
+* ( 2T - 2x - )0 4T - 4P -  
+  - +1 As,  --> enchère: 6S
+  -  --> enchère: 4S
+ 
+
+     réponses sur 2T
+
+?--- 2T -  
+  - +5 cartes M, 2 gros honneurs mini M, 8H+,  --> enchère: 2M
+  - 5 cartes T, 5 cartes K,  --> enchère: 2S
+  -  --> enchère: 2K
+?--- 2T - 2K -  
+  - +8 cartes M, 2 As,  --> enchère: 4M
+  - unicolore, 7 cartes M, honneur M: As Roi Dame,  --> enchère: 3M
+  - unicolore, +6 cartes M,  --> enchère: 2M
+  - unicolore, +6 cartes m,  --> enchère: 3m
+  - 5 cartes P, 5 cartes C,  --> enchère: 3S
+  - 6 cartes C, 5 cartes P,  --> enchère: 4T
+  - 5 cartes C, 6 cartes P,  --> enchère: 4K
+  - sans-atout, 22-23HL,  --> enchère: 2S
+?--- 2T - 2K - 2C -  
+  - +4 cartes P, 4H+,  --> enchère: 2P
+?--- 2T - 2K - 2P -  
+  - +5 cartes C, 10HL+,  --> enchère: 3C
+  - +5 cartes C, 10SM+,  --> enchère: 3C
+?--- 2T - 2K - 2M -  
+  - +2 cartes M, 7-9SM,  --> enchère: 4M
+  - +2 cartes M, +5 cartes m, 10SM+,  --> enchère: 3m
+  - +2 cartes M, 10SM,  --> enchère: 3M
+  - +2 cartes M, 5-6SM,  --> enchère: 2S
+  - 4-7H,  --> enchère: 2S
+  - +5 cartes m, 10HL+,  --> enchère: 3m
+?--- 2K -  
+  - +6 cartes M, honneur M: Roi Dame,  --> enchère: 3M
+  - 0 As, -2 Roi, 8H-,  --> enchère: 2C
+  - 1 As, 0 Roi,  --> enchère: 2P
+  - 0 As, 2 Roi,  --> enchère: 2S
+  - 0 As, 8H+,  --> enchère: 2S
+  - 1 As, 1 Roi,  --> enchère: 3T
+  - 1 As, 2 Roi,  --> enchère: 3K
+  - +2 As,  --> enchère: 3S
+?--- 2K - 2C -  
+  - +6 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+?--- 2K - 2P -  
+  - +6 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+?--- 2K - 2S -  
+  - +6 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+?--- 2K - 3m -  
+  - +6 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+?--- 2K - 3M -  
+  - +2 cartes M,  --> enchère: 4M
+  - +6 cartes M',  --> enchère: 4M'
+  -  --> enchère: 3S
+ 
+
+     Développement sur l'ouverture de 2SA
+
+ 
+
+     ou 2T-2K-2SA ou 2K-2C-2SA ou 2K-2P-2SA
+
+?--- ( 2T - 2K - )2 ( 2K - 2M - )5 2S -  
+  - 5 cartes C, 5 cartes P, 11HL-,  --> enchère: 4K texas majeure
+  - 4 cartes C, 5 cartes P, 11HL-,  --> enchère: 3S
+  - 5 cartes C,  --> enchère: 3K
+  - 5 cartes P,  --> enchère: 3C
+  - 4 cartes M, 5H+,  --> enchère: 3T Stayman
+  - 6 cartes T, 12HL+,  --> enchère: 3P texas mineure
+  - 6 cartes T, 5HL-,  --> enchère: 3P
+  - 6 cartes K, 12HL+,  --> enchère: 4T
+  - 6 cartes K, 7HL-,  --> enchère: 4T
+  - 5 cartes T, 5 cartes K, 12HL+,  --> enchère: 3P
+  - 5HL-,  --> enchère: -
+  - 5-10HL,  --> enchère: 3T
+  - 11-12HL,  --> enchère: 4S
+  - 13HL+,  --> enchère: 5S
+  -  --> enchère: -
+ 
+
+     redemande Stayman
+
+* 3T -  
+  - 5 cartes M,  --> enchère: 3M
+  - 4 cartes M,  --> enchère: 2K
+  -  --> enchère: 3S
+* 3T - 3K -  
+  - 4 cartes C, 4 cartes P,  --> enchère: 4K
+  - 4 cartes C, 5 cartes P,  --> enchère: 4C
+  - 4 cartes M,  --> enchère: 3M'
+  - 12HL-,  --> enchère: 3S
+  - 11-12H,  --> enchère: 4S
+* 3T - 3M -  
+  - +3 cartes M, contrôle T, 12HL+,  --> enchère: 4T
+  - +3 cartes M, contrôle K, 12HL+,  --> enchère: 4K
+  - +5 cartes m, 2 gros honneurs mini m, 12HL+,  --> enchère: 4m
+  - 11-12H,  --> enchère: 4S
+  - +3 cartes M,  --> enchère: 4M
+  -  --> enchère: 3S
+* 3T - 3S -  
+  - 5 cartes P, 4 cartes C,  --> enchère: 4C
+  - 11-12H,  --> enchère: 4S
+ 
+
+     redemande Texas majeure
+
+* 3K -  
+  - +4 cartes C, contrôle T, 21H,  --> enchère: 4T
+  - +4 cartes C, contrôle K, 21H,  --> enchère: 4K
+  - +4 cartes C,  --> enchère: 4C
+  - 5 cartes P, 2 cartes C,  --> enchère: 3P
+  -  --> enchère: 3C
+* 3K - 3C -  
+  - +6 cartes C, 7-11HL,  --> enchère: 4C
+  - 4 cartes P, 7-11HL,  --> enchère: 3P
+  - 7-11HL,  --> enchère: 3S
+  - +6 cartes C, contrôle T, 12HL+,  --> enchère: 4T
+  - +6 cartes C, contrôle K, 12HL+,  --> enchère: 4K
+  - +5 cartes m, 2 gros honneurs mini m, 12HL+,  --> enchère: 4m
+  - 6 cartes C, 5 cartes P, 12HL+,  --> enchère: 4P
+  - 11-12H,  --> enchère: 4S
+* 3K - 3C - 3P -  
+  - +4 cartes P,  --> enchère: 4P
+  - +3 cartes C,  --> enchère: 4C
+  -  --> enchère: 3S
+* 3K - 3P -  
+  - +6 cartes C, 7-11HL,  --> enchère: 4C
+  - +3 cartes P, 7-11HL,  --> enchère: 4P
+  - +6 cartes C, contrôle T, 12HL+,  --> enchère: 4T
+  - +6 cartes C, contrôle K, 12HL+,  --> enchère: 4K
+  - +3 cartes P, contrôle T, 12HL+,  --> enchère: 4T
+  - +3 cartes P, contrôle K, 12HL+,  --> enchère: 4K
+  - +5 cartes m, 2 gros honneurs mini m, 12HL+,  --> enchère: 4m
+  - 11-12H,  --> enchère: 4S
+* 3C -  
+  - +4 cartes P, contrôle T, 21H,  --> enchère: 4T
+  - +4 cartes P, contrôle K, 21H,  --> enchère: 4K
+  - +4 cartes P,  --> enchère: 4P
+  - 5 cartes C, 2 cartes P,  --> enchère: 3S
+  -  --> enchère: 3P
+* 3C - 3P -  
+  - +6 cartes P, 7-11HL,  --> enchère: 4P
+  - +6 cartes P, contrôle T, 12HL+,  --> enchère: 4T
+  - +6 cartes P, contrôle K, 12HL+,  --> enchère: 4K
+  - +5 cartes m, 2 gros honneurs mini m, 12HL+,  --> enchère: 4m
+  - 5 cartes C, 5 cartes P, 12HL+,  --> enchère: 4C
+  - 11-12H,  --> enchère: 4S
+* 3C - 3S -  
+  - +6 cartes P, 7-11HL,  --> enchère: 4P
+  - +3 cartes C, 7-11HL,  --> enchère: 4C
+  - +6 cartes P, contrôle T, 12HL+,  --> enchère: 4T
+  - +6 cartes P, contrôle K, 12HL+,  --> enchère: 4K
+  - +3 cartes C, contrôle T, 12HL+,  --> enchère: 4T
+  - +3 cartes C, contrôle K, 12HL+,  --> enchère: 4K
+  - +5 cartes m, 2 gros honneurs mini m, 12HL+,  --> enchère: 4m
+  - 11-12H,  --> enchère: 4S
+ 
+
+     redemande Texas mineure
+
+* 3P -  
+  -  --> enchère: 4T
+* 3P - 4T -  
+  - 5 cartes K, 5 cartes T,  --> enchère: 4K
+* 3P - 4T -  
+  - 12HL+,  --> enchère: 4S
+  -  --> enchère: -
+* 4T -  
+  -  --> enchère: 4K
+* 4T - 4K -  
+  - 12HL+,  --> enchère: 4S
+  -  --> enchère: -
+ 
+
+     à complèter pour les chelems
+
+ 
+
+     réponses sur ouverture d'un 2 faible
+
+?--- 2M -  
+  - 15H+,  --> enchère: 2S
+?--- 2M X  
+  - 15H+,  --> enchère: XX
+?--- 2M ?  
+  - 3 cartes M, 10-12H,  --> enchère: 3M
+  - +4 cartes M, 13-14H,  --> enchère: 4M
+  -  non vulnérable, 3 cartes M,  --> enchère: 3M
+  -  non vulnérable, +4 cartes M,  --> enchère: 4M
+  - +6 cartes n, 16DH+,  --> enchère: 0n
+  - 15H+,  --> enchère: X
+  -  --> enchère: -
+ 
+
+     redemandes sur enchère forcing
+
+?--- 2M - 2S -  
+  - 8H+, honneur n: As,  --> enchère: 3n
+  - 8H+, honneur n: Roi,  --> enchère: 3n
+  - 8H+, contrôle n,  --> enchère: 4n
+  -  --> enchère: 3M
+?--- 2M X XX -  
+  - 8H+, honneur n: As,  --> enchère: 3n
+  - 8H+, honneur n: Roi,  --> enchère: 3n
+  - 8H+, contrôle n,  --> enchère: 4n
+  -  --> enchère: 3M
+?--- 2M ? X -  
+  - 8H+, honneur n: As,  --> enchère: 3n
+  - 8H+, honneur n: Roi,  --> enchère: 3n
+  - 8H+, contrôle n,  --> enchère: 4n
+  -  --> enchère: 3M
+?--- 2M ? X ?  
+  - 8H+,  --> enchère: 4M
+ 
+
+     2ème réponse après enchère forcing
+
+?--- 2M - 2S - 3M -  
+  -  --> enchère: -
+?--- 2M - 2S - 3x -  
+  -  --> enchère: 4M
+?--- 2M - 2S - 4x -  
+  -  --> enchère: 4M
+?--- 2M X XX - 3M -  
+  -  --> enchère: -
+?--- 2M X XX - 3x -  
+  -  --> enchère: 4M
+?--- 2M X XX - 4x -  
+  -  --> enchère: 4M
+?--- 2M ? X - 3M -  
+  -  --> enchère: -
+?--- 2M ? X - 3x -  
+  -  --> enchère: 4M
+?--- 2M ? X - 4x -  
+  -  --> enchère: 4M
+ 
+
+     Interventions de barrage
+
+??  
+  - unicolore, +8 cartes x,  vulnérable, 8LJ, 11H-,  --> enchère: 4x
+  - unicolore, +8 cartes x,  non vulnérable, 7LJ, 11H-,  --> enchère: 4x
+  - unicolore, 7 cartes m, 3 gros honneurs mini m, 11H-,  --> enchère: 3S
+  - unicolore, +7 cartes m, 2 gros honneurs mini m,  non vulnérable contre vulnérable, 5-7LJ, 11H-,  --> enchère: 3m
+  - unicolore, +7 cartes m, 2 gros honneurs mini m,  même vulnérablilité, 6-7LJ, 11H-,  --> enchère: 3m
+  - unicolore, +7 cartes m, 2 gros honneurs mini m,  vulnérable contre non vulnérable, 7LJ, 11H-,  --> enchère: 3m
+  - unicolore, +7 cartes M, 2 honneurs mini M,  non vulnérable contre vulnérable, 5-7LJ, 11H-,  --> enchère: 3M
+  - unicolore, +7 cartes M, 2 honneurs mini M,  même vulnérablilité, 6-7LJ, 11H-,  --> enchère: 3M
+  - unicolore, +7 cartes M, 2 honneurs mini M,  vulnérable contre non vulnérable, 7LJ, 11H-,  --> enchère: 3M
+  - 6 cartes M, 2 honneurs mini M, 8-12HL,  --> enchère: 2M
+ 
+
+     Intervention du n° 2 sur 1 couleur
+
+?--- 1T  
+  - +4 cartes K, 2 cartes C, 12H+,  --> enchère: 1K
+  - +4 cartes K, 2 cartes P, 12H+,  --> enchère: 1K
+  - 5 cartes C, +5 cartes K, -7 cartes K, 7 cartes P,  --> enchère: 2S bicolore Michael CK
+?--- 1K  
+  - 5 cartes C, +5 cartes T, -7 cartes T, 7 cartes P,  --> enchère: 2S bicolore Michael CT
+?--- 1m  
+  - 4 cartes M, +3 cartes M', -5 cartes M', 12H+,  --> enchère: X
+  - 5 cartes M, +5 cartes M', -7 cartes M', 7 cartes P,  --> enchère: 2K bicolore Michael majeure
+?--- 1M  
+  - 4 cartes M', 12H+,  --> enchère: X
+  - 5 cartes M, +5 cartes m, -7 cartes m, 7 cartes P,  --> enchère: 2M' bicolore Michael maj-min
+  - 5 cartes m, +5 cartes m', -7 cartes m', 7 cartes P,  --> enchère: 2S bicolore Michael mineure
+?--- 1P  
+  - 5 cartes C, 3 gros honneurs mini C, 14-17H,  --> enchère: 2C
+?--- 1y  
+  - 5 cartes z, 2 gros honneurs mini z, 8-17H,  --> enchère: 1z
+  - 6 cartes x, 2 gros honneurs mini x, 11-17H,  --> enchère: 2x
+  - sans-atout, 2 tenues SA y, 16-18H,  --> enchère: 1S
+  - sans-atout, y=T, 1 tenues SA y, 16-18H,  --> enchère: 1S
+  - sans-atout, y=K, 1 tenues SA y, 16-18H,  --> enchère: 1S
+  - sans-atout, 2 tenues SA y, 19H+,  --> enchère: X
+  - distribution4441, singleton y, 11H+,  --> enchère: X
+  - distribution5440, singleton y, 11H+,  --> enchère: X
+  - 18H+,  --> enchère: X
+  -  --> enchère: -
+ 
+
+     Réponses au contre après passe du répondant
+
+?--- 1m X -  
+  - +4 cartes M, 8H-,  --> enchère: 1M
+  - +6 cartes m', 8H-,  --> enchère: 0m'
+  - +3 cartes M, 8H-,  --> enchère: 1M
+  - +4 cartes m', 8H-,  --> enchère: 1m'
+  - 4 cartes C, 4 cartes P, 8-10H,  --> enchère: 2m
+  - +6 cartes M, 8-10H,  --> enchère: 4M
+  - 5 cartes M, 8-10H,  --> enchère: 3M
+  - 4 cartes M, 8-10H,  --> enchère: 2M
+  - +4 cartes m', 8-10H,  --> enchère: 2m'
+?--- 1M X -  
+  - +3 cartes M', 8H-,  --> enchère: 0M'
+  - +4 cartes m, 8H-,  --> enchère: 0m
+  - +6 cartes M', 8-10H,  --> enchère: 4M'
+  - 5 cartes M', 8-10H,  --> enchère: 3M'
+  - +4 cartes M', 8-10H,  --> enchère: +1M'
+?--- 1y X -  
+  - 1 tenues SA y, 8-10H,  --> enchère: 1S
+  - sans-atout, 2 tenues SA y, 11-12HL,  --> enchère: 2S
+  - sans-atout, 2 tenues SA y, 13-15H,  --> enchère: 3S
+  - 11H+,  --> enchère: 2y
+  - +5 cartes x,  --> enchère: 2x
+  -  --> enchère: -
+ 
+
+     Réponses au contre après 1 couleur répondant
+
+?--- 1T X 1K  
+  - +6 cartes M, 8-10H,  --> enchère: 4M
+?--- 1x X 1M  
+  - +6 cartes M', 8-10H,  --> enchère: 4M'
+?--- 1x X 1y  
+  - 4H-,  --> enchère: -
+  - +4 cartes n, 3-7H,  --> enchère: 0n
+  - +5 cartes n, 8-11H,  --> enchère: +1n
+  - 4 cartes y, 8H+,  --> enchère: X
+  - sans-atout, 1 tenues SA x, 8-10H,  --> enchère: 1S
+  - sans-atout, 1 tenues SA x, 11-12H,  --> enchère: 2S
+  - 9H+,  --> enchère: 2x
+  -  --> enchère: -
+ 
+
+     Réponses au contre après 1 SA répondant
+
+?--- 1m X 1S  
+  - +6 cartes M, 8-10H,  --> enchère: 4M
+?--- 1M X 1S  
+  - +6 cartes M', 8-10H,  --> enchère: 4M'
+?--- 1x X 1S  
+  - +5 cartes n, 8H-,  --> enchère: 2n
+  - 8H+, 1 tenues SA T, 1 tenues SA K,  --> enchère: X
+  -  --> enchère: -
+ 
+
+     Réponses au contre après surcontre répondant
+
+?--- 1y X XX  
+  - 8H+,  --> enchère: 2y
+  - +7 cartes n, 8H-,  --> enchère: +2n
+  - 6 cartes n, 8H-,  --> enchère: +1n
+  - +4 cartes n, 8H-,  --> enchère: 0n
+  -  --> enchère: -
+ 
+
+     Réponses au contre après soutien répondant
+
+?--- 1m X 2m  
+  - 4 cartes M, 4 cartes M', 8-10H,  --> enchère: X
+?--- 1M X 2M  
+  - 4 cartes m, 4 cartes m', 8-10H,  --> enchère: X
+?--- 1y X 2y  
+  - +5 cartes n, 9-10H,  --> enchère: +1n
+  - +4 cartes z, 5-9H,  --> enchère: 2z
+  - +4 cartes x, 5-9H,  --> enchère: 3x
+  - 2 tenues SA y, 10-11HL,  --> enchère: 2S
+  - 2 tenues SA y, 12HL+,  --> enchère: 3S
+  - 11H+,  --> enchère: 3y
+  - 8-10H,  --> enchère: X
+  -  --> enchère: -
+?--- 1y X 3y  
+  - +5 cartes n, 9-10H,  --> enchère: 0n
+  - +4 cartes z, 5-9H,  --> enchère: 3z
+  - +5 cartes x, 5-9H,  --> enchère: 4x
+  - 2 tenues SA y, 12HL+,  --> enchère: 3S
+?--- 1C X 4C  
+  - 5 cartes T, 5 cartes K,  --> enchère: 4S
+?--- 1P X 4P  
+  - 5 cartes T, 5 cartes K,  --> enchère: 4S
+  - 5 cartes C, 5 cartes m,  --> enchère: 4S
+ 
+
+     conclusion: contre ou passe
+
+?--- 1x X 3+x  
+  - 8H+,  --> enchère: X
+  -  --> enchère: -
+ 
+
+     Redemande après le contre sur réponse faible (0-7H)
+
+?--- 1T X - 1K -  
+  - 22H+,  --> enchère: 2x
+  - +5 cartes M, 17-21HL,  --> enchère: 0M majeure 5ème
+  - 2 tenues SA x, 19-21H,  --> enchère: 1S SA
+  - 2 tenues SA x, 22-23H,  --> enchère: 2S
+  - +4 cartes K, 17H+,  --> enchère: 2K soutien
+  -  --> enchère: -
+?--- 1x X - 1M -  
+  - 22H+,  --> enchère: 2x
+  - +5 cartes n, 17-21HL,  --> enchère: 0n belle couleur 5ème
+  - +4 cartes M, 24SM+,  --> enchère: 4M soutien
+  - +4 cartes M, 18SM+,  --> enchère: 2M soutien
+  - 2 tenues SA x, 19-21H,  --> enchère: 1S SA
+  - 2 tenues SA x, 22-23H,  --> enchère: 2S
+  -  --> enchère: -
+ 
+
+     Redemande après le contre sur 1SA (8-10H)
+
+?--- 1x X - 1S -  
+  - 22H+,  --> enchère: 2x
+  - +5 cartes M, 16-22HL,  --> enchère: 0M majeure 5ème
+  - 16HL+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     Réponses à l'intervention 1 couleur après passe du répondant
+
+?--- 1x 1y -  
+  - 3 cartes y, 7-10Sy,  --> enchère: 2y
+  - 4 cartes y, 7-10Sy,  --> enchère: 3y
+  - +5 cartes y, 7-10Sy,  --> enchère: 4y
+  - +3 cartes y, 9H+, +5 cartes n, 2 gros honneurs mini n,  --> enchère: +1n
+  - 4 cartes y, 10-12H, régulier,  --> enchère: 3x
+  - +3 cartes y, 11Sy+,  --> enchère: 2x
+?--- 1m 1M -  
+  - +6 cartes m', 8-10H,  --> enchère: 2m'
+  - M=P, +6 cartes C, 8-10H,  --> enchère: 2C
+?--- 1x 1y -  
+  - +4 cartes z, 8H+,  --> enchère: 2m
+  - régulier, +3 cartes x, 8-12H,  --> enchère: 1S
+  - régulier, 2 tenues SA x, 13-14H,  --> enchère: 2S
+  - régulier, 2 tenues SA x, 15-16H,  --> enchère: 3S
+  - 10H+,  --> enchère: 2x
+  -  --> enchère: -
+ 
+
+     redemande sur soutien
+
+?--- 1x 1y - 2y -  
+  - 20DH+,  --> enchère: 4y
+  - 18DH+,  --> enchère: 3y
+  -  --> enchère: -
+?--- 1x 1y - 2y - 3y -  
+  - 9Sy+,  --> enchère: 4y
+?--- 1x 1y - 3y -  
+  - 20DH+,  --> enchère: 4y
+  -  --> enchère: -
+ 
+
+     redemande sur SA
+
+?--- 1x 1y - 1S -  
+  - 17HL+,  --> enchère: 3S
+  - 15HL+,  --> enchère: 2S
+  -  --> enchère: -
+?--- 1x 1y - 1S - 2S -  
+  - 10HL+,  --> enchère: 3S
+  -  --> enchère: -
+?--- 1x 1y - 2S -  
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     redemande sur cue-bid
+
+?--- 1T 1M - 2T -  
+  - 13H-, +4 cartes K,  --> enchère: 2K bicolore économique
+?--- 1m 1P - 2m -  
+  - 13H-, +4 cartes C,  --> enchère: 2C bicolore économique
+?--- 1x 1y - 2x -  
+  - 13H-,  --> enchère: 2y répétition
+  - 13-15H, 6 cartes y,  --> enchère: 3y répétition saut
+  - 13-15H, +4 cartes z,  --> enchère: 0n bicolore cher
+  - 13-15H, +4 cartes n,  --> enchère: +1n bicolore à saut
+  - 13-15H, régulier, 2 tenues SA x,  --> enchère: 2S
+  - 16H+, 6 cartes y,  --> enchère: 4y
+  - 13H+,  --> enchère: 3x
+ 
+
+     dev. après cue-bid et redemande faible
+
+?--- 1x 1z - 2x - 2y -  
+  - +3 cartes z, 18Sz+,  --> enchère: 4z
+  - +3 cartes z, 15Sz+,  --> enchère: 3z
+  - 18H+,  --> enchère: 3S
+  - 15H+,  --> enchère: 2S
+  -  --> enchère: 2z
+?--- 1x 1z - 2x - 2z -  
+  - +3 cartes z, 18Sz+,  --> enchère: 4z
+  - +3 cartes z, 15Sz+,  --> enchère: 3z
+  - 18H+,  --> enchère: 3S
+  - 15H+,  --> enchère: 2S
+  -  --> enchère: -
+ 
+
+     dev. après cue-bid et redemande forte
+
+?--- 1x 1y - 2x - 3y -  
+  - +3 cartes y,  --> enchère: 4y
+  -  --> enchère: 3S
+?--- 1x 1y - 2x - 2S -  
+  - +3 cartes y,  --> enchère: 4y
+  -  --> enchère: 3S
+?--- 1x 1y - 2x - 2z -  
+  - +3 cartes y,  --> enchère: 4y
+  -  --> enchère: 3S
+?--- 1x 1y - 2x - 3n -  
+  - +3 cartes y,  --> enchère: 4y
+  -  --> enchère: 3S
+?--- 1x 1y - 2x - 3x -  
+  - +3 cartes y,  --> enchère: 4y
+  -  --> enchère: 3S
+?--- 1x 1y - 2x - 4y -  
+  -  --> enchère: -
+ 
+
+     redemande sur changement de couleur
+
+?--- 1x 1y - 1z -  
+  - +3 cartes z,  --> enchère: 2z
+  -  --> enchère: 2y
+ 
+
+     Intervention du n° 2 sur le 2 faible
+
+?--- 2C  
+  - +6 cartes P, 18DH+,  --> enchère: 3P
+  - +5 cartes P, 12H+,  --> enchère: 2P
+  - +5 cartes P,  non vulnérable, 10H+,  --> enchère: 2P
+?--- 2P  
+  - +6 cartes C, 14DH+,  --> enchère: 3C
+?--- 2M  
+  - sans-atout, 2 tenues SA M, 17-18H,  --> enchère: 2S
+  - +6 cartes m, 14DH+,  --> enchère: 3m
+  - 5 cartes m, 5 cartes m', 18DH+,  --> enchère: 3S
+  - 5 cartes M', 5 cartes m, 18DH+,  --> enchère: 4m
+  - 7 cartes m, honneur m: As Roi Dame, 1 tenues SA M,  --> enchère: 3M
+  - +4 cartes M', 14H+,  --> enchère: X
+  - 19H+,  --> enchère: X
+ 
+
+     Réponse au contre
+
+?--- 2C X ?  
+  - 4 cartes P, 8H-,  --> enchère: 2P
+  - 5 cartes P, 8-10H,  --> enchère: 3P
+?--- 2M X ?  
+  - 4 cartes M', 8H-,  --> enchère: 3M'
+  - 4 cartes m, 8H-,  --> enchère: 3m
+  - 5 cartes M', 11-13H,  --> enchère: 4M'
+  - 2 tenues SA M, 11-13H,  --> enchère: 3S
+  - 5 cartes M', +5 cartes m, 9-10H,  --> enchère: 4m
+  - 7 cartes m, honneur m: As Roi Dame, 1 tenues SA M,  --> enchère: 3M
+  - +5 cartes m, +5 cartes m',  --> enchère: 4S
+  - 8H+,  --> enchère: 2S
+  -  --> enchère: -
+ 
+
+     Réponse couleur
+
+?--- 2C 2P ?  
+  - +3 cartes P, 14SP+,  --> enchère: 4P
+  - +3 cartes P, 11SP+,  --> enchère: 3P
+  - +5 cartes P,  --> enchère: 4P
+  - 12HL+, 2 tenues SA C,  --> enchère: 3S
+  - 11HL, 2 tenues SA C,  --> enchère: 2S
+  - 12HL+,  --> enchère: 3C
+  -  --> enchère: -
+* 3P ?  
+  - +6 cartes P,  --> enchère: 4P
+  - 16DH,  --> enchère: 4P
+  - 15H+,  --> enchère: X
+  -  --> enchère: -
+* 2S ?  
+  - +6 cartes P,  --> enchère: 4P
+  - 13HL+,  --> enchère: 3S
+  -  --> enchère: -
+?--- 2C 3P ?  
+  - +3 cartes P, 14SP+,  --> enchère: 6P
+  - +2 cartes P, 9SP+,  --> enchère: 4P
+  - +4 cartes P,  --> enchère: 4P
+  - 9HL+, 2 tenues SA C,  --> enchère: 3S
+  - 9H+,  --> enchère: X
+  -  --> enchère: -
+?--- 2P 3C ?  
+  - +2 cartes C, 13SP+,  --> enchère: 0C
+  - +3 cartes C, 10SP+,  --> enchère: 3C
+  - +4 cartes C,  --> enchère: 4C
+  - 10HL+, 2 tenues SA C,  --> enchère: 3S
+  - 12H+,  --> enchère: 3P
+  - 12H+,  --> enchère: X
+  -  --> enchère: -
+ 
+
+     developpement après contre et 2SA
+
+?--- 2M X - 2S -  
+  - 5 cartes M', 18H-,  --> enchère: 3M'
+  - 19-20H, 2 tenues SA M,  --> enchère: 3S
+  - 18H+,  --> enchère: 3M
+  - 6 cartes m,  --> enchère: 4m
+  -  --> enchère: 3T
+?--- 2M X - 2S - 3T -  
+  - 5 cartes M', 14H+,  --> enchère: 4M'
+  - 4 cartes M', 2 tenues SA M,  --> enchère: 3M'
+  - 4 cartes M',  --> enchère: 3M
+  - 14H+, 2 tenues SA M,  --> enchère: 3S
+  - +5 cartes K,  --> enchère: 3K
+  -  --> enchère: -
+ 
+
+     Reveil sur ouverture 1 couleur
+
+?--- 1m - - -  
+  - 7H+, 5 cartes M, +4 cartes M',  --> enchère: 2m bicolore majeur
+?--- 1M - - -  
+  - 7H+, 5 cartes m, 5 cartes M',  --> enchère: 2M bicolore maj-min
+?--- 1y - - -  
+  - 6-11H, +5 cartes n,  --> enchère: 0n
+  - 10-12H, 6 cartes n,  --> enchère: +1n
+  - 10-12H, 7 cartes n,  --> enchère: +2n
+  - 10-12H, sans-atout, 1 tenues SA y,  --> enchère: 1S
+  - 16-18H, sans-atout, 2 tenues SA y,  --> enchère: 2S
+  - 8-10H, -3 cartes y,  --> enchère: X
+  - 12H+,  --> enchère: X
+  -  --> enchère: -
+ 
+
+     réponse au cue-bid = bicolore
+
+?--- 1m - - - 2m -  
+  - +4 cartes M, 15SM+,  --> enchère: 4M
+  - +2 cartes M,  --> enchère: 2M
+  - +6 cartes n,  --> enchère: 0n
+?--- 1M - - - 2M -  
+  - +2 cartes M',  --> enchère: 0M'
+  - +2 cartes m,  --> enchère: 3m
+  - +6 cartes n,  --> enchère: 0n
+ 
+
+     réponse au contre de reveil
+
+?--- 1y - - - X -  
+  - 15H-, +4 cartes M,  --> enchère: 0M
+  - 14-16H, +4 cartes M,  --> enchère: +1M
+  - 9-13H, sans-atout,  --> enchère: 1S
+  - 14-15H, sans-atout, 2 tenues SA y,  --> enchère: 2S
+  - +4 cartes n,  --> enchère: 0n
+  - 14H+, +5 cartes y,  --> enchère: -
+  - 3 cartes z,  --> enchère: 1z
+ 
+
+     redemande après contre de reveil
+
+* 0M -  
+  - +4 cartes M, 13-14H,  --> enchère: 0M soutien
+  - +4 cartes M, 15-18H,  --> enchère: +1M
+  - +4 cartes M, 19H+,  --> enchère: 0y
+  - +5 cartes M', M'<>y, 13-15H,  --> enchère: 0M' autre majeure
+  - +5 cartes M', M'<>y, 16-19H,  --> enchère: +1M'
+  - +5 cartes M', M'<>y, 20H+,  --> enchère: 0y
+  - +6 cartes m, m<>y, 2 gros honneurs mini m, 13-15H,  --> enchère: 0M' belle mineure 6ème
+  - +6 cartes m, m<>y, 2 gros honneurs mini m, 16-19H,  --> enchère: +1M'
+  - +6 cartes m, m<>y, 2 gros honneurs mini m, 20H+,  --> enchère: 0y
+  - 13-15H, 2 tenues SA y,  --> enchère: 0S SA
+  - 19-21H, 2 tenues SA y,  --> enchère: +1S
+  - 13H+,  --> enchère: 0y
+  -  --> enchère: -
+ 
+
+     réponse au 1SA de reveil
+
+?--- 1m - - - 1S -  
+  - +5 cartes C,  --> enchère: 2K Texas
+  - +5 cartes P,  --> enchère: 2C
+?--- 1C - - - 1S -  
+  - +5 cartes P,  --> enchère: 2C
+?--- 1P - - - 1S -  
+  - +5 cartes C,  --> enchère: 2K
+?--- 1y - - - 1S -  
+  - 4 cartes M, 12H+,  --> enchère: 2T Stayman
+  - 13-14HL,  --> enchère: 2S
+  - 15HL+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     Redemande
+
+* - 2S -  
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     Staymann sur 1SA de reveil
+
+* - 2T -  
+  - 4 cartes C, 4 cartes P,  --> enchère: 2S
+  - 4 cartes M,  --> enchère: 2M
+  -  --> enchère: 2K
+* - 2T - 2K -  
+  - 15HL+,  --> enchère: 3S
+  -  --> enchère: 2S
+* - 2T - 2K - 2S  
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: -
+* - 2T - 2M -  
+  - +4 cartes M, 12-14SM,  --> enchère: 3M
+  - +4 cartes M, 13SM+,  --> enchère: 4M
+  - 15HL+,  --> enchère: 3S
+  -  --> enchère: 2S
+* - 2T - 2M - 2S  
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: -
+* - 2T - 2M - 3M  
+  - 12SM+,  --> enchère: 4M
+  -  --> enchère: -
+* - 2T - 2S -  
+  - 4 cartes C, 15SC+,  --> enchère: 4T
+  - 4 cartes P, 15SP+,  --> enchère: 4K
+  - 4 cartes C,  --> enchère: 3T
+  - 4 cartes P,  --> enchère: 3K
+* - 2T - 2S - 3T -  
+  - 12HL+,  --> enchère: 4C
+  -  --> enchère: 3C
+* - 2T - 2S - 3K -  
+  - 12HL+,  --> enchère: 4P
+  -  --> enchère: 3P
+* - 2T - 2S - 4T -  
+  -  --> enchère: 4C
+* - 2T - 2S - 4K -  
+  -  --> enchère: 4P
+ 
+
+     Texas sur 1SA de reveil
+
+* - 2K -  
+  -  --> enchère: 2C
+* - 2C -  
+  -  --> enchère: 2P
+* - ( 2K - 2C / 2C - 2P )0 -  
+  - +6 cartes M, 12-14HL,  --> enchère: 3M
+  - +6 cartes M, 15HL+,  --> enchère: 4M
+  - 12-14HL,  --> enchère: 2S
+  - 15HL+,  --> enchère: 3S
+  -  --> enchère: -
+* - 2K - 2C - 2S -  
+  - +3 cartes C, 12SC+,  --> enchère: 4C
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: -
+* - 2C - 2P - 2S -  
+  - +3 cartes P, 12SP+,  --> enchère: 4P
+  - 12HL+,  --> enchère: 3S
+  -  --> enchère: -
+* - 2K - 2C - 3C -  
+  - 12HL+,  --> enchère: 4C
+  -  --> enchère: -
+* - 2C - 2P - 3P -  
+  - 12HL+,  --> enchère: 4P
+  -  --> enchère: -
+ 
+
+     réponse au 2SA de reveil
+
+?--- 1m - - - 2S -  
+  - +5 cartes C,  --> enchère: 3K Texas
+  - +5 cartes P,  --> enchère: 3C
+?--- 1C - - - 2S -  
+  - +5 cartes P,  --> enchère: 3C
+?--- 1P - - - 2S -  
+  - +5 cartes C,  --> enchère: 3K
+?--- 1y - - - 2S -  
+  - 4 cartes M, 8H+,  --> enchère: 3T Stayman
+  - 8HL+,  --> enchère: 3S
+  -  --> enchère: -
+ 
+
+     Staymann sur 2SA de reveil
+
+* - 3T -  
+  - 4 cartes C, 4 cartes P,  --> enchère: 3S
+  - 4 cartes M,  --> enchère: 3M
+  -  --> enchère: 3K
+* - 3T - 3K -  
+  -  --> enchère: 3S
+* - 3T - 3M -  
+  - +4 cartes M, 8SM+,  --> enchère: 4M
+  -  --> enchère: 3S
+* - 3T - 3S -  
+  - 4 cartes C,  --> enchère: 4T
+  - 4 cartes P,  --> enchère: 4K
+* - 3T - 3S - 4T -  
+  -  --> enchère: 4C
+* - 3T - 3S - 4K -  
+  -  --> enchère: 4P
+ 
+
+     Texas sur 2SA de reveil
+
+* - 3K -  
+  -  --> enchère: 3C
+* - 3C -  
+  -  --> enchère: 3P
+* - ( 3K - 3C / 3C - 3P )0 -  
+  - +6 cartes M, 9HL+,  --> enchère: 4M
+  - 9HL+,  --> enchère: 3S
+  -  --> enchère: -
+* - 3K - 3C - 3S -  
+  - +3 cartes C,  --> enchère: 4C
+  -  --> enchère: -
+Alertes
+  Staymann = 2T
+  Texas = 2K pour C, 2C pour P
+  TexasMin = 2P pour T, 2SA pour K
+  Gerber = 4T
+
+

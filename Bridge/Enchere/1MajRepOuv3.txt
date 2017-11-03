@@ -1,0 +1,160 @@
+// réponses ouverture 1 majeure après passe
+
+--?- 1M -
+   = 3M+ 6-10SM = 2M		// soutien simple
+   = 4M 6-10SM 10H- = 3M	// soutien saut
+   = 5M+ 6-10SM 10H- = 4M	// barrage avec 5 cartes
+   = 5M 10H+ = 3S		// soutien positif avec 5 cartes
+   = 3M+ 5m+ 2ghm+ 13SM+ = 3m	// soutien avec belle couleur
+   = 3M+ 11SM+ = 2T		// Convention Drury
+
+   = 5T+ 5K+ 9H+ = 2S		// bicolore mineure
+   = 5m+ 2ghm+ 10H+ = 2m  
+
+--?- 1C -
+   = 4P+ 5H+ = 1P
+
+--?- 1M -
+   = 2M 1ghM+ 11H+ = 2T		// Convention Drury
+   = 6T+ 9H+ = 2T		// Convention Drury
+   = 5H+ = 1S
+   = = -
+
+// redemande sur le 2T Drury
+
+--?- 1P - 2T -
+   = 5C 12H- = 2C
+
+--?- 1C - 2T -
+   = 4P 16H+ = 2P
+   
+--?- 1M - 2T -
+   = 6M+ 2ghM 15H+ = 3M 
+   = 6M+ 12-14H = 2M 
+   = 5m 2ghm 16H+ = 3m
+   = D5332 15-17H = 2S
+   = = 2K   
+
+// 2ème réponse sur le 2T Drury avec redemande 2K
+
+--?- 1M - 2T - 2K - 
+   = 3M+ = 2M		// soutien
+   = 4C = 2C
+   = = 2S
+   
+--?- 1P - 2T - 2C -
+	= 4P+ = 4P
+	= 4C+ = 4C
+	= 3P+ = 4P
+	= = 2P
+
+--?- 1M - 2T - 2M -
+	= = 4M
+
+--?- 1M - 2T - 3M -
+	= = 4M 
+
+--?- 1M - 2T - 2S -
+	= 3M+ = 4M
+	= = 3S 
+
+--?- 1C - 2T - 2P - 
+ 
+
+
+// 2ème redemande sur le 2T Drury
+
+--?- 1P - 2T - 2K - 2P - 
+  = 4C 14HL+ = 3C
+  = = - 
+--?- 1C - 2T - 2K - 2C - 
+  = 4P 14HL+ = 2P 
+  = = - 
+--?- 1M - 2T - 2K - 2M - 
+  = D5332 13-14H = 2S
+  = 4m 14HL+ = 3m 
+  = = - 
+
+--?- 1M - 2T - 2K - 2S -
+  = 14HL+ 6M+ = 4M
+  = 14HL+ = 3S
+  = = -
+  
+// redemandes ouverture majeure en 3ème position
+
+--?- 1C - 1P -
+   = 4P+ 17SP- = 2P
+   = 4P+ 17-19SP- = 3P
+   = 4P+ 20-22SP+ = 4P     // + fragment bid
+   = 4M+ 4m+ 23SM+ = 3m    // à revoir
+   = 4M+ ctrm 23SM+ = 3m
+   = reg 12-15H = 1S
+   = 4m+ 12-16H = 2m 
+   = 4m+ 17H+ = 3m
+   = uni 6C+ 2ghC 17-19HL = 3C
+   = 5C 3P = -
+   = = 2C 
+   
+--?- 1C - 1S -
+   = 4P+ 16H+ = 2P
+
+--?- 1P - 1S -
+   = 4C+ 12-16H = 2C
+   = 4C+ 17H+ = 3C
+
+--?- 1M - 1S -
+   = 4m+ 17H- = 2m 
+   = 4m+ 17H+ = 3m
+   = uni 6M+ 2ghM 17-19HL = 3M
+   = 14HL+ 3m+ = 2m 
+   = = -    
+   
+--?- 1P - 2m -
+   = 4C+ 12-16HL = 2C 
+   = 4C+ 17HL+ = 3C
+--?- 1M - 2T -
+   = 3T+ 17ST+ = 3T
+   = 4K+ 12-16HL = 2K 
+   = 4K+ 17HL+ = 3K 
+--?- 1M - 2m -
+   = 3m+ 17Sm+ = 3m
+   = reg 15-17H = 2S
+   = reg 18-19H = 3S
+   = uni 6M+ 2ghM 17-19HL = 3M
+   = = -
+   
+--?- 1P - 2C -
+   = 3C+ 14-16SC = 4C
+   = 3C+ 17SC+ = 3C
+   = reg 15-17H = 2S
+   = reg 18-19H = 3S
+   = uni 6P+ 2ghP 17-19HL = 3P
+   = = -
+
+// redemande sur les soutiens directs
+   
+--?- 1M - 2M -
+   = D5332 15-19HL = 2S
+   = 4m+ 15-19HL = 3m   
+--?- 1C - 2C -
+   = 4P+ 15-19HL = 2P   
+   = = -   
+--?- 1P - 2P -
+   = 4C+ 15-19HL = 3C
+   = = -  
+
+// 2ème réponse
+
+--?- 1M - 1S - 2m -
+   = 11H = 2S
+
+// 2ème redemande sur le 1SA suivi de 2SA
+  
+--?- 1M - 1S - 2m - 2S -
+  = 14HL+ = 3S
+  = = -
+  
+--?- 1P - 1S - 2C - 2S - 
+  = 14HL+ = 3S
+  = = -
+  
