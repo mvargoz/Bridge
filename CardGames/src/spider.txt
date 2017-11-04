@@ -1,0 +1,24 @@
+Règle du jeu du "Spider"
+
+C'est une réussite qui se joue avec deux jeux de 52 cartes
+
+Le tableau se compose ainsi
+- un talon
+- 8 tas destinés à recevoir chaque couleur complètement reconstituée 
+- 10 colonnes
+
+Le jeux est distribué sur les colonnes de la façon suivante :
+- 52 cartes face cachée
+- la carte supérieure de chaque tas est retournée face visible
+
+Déplacement des cartes sur les colonnes :
+- on peut déplacer une ou plusieurs cartes consécutives à condition que :
+	- la carte d'arrivée doit être d'un rang immédiatement supérieur
+	- les cartes déplacées doivent être de la même couleur (TKCP) et en séquence descendante 
+- n'importe quelle carte peut aller sur une case vide
+
+Déplacement des cartes vers les tas
+- les couleurs entièrement reconstituées peuvent être stockée dans le tas
+
+Gestion du talon
+- on distribue une carte retournée sur chaque tas

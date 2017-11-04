@@ -1,0 +1,27 @@
+Règle du jeu du "Solitaire"
+
+C'est une réussite qui se joue seul avec un jeu de 52 cartes
+
+Le tableau se compose ainsi
+- un talon
+- 4 tas destinés à recevoir chaque couleur classée de l'As au Roi 
+- 7 colonnes
+
+Le jeux est distribué sur les colonnes de la façon suivante :
+- une carte visible sur la première colonne et une carte retournées sur les suivantes
+- une carte visible sur la deuxième colonne et une carte retournées sur les suivantes
+- etc.
+- une carte visible sur la dernière colonne
+
+Déplacement des cartes sur les colonnes :
+- on peut déplacer une ou plusieurs cartes consécutives à condition que :
+	- la carte d'arrivée doit être d'un rang immédiatement supérieur
+	- la carte d'arrivée doit être d'une couleur opposée 
+- seuls les rois peuvent aller sur une case vide
+
+Déplacement des cartes vers les tas
+- on peut empiler de l'As au Roi de la même couleur
+
+Gestion du talon
+- on retourne 3 cartes à la fois
+- on peut placer les cartes retournées sur les colonnes et respectant la règle rang/couleur
