@@ -1,0 +1,10 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.blue{
+	-fx-text-fill: blue;
+}
+#mediaBar{
+	-fx-background-color: #bfc2c7;
+}
+#infoMessage{
+	-fx-background-color: #bfc2c7;
+}
