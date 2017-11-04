@@ -213,9 +213,9 @@ public class DialogAssembleParam extends JDialog implements ActionListener {
 			paramFile = new File(SynchroPanel.baseDir + "/" + fileName);
 			if ( paramFile != null && paramFile.exists() )  {
 				int okno = JOptionPane.showConfirmDialog(this,
-						ContexteGlobal.getResourceString("mess9"),
-			             ContexteGlobal.getResourceString("messDeleteFileSynchro"),
-			             JOptionPane.YES_NO_OPTION);
+						fileName + "\n" + ContexteGlobal.getResourceString("mess9"),
+			            ContexteGlobal.getResourceString("messDeleteFileSynchro"),
+			            JOptionPane.YES_NO_OPTION);
 				if ( okno == JOptionPane.OK_OPTION )  {
 					try  {
 						Files.delete(paramFile.toPath());

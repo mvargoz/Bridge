@@ -5,7 +5,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
-import java.awt.GraphicsEnvironment;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -265,7 +264,7 @@ public class SynchroPanel  extends JPanel implements ActionListener {
 			synchroButton.setEnabled(false);
 			winApp.ContexteGlobal.frame.getAction("synchro").setEnabled(false);
 			outputLog.setText("");			
-			bk = new Backup(new File(fileName));
+			bk = new Backup(new File(baseDir + "/" + fileName));
 			return;
 		}
 		//		vérification synchro
