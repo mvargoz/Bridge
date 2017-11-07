@@ -41,7 +41,7 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 		//	commandes UNIX
 	private static String mkdirMac = ContexteGlobal.getResourceString("mkdirMac") + " ";
 	private static String copyMac = ContexteGlobal.getResourceString("copyMac") + " ";
-	private static String shellCopy = modelDir + ContexteGlobal.getResourceString("shellCopy");
+	private static String shellCopy = modelDir + "/" + ContexteGlobal.getResourceString("shellCopy");
 
 	// liste des albums référencés
 

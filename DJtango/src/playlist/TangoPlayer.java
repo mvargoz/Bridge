@@ -48,6 +48,9 @@ import javafx.util.Duration;
 import winApp.ContexteGlobal;
 
 import java.awt.Frame;
+import java.awt.Point;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -56,7 +59,7 @@ import java.util.Arrays;
 
 import javax.swing.*;
 
-public class TangoPlayer extends JDialog {
+public class TangoPlayer extends JDialog implements WindowListener {
 	private static final long serialVersionUID = 1L;
 
 	//		constantes
@@ -138,17 +141,18 @@ public class TangoPlayer extends JDialog {
 	//		player constructor
 	
 	public TangoPlayer(String param) {
-		super(winApp.ContexteGlobal.frame, title, modal);
+		super(ContexteGlobal.frame, title, modal);
+		addWindowListener(this);
         if ( param.contains("mini"))
         	miniPlayer = true;
-		parentFrame = winApp.ContexteGlobal.frame;
+		parentFrame = ContexteGlobal.frame;
         fxPanel = new JFXPanel();
         getContentPane().add(fxPanel);
-        if ( miniPlayer )
+        if ( miniPlayer )  {
         	setSize(widthScreenMini,heightScreenMini);
-        else
+        } else {
         	setSize(widthScreen,heightScreen);
-		setLocationRelativeTo(parentFrame);
+        }
 		setVisible(false);
 
         Platform.runLater(new Runnable() {
@@ -162,7 +166,14 @@ public class TangoPlayer extends JDialog {
 	//		affichage du player
 	
 	public void open() {
-		setLocationRelativeTo(parentFrame);
+        if ( miniPlayer )  {
+    		Point p = ContexteGlobal.frame.getLocationOnScreen();
+    		p.y += ContexteGlobal.frame.getHeight() - heightScreenMini;
+    		p.x += ContexteGlobal.frame.getWidth() - widthScreenMini;
+    		setLocation(p);
+        } else {
+    		setLocationRelativeTo(parentFrame);
+        }
 		setVisible(true);
 	}
 
@@ -667,6 +678,43 @@ public class TangoPlayer extends JDialog {
 		int mn = hrest / 60;
     	int sec = hrest % 60;
 		return String.format("%d h %02d mn %02d s", h, mn, sec);		
+	}
+	
+	// WindowListener
+
+	@Override
+	public void windowActivated(WindowEvent arg0) {
+		
+	}
+
+	@Override
+	public void windowClosed(WindowEvent e) {
+
+	}
+
+	@Override
+	public void windowClosing(WindowEvent e) {
+		stop();				
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+		
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+		
+	}
+
+	@Override
+	public void windowIconified(WindowEvent e) {
+		
+	}
+
+	@Override
+	public void windowOpened(WindowEvent e) {
+		
 	}
 
 }
