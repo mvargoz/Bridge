@@ -129,6 +129,8 @@ public class DialogueSaisieProbleme extends JDialog implements ActionListener {
 	public DialogueSaisieProbleme() {
 		super(ContexteGlobal.frame, title, modal);
 		parentFrame = ContexteGlobal.frame;
+		if ( BridgeDonneProblem.fileDir == null )
+			BridgeDonneProblem.fileDir = ".";
 		
         	//	panel
 		getContentPane().add(panel);		

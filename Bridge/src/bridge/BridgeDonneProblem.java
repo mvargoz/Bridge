@@ -42,6 +42,8 @@ public class BridgeDonneProblem {
 	 * 	Constructeur
 	 */
 	public BridgeDonneProblem() {
+		if ( fileDir == null )
+			fileDir = ".";
 		init();
 
 	}

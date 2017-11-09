@@ -142,8 +142,11 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 
 		// initialisation des listes
 
-		if (baseDir == null)
-			playlistDir = ".";
+		if (baseDir == null)  {
+			baseDir = ".";
+			playlistDir = baseDir + "/" + ContexteGlobal.getResourceString("playlistDir");
+			tandaImageDir = baseDir + "/" + ContexteGlobal.getResourceString("imageDir");
+		}
 		if (modelDir == null)
 			modelDir = ".";
 
