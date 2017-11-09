@@ -80,7 +80,7 @@ public class BridgeGame {
 	 * Constructeur
 	 */
 	public BridgeGame() {
-		String file = winApp.ContexteGlobal.getResourceString("encheres");
+		String file = BridgePanel.baseDir + "/" + winApp.ContexteGlobal.getResourceString("encheres");
 		systemNS = ContexteGlobal.getResourceString("sytemEnchere");
 		systemEO = ContexteGlobal.getResourceString("sytemEnchere");
 		TypeTournoi = ContexteGlobal.getResourceString("tournoi");
@@ -91,8 +91,11 @@ public class BridgeGame {
 
 	/**
 	 * Initialisation d'une nouvelle donne
+	 * @return true si ok
 	 */
-	public void init() {
+	public boolean init() {
+		if (!SysEnchere.ok() )
+			return false;
 		cardBoard.init();
 		battreCartes();
 		distribuerCartes();
@@ -109,6 +112,7 @@ public class BridgeGame {
 		}
 
 		go();
+		return true;
 	}
 
 	/**

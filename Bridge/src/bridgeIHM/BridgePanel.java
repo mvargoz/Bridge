@@ -19,6 +19,11 @@ import winApp.*;
 public class BridgePanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 
+
+	// directories
+
+	protected static String baseDir = ContexteGlobal.getResourceString("baseDir");
+
 	// fonts
 
 	private static Font defaultFont = new Font("Dialog", Font.PLAIN, 12);
@@ -68,6 +73,8 @@ public class BridgePanel extends JPanel {
 	 * Constructeur:  mise en place de l'environnement
 	 */
 	public BridgePanel() {
+		if (baseDir == null)
+			baseDir = ".";
 		dimBoard = BridgeGame.dimBoard;
 		CardSize = CardImages.CardSize;
 		board = new Rectangle[dimBoard];
@@ -99,6 +106,14 @@ public class BridgePanel extends JPanel {
 	}
 
 	/**
+	 * Options
+	 * select base directory & parameters
+	 */
+	public void option() {
+		new DialogueOption(this);
+	}
+
+	/**
 	 * Initialisation du jeu
 	 */
 	public void initPanelJeu()	{
@@ -126,8 +141,10 @@ public class BridgePanel extends JPanel {
 		// jeu
 
 		bridgeGame = new BridgeGame();
-		bridgeGame.init();
-//		lanceJeu();
+		if ( bridgeGame.init() )
+			lanceJeu();
+		else
+			option();
 	}
 
 	/**
@@ -194,6 +211,8 @@ public class BridgePanel extends JPanel {
 	 * Lancement du jeu
 	 */
 	private void lanceJeu() {
+		bridgeGame = new BridgeGame();
+		bridgeGame.init();
 		visibiliteBoard();
 		sizeBoard();
 		lbContrat.setText("");

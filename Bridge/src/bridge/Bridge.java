@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 import bridgeBid.Interpreter;
+import bridgeIHM.BridgePanel;
 import bridgePlay.DonnePlay;
 import bridgePlay.Jeu;
 import bridgePlay.Simulator;
@@ -40,9 +41,11 @@ public class Bridge {
 	 */
 	public Bridge(boolean debug, boolean compil) {
 		ContexteGlobal.init("appli");
-		String fileObjet = ContexteGlobal.getResourceString("encheres");
+		String fileObjet = ContexteGlobal.getResourceString("baseDir") + "/"
+						 + ContexteGlobal.getResourceString("encheres");
 		if ( compil )  {
-			String fileSource = ContexteGlobal.getResourceString("encheresSource");
+			String fileSource = ContexteGlobal.getResourceString("baseDir") + "/"
+							  + ContexteGlobal.getResourceString("encheresSource");
 			Compiler compiler = new Compiler(fileSource,fileObjet);
 			if ( compiler.compil() ==  null )
 				System.out.println("Erreur de compilation");
