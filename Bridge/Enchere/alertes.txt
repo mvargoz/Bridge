@@ -1,6 +1,0 @@
-Alerte
-Staymann = 2T
-Texas = 2K pour C, 2C pour P
-TexasMin = 2P pour T, 2SA pour K
-Gerber = 4T 
-finAlerte
