@@ -5,21 +5,6 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 public class ActionBridge {
-
-	// options
-
-	public static class optionAction extends AbstractAction {
-		private static final long serialVersionUID = 1L;
-
-		public optionAction() {
-			super("option");
-			setEnabled(true);
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			((BridgePanel) winApp.ContexteGlobal.frame.panel).option();
-		}
-	}
 	
 	//	debug
 	

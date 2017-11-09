@@ -80,14 +80,6 @@ public class Interpreter {
 	}
 
 	/**
-	 * Test interpréteur prêt
-	 * @return true if ready
-	 */
-	public boolean ok()  {
-		return size > 0;
-	}
-	
-	/**
 	 * évaluation de l'enchère suivante
 	 * @param pdonne : donne
 	 * @return enchère
