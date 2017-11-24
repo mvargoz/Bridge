@@ -139,6 +139,9 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 	public PlaylistPanel() {
 		winApp.ContexteGlobal.frame.getAction("save").setEnabled(true);
 		winApp.ContexteGlobal.frame.getAction("delete").setEnabled(true);
+		if ( !PlaylistPanel.system.startsWith("Windows") )  {
+			playlistDir = baseDir + "/" + ContexteGlobal.getResourceString("playlistMacDir");
+		}
 
 		// initialisation des listes
 

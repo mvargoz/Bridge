@@ -123,7 +123,10 @@ public class ActionPlaylist {
 
 		public pc2macAction() {
 			super("pc2mac");
-			setEnabled(true);
+			setEnabled(false);
+			if ( PlaylistPanel.system.startsWith("Windows") )  {
+				setEnabled(true);				
+			}
 		}
 
 		public void actionPerformed(ActionEvent e) {
