@@ -15,7 +15,6 @@ import java.util.Vector;
 
 import javax.swing.*;
 import javax.swing.SwingWorker.StateValue;
-import javax.swing.border.Border;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.event.UndoableEditEvent;
@@ -88,10 +87,10 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 	private Vector<String> listCortina = new Vector<String>();
 	private JComboBox<String> cortinaChoix = new JComboBox<String>(listCortina);
 
-	private JPanel cumparsitaPanel = new JPanel();
-	private JLabel cumparsitaLabel = new JLabel(ContexteGlobal.getResourceString("titleCumparsita"));
-	private Vector<String> listCumparsita = new Vector<String>();
-	private JComboBox<String> cumparsitaChoix = new JComboBox<String>(listCumparsita);
+//	private JPanel cumparsitaPanel = new JPanel();
+//	private JLabel cumparsitaLabel = new JLabel(ContexteGlobal.getResourceString("titleCumparsita"));
+//	private Vector<String> listCumparsita = new Vector<String>();
+//	private JComboBox<String> cumparsitaChoix = new JComboBox<String>(listCumparsita);
 
 	// model edit
 
@@ -189,14 +188,14 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		winApp.ContexteGlobal.frame.toolBar.add(cortinaPanel);
 		winApp.ContexteGlobal.frame.toolBar.addSeparator();
 
-		cumparsitaPanel.setLayout(new BoxLayout(cumparsitaPanel, BoxLayout.Y_AXIS));
-		cumparsitaLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-		cumparsitaPanel.add(cumparsitaLabel);
-		cumparsitaPanel.add(Box.createRigidArea(new Dimension(3, 3)));
-		cumparsitaChoix.setAlignmentX(Component.CENTER_ALIGNMENT);
-		cumparsitaPanel.add(cumparsitaChoix);
-		winApp.ContexteGlobal.frame.toolBar.add(cumparsitaPanel);
-		winApp.ContexteGlobal.frame.toolBar.addSeparator();
+//		cumparsitaPanel.setLayout(new BoxLayout(cumparsitaPanel, BoxLayout.Y_AXIS));
+//		cumparsitaLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+//		cumparsitaPanel.add(cumparsitaLabel);
+//		cumparsitaPanel.add(Box.createRigidArea(new Dimension(3, 3)));
+//		cumparsitaChoix.setAlignmentX(Component.CENTER_ALIGNMENT);
+//		cumparsitaPanel.add(cumparsitaChoix);
+//		winApp.ContexteGlobal.frame.toolBar.add(cumparsitaPanel);
+//		winApp.ContexteGlobal.frame.toolBar.addSeparator();
 
 		listFile.setEditable(true);
 		listFile.setMinimumSize(dimNameComboBox);
@@ -206,7 +205,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		
 		cortinaChoix.setMinimumSize(dimNameComboBox);
 		
-		cumparsitaChoix.setMinimumSize(dimNameComboBox);
+//		cumparsitaChoix.setMinimumSize(dimNameComboBox);
 		
 		// edit model
 
@@ -282,8 +281,8 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 //		cortinaChoix.addActionListener(this);
 		cortinaChoix.setActionCommand("selectCortina");
 		
-		cumparsitaChoix.addActionListener(this);
-		cumparsitaChoix.setActionCommand("selectCumparsita");
+//		cumparsitaChoix.addActionListener(this);
+//		cumparsitaChoix.setActionCommand("selectCumparsita");
 
 	}
 
@@ -297,8 +296,6 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		listTandas();
 		if (!listCortina.isEmpty())
 			cortinaChoix.setSelectedIndex(0);
-		if (!listCumparsita.isEmpty())
-			cumparsitaChoix.setSelectedIndex(0);
 		this.repaint();
 	}
 
@@ -655,6 +652,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		tandasMilonga.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
 			String nameTanda = nm.substring(0, nm.length() - 4);
@@ -670,6 +668,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		tandasValse.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
 			String nameTanda = nm.substring(0, nm.length() - 4);
@@ -680,11 +679,14 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 
 		listFile = dir.listFiles(new FilenameFilter() {
 			public boolean accept(File dir, String filename) {
-				return (filename.startsWith(playlistTango) && filename.endsWith(playlistExt));
+				return ( (filename.startsWith(playlistTango) ||
+						  filename.startsWith(playlistCumparsita) ) &&  
+						  filename.endsWith(playlistExt));
 			}
 		});
 		if (listFile == null)
 			return;
+		tandasTango.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
 			String nameTanda = nm.substring(0, nm.length() - 4);
@@ -700,6 +702,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		listCortina.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
 			String nameTanda = nm.substring(0, nm.length() - 4);
@@ -708,18 +711,20 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 
 		// Cumparsita
 
-		listFile = dir.listFiles(new FilenameFilter() {
+/*		listFile = dir.listFiles(new FilenameFilter() {
 			public boolean accept(File dir, String filename) {
 				return (filename.startsWith(playlistCumparsita) && filename.endsWith(playlistExt));
 			}
 		});
 		if (listFile == null)
 			return;
+		listCumparsita.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
 			String nameTanda = nm.substring(0, nm.length() - 4);
 			listCumparsita.addElement(nameTanda);
 		}
+*/
 	}
 
 	/** 
@@ -748,14 +753,14 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 			tandaOpen(cortina);			
 			break;
 			
-		case "selectCumparsita":
+/*		case "selectCumparsita":
 			// select cumparsita file in combobox
 			String cumparsita = (String) cumparsitaChoix.getSelectedItem();
 			if (cumparsita == null) break;
 			tandaOpen(cumparsita);						
 			break;
+*/
 		}
-
 	}
 
 	/**

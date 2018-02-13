@@ -83,10 +83,10 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 				return dir.isFile() && dir.getName().endsWith(playlistExt);
 			}
 		});
-		if ( listFileOut.length == 0 )  {
+		if ( listFile.length == 0 )  {
 			return "Aucune playlist à convertir!";			
 		}
-		double incProgress = 100 / listFileOut.length;
+		double incProgress = 100 / listFile.length;
 
 		for (File f : listFile) {
 			File fileOut = new File(playlistDirMac + "\\" + f.getName());
@@ -95,7 +95,7 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 			setProgress(Math.min(100,(int) Math.round(progress)));
 			System.out.println("Conversion " + f.getName() + " OK");
 		}
-		mess += "playlists converties : " +  listFileOut.length + "\n";
+		mess += "playlists converties : " +  listFile.length + "\n";
 
 		//	création du shell de copie des albums sur mac depuis la sauvegarde
 

@@ -1,6 +1,10 @@
 package playlist;
 
 import java.net.URI;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -14,59 +18,148 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
 
+/**
+ * @author Michel
+ * Recherche asynchrone des informations musique (tag)
+ *
+ */
 public class InfoMedia implements Runnable {
-	private JFXPanel fxPanel = new JFXPanel();  // initialisation fx toolkit
-	private Object thisObj = this;
-	private DefaultTableModel modelJTable;
-	private int row;
+	/**
+	 *  initialisation fx toolkit
+	 */
+	private JFXPanel fxPanel = new JFXPanel();
+	/**
+	 *  gestion de la synchronisation
+	 */
+	final Lock lockQueue = new ReentrantLock();
+	final Condition notEmpty = lockQueue.newCondition();
+	final Lock lockMedia = new ReentrantLock();
+	final Condition ready = lockMedia.newCondition();
+	private boolean active;	
+	/**
+	 *  Media
+	 */	
 	private Media media;
 	private MediaPlayer mediaPlayer;
-	private boolean playerReady = false;
+	/**
+	 *  récupération des tags
+	 */	
 	private MapChangeListener<String, Object> metadataChangeListener;
-	private URI uriFile;
+	/**
+	 *  données des tags
+	 */
 	private String artist = "";
 	private String title = "";
 	private String album = "";
 	private String year = "";
 	private String genre = "";
 	private ImageView imageMedia = null;
-	private int playTime = 0;
+	private int playTime = 0;	
+	/**
+	 *  élement de la queue d'exécution
+	 */
+	private class queueObj {
+		URI uriFile;
+		DefaultTableModel modelJTable;
+		int row;	
+	}
+	/**
+	 *  Queue d'exécution
+	 */
+	private ArrayBlockingQueue<queueObj> queue;
 
-		//	paramètre de la recherche
-
-	public InfoMedia(URI uriFile, JTable table, int row)  {
-		this.uriFile = uriFile;
-        modelJTable = (DefaultTableModel)table.getModel();
-        this.row = row;
+	/**
+	 * constructeur
+	 */
+	public InfoMedia()  {
+		queue = new ArrayBlockingQueue<queueObj>(20,true);
+		active = true;
+		new Thread(this).start();
 	}
 
-		//   lancement de la recherche
+	/**
+	 * arrêt de la thread, plus d'infos à demander
+	 */
+	public void stopInfoMedia()  {
+		active = false;		
+	}
 	
+	/**
+	 * empile paramètres de recherche
+	 * @param uriFile
+	 * @param table
+	 * @param row
+	 */
+	public void getInfoMedia(URI uriFile, JTable table, int row)  {
+		lockQueue.lock();
+		try {
+			queueObj elem = new queueObj();
+			elem.uriFile = uriFile;
+			elem.modelJTable = (DefaultTableModel)table.getModel();
+			elem.row = row;
+			queue.put(elem);
+			notEmpty.signal();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} finally {
+			lockQueue.unlock();
+        }
+	}
+
+	/**
+	 * lancement des recherches
+	 */
 	public void run() {
+		lockQueue.lock();
+		try {
+			queueObj elem;
+			while ( active || !queue.isEmpty() )  {
+				elem = queue.poll();
+				if ( elem != null )
+					search(elem.uriFile, elem.modelJTable, elem.row);
+				else if ( active )
+					notEmpty.await();
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} finally {
+			lockQueue.unlock();
+	    }
+	}
+	
+	/**
+	 * recherche des infos pour une musique
+	 * @param uriFile
+	 * @param modelJTable
+	 * @param row
+	 */
+	private void search(URI uriFile, DefaultTableModel modelJTable, int row)  {
 		try {
 			media = new Media(uriFile.toString());
-			setMetaDataDisplay(media.getMetadata());
-			
+			setMetaDataDisplay(media.getMetadata());			
 			mediaPlayer = new MediaPlayer(media);
-			
+		
 			mediaPlayer.setOnReady(new Runnable() {
 				public void run() {
-					Duration duration = mediaPlayer.getMedia().getDuration();
-					playTime =  (int) Math.floor(duration.toSeconds());
-//					System.out.println("Musique ready : " + uriFile);
-					synchronized(thisObj){
-						playerReady = true;
-						thisObj.notifyAll();
-					}
-
+					lockMedia.lock();
+					try {
+						Duration duration = mediaPlayer.getMedia().getDuration();
+						playTime =  (int) Math.floor(duration.toSeconds());
+					//	System.out.println("Musique ready : " + uriFile);
+						ready.signal();
+				    } finally {
+				    	lockMedia.unlock();
+				    }
 				}
 			});
 
-			synchronized(thisObj){
-				while ( !playerReady ) {
-					thisObj.wait();
-				}
-			}
+			lockMedia.lock();
+			try {
+				ready.await();
+		    } finally {
+		    	lockMedia.unlock();
+		    }
+			
 /*			String out = "Musique ready : " + uriFile + "\n";
 			out += "Duration = " + playTime/60 + "'" + playTime%60 + "\n";
 			out += "Artist = "+ artist + "\n";
@@ -95,8 +188,10 @@ public class InfoMedia implements Runnable {
 
 	}
 
-	// tags du media (ne fonctionne qu'avec mp3)
-
+	/**
+	 * listener des tags du media (ne fonctionne qu'avec mp3)
+	 * @param metadata
+	 */
 	private void setMetaDataDisplay(ObservableMap<String, Object> metadata) {
 		metadataChangeListener = new MapChangeListener<String, Object>() {
 			@Override

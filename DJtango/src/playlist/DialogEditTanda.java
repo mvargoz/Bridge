@@ -6,19 +6,20 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.GridLayout;
+import java.awt.Point;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileWriter;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
+import java.io.OutputStreamWriter;
 import java.util.Arrays;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
@@ -84,8 +85,9 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 	
 	private String tanda = null;
 	
-		//  action listener
-	
+	/**
+	 * action listener
+	 */
 	@Override
 	public void actionPerformed(ActionEvent actev) {
 		int[] rows = tandasMusicTable.getSelectedRows();
@@ -148,8 +150,10 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 
 	}
 
-		// contructeur
-	
+	/**
+	 * contructeur
+	 * @param pp
+	 */
 	public DialogEditTanda(PlaylistPanel pp)	{
 		super(winApp.ContexteGlobal.frame, titreTanda, false);
 		
@@ -157,7 +161,9 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		
 		parentFrame = winApp.ContexteGlobal.frame;
 		parentPanel = pp;
-		setLocationRelativeTo(parentFrame);
+		Point parentPoint = pp.getLocationOnScreen();
+		parentPoint.x += 50;
+		setLocation(parentPoint);
 		
 			//  contrôle du nom de la tanda
 		
@@ -205,7 +211,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		
 		tandasMusicTable.setDropMode(DropMode.ON_OR_INSERT);
 		tandasMusicTable.setTransferHandler(new MusicTransferHandler());
-		tandasMusicTable.setDragEnabled(true);
+		tandasMusicTable.setDragEnabled(false); // pas de drag dans la table
 		
 		//	construction du panel
 			
@@ -264,10 +270,11 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		setVisible(false);		
 	}
-		
-
-		//  open dialog box
-	
+			
+	/**
+	 * open dialog box
+	 * @param tanda
+	 */
 	public void open(String tanda)  {		
 		this.tanda = tanda;
 		if ( tanda == null )  {
@@ -282,8 +289,9 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		setVisible(true);
 	}
 	
-		//   vérification du nom de la tanda
-	
+	/**
+	 * vérification du nom de la tanda
+	 */
 	public void verifTandaName() {
 		if ( nameTanda.getText().length() == 0 )  {
 			deleteButton.setEnabled(false);
@@ -297,9 +305,12 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		}			
 	}
 
-		//	read and load tanda
-
+	/**
+	 * read and load tanda
+	 * @param tanda
+	 */
 	private void readTanda(String tanda)  {
+		String nmFile = playlistDir + "/" + tanda + playlistExt;
 		DefaultTableModel tableModel = (DefaultTableModel) tandasMusicTable.getModel();
 		tableModel.setRowCount(0);
 		if ( tanda == null )  {
@@ -309,8 +320,8 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		BufferedReader in;		
 		String line;
 		try  {
-			in = new BufferedReader(new InputStreamReader(
-					new FileInputStream(playlistDir + "/" + tanda + playlistExt), "UTF8"));
+			InfoMedia infoMedia = new InfoMedia();
+			in = new BufferedReader(new InputStreamReader(new FileInputStream(nmFile),"UTF8"));
 			line = in.readLine();
 			line = in.readLine();
 			while (line != null)  {
@@ -328,36 +339,40 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 				music[4] = path;
 				File file = new File(path);
 				tableModel.addRow(music);
-				new Thread(new InfoMedia(file.toURI(), tandasMusicTable, tableModel.getRowCount() - 1)).start();
+				infoMedia.getInfoMedia(file.toURI(), tandasMusicTable, tableModel.getRowCount()-1);
 				line = in.readLine();					
 			}
 			in.close();
+			infoMedia.stopInfoMedia();
 		} catch (Exception ex) {
 			JOptionPane.showMessageDialog(this, ContexteGlobal.getResourceString("messErrRead") + tanda,
 					ContexteGlobal.getResourceString("messReadFileTanda"), JOptionPane.ERROR_MESSAGE);
 			ex.printStackTrace();
 			return;
-		}
-		
+		}		
 	}
 	
-		//	write tanga
-		
+	/**
+	 * write tanda
+	 * @param tanda
+	 */
 	private void writeTanda(String tanda)  {
 		String nmFile = playlistDir + "/" + tanda + playlistExt;
-		File file = new File(nmFile);
-		FileWriter out;
+		BufferedWriter out;
+		System.setProperty( "file.encoding","UTF-8"); // ne fonctionne pas sans ça ?
 
 		try	{
-			out = new FileWriter(file);
+			OutputStreamWriter outstr = new OutputStreamWriter(new FileOutputStream(nmFile),"UTF8");
+			out = new BufferedWriter(outstr);
 			out.write("#EXTM3U\n");
 			DefaultTableModel modelJTable = (DefaultTableModel)tandasMusicTable.getModel();
 			for (int i = 0; i < modelJTable.getRowCount(); i++ ) {
+				String nameMusic = (String) modelJTable.getValueAt(i,0);
 				out.write("#EXTINF:"
 				 + modelJTable.getValueAt(i,3) + ","
-				 + modelJTable.getValueAt(i,0) + "\n"
+				 + nameMusic.trim() + "\n"
 				 + modelJTable.getValueAt(i,4) + "\n");
-			}			
+			}
 			out.close();
 			JOptionPane.showMessageDialog(this, ContexteGlobal.getResourceString("messSaveOK"),
 					ContexteGlobal.getResourceString("messSaveFileTanda"), JOptionPane.INFORMATION_MESSAGE);
@@ -370,8 +385,10 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		}	
 	}
 	
-		//	delete tanga
-	
+	/**
+	 * delete tanda
+	 * @param tanda
+	 */
 	private void deleteTanda(String tanda)  {
 		String nmFile = playlistDir + "/" + tanda + playlistExt;
 		File file = new File(nmFile);
@@ -390,12 +407,19 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 			}
 		}		
 	}
-		
-			// Drag & drop
-   
+		  
+	/**
+	 * Drag & drop : transfert des données
+	 *
+	 */
 	private class MusicTransferHandler extends TransferHandler {
 		
-	    public boolean canImport(TransferSupport support) {
+		private static final long serialVersionUID = 1L;
+
+		/* (non-Javadoc)
+		 * @see javax.swing.TransferHandler#canImport(javax.swing.TransferHandler.TransferSupport)
+		 */
+		public boolean canImport(TransferSupport support) {
 	        if (support.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
 	            support.setDropAction(COPY);
 	            return true;
@@ -403,6 +427,9 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 	        return false;
 	    }
 
+	    /* (non-Javadoc)
+	     * @see javax.swing.TransferHandler#importData(javax.swing.TransferHandler.TransferSupport)
+	     */
 	    public boolean importData(TransferSupport support) {
 	        if (!canImport(support)) {
 	            return false;
@@ -416,23 +443,28 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 	        	// fetch the list of file
 	        java.util.List<File> listFile;
 	        try {
-	        	listFile =
-	        		(java.util.List<File>)support.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
+	          listFile =
+	        	(java.util.List<File>)support.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
 	        } catch (UnsupportedFlavorException e) {
 	            return false;
 	        } catch (IOException e) {
 	            return false;
 	        }
 	        	//  insert
+	        InfoMedia infoMedia = new InfoMedia();
 	        for (File file : listFile) {
 	        	String path = file.getPath();
 	        	int c = path.lastIndexOf(File.separatorChar);
 				String[] music = new String[5];
-				music[0] = path.substring(c+1, path.lastIndexOf('.'));
+				music[0] = path.substring(c+1,path.lastIndexOf('.'));
 				music[4] = path;
-				modelJTable.insertRow(row,music);
-				new Thread(new InfoMedia(file.toURI(), table, row)).start();
+// ajout car l'insertion ne marche pas avec getInfoMedia (changement valeur row)				
+				modelJTable.addRow(music);
+				infoMedia.getInfoMedia(file.toURI(), tandasMusicTable, modelJTable.getRowCount()-1);
+//				modelJTable.insertRow(row,music);
+//				infoMedia.getInfoMedia(file.toURI(), table, row);
 	        }
+			infoMedia.stopInfoMedia();
 	        return true;
 	    }
 	}
