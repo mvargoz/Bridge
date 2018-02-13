@@ -652,6 +652,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		Arrays.sort(listFile);
 		tandasMilonga.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
@@ -668,6 +669,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		Arrays.sort(listFile);
 		tandasValse.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
@@ -686,6 +688,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		Arrays.sort(listFile);
 		tandasTango.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
@@ -702,6 +705,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		Arrays.sort(listFile);
 		listCortina.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
@@ -718,6 +722,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 		});
 		if (listFile == null)
 			return;
+		Arrays.sort(listFile);
 		listCumparsita.clear();
 		for (File f : listFile) {
 			String nm = f.getName();
