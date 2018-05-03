@@ -5,10 +5,13 @@ package playlist;
  */
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FilenameFilter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
@@ -34,14 +37,8 @@ public class PlaylistMilonga {
 	
 	//	Cortinas
 	
-	private File fileCortina;
 	private ArrayList<String> cortinaList = new ArrayList<String>();
 	private ArrayList<String> cortinaFile = new ArrayList<String>();
-
-	//	Playlist
-	
-	private File outPlaylist;
-	private FileWriter writePlaylist;
 
 	//	data
 	
@@ -88,9 +85,12 @@ public class PlaylistMilonga {
 				+ "-" + Integer.toString(nbTango)
 				+ playlistExt;
 		getCortinas(pCortina);
+		System.setProperty( "file.encoding","UTF-8"); // ne fonctionne pas sans ça ?
+
 		try {
-			outPlaylist = new File(nmPlaylist);
-			writePlaylist = new FileWriter(outPlaylist);
+			OutputStreamWriter outstr = new OutputStreamWriter(new FileOutputStream(nmPlaylist),"UTF8");
+			BufferedWriter writePlaylist = new BufferedWriter(outstr);
+
 			writePlaylist.write("#EXTM3U\n");
 			
 			for ( String line: model )	{
@@ -129,11 +129,11 @@ public class PlaylistMilonga {
 				    }
 				    String pathTanda = playlistDir + "/" + nomTanda + playlistExt;
 					if ( type.equalsIgnoreCase("Tango") )
-						copyPlaylist(new FileReader(pathTanda),writePlaylist,nomTanda,nbTango);
+						copyPlaylist(pathTanda,writePlaylist,nomTanda,nbTango);
 					else if ( nbTango <= 3 )						
-						copyPlaylist(new FileReader(pathTanda),writePlaylist,nomTanda,nbTango);
+						copyPlaylist(pathTanda,writePlaylist,nomTanda,nbTango);
 					else
-						copyPlaylist(new FileReader(pathTanda),writePlaylist,nomTanda,3);
+						copyPlaylist(pathTanda,writePlaylist,nomTanda,3);
 				    
 				} else {
 					JOptionPane.showMessageDialog(((PlaylistPanel) winApp.ContexteGlobal.frame.panel),
@@ -146,7 +146,7 @@ public class PlaylistMilonga {
 			
 			//  cumparsita
 			
-			copyPlaylist(new FileReader(cumparsita),writePlaylist,"Cumparsita",2);
+			copyPlaylist(cumparsita,writePlaylist,"Cumparsita",2);
 			
 			writePlaylist.close();
 			JOptionPane.showMessageDialog(((PlaylistPanel) winApp.ContexteGlobal.frame.panel),
@@ -216,12 +216,11 @@ public class PlaylistMilonga {
 		
 		cortinaList.clear();
 		cortinaFile.clear();
-		fileCortina = new File(playlistDir + "/" + pCortina + playlistExt);
+		String nmCortina = playlistDir + "/" + pCortina + playlistExt;
 		String nextCortina;
-		BufferedReader cortina = null;
 		
 		try {
-			cortina = new BufferedReader(new FileReader(fileCortina));
+			BufferedReader cortina = new BufferedReader(new InputStreamReader(new FileInputStream(nmCortina),"UTF8"));
 			nextCortina = cortina.readLine();
 			if ( nextCortina.startsWith("#EXTM3U") )		// ignore #EXTM3U
 				nextCortina = cortina.readLine();
@@ -256,14 +255,14 @@ public class PlaylistMilonga {
 	 * @param nbSongs
 	 * @return
 	 */
-	private boolean copyPlaylist(FileReader in, FileWriter out, String nomTanda, int nbSongs)  {
+	private boolean copyPlaylist(String in, BufferedWriter out, String nomTanda, int nbSongs)  {
 		
 		ArrayList<String> songList = new ArrayList<String>();
 		ArrayList<String> songFile = new ArrayList<String>();
 		String line1, line2;
-		BufferedReader incopy = new BufferedReader(in);
 
 		try {
+			BufferedReader incopy = new BufferedReader(new InputStreamReader(new FileInputStream(in),"UTF8"));
 			incopy.readLine();	 // ignore #EXTM3U
 			line1 = incopy.readLine();
 			while (line1 != null) {
@@ -287,6 +286,7 @@ public class PlaylistMilonga {
 				out.write(extinf + ',' + nomTanda + '\n');
 				out.write(songFile.get(j) + '\n');
 			}
+			incopy.close();
 			
 		} catch (Exception ex)	{
 			JOptionPane.showMessageDialog(((PlaylistPanel) winApp.ContexteGlobal.frame.panel),
