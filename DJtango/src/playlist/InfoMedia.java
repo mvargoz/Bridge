@@ -170,17 +170,15 @@ public class InfoMedia implements Runnable {
 			System.out.println(out); */
 			
 			mediaPlayer.dispose();
-
-	        modelJTable.setValueAt(playTime, row, 3);
 	        
 	        	//  tags
+			
+	        modelJTable.setValueAt(title, row, 0);
+	        modelJTable.setValueAt(artist, row, 1);
+	        modelJTable.setValueAt(year, row, 2);
+	        modelJTable.setValueAt(playTime, row, 3);
+	        modelJTable.setValueAt(genre, row, 4);
 	        
-			if ( title.length() > 0 )  {
-		        modelJTable.setValueAt(title, row, 0);
-		        modelJTable.setValueAt(artist, row, 1);
-		        modelJTable.setValueAt(year, row, 2);
-			}
-
 		} catch (Exception e) {
 			System.out.println("Erreur sur : " + uriFile);
 			e.printStackTrace();
@@ -199,7 +197,7 @@ public class InfoMedia implements Runnable {
 				if ( change.wasAdded() ) {
 					String key=change.getKey();
 					Object value=change.getValueAdded(); 
-//					System.out.println("Add tag " + uriFile + " : " + key + "=" + value);
+//					System.out.println("Add tag : " + key + "=" + value);
 					switch(key){
 					case "album":
 						album = (String) value;

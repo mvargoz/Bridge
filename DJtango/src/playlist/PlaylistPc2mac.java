@@ -43,6 +43,10 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 	private static String copyMac = ContexteGlobal.getResourceString("copyMac") + " ";
 	private static String shellCopy = modelDir + "/" + ContexteGlobal.getResourceString("shellCopy");
 
+	// liste des fichiers musiques non accessibles
+
+	private static HashSet<String> errMusic = new HashSet<String>();
+
 	// liste des albums référencés
 
 	private static HashSet<String> album = new HashSet<String>();
@@ -75,6 +79,11 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 		for (File f : listFileOut) {
 			f.delete();
 		}
+		
+		//  vidage liste albums
+
+		errMusic.clear();
+		album.clear();
 
 		//	traitement des playlists
 
@@ -130,10 +139,12 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 			line = in.readLine();
 			while (line != null)  {
 				line = line.trim();
-//				System.out.println(":" + line);
 				if ( line.startsWith("#EXTINF:")  )  {
 					out.write(line+'\n');
 				} else {
+					//  test existence fichier musique
+					if ( !(new File(line).exists()) )
+						errMusic.add(line + " in " + fileIn.getName());
 					//	conversion path musique pour mac
 					out.write(macDir + albumMac(line) + '\n');
 					//	album
@@ -172,6 +183,10 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 		try
 		{
 			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileCopy), "UTF8"));
+			for( String errPath: errMusic )  {
+				out.write("not find: " + errPath);
+				out.newLine();
+			}
 			out.write("cd \"" + macBackupDir +  "\"\n");
 			for( String albumPath: albumList )  {
 				String albumDir = albumMac(albumPath);

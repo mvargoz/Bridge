@@ -42,7 +42,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 	private static final String playlistDir = PlaylistPanel.playlistDir;;
 	private static final String playlistExt = PlaylistPanel.playlistExt;
 	private static final String titreTanda = ContexteGlobal.getResourceString("titreTanda");
-	private static final int widthTable = 500;
+	private static final int widthTable = 800;
 	private static final int heightTable = 300;
 	private static final Dimension dimNameField = new Dimension(300, 25);
 
@@ -63,8 +63,8 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 
 		// 	Liste des musiques d'une tanda
 
-    private String[] columnNames = {"Titre", "Artiste", "Année", "Durée", ""};
-    private int[] columnWidth = {250, 150, 40, 40, 0};
+    private String[] columnNames = {"Titre", "Artiste", "Année", "Durée", "Genre", ""};
+    private int[] columnWidth = {250, 300, 40, 40, 70, 0};
     private JTable tandasMusicTable = new JTable(new DefaultTableModel(columnNames,0));
 	private JScrollPane tandasMusicTableScrollPane = new JScrollPane(tandasMusicTable);
 	
@@ -196,7 +196,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
             public Component getTableCellRendererComponent(JTable table, Object value,
                     boolean isSelected, boolean hasFocus, int row, int column) {
 
-                if ( column == 4 ) {
+                if ( column == 5 ) {
                 	return null;
                 } else if ( column == 3 && value instanceof Integer) {
         		    setText((int) value / 60 + "'" + (int)value % 60);
