@@ -13,38 +13,48 @@ import bridgePlay.Jeu;
 import winApp.*;
 
 /**
- * 		Table de bridge
+ * 		présentation de la table de bridge
  */
 
 public class BridgePanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-
-	// directories
-
+	/**
+	 * répertoire de base de l'application
+	 */
 	protected static String baseDir = ContexteGlobal.getResourceString("baseDir");
 
-	// fonts
-
-	private static Font defaultFont = new Font("Dialog", Font.PLAIN, 12);
-	private static Font boldFont = new Font("Dialog", Font.BOLD, 12);
-	private static Font bigFont = new Font("Dialog", Font.PLAIN, 18);
-	private static Font bigBoldFont = new Font("Dialog", Font.BOLD, 18);
-	private static LineBorder encadre = new LineBorder(Color.black, 1);
+	/**
+	 * fonts
+	 */
+	private final static Font defaultFont = new Font("Dialog", Font.PLAIN, 12);
+	private final static Font boldFont = new Font("Dialog", Font.BOLD, 12);
+	private final static Font bigFont = new Font("Dialog", Font.PLAIN, 18);
+	private final static Font bigBoldFont = new Font("Dialog", Font.BOLD, 18);
+	private final static LineBorder encadre = new LineBorder(Color.black, 1);
 
 	// constantes
 
-	private static int dimBoard;
-	// private static int back = 52;
-	private static int CardVerticalSpace = 15;
-	private static int CardHorizontalSpace = 15;
+	private final static int dimBoard = BridgeGame.dimBoard;
+	private final static int CardVerticalSpace = 15;
+	private final static int CardHorizontalSpace = 15;
 
-	// jeu
-
+	/**
+	 * jeu de bridge
+	 */
 	public BridgeGame bridgeGame;
-	public boolean bAttente = true; // bloque le superviseur
-	public boolean bEnchere = false; // phase enchères
-	public boolean bJeuCarte = false; // phase jeu de la carte
+	/**
+	 * bloque le superviseur pour rendre la main au joueur
+	 */
+	public boolean bAttente = true; 
+	/**
+	 * phase enchères en cours
+	 */
+	public boolean bEnchere = false; 
+	/**
+	 * phase jeu de la carte en cours
+	 */
+	public boolean bJeuCarte = false; 
 
 	// description de l'IHM
 
@@ -56,11 +66,8 @@ public class BridgePanel extends JPanel {
 	public JLabel lbNord, lbEst, lbSud, lbOuest;
 	public JPanel pNord, pEst, pSud, pOuest;
 	public JLabel[][] lbEnch;
-
 	private Dimension CardSize;
 	private cardCanvas[] boardCanvas;
-	private int hPli;
-	private int vPli;
 	private JPanel infoPanel, enchPanel;
 	private BoiteEnchere bidding;
 	private DialogueFinEnchere dlgEndBidding = new DialogueFinEnchere();
@@ -75,7 +82,6 @@ public class BridgePanel extends JPanel {
 	public BridgePanel() {
 		if (baseDir == null)
 			baseDir = ".";
-		dimBoard = BridgeGame.dimBoard;
 		CardSize = CardImages.CardSize;
 		board = new Rectangle[dimBoard];
 
@@ -201,7 +207,7 @@ public class BridgePanel extends JPanel {
 	 */
 	public void undo() {
 		bridgeGame.undo();
-		if (bridgeGame.etat == 0)
+		if (bridgeGame.stadeJeu == 0)
 			afficheEnchere();
 		else
 			afficheInfoJeu();
@@ -348,45 +354,54 @@ public class BridgePanel extends JPanel {
 		int hPanel = getSize().height;
 		if (wPanel == 0 || hPanel == 0)
 			return;
-		int vsp = CardSize.height / 2 + 5;
-		int hsp = CardSize.width + 5;
+		int vsp = CardSize.height / 2 + 7;
+		int hsp = CardSize.width + 7;
 		int hBoard = CardSize.width + 12 * CardHorizontalSpace;
 		int vBoard = CardSize.height + 12 * CardVerticalSpace;
-		// positionnements
+			// positionnements
 		int hNord = wPanel / 2 - 2 * hsp;
 		int vNord = 40;
 		int hSud = wPanel / 2 - hBoard;
-		int vSud = hPanel - CardSize.height - 5;
+		int vSud = hPanel - CardSize.height - 25;
 		int vEst = hPanel / 2 - 2 * vsp;
 		int vOuest = vEst;
 		int hEst = wPanel - hBoard;
 		int hOuest = 5;
-
+			// nord
 		for (int i = 0; i < BridgeGame.nbCouleur; i++)
 			board[i] = new Rectangle(hNord + (3 - i) * hsp, vNord, CardSize.width, vBoard);
+			// est
 		for (int i = 0; i < BridgeGame.nbCouleur; i++)
 			board[i + 4] = new Rectangle(hEst, vEst + (3 - i) * vsp, hBoard, CardSize.height);
-		for (int i = 0, tab = hSud; i < BridgeGame.nbCouleur; i++) {
+			// sud
+		for (int i = BridgeGame.nbCouleur - 1, tab = hSud; i >= 0; i--) {
 			int hBoardS = CardSize.width + (bridgeGame.cardBoard.nbCartes[i + 8]) * CardHorizontalSpace;
 			board[i + 8] = new Rectangle(tab, vSud, hBoardS, CardSize.height);
 			tab += hBoardS + 5;
 		}
+			// ouest
 		for (int i = 0; i < BridgeGame.nbCouleur; i++)
 			board[i + 12] = new Rectangle(hOuest, vOuest + (3 - i) * vsp, hBoard, CardSize.height);
 
-		hPli = wPanel / 2;
-		vPli = hPanel / 2;
+			// pli en cours
+		int hPli = wPanel / 2;
+		int vPli = hPanel / 2;
 		board[16] = new Rectangle(hPli, vPli - CardSize.height / 4, CardSize.width, CardSize.height);
 		board[17] = new Rectangle(hPli + CardSize.width / 2, vPli, CardSize.width, CardSize.height);
 		board[18] = new Rectangle(hPli, vPli + CardSize.height / 4, CardSize.width, CardSize.height);
 		board[19] = new Rectangle(hPli - CardSize.width / 2, vPli, CardSize.width, CardSize.height);
 
-		// modification de taille pour les jeux non visibles
+			// modification de taille pour les jeux non visibles
+			// le jeu est mis à la place des coeurs
 
 		for (int i = 0; i < BridgeGame.table; i++) {
 			if (!visibleBoard[i])
 				if (i % 4 == 2)
-					board[i] = new Rectangle(board[i].x, board[i].y, 3 * CardSize.width, 3 * CardSize.height);
+					if (i / 4 == 2)
+						   // position horizontale de sud alignée sur nord
+						board[i] = new Rectangle(board[i-8].x, board[i].y, 3 * CardSize.width, 3 * CardSize.height);
+					else					
+						board[i] = new Rectangle(board[i].x, board[i].y, 3 * CardSize.width, 3 * CardSize.height);
 				else
 					board[i] = new Rectangle(0, 0, 0, 0);
 		}
@@ -398,13 +413,16 @@ public class BridgePanel extends JPanel {
 			boardCanvas[i].setSize(board[i].width + 2, board[i].height + 2);
 			boardCanvas[i].setVisible(true);
 		}
+			//  libellé nord, est, sud, ouest
 		pNord.setLocation(wPanel / 2, 5);
 		pEst.setLocation(hEst + hsp, vEst - 30);
 		pSud.setLocation(wPanel / 2, vSud - vNord);
 		pOuest.setLocation(hOuest + hsp, vOuest - 30);
+			//  informations
 		infoPanel.setLocation(0, 0);
+			//  boite à enchère
 		enchPanel.setLocation(wPanel - 150, 0);
-		bidding.setLocation(hEst - bidding.getSize().width - 50, vSud - bidding.getSize().height - 50);
+		bidding.setLocation( (wPanel - bidding.getSize().width)/2, (hPanel - bidding.getSize().height)/2 );
 
 	}
 
@@ -412,11 +430,12 @@ public class BridgePanel extends JPanel {
 	 * Visibilité des jeux
 	 */
 	public void visibiliteBoard() {
-		visibleBoard = new boolean[dimBoard];
 		for (int i = 0; i < BridgeGame.table; i++)
-			visibleBoard[i] = bridgeGame.joueurHumain(i / 4) || allVisible;
+			visibleBoard[i] = bridgeGame.joueurHumain(i / 4) ||
+							  bridgeGame.mortVisible(i / 4)  ||
+							  allVisible;
 		for (int i = BridgeGame.table; i < dimBoard; i++)
-			visibleBoard[i] = (bridgeGame.etat == 1);
+			visibleBoard[i] = (bridgeGame.stadeJeu == 1);
 	}
 
 	/**
@@ -438,10 +457,8 @@ public class BridgePanel extends JPanel {
 	public void putEnchere(String enchere) {
 		bridgeGame.enchere(enchere);
 		afficheEnchere();
-		if (bridgeGame.etat == 1) {
+		if (bridgeGame.stadeJeu == 1) {
 			bidding.close();
-			lbContrat.setText(bridgeGame.contrat);
-			visibiliteBoard();
 			afficheInfoJeu();
 			dlgEndBidding.setContrat(bridgeGame.contrat);
 			dlgEndBidding.setVisible(true);
@@ -458,6 +475,9 @@ public class BridgePanel extends JPanel {
 				bEnchere = false;
 				bJeuCarte = true;
 				bridgeGame.initJeuCarte();
+				lbContrat.setText(bridgeGame.contrat);
+				visibiliteBoard();
+				sizeBoard();
 			}
 		}
 		bAttente = false;
@@ -529,6 +549,8 @@ public class BridgePanel extends JPanel {
 			bAttente = bridgeGame.jeuCarteHumain();
 			repaint();
 		}
+		visibiliteBoard();
+		sizeBoard();
 	}
 
 	/**
@@ -564,18 +586,17 @@ public class BridgePanel extends JPanel {
 		ContexteGlobal.frame.setMessage(bridgeGame.messageFixe);
 		dlgEndGame.setContrat(bridgeGame.messageFixe);
 		dlgEndGame.setVisible(true);
-		if (dlgEndGame.getAction() == 0) // donne suivante
-		{
+		if (dlgEndGame.getAction() == 0)  {
+				// donne suivante		
 			reInit();
-		} else if (dlgEndGame.getAction() == 1) // recommencer les enchères
-		{
+		} else if (dlgEndGame.getAction() == 1) {
+				// recommencer les enchères		
 			bridgeGame.restoreJeu();
 			bridgeGame.initEnchere();
 			afficheInfoJeu();
 			lanceJeu();
-		} else
-		// recommencer le jeu de la carte
-		{
+		} else {
+				// recommencer le jeu de la carte
 			bridgeGame.restoreJeu();
 			bridgeGame.initJeuCarte();
 			bEnchere = false;

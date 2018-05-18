@@ -13,6 +13,9 @@ class EvalJeuPartenaire {
 	public int nbCartesMax[]; // nombre de cartes max par couleur
 	public char atout; // couleur d'atout: TKCPS
 
+	/**
+	 * évaluation du jeu du partenaire
+	 */
 	public EvalJeuPartenaire() {
 		PH = 0;
 		PHM = 40;
@@ -30,6 +33,9 @@ class EvalJeuPartenaire {
 		}
 	}
 
+	/**
+	 * édition de contrôle
+	 */
 	public void print() {
 		System.out.println("Jeu type :");
 		System.out.println("Atout :" + atout);

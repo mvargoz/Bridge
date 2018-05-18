@@ -21,8 +21,10 @@ class Decompiler {
 	static boolean doc = false;
 	static String texte = "";
 
-	// Interpréteur des annonces de bridge
-
+	/**
+	 * Décompilateur batch du langage d'enchères de bridge
+	 * @param args nom du fichier à décompiler + [doc] pour documentation
+	 */
 	public static void main(String[] args) {
 
 		if (args.length >= 2) {
@@ -45,6 +47,10 @@ class Decompiler {
 		}
 	}
 
+	/**
+	 * décompilateur
+	 * @param size
+	 */
 	static void decompil(int size) {
 		int i, cd, ad, ads;
 		String param;
@@ -118,15 +124,18 @@ class Decompiler {
 		}
 	}
 
-	// erreurs de paramètres
-
+	/**
+	 * erreurs de paramètres
+	 */
 	static void usage() {
 		System.out.println("Usage: java BridgeInt <fichier binaire>");
 		System.exit(0);
 	}
 
-	// codification de la séquence d'enchères
-
+	/**
+	 * codification de la séquence d'enchères
+	 * @param size
+	 */
 	static void SequEnchere(int size) {
 		if (debug)
 			System.out.println("Séquence enchère " + String.valueOf(size));
@@ -168,8 +177,11 @@ class Decompiler {
 		println(" ");
 	}
 
-	// enchère
-
+	/**
+	 * enchère
+	 * @param i
+	 * @return
+	 */
 	static boolean PatternEnchere(int i) {
 		if (i == 105)
 			print("-");
@@ -203,8 +215,9 @@ class Decompiler {
 		return true;
 	}
 
-	// couleur
-
+	/**
+	 * couleur
+	 */
 	static void PatternCouleur() {
 		int i = getObj();
 		String s = PatternCouleurString(i);
@@ -214,11 +227,20 @@ class Decompiler {
 			erreur("Couleur non reconnue : " + String.valueOf(i));
 	}
 
+	/**
+	 * couleur
+	 * @return
+	 */
 	static String PatternCouleurString() {
 		int i = getObj();
 		return PatternCouleurString(i);
 	}
 
+	/**
+	 * couleur
+	 * @param i
+	 * @return
+	 */
 	static String PatternCouleurString(int i) {
 		if (i == 151)
 			return ("T");
@@ -254,8 +276,10 @@ class Decompiler {
 			return ("");
 	}
 
-	// codification des conditions et enchère
-
+	/**
+	 * codification des conditions et enchère
+	 * @param size
+	 */
 	static void CodeCond(int size) {
 		if (debug)
 			System.out.println("Condition " + String.valueOf(size));
@@ -276,8 +300,11 @@ class Decompiler {
 		erreur("manque fin dans conditions");
 	}
 
-	// distribution
-
+	/**
+	 * distribution
+	 * @param i
+	 * @return
+	 */
 	static boolean Distribution(int i) {
 		if (i == 10) {
 			print("D", "distribution");
@@ -348,8 +375,11 @@ class Decompiler {
 		return true;
 	}
 
-	// valeur de la main
-
+	/**
+	 * valeur de la main
+	 * @param i
+	 * @return
+	 */
 	static boolean Valeur(int i) {
 		int min = 0;
 		int max = 99;
@@ -393,8 +423,11 @@ class Decompiler {
 		return true;
 	}
 
-	// Condition
-
+	/**
+	 * Condition
+	 * @param i
+	 * @return
+	 */
 	static boolean Condition(int i) {
 		if (i == 70) {
 			PatternCouleur();
@@ -417,8 +450,11 @@ class Decompiler {
 		return true;
 	}
 
-	// vulnérabilité
-
+	/**
+	 * vulnérabilité
+	 * @param i
+	 * @return
+	 */
 	static boolean Vulnerabilite(int i) {
 		if (i == 81)
 			print("V", " vulnérable");
@@ -439,8 +475,11 @@ class Decompiler {
 		return true;
 	}
 
-	// type de tournoi
-
+	/**
+	 * type de tournoi
+	 * @param i
+	 * @return
+	 */
 	static boolean Tournoi(int i) {
 		if (i == 88)
 			print("TPP", " tournoi par paire");
@@ -451,8 +490,10 @@ class Decompiler {
 		return true;
 	}
 
-	// carte
-
+	/**
+	 * carte
+	 * @return
+	 */
 	static String codeCarte() {
 		String s = "";
 		int i = getObj();
@@ -472,8 +513,10 @@ class Decompiler {
 		return s;
 	}
 
-	// + -
-
+	/**
+	 * + -
+	 * @return
+	 */
 	static String PlusMoins() {
 		int i = getObj();
 		if (i == 253)
@@ -487,16 +530,20 @@ class Decompiler {
 		return "";
 	}
 
-	// erreur
-
+	/**
+	 * erreur
+	 * @param cause
+	 */
 	static void erreur(String cause) {
 		System.out.println(" *** ");
 		System.out.println(cause);
 		System.exit(0);
 	}
 
-	// lecture d'un byte
-
+	/**
+	 * lecture d'un byte
+	 * @return
+	 */
 	static int getObj() {
 		Byte cd = new Byte(obj[objPnt++]);
 		int i = cd.intValue();
@@ -507,8 +554,10 @@ class Decompiler {
 		return i;
 	}
 
-	// lecture d'une adresse de fin
-
+	/**
+	 * lecture d'une adresse de fin
+	 * @return
+	 */
 	static int getAdr() {
 		Byte cd = new Byte(obj[objPnt++]);
 		int i = cd.intValue();
@@ -524,8 +573,10 @@ class Decompiler {
 		return i;
 	}
 
-	// décodage d'un nom
-
+	/**
+	 * décodage d'un nom
+	 * @return
+	 */
 	static String decodeNom() {
 		int i = getObj();
 		if (i > 0) {
@@ -536,12 +587,20 @@ class Decompiler {
 			return "";
 	}
 
-	// sortie décodage ou documentation
 
+	/**
+	 * édition décodage ou documentation
+	 * @param sdec
+	 */
 	static void print(String sdec) {
 		print(sdec, sdec);
 	}
 
+	/**
+	 * édition décodage ou documentation
+	 * @param sdec
+	 * @param sdoc
+	 */
 	static void print(String sdec, String sdoc) {
 		if (doc && sdoc != null)
 			System.out.print(sdoc);
@@ -549,10 +608,19 @@ class Decompiler {
 			System.out.print(sdec);
 	}
 
+	/**
+	 * édition décodage ou documentation
+	 * @param sdec
+	 */
 	static void println(String sdec) {
 		println(sdec, sdec);
 	}
 
+	/**
+	 * édition décodage ou documentation
+	 * @param sdec
+	 * @param sdoc
+	 */
 	static void println(String sdec, String sdoc) {
 		if (doc && sdoc != null)
 			System.out.println(sdoc);
@@ -560,10 +628,21 @@ class Decompiler {
 			System.out.println(sdec);
 	}
 
+	/**
+	 * retour décodage ou documentation
+	 * @param sdec
+	 * @return
+	 */
 	static String returnString(String sdec) {
 		return returnString(sdec, sdec);
 	}
 
+	/**
+	 * retour décodage ou documentation
+	 * @param sdec
+	 * @param sdoc
+	 * @return
+	 */
 	static String returnString(String sdec, String sdoc) {
 		if (doc && sdoc != null)
 			return sdoc;

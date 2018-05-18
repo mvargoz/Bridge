@@ -10,7 +10,7 @@ import bridgePlay.Jeu;
 import winApp.ContexteGlobal;
 
 /**
- * Gestion des problèmes de bridge
+ * Gestion des problèmes de bridge (load, save)
  *
  */
 public class BridgeDonneProblem {
@@ -45,7 +45,6 @@ public class BridgeDonneProblem {
 		if ( fileDir == null )
 			fileDir = ".";
 		init();
-
 	}
 	
 	/**

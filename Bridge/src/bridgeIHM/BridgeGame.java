@@ -21,59 +21,173 @@ import bridge.*;
  */
 public class BridgeGame {
 
-	// constantes
+			// constantes
 
-	public static int nbCartes = 52; // nombre de cartes par jeu
-	public static int dimBoard = 20; // dimension du plateau
-	public static int nbJoueur = 4;
-	public static int nbCouleur = 4;
-	public static int table = 16; // board représentant la table
-	public static String vulnerabilites[] = { "P", "NS", "EO", "T", "NS", "EW", "T" };
-	public static String donneurs[] = { "N", "O", "S", "E" };
+	/**
+	 * nombre de cartes par jeu
+	 */
+	public static final int nbCartes = 52;
+	/**
+	 * dimension du board: 4 joueurs x 4 couleurs +
+	 *   carte fournie par chaque joueur pour le pli en cours
+	 */
+	public static final int dimBoard = 20;
+	/**
+	 * nombre de joueur
+	 */
+	public static final int nbJoueur = 4;
+	/**
+	 * nombre de couleur
+	 */
+	public static final int nbCouleur = 4;
+	/**
+	 * board représentant la table
+	 */
+	public static final int table = 16;
+	/**
+	 * séquence des vulnérabilités
+	 */
+	public static final String vulnerabilites[] = { "P", "NS", "EO", "T", "NS", "EW", "T" };
+	/**
+	 * séquence des donneurs
+	 */
+	public static final String donneurs[] = { "N", "O", "S", "E" };
 
-	// description du jeu
+			// description du jeu
 
+	/**
+	 * Message
+	 */
 	public String Message;
+	/**
+	 * message fixe en bas d'écran
+	 */
 	public String messageFixe = "";
-	public CardBoard cardBoard, cardBoardInit;
-
+	/**
+	 * 
+	 */
+	public CardBoard cardBoard;
+	/**
+	 * 
+	 */
+	public CardBoard cardBoardInit;
+	/**
+	 * donne
+	 */
 	public DonneBid donne;
+	/**
+	 * système enchères NS
+	 */
 	public String systemNS = null;
+	/**
+	 * système enchères EO
+	 */
 	public String systemEO = null;
+	/**
+	 * indice donneur dans tableau
+	 */
 	public int idonneur = -1;
+	/**
+	 * donneur
+	 */
 	public String donneur = null;
+	/**
+	 * indice vulnérabilité dans tableau
+	 */
 	public int ivulnerabilite = -1;
+	/**
+	 * vulnérabilité
+	 */
 	public String vulnerabilite = null;
+	/**
+	 * Type Tournoi
+	 */
 	public String TypeTournoi = null;
+	/**
+	 * contrat
+	 */
 	public String contrat = null;
 
-	// controle du jeu
+			// controle du jeu
 
-	public int etat; // 0 = enchères, 1 = jeu, 2 = fin
-	public int plisNS, plisEO; // nombre de plis réalisé
-
+	/**
+	 * stade du jeu ; 0 = enchères, 1 = jeu, 2 = fin
+	 */
+	public int stadeJeu;
+	/**
+	 * nombre de plis réalisés en NS
+	 */
+	public int plisNS;
+	/**
+	 * nombre de plis réalisés en EO
+	 */
+	public int plisEO;
+	/**
+	 * numéro du joueur humain
+	 */
 	private int joueurHumain;
-	private int joueurHumain2; // mort éventuel
-
-	// controle des encheres
-
+	/**
+	 * mort éventuel joué par un humain
+	 */
+	private int joueurHumain2;
+	/**
+	 * contrôle des encheres
+	 */
 	private Interpreter SysEnchere;
+	/**
+	 * nombre de passes
+	 */
 	private int nbPasse;
 
-	// controle du jeu de la carte
+			// controle du jeu de la carte
 
+	/**
+	 * joueur ayant la main
+	 */
 	public int joueurAyantLaMain;
-
+	/**
+	 * 
+	 */
 	private int[] jeuxCartes;
+	/**
+	 * historique des coups
+	 */
 	private CardBoardHisto hist = new CardBoardHisto();
+	/**
+	 * joueur jouant le contrat
+	 */
 	private int joueurContrat;
+	/**
+	 * mort
+	 */
 	private int mort;
+	/**
+	 * tour
+	 */
 	private int tour;
+	/**
+	 * couleur du tour
+	 */
 	private int couleurTour;
+	/**
+	 * nombre de cartes dans le pli
+	 */
 	private int nbCartesPli;
+	/**
+	 * atout
+	 */
 	private int atout;
+	/**
+	 * nombre de plis du contrat
+	 */
 	private int nbPliContrat;
+	/**
+	 * simulateur du jeu de la carte
+	 */
 	private Simulator bjc;
+	/**
+	 * représentation des jeux
+	 */
 	private String jeu[][] = new String[nbJoueur][nbCouleur];
 
 	/**
@@ -223,7 +337,7 @@ public class BridgeGame {
 	 */
 	public void initEnchere() {
 		donne.initEnchere();
-		etat = 0;
+		stadeJeu = 0;
 		messageFixe = "Enchères";
 		Message = "mess1";
 		nbPasse = -1;
@@ -296,7 +410,7 @@ public class BridgeGame {
 	 * @return 0 OK, -1 erreur
 	 */
 	public int click(int noBoard, int pos) {
-		if (etat == 1 && noBoard < nbJoueur * nbCouleur) {
+		if (stadeJeu == 1 && noBoard < nbJoueur * nbCouleur) {
 			int joueur = noBoard / nbCouleur;
 			int couleurJoue = noBoard % nbCouleur;
 			if (joueur != joueurAyantLaMain || nbCartesPli > nbJoueur) {
@@ -319,8 +433,10 @@ public class BridgeGame {
 			cardBoard.nbCartes[noBoard]--;
 			joueurAyantLaMain = joueurAyantLaMain == 3 ? 0 : joueurAyantLaMain + 1;
 			nbCartesPli++;
-			if (nbCartesPli > nbJoueur) { // fin du pli : détermination du
-											// gagnant
+			if (nbCartesPli > nbJoueur) {
+				
+					// fin du pli : détermination du gagnant
+				
 				int couleurRef = Jeu.carteCouleur(cardBoard.board[table + joueurAyantLaMain][0]);
 				int hauteurRef = Jeu.carteRang(cardBoard.board[table + joueurAyantLaMain][0]);
 				for (int i = 0; i < nbJoueur; i++) {
@@ -341,12 +457,12 @@ public class BridgeGame {
 				else
 					plisEO++;
 			}
-		} else if (etat == 1 && noBoard >= nbJoueur && nbCartesPli > nbJoueur) {
+		} else if (stadeJeu == 1 && noBoard >= nbJoueur && nbCartesPli > nbJoueur) {
 			// pli suivant
 
 			tour++;
 			if (tour > 13) { // fin de la donne
-				etat = 2;
+				stadeJeu = 2;
 				int resultat = 0;
 				if (joueurContrat % 2 == 00)
 					resultat = plisNS - 6 - donne.lastHauteurAnnonce();
@@ -391,7 +507,18 @@ public class BridgeGame {
 	 * @return true ou false
 	 */
 	public boolean joueurHumain(int joueur) {
-		if (joueur == joueurHumain || etat == 1 && joueur == joueurHumain2)
+		if (joueur == joueurHumain || stadeJeu == 1 && joueur == joueurHumain2)
+			return true;
+		return false;
+	}
+
+	/**
+	 * le mort est-il visible ?
+	 * @param i joueur
+	 * @return true or false
+	 */
+	public boolean mortVisible(int i)  {
+		if ( stadeJeu == 1 && mort == i && ( tour > 1 || nbCartesPli > 1 ) )
 			return true;
 		return false;
 	}
@@ -418,14 +545,14 @@ public class BridgeGame {
 		donne.putEnchere(enchere);
 		donne.JoueurSuivant();
 		if (nbPasse == 3)
-			etat = 1;
+			stadeJeu = 1;
 	}
 
 	/**
 	 * Initialisation du jeu de la carte
 	 */
 	public void initJeuCarte() {
-		etat = 1;
+		stadeJeu = 1;
 		joueurContrat = donne.joueurContrat();
 		joueurHumain = joueurContrat; // pour les tests
 		atout = Jeu.couleurToInt(donne.lastCouleurAnnonce());
@@ -454,7 +581,7 @@ public class BridgeGame {
 		return ((joueurAyantLaMain == joueurHumain || joueurAyantLaMain == joueurHumain2)
 				&& bjc.getCarteSeule() == null);
 	}
-
+	
 	/**
 	 * Jeu ordinateur
 	 * @return 0 OK, -1 erreur, -2 non implémenté

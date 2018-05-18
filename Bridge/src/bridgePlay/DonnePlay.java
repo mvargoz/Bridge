@@ -16,12 +16,17 @@ public class DonnePlay implements Cloneable {
 	 */
 
 	public static class CardPlay implements Cloneable {
-		int couleur; // TKCP
-		int hauteur; // ARDVX98765432
+		/**
+		 * couleur TKCP
+		 */
+		int couleur;
+		/**
+		 * hauteur ARDVX98765432
+		 */
+		int hauteur;
 
 		/**
 		 * Constructeur
-		 * 
 		 * @param couleur
 		 * @param hauteur
 		 */
@@ -45,50 +50,111 @@ public class DonnePlay implements Cloneable {
 		}
 	}
 
-	// cartes par joueur (NESW) et couleur (TKCP)
-
+	/**
+	 * cartes par joueur (NESW) et couleur (TKCP)
+	 */
 	public Jeu[] jeu = new Jeu[Jeu.nbJoueur];
+	/**
+	 * cartes par joueur (NESW) et couleur (TKCP)
+	 */
 	public Jeu[] jeuInitial = new Jeu[Jeu.nbJoueur];
 
-	// repérage des joueurs
+			// repérage des joueurs
 
 	public int declarant;
 	public int mort;
 	public int flancDroit;
 	public int flancGauche;
-	public int joueurAyantLaMain; // joueur qui a la main
+	public int joueurAyantLaMain;
 
-	// contrat
+	/**
+	 * contrat : nombre de plis à réaliser
+	 */
+	public int hauteurContrat;
+	/**
+	 * couleur d'atout (0 à 3 pour TKCP, 4 = SA)
+	 */
+	public int atout;
 
-	public int hauteurContrat; // nombre de plis à réaliser
-	public int atout; // couleur d'atout (0 à 3 pour TKCP, 4 = SA)
+			// déroulement du jeu
+	/**
+	 * numéro du pli courant de 0 à 12
+	 */
+	public int tour;
+	/**
+	 * plis faits par tour, joueur : valeur + couleur
+	 */
+	public CardPlay[][] plis;
+	/**
+	 * cartes déjà jouées par couleur
+	 */
+	public ArrayList<Integer>[] cardPlayed;
+	/**
+	 * joueur ayant gagné le pli
+	 */
+	public int gainPli[];
+	/**
+	 * joueur ayant initié le pli
+	 */
+	public int joueur1Pli[];
+	/**
+	 * nombre de pli fait par le déclarant
+	 */
+	public int nbPliDeclarant;
+	/**
+	 * nombre de pli fait par le flanc
+	 */
+	public int nbPliFlanc;
 
-	// déroulement du jeu
+			// déroulement du pli
 
-	public int tour; // numéro du pli courant de 0 à 12
-	public CardPlay[][] plis; // plis faits par tour, joueur : valeur + couleur
-	public ArrayList<Integer>[] cardPlayed; // cartes déjà jouées par couleur
-	public int gainPli[]; // joueur ayant gagné le pli
-	public int joueur1Pli[]; // joueur ayant initié le pli
-	public int nbPliDeclarant; // nombre de pli fait par le déclarant
-	public int nbPliFlanc; // nombre de pli fait par le flanc
-
-	// déroulement du pli
-
-	public int joueur; // joueur courant de 0 à 3
-	public int partenaire; // partenaire du joueur courant de 0 à 3
-	public int nbCartesPli; // nb de cartes jouées pour ce pli
-	public int couleurPli; // couleur demandée
-	public int hauteurPli; // hauteur carte maitresse du pli
-	public int maitrePli; // joueur maitre du pli en cours
-	public boolean pliCoupe; // pli coupé
-	public CardPlay[] pliEnCours; // pli en cours
-	public CardPlay lastCardPlay; // dernière carte jouée du pli
+	/**
+	 * joueur qui joue de 0 à 3
+	 */
+	public int joueur;
+	/**
+	 * partenaire du joueur qui joue de 0 à 3
+	 */
+	public int partenaire;
+	/**
+	 * nb de cartes jouées pour ce pli
+	 */
+	public int nbCartesPli;
+	/**
+	 * couleur demandée
+	 */
+	public int couleurPli;
+	/**
+	 * hauteur de la carte maitresse du pli
+	 */
+	public int hauteurPli;
+	/**
+	 * joueur maitre du pli en cours
+	 */
+	public int maitrePli;
+	/**
+	 * pli coupé
+	 */
+	public boolean pliCoupe;
+	/**
+	 * pli en cours
+	 */
+	public CardPlay[] pliEnCours;
+	/**
+	 * dernière carte jouée du pli
+	 */
+	public CardPlay lastCardPlay;
 	
-	// valeur des jeux à la fin du pli précédent 0=NS, 1=EO
+			// valeur des jeux à la fin du pli précédent 0=NS, 1=EO
 	
-	public double[] gagnante = new double[2] ; // nombre de plis faits + gagnantes potentielles
-	public double[] perdante = new double[2] ; // nombre de plis perdus + perdantes potentielles
+	/**
+	 * nombre de plis faits + gagnantes potentielles
+	 */
+	public double[] gagnante = new double[2];
+	/**
+	 * nombre de plis perdus + perdantes potentielles
+	 */
+	public double[] perdante = new double[2];
 
 	/**
 	 * Constructeur à partir des enchères
@@ -130,7 +196,6 @@ public class DonnePlay implements Cloneable {
 	/**
 	 * initialisation de la donne
 	 */
-
 	private void initPlay() {
 		mort = (declarant + 2) % Jeu.nbJoueur;
 		flancDroit = (declarant - 1) % Jeu.nbJoueur;
@@ -160,7 +225,6 @@ public class DonnePlay implements Cloneable {
 	/**
 	 * Clonage de la donne
 	 */
-
 	public DonnePlay clone() {
 		DonnePlay donnePlayCopy = null;
 		try {
@@ -181,7 +245,6 @@ public class DonnePlay implements Cloneable {
 	/**
 	 * initialisation du jeu d'un pli
 	 */
-
 	private void initPli() {
 		nbCartesPli = 0;
 		hauteurPli = -1;
@@ -195,15 +258,10 @@ public class DonnePlay implements Cloneable {
 
 	/**
 	 * Jouer une carte
-	 * 
-	 * @param int
-	 *            couleur jouée
-	 * @param int
-	 *            hauteur jouée
-	 *  
+	 * @param int couleur jouée
+	 * @param int hauteur jouée
 	 * @return true si fin du pli, false sinon
 	 */
-
 	public boolean joueCarte(int couleurJoue, int hauteurJoue) {
 
 		//	pli en cours
@@ -258,8 +316,8 @@ public class DonnePlay implements Cloneable {
 				joueur1Pli[tour] = joueurAyantLaMain;
 				initPli();
 			}
-			evalCamp(0);
-			evalCamp(1);
+//			evalCamp(0);
+//			evalCamp(1);
 			return true;
 		}
 		return false;
@@ -267,11 +325,9 @@ public class DonnePlay implements Cloneable {
 
 	/**
 	 * Teste s'il ne reste plus qu'une seule carte à jouer
-	 * 
 	 * @return carte sous forme hauteur couleur,
 	 * null s'il reste plus d'une seule carte à jouer
 	 */
-
 	public String getCarteSeule() {
 		if (nbCartesPli > 0 && jeu[joueur].nbCartes(couleurPli) == 1) {
 			int h = jeu[joueur].carte(couleurPli, 1);
@@ -284,7 +340,6 @@ public class DonnePlay implements Cloneable {
 	 * Evaluation de la valeur du jeu du camp du joueur
 	 * @param joueur
 	 */
-
 	public void evalCamp(int joueur) {
 		gagnante[joueur % 2] = (joueur % 2 == declarant % 2) ? nbPliDeclarant : nbPliFlanc;
 		perdante[joueur % 2] = (joueur % 2 == declarant % 2) ? nbPliFlanc : nbPliDeclarant;
@@ -394,7 +449,6 @@ public class DonnePlay implements Cloneable {
 	 *         par la plus grosse, ne donne que la plus grosse carte d'une
 	 *         séquence
 	 */
-
 	public ArrayList<CardPlay> cartesJouables(int joueur, int couleurDemande) {
 		ArrayList<CardPlay> card = new ArrayList<CardPlay>();
 

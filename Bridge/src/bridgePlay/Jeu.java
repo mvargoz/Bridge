@@ -204,7 +204,7 @@ public class Jeu implements Cloneable {
 		int nc = nbCartes(couleur);
 		if (n > nc)
 			n = nc;
-		return carteToString(couleur, n - 1);
+		return carteToString(couleur, n);
 	}
 
 	/**

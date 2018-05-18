@@ -44,7 +44,6 @@ public class Simulator {
 
 	/**
 	 * Constructeur à partir des enchères
-	 * 
 	 * @param donne
 	 * @param profondeur
 	 */
@@ -58,7 +57,6 @@ public class Simulator {
 
 	/**
 	 * Constructeur à partir des jeux
-	 * 
 	 * @param donne
 	 * @param profondeur
 	 */
@@ -71,7 +69,6 @@ public class Simulator {
 
 	/**
 	 * Enregistre une carte jouée
-	 * 
 	 * @param carte
 	 */
 	public void putCarte(String carte) {
@@ -81,7 +78,8 @@ public class Simulator {
 	}
 
 	/**
-	 * @return dernière carte à jouer
+	 * Teste si une seule carte à jouer
+	 * @return dernière carte à jouer ou null
 	 */
 	public String getCarteSeule() {
 		return donnePlay.getCarteSeule();
@@ -127,7 +125,6 @@ public class Simulator {
 
 	/**
 	 * Choisir la meilleure carte suivant les règles
-	 * 
 	 * @return carte
 	 */
 	private String getMeilleureCarte() {
@@ -138,12 +135,16 @@ public class Simulator {
 		// on triche en regardant le jeu
 		jeuDeclarant = donnePlay.jeu[donnePlay.declarant];
 
-		if (donnePlay.tour == 0 && donnePlay.nbCartesPli == 0) { // entame
+		if (donnePlay.tour == 0 && donnePlay.nbCartesPli == 0) {
+			
+			 // entame
 			if (donnePlay.atout == Jeu.SansAtout)
 				return entameSA();
 			else
 				return entameCouleur();
-		} else if (donnePlay.nbCartesPli == 0) { // nouveau pli
+		} else if (donnePlay.nbCartesPli == 0) {
+			
+			 // nouveau pli
 			if (donnePlay.joueur % 2 == donnePlay.declarant % 2) {
 				if (donnePlay.atout == Jeu.SansAtout)
 					return declarantSA();
@@ -155,7 +156,8 @@ public class Simulator {
 				else
 					return flancCouleur();
 			}
-		} else if (donnePlay.nbCartesPli == 1) { // jeu en second
+		} else if (donnePlay.nbCartesPli == 1) {
+			// jeu en second
 			if (donnePlay.joueur % 2 == donnePlay.declarant % 2) {
 				if (donnePlay.atout == Jeu.SansAtout)
 					return declarantSA2();
@@ -167,7 +169,8 @@ public class Simulator {
 				else
 					return flancCouleur2();
 			}
-		} else if (donnePlay.nbCartesPli == 2) { // jeu en troisième
+		} else if (donnePlay.nbCartesPli == 2) {
+			// jeu en troisième
 			if (donnePlay.joueur % 2 == donnePlay.declarant % 2) {
 				if (donnePlay.atout == Jeu.SansAtout)
 					return declarantSA3();
@@ -179,7 +182,8 @@ public class Simulator {
 				else
 					return flancCouleur3();
 			}
-		} else if (donnePlay.nbCartesPli == 3) { // jeu en quatrième
+		} else if (donnePlay.nbCartesPli == 3) {
+			// jeu en quatrième
 			if (donnePlay.joueur % 2 == donnePlay.declarant % 2) {
 				if (donnePlay.atout == Jeu.SansAtout)
 					return declarantSA4();
@@ -419,6 +423,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 1 à SA
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantSA() {
@@ -427,6 +433,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 1 à la couleur
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantCouleur() {
@@ -435,6 +443,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 2 à SA
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantSA2() {
@@ -443,6 +453,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 2 à la couleur
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantCouleur2() {
@@ -451,6 +463,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 3 à SA
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantSA3() {
@@ -459,6 +473,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 3 à la couleur
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantCouleur3() {
@@ -467,6 +483,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 4 à SA
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantSA4() {
@@ -475,6 +493,8 @@ public class Simulator {
 	}
 
 	/**
+	 * Jeu du déclarant en 4 à la couleur
+	 * non traité
 	 * @return carte
 	 */
 	public String declarantCouleur4() {
@@ -483,8 +503,11 @@ public class Simulator {
 	}
 
 	/**
-	 * Flanc à SA
-	 * 
+	 * Flanc en 1 à SA
+ 	 * <pre>
+	 * Choix de la première carte à jouer pour le flanc
+	 * reste à traiter:
+	 * </pre>
 	 * @return carte
 	 */
 	public String flancSA() {
@@ -579,8 +602,11 @@ public class Simulator {
 	}
 
 	/**
-	 * Flanc à la couleur
-	 * 
+	 * Flanc en 1 à la couleur
+ 	 * <pre>
+	 * Choix de la première carte à jouer pour le flanc
+	 * reste à traiter:
+	 * </pre>
 	 * @return carte
 	 */
 	public String flancCouleur() {
@@ -641,6 +667,7 @@ public class Simulator {
 	}
 
 	/**
+	 * Flanc en 2 à SA
 	 * @return carte
 	 */
 	public String flancSA2() {
@@ -653,6 +680,7 @@ public class Simulator {
 	}
 
 	/**
+	 * Flanc en 2 à la couleur
 	 * @return carte
 	 */
 	public String flancCouleur2() {
@@ -671,6 +699,7 @@ public class Simulator {
 	}
 
 	/**
+	 * Flanc en 3 à SA
 	 * @return carte
 	 */
 	public String flancSA3() {
@@ -706,6 +735,7 @@ public class Simulator {
 	}
 
 	/**
+	 * Flanc en 3 à la couleur
 	 * @return carte
 	 */
 	public String flancCouleur3() {
@@ -758,6 +788,7 @@ public class Simulator {
 	}
 
 	/**
+	 * Flanc en 4 à SA
 	 * @return carte
 	 */
 	public String flancSA4() {
@@ -771,6 +802,7 @@ public class Simulator {
 	}
 
 	/**
+	 * Flanc en 4 à la couleur
 	 * @return carte
 	 */
 	public String flancCouleur4() {
@@ -785,33 +817,30 @@ public class Simulator {
 
 	/**
 	 * Coupe
-	 * 
+	 * à faire>>>ne pas couper dans le vide
 	 * @return carte
 	 */
 	public String coupe() {
 		if (jeu.nbCartes(donnePlay.atout) == 0)
 			return null;
-		if (donnePlay.nbCartesPli == 3) // en quatrième position
-		{
+		if (donnePlay.nbCartesPli == 3)  {
+				// en quatrième position		
 			if (donnePlay.pliCoupe) {
 				if (jeu.carte(donnePlay.atout, 1) < donnePlay.hauteurPli)
-					return null; // ne peut pas surcouper
+					 	// ne peut pas surcouper
+					return null;
 				else {
 					trace("Surcoupe");
 					return jeu.minMaxCarte(donnePlay.atout, donnePlay.hauteurPli);
 				}
 			}
-			if (donnePlay.maitrePli % 2 != donnePlay.joueur % 2) // partenaire
-																	// non
-																	// maitre
-			{
+			if (donnePlay.maitrePli % 2 != donnePlay.joueur % 2)   {
+				// partenaire non maitre	
 				trace("Coupe");
 				return jeu.minMaxCarte(donnePlay.atout);
 			}
-		} else if (donnePlay.joueur == donnePlay.flancGauche) // avant le mort
-																// en 2 ou 3ème
-		// position
-		{
+		} else if (donnePlay.joueur == donnePlay.flancGauche)   {
+				// avant le mort en position 2 ou 3 
 			boolean mortCoupe = false;
 			boolean mortSurcoupe = false;
 			if (donnePlay.jeu[donnePlay.mort].nbCartes(donnePlay.couleurPli) == 0
@@ -821,16 +850,16 @@ public class Simulator {
 					mortSurcoupe = true;
 			}
 			if (mortSurcoupe)
-				return null; // pas de coupe si surcoupe au mort
-			if (donnePlay.nbCartesPli == 1) // en seconde position avant le mort
-			{
+					// pas de coupe si surcoupe au mort
+				return null;
+			if (donnePlay.nbCartesPli == 1) {
+				// en seconde position avant le mort	
 				if (mortCoupe) {
 					trace("Coupe avant le mort");
 					return jeu.minMaxCarte(donnePlay.atout, donnePlay.jeu[donnePlay.mort].carte(donnePlay.atout, 1));
 				}
-				if (donnePlay.carteMaitresse(donnePlay.couleurPli, donnePlay.hauteurPli)) // carte
-																							// maitresse
-				{
+				if (donnePlay.carteMaitresse(donnePlay.couleurPli, donnePlay.hauteurPli)) {
+						// carte maitresse
 					trace("Coupe carte maîtresse");
 					return jeu.minMaxCarte(donnePlay.atout);
 				}
@@ -839,13 +868,12 @@ public class Simulator {
 					trace("Coupe car carte maîtresse au mort");
 					return jeu.minMaxCarte(donnePlay.atout);
 				}
-			} else if (donnePlay.nbCartesPli == 2) // en troisième position
-													// avant le
-			// mort
-			{
+			} else if (donnePlay.nbCartesPli == 2) {
+					// en troisième position avant le mort			
 				if (donnePlay.pliCoupe) {
 					if (jeu.carte(donnePlay.atout, 1) < donnePlay.hauteurPli)
-						return null; // ne peut pas surcouper
+						 	// ne peut pas surcouper
+						return null;
 					else {
 						trace("surcoupe avant le mort");
 						return jeu.minMaxCarte(donnePlay.atout, Math
@@ -856,10 +884,8 @@ public class Simulator {
 					trace("Coupe avant le mort");
 					return jeu.minMaxCarte(donnePlay.atout, donnePlay.jeu[donnePlay.mort].carte(donnePlay.atout, 1));
 				}
-				if (donnePlay.maitrePli % 2 != donnePlay.joueur % 2) // partenaire
-																		// non
-																		// maitre
-				{
+				if (donnePlay.maitrePli % 2 != donnePlay.joueur % 2)  {
+						// partenaire non maitre			
 					trace("Coupe car partenaire pas maitre");
 					return jeu.minMaxCarte(donnePlay.atout);
 				}
@@ -869,9 +895,8 @@ public class Simulator {
 					return jeu.minMaxCarte(donnePlay.atout);
 				}
 			}
-		} else
-		// après le mort en 2 ou 3ème position
-		{
+		} else {
+				// après le mort en position 2 ou 3 		
 			boolean declarantCoupe = false;
 			boolean declarantSurcoupe = false;
 			if (jeuDeclarant.nbCartes(donnePlay.couleurPli) == 0 && jeuDeclarant.nbCartes(donnePlay.atout) > 0) {
@@ -880,16 +905,16 @@ public class Simulator {
 					declarantSurcoupe = true;
 			}
 			if (declarantSurcoupe)
-				return null; // pas de coupe si surcoupe au mort
-			if (donnePlay.nbCartesPli == 1) // en seconde position après le mort
-			{
+				 // pas de coupe si surcoupe au mort
+				return null;
+			if (donnePlay.nbCartesPli == 1) {
+					// en seconde position après le mort		
 				if (declarantCoupe) {
 					trace("Coupe avant le déclarant");
 					return jeu.minMaxCarte(donnePlay.atout, jeuDeclarant.carte(donnePlay.atout, 1));
 				}
-				if (donnePlay.carteMaitresse(donnePlay.couleurPli, donnePlay.hauteurPli)) // carte
-																							// maitresse
-				{
+				if (donnePlay.carteMaitresse(donnePlay.couleurPli, donnePlay.hauteurPli))   {
+						// carte maitresse				
 					trace("Coupe carte maîtresse");
 					return jeu.minMaxCarte(donnePlay.atout);
 				}
@@ -897,13 +922,12 @@ public class Simulator {
 					trace("Coupe car carte maîtresse chez le déclarant");
 					return jeu.minMaxCarte(donnePlay.atout);
 				}
-			} else if (donnePlay.nbCartesPli == 2) // en troisième position
-													// après le
-			// mort
-			{
+			} else if (donnePlay.nbCartesPli == 2)   {
+					// en troisième position après le mort			
 				if (donnePlay.pliCoupe) {
 					if (jeu.carte(donnePlay.atout, 1) < donnePlay.hauteurPli)
-						return null; // ne peut pas surcouper
+						    // ne peut pas surcouper
+						return null;
 					else {
 						trace("surcoupe avant le mort");
 						return jeu.minMaxCarte(donnePlay.atout,
@@ -914,10 +938,8 @@ public class Simulator {
 					trace("Coupe avant le mort");
 					return jeu.minMaxCarte(donnePlay.atout, jeuDeclarant.carte(donnePlay.atout, 1));
 				}
-				if (donnePlay.maitrePli % 2 != donnePlay.joueur % 2) // partenaire
-																		// non
-																		// maitre
-				{
+				if (donnePlay.maitrePli % 2 != donnePlay.joueur % 2) {
+						// partenaire non maitre				
 					trace("Coupe car partenaire pas maitre");
 					return jeu.minMaxCarte(donnePlay.atout);
 				}
@@ -941,7 +963,7 @@ public class Simulator {
 		for (int t = 0; t < donnePlay.tour; t++) {
 			int c = donnePlay.plis[donnePlay.flancDroit][t].couleur;
 			int h = donnePlay.plis[donnePlay.flancDroit][t].hauteur;
-			// honneur ou carte < 6 = prometteuse
+				// honneur ou carte < 6 = prometteuse
 			if (t > 0 && !couleurJoue[t] && donnePlay.joueur1Pli[t] == donnePlay.partenaire && jeu.nbCartes(c) > 0
 					&& (h < Jeu.Six || h > Jeu.Neuf)) {
 				trace("Continuer couleur prometteuse");
@@ -959,7 +981,7 @@ public class Simulator {
 	 */
 	public String defausse() {
 		trace("Défausser");
-		// couleur sans honneur: la plus longue
+			// couleur sans honneur: la plus longue
 		int[] c = { 0, 1, 2, 3 };
 		c = jeu.triCouleurLg(c);
 		for (int i = 0; i < 4; i++) {
@@ -980,9 +1002,11 @@ public class Simulator {
 	}
 
 	/**
-	 * Prendre le pli si possible Avec la carte la plus économique sinon fournir
-	 * petit Couper ou surcouper si possible sinon défausser
-	 * 
+	 * Prendre le pli si possible avec la carte la plus économique
+	 * sinon fournir petit
+	 * Couper si possible
+	 * à faire>>>Ne surcouper que si pli de chute, défausser plutôt dans une courte
+	 * sinon défausser
 	 * @return carte
 	 */
 	private String prendrePliEnDernier() {
@@ -1015,8 +1039,7 @@ public class Simulator {
 	}
 
 	/**
-	 * Faible du mort
-	 * 
+	 * jouer la faible du mort
 	 * @return carte
 	 */
 	private String faibleMort() {
@@ -1037,8 +1060,7 @@ public class Simulator {
 	}
 
 	/**
-	 * Forte du mort
-	 * 
+	 * jouer la forte du mort
 	 * @return carte
 	 */
 	private String forteMort() {
@@ -1056,7 +1078,6 @@ public class Simulator {
 
 	/**
 	 * Honneur sur honneur ou petit sauf intercalage
-	 * 
 	 * @return carte
 	 */
 	private String honneurSurHonneur() {
@@ -1119,15 +1140,11 @@ public class Simulator {
 		return c;
 	}
 
-	// calcule le nombre de cartes du déclarant suivant la règle des onze
-	// retourne < 0 si pas 4ieme
-
 	/**
 	 * Calcule le nombre de cartes du déclarant supérieures à l'entame suivant
 	 * la règle des onze pour une entame en quatrième meilleure
-	 * 
-	 * @return nombre de cartes du déclarant supérieures (<0 si pas quatrième
-	 *         meilleure)
+	 * @return nombre de cartes du déclarant supérieures
+	 *  		(<0 si pas quatrième meilleure)
 	 */
 	private int regleDesOnze() {
 		int c = donnePlay.couleurEntame();
@@ -1145,9 +1162,8 @@ public class Simulator {
 	 *            : donne à analyser (DonnePlay)
 	 * @param profondeur
 	 *            : nombre de coups à analyser (int)
-	 * @return resultatSimulation
+	 * @return resultat Simulation
 	 */
-
 	public TreeNodeSimulation simulation(DonnePlay donnePlay1, int profondeur) {
 			// création node courant
 		int joueurSimul = donnePlay1.joueur;
@@ -1315,9 +1331,7 @@ public class Simulator {
 
 	/**
 	 * Trace
-	 * 
-	 * @param mess
-	 *            : message (String)
+	 * @param mess : message (String)
 	 */
 
 	private void trace(String mess) {

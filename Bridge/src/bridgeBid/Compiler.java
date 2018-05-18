@@ -184,8 +184,10 @@ public class Compiler {
 		}
 	}
 
-	// codification de la séquence d'enchères
-
+	/**
+	 * codification de la séquence d'enchères
+	 * @param param
+	 */
 	private void SequEnchere(String param) {
 		if (debug)
 			System.out.println("Enchère : " + param);
@@ -228,8 +230,11 @@ public class Compiler {
 			erreur("Enchère non reconnue : " + param);
 	}
 
-	// enchère
-
+	/**
+	 * codage enchère
+	 * @param s
+	 * @return
+	 */
 	private boolean PatternEnchere(String s) {
 		if (s.length() == 0)
 			erreur("Enchère vide");
@@ -294,12 +299,21 @@ public class Compiler {
 		return true;
 	}
 
-	// couleur
-
+	/**
+	 * codage couleur
+	 * @param s
+	 * @return longueur
+	 */
 	private int PatternCouleur(String s) {
 		return PatternCouleur(s, false);
 	}
 
+	/**
+	 * codage couleur
+	 * @param s
+	 * @param enchere
+	 * @return longueur
+	 */
 	private int PatternCouleur(String s, boolean enchere) {
 		if (debug)
 			System.out.println("PatternCouleur : " + s);
@@ -346,8 +360,9 @@ public class Compiler {
 		return i;
 	}
 
-	// codification des conditions et enchère
-
+	/**
+	 * codification des conditions et enchère
+	 */
 	private void CodeCond() {
 		while (STline.hasMoreTokens()) {
 			String param = STline.nextToken();
@@ -364,8 +379,11 @@ public class Compiler {
 		erreur("manque = dans conditions");
 	}
 
-	// distribution
-
+	/**
+	 * codage distribution
+	 * @param param
+	 * @return false si erreur
+	 */
 	private boolean Distribution(String param) {
 		int i;
 		char firstC = param.charAt(0);
@@ -456,8 +474,11 @@ public class Compiler {
 		return true;
 	}
 
-	// valeur de la main
-
+	/**
+	 * codage valeur de la main
+	 * @param param
+	 * @return false si erreur
+	 */
 	private boolean Valeur(String param) {
 		int min = 0;
 		int max = 99;
@@ -514,8 +535,11 @@ public class Compiler {
 		return true;
 	}
 
-	// Condition
-
+	/**
+	 * codage condition
+	 * @param param
+	 * @return false si erreur
+	 */
 	private boolean Condition(String param) {
 		putObj(70);
 		int i = PatternCouleur(param);
@@ -545,8 +569,11 @@ public class Compiler {
 		return true;
 	}
 
-	// vulnérabilité
-
+	/**
+	 * codage vulnérabilité
+	 * @param param
+	 * @return false si erreur
+	 */
 	private boolean Vulnerabilite(String param) {
 		if (param.compareTo("V") == 0)
 			putObj(81);
@@ -567,8 +594,11 @@ public class Compiler {
 		return true;
 	}
 
-	// type de tournoi
-
+	/**
+	 * codage type de tournoi
+	 * @param param
+	 * @return false si erreur
+	 */
 	private boolean Tournoi(String param) {
 		if (param.compareTo("TPP") == 0)
 			putObj(88);
@@ -579,8 +609,10 @@ public class Compiler {
 		return true;
 	}
 
-	// carte
-
+	/**
+	 * codage carte
+	 * @param s
+	 */
 	private void codeCarte(String s) {
 		int i;
 		for (i = 0; i < s.length(); i++) {
@@ -598,8 +630,11 @@ public class Compiler {
 		putObj(0);
 	}
 
-	// + -
-
+	/**
+	 * codage opération plus et moins
+	 * @param s
+	 * @return
+	 */
 	private int PlusMoins(String s) {
 		if (s.length() == 0) {
 			putObj(253);
@@ -616,8 +651,11 @@ public class Compiler {
 		}
 	}
 
-	// nombre
-
+	/**
+	 * décode un nombre
+	 * @param param
+	 * @return
+	 */
 	private int decodeNb(String param) {
 		valeur = 0;
 		int i = 0;
@@ -630,16 +668,20 @@ public class Compiler {
 		return i;
 	}
 
-	// erreur
-
+	/**
+	 * erreur
+	 * @param cause
+	 */
 	private void erreur(String cause) {
 		System.out.println(" *** ");
 		System.out.println(cause);
 		System.exit(1);
 	}
 
-	// lecture ligne
-
+	/**
+	 * lecture ligne
+	 * @throws IOException
+	 */
 	private void getLine() throws IOException {
 		String param;
 		line = in.readLine();
@@ -665,22 +707,27 @@ public class Compiler {
 		}
 	}
 
-	// erreurs de paramètres
-
+	/**
+	 * erreurs de paramètres
+	 */
 	static void usage() {
 		System.out.println("Usage: java BridgeComp <fichier source> <fichier binaire>");
 		System.exit(-10);
 	}
 
-	// conversion int en byte
-
+	/**
+	 * conversion int en byte
+	 * @param pi
+	 * @return
+	 */
 	private byte byteValue(int pi) {
 		Integer i = new Integer(pi);
 		return i.byteValue();
 	}
 
-	// empile l'adresse de l'emplacement d'une adresse de fin
-
+	/**
+	 * empile l'adresse de l'emplacement d'une adresse de fin
+	 */
 	private void empileAdr() {
 		pilePnt++;
 		pileAd[pilePnt] = objPnt;
@@ -688,8 +735,9 @@ public class Compiler {
 		objPnt += 2;
 	}
 
-	// fin de champ, mémorise l'adresse de fin
-
+	/**
+	 * fin de champ, mémorise l'adresse de fin
+	 */
 	private void depileAdr() {
 		putObj(0);
 		obj[pileAd[pilePnt]] = byteValue(objPnt >> 8);
@@ -697,8 +745,10 @@ public class Compiler {
 		pilePnt--;
 	}
 
-	// mémorise un byte
-
+	/**
+	 * mémorise un byte
+	 * @param valeur
+	 */
 	private void putObj(int valeur) {
 		if (valeur > 255)
 			erreur("valeur octet > 255");
@@ -711,8 +761,10 @@ public class Compiler {
 		}
 	}
 
-	// mémorise un nom sous forme <longueur><nom 1 caractère/byte>
-
+	/**
+	 * mémorise un nom sous forme <longueur><nom à raison d'un caractère/byte>
+	 * @param param
+	 */
 	private void putNom(String param) {
 		if (param.length() > 255)
 			erreur("longueur string > 255");

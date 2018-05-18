@@ -5,23 +5,79 @@ package bridgeBid;
  */
 
 public class EvalJeu {
-	public int PH; // points d'honneurs
-	public int PDH; // points de distribution et d'honneurs
-	public int PHL; // points de longueur et d'honneurs
-	public int PJ; // points de chelem
-	public int LJ; // levées de jeux
-	public int P; // perdantes
-	public int S[]; // points de soutien dans chaque couleur
-	public int Hc[]; // points d'honneurs dans chaque couleur
-	public String distribution; // nombre de cartes du + au -
+	/**
+	 *  points d'honneurs
+	 */
+	public int PH;
+	/**
+	 *  points de distribution et d'honneurs
+	 */
+	public int PDH;
+	/**
+	 *  points de longueur et d'honneurs
+	 */
+	public int PHL;
+	/**
+	 *  points de chelem
+	 */
+	public int PJ;
+	/**
+	 *  levées de jeux
+	 */
+	public int LJ;
+	/**
+	 *  perdantes
+	 */
+	public int P;
+	/**
+	 *  points de soutien dans chaque couleur
+	 */
+	public int S[];
+	/**
+	 *  points d'honneurs dans chaque couleur
+	 */
+	public int Hc[];
+	/**
+	 *  nombre de cartes du + au -
+	 */
+	public String distribution;
+	/**
+	 *  jeu à évaluer
+	 */
 	public String jeu[];
+	/**
+	 *  type de distribution
+	 */
+	private String typeDistrib1;
+	/**
+	 *  type de distribution secondaire
+	 */
+	private String typeDistrib2;
+	/**
+	 *  points de distribution
+	 */
+	private int PD;
+	/**
+	 *  points de soutien
+	 */
+	private int PS;
+	/**
+	 *  points de longueur par couleur
+	 */
+	private int PL[];
+	/**
+	 *  symbolique des cartes
+	 */
+	private final static String carteSymbole = "ARDVX98765432";
 
-	private String typeDistrib1; // type de distribution
-	private String typeDistrib2; // type de distribution secondaire
-	private int PD, PS, PL[];
-
-	private static String carteSymbole = "ARDVX98765432";
-
+	/**
+	 * évaluation d'un jeu
+	 * @param T
+	 * @param K
+	 * @param C
+	 * @param P
+	 * @throws Exception
+	 */
 	public EvalJeu(String T, String K, String C, String P) throws Exception {
 		int nbCartes = T.length() + K.length() + C.length() + P.length();
 		if (nbCartes != 13) {
@@ -40,6 +96,11 @@ public class EvalJeu {
 		CalculDistribution();
 	}
 
+	/**
+	 * Contrôle du jeu
+	 * @param j
+	 * @throws Exception
+	 */
 	public static void controleJeu(String j) throws Exception {
 		int noCarteCourante = -1;
 		for (int i = 0; i < j.length(); i++) {
@@ -54,6 +115,11 @@ public class EvalJeu {
 		}
 	}
 
+	/**
+	 * numéro couleur
+	 * @param couleur TKCP
+	 * @return numéro couleur 0-3
+	 */
 	public static int noCouleur(char couleur) {
 		if (couleur == 'T')
 			return 0;
@@ -66,6 +132,11 @@ public class EvalJeu {
 		return 0;
 	}
 
+	/**
+	 * couleur sous forme symbolique 
+	 * @param j  numéro couleur 0-3
+	 * @return T K C P
+	 */
 	public static char couleurToChar(int j) {
 		if (j >= 0 && j < 4) {
 			String s = "TKCP";
@@ -74,36 +145,77 @@ public class EvalJeu {
 		return ' ';
 	}
 
+	/**
+	 * comparaison type Distribution
+	 * @param distrib
+	 * @return true si idem
+	 */
 	public boolean typeDistrib(String distrib) {
 		if (typeDistrib1.equals(distrib) || typeDistrib2.equals(distrib))
 			return true;
 		return false;
 	}
 
+	/**
+	 * nombre de cartes dans couleur
+	 * @param couleur
+	 * @return
+	 */
 	public int nbCartes(char couleur) {
 		return jeu[noCouleur(couleur)].length();
 	}
 
+	/**
+	 * niveau contrôle couleur
+	 * @param couleur
+	 * @return
+	 */
 	public int Controles(char couleur) {
 		return testControles(jeu[noCouleur(couleur)]);
 	}
 
+	/**
+	 * contrôles SA
+	 * @param couleur
+	 * @return
+	 */
 	public int ControlesSA(char couleur) {
 		return testControlesSA(jeu[noCouleur(couleur)]);
 	}
 
+	/**
+	 * recherche cartes dans un jeu pour cette couleur
+	 * @param couleur
+	 * @param liste
+	 * @return
+	 */
 	public boolean Cartes(char couleur, String liste) {
 		return testCartes(jeu[noCouleur(couleur)], liste);
 	}
 
+	/**
+	 * nombre d'H dans la couleur
+	 * @param couleur
+	 * @return
+	 */
 	public int nbHonneurs(char couleur) {
 		return countH(jeu[noCouleur(couleur)]);
 	}
 
+	/**
+	 * nombre de GH dans la couleur
+	 * @param couleur
+	 * @return
+	 */
 	public int nbGrosHonneurs(char couleur) {
 		return countGH(jeu[noCouleur(couleur)]);
 	}
 
+	/**
+	 * nombre de cartes de ce type dans le jeu
+	 * @param carte type
+	 * @return
+	 */
 	public int nbCartesType(char carte) {
 		int c = 0;
 		for (int i = 0; i < 4; i++)
@@ -114,14 +226,27 @@ public class EvalJeu {
 		return c;
 	}
 
+	/**
+	 * PS
+	 * @param couleur
+	 * @return
+	 */
 	public int Soutien(char couleur) {
 		return S[noCouleur(couleur)];
 	}
 
+	/**
+	 * nombre de PH dans une couleur
+	 * @param couleur
+	 * @return
+	 */
 	public int Honneur(char couleur) {
 		return Hc[noCouleur(couleur)];
 	}
 
+	/**
+	 * édition de contôle
+	 */
 	public void print() {
 		System.out.println("----- Jeu -----");
 		for (int i = 0; i < 4; i++)
@@ -144,6 +269,11 @@ public class EvalJeu {
 		System.out.println("---------------");
 	}
 
+	/**
+	 * nombre d'H
+	 * @param j
+	 * @return nombre de ARDVX
+	 */
 	private int countH(String j) {
 		int c = 0;
 		for (int i = 0; i < j.length(); i++) {
@@ -154,6 +284,11 @@ public class EvalJeu {
 		return c;
 	}
 
+	/**
+	 * nombre de GH
+	 * @param j
+	 * @return nombre de ARD
+	 */
 	private int countGH(String j) {
 		int c = 0;
 		for (int i = 0; i < j.length(); i++) {
@@ -163,52 +298,66 @@ public class EvalJeu {
 		return c;
 	}
 
-	private int testControles(String j) {
-		if (j.length() == 0)
+	/**
+	 * niveau de contrôles d'un jeu à la couleur
+	 * @param jeu
+	 * @return 1=premier, 2=second, 3=troisième, sinon 14
+	 */
+	private int testControles(String jeu) {
+		if (jeu.length() == 0)
 			return 1;
-		else if (j.length() == 1) {
-			if (j.charAt(0) == 'A')
+		else if (jeu.length() == 1) {
+			if (jeu.charAt(0) == 'A')
 				return 1;
 			else
 				return 2;
-		} else if (j.length() >= 2) {
-			if (j.charAt(0) == 'A')
+		} else if (jeu.length() >= 2) {
+			if (jeu.charAt(0) == 'A')
 				return 1;
-			else if (j.charAt(0) == 'R')
+			else if (jeu.charAt(0) == 'R')
 				return 2;
-			else if (j.length() >= 3 && j.charAt(0) == 'D' && j.charAt(1) == 'V')
+			else if (jeu.length() >= 3 && jeu.charAt(0) == 'D' && jeu.charAt(1) == 'V')
 				return 3;
 		}
 		return 14;
 	}
 
-	// nombre de demi-contrôles pour SA
-
-	private int testControlesSA(String j) {
+	/**
+	 * nombre de demi-contrôles pour SA
+	 * @param jeu
+	 * @return
+	 */
+	private int testControlesSA(String jeu) {
 		int ctr = 0;
-		if ( j.startsWith("ARD") || j.startsWith("ADV") ||  j.startsWith("ARV"))
+		if ( jeu.startsWith("ARD") || jeu.startsWith("ADV") ||  jeu.startsWith("ARV"))
 			ctr = 6;
-		else if ( j.startsWith("ADV") ||  j.startsWith("ARV") )
+		else if ( jeu.startsWith("ADV") ||  jeu.startsWith("ARV") )
 			ctr = 5;
-		else if ( j.startsWith("AR") ||  j.startsWith("RDV"))
+		else if ( jeu.startsWith("AR") ||  jeu.startsWith("RDV"))
 			ctr = 4;
-		else if ( j.startsWith("AD") ||  j.startsWith("AVX") ||
-				  j.length() >= 3 && j.startsWith("RV") ||
-				  j.length() >= 3 && j.startsWith("RD")  )
+		else if ( jeu.startsWith("AD") ||  jeu.startsWith("AVX") ||
+				  jeu.length() >= 3 && jeu.startsWith("RV") ||
+				  jeu.length() >= 3 && jeu.startsWith("RD")  )
 			ctr = 3;	// un arrêt et demi: AD, AVX, RVx, RDx
-		else if ( j.startsWith("A") ||
-				  j.length() >= 2 && j.startsWith("R") ||
-			  	  j.length() >= 3 && j.startsWith("D") )
+		else if ( jeu.startsWith("A") ||
+				  jeu.length() >= 2 && jeu.startsWith("R") ||
+			  	  jeu.length() >= 3 && jeu.startsWith("D") )
 			ctr = 2;	// arrêt: A ou Rx ou Dxx
-		else if ( j.length() >= 3 && j.startsWith("V") ||
-				  j.length() >= 2 && j.startsWith("D") )
+		else if ( jeu.length() >= 3 && jeu.startsWith("V") ||
+				  jeu.length() >= 2 && jeu.startsWith("D") )
 			ctr = 1;	// demi-arrêt: Vxx ou Dx
 		return ctr;
 	}
 
-	private boolean testCartes(String j, String liste) {
+	/**
+	 * recherche cartes dans un jeu
+	 * @param jeu
+	 * @param liste des cartes à trouver
+	 * @return true si cartes trouvées dans le jeu
+	 */
+	private boolean testCartes(String jeu, String liste) {
 		int il;
-		if (j.length() < liste.length())
+		if (jeu.length() < liste.length())
 			return false;
 		for (il = 0; il < liste.length(); il++) {
 			if (liste.indexOf(liste.charAt(il)) < 0)
@@ -217,8 +366,22 @@ public class EvalJeu {
 		return true;
 	}
 
+	/**
+	 * évaluation des jeux
+	 * PH : As=4, Roi=3, Dame=2, Valet=1
+	 * PD : chicane=3, valet singleton=1, singleton=2 sauf si R ou D, doubleton=1
+	 * PL : 1 points à partir de la cinquième carte si 2 GH A,R,D
+	 * ou   1 points à partir de la sixième carte si AV,RV,DVX
+	 * PS : soutien par couleur
+	 * 		+2 pour la chicane et le singleton
+	 * 		+1 par atout à partir de 4 en majeur, 6 en mineure
+	 * 		+1 si PH=2 à l'atout
+	 * LJ : levées de jeu
+	 */
 	private void CalculJeu() {
 		int i, j;
+		
+			//  honneurs
 		Hc = new int[4];
 		for (i = 0; i < 4; i++) {
 			Hc[i] = 0;
@@ -235,7 +398,8 @@ public class EvalJeu {
 			}
 		}
 		PH = Hc[0] + Hc[1] + Hc[2] + Hc[3];
-
+		
+			//  distribution
 		PS = 0;
 		PD = 0;
 		for (i = 0; i < 4; i++) {
@@ -258,6 +422,7 @@ public class EvalJeu {
 			}
 		}
 
+			//  longueur
 		PL = new int[4];
 		for (i = 0; i < 4; i++) {
 			PL[i] = 0;
@@ -269,11 +434,15 @@ public class EvalJeu {
 				PL[i] += jeu[i].length() - 5;
 		}
 
+			//  combinaison PHL et PDH
 		PHL = PH + PL[0] + PL[1] + PL[2] + PL[3];
 		PDH = PHL + PD;
 
-		PJ = PDH; // à voir plus tard
+			//  modification des points pour le chelem
+			//  non implémenté
+		PJ = PDH;
 
+			//  points de soutien par couleur
 		S = new int[4];
 		S[0] = 0;
 		if (jeu[0].length() >= 4) {
@@ -297,6 +466,7 @@ public class EvalJeu {
 				S[3] += 1;
 		}
 
+			//   levées de jeu
 		double LJtotal = 0;
 		for (i = 0; i < 4; i++) {
 			double LJc = 0;
@@ -330,6 +500,17 @@ public class EvalJeu {
 		P = 13 - (int) Math.round(LJtotal);
 	}
 
+	/**
+	 *  évaluation des type de distribution 1 & 2
+	 *  4333 -> pl reg (plate régulière)
+	 *  4432 -> reg (régulière)
+	 *  5332 -> reg uni (régulière unicolore)
+	 *  5422 -> sreg bic (semi-régulière bicolore)
+	 *  6332 -> sreg uni (semi-régulière unicolore)
+	 *  4441 et 5440 -> tri (tricolore)
+	 *  55 à 76 -> bic (bicolore)
+	 *  sinon -> uni (unicolore)
+	 */
 	private void CalculDistribution() {
 		int i, j, k;
 		int lg[] = new int[4];

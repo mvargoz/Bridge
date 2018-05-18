@@ -13,26 +13,37 @@ import bridgeBid.DonneBid;
 import bridgeBid.Compiler;
 
 /**
- * 		Bridge : Test batch du système d'enchère et du jeu de la carte
+ * 		Bridge : Test du système d'enchère et du jeu de la carte
  */
 
 public class Bridge {
 	
-	// lecture du fichier txt
+	/**
+	 * lecture du fichier txt
+	 */
 	static BufferedReader in = null;
 	static String line;
 	static String cmd;
 	static StringTokenizer STline;
-	
-	//	interpréteur d'enchères
+	/**
+	 * interpréteur d'enchères
+	 */
 	static Interpreter SysEnchere;
+	/**
+	 * système d'enchère
+	 */
 	static String sytemEnchere;
+	/**
+	 * type de tournoi
+	 */
 	static String tournoi;
-
-	//  debug
+	/**
+	 * debug
+	 */
 	static boolean debug = false;
-
-	//  code retour
+	/**
+	 * code retour
+	 */
 	static int codeRetour = 0;
 
 	/**
@@ -463,8 +474,10 @@ public class Bridge {
 		}
 	}
 
-	// lecture ligne
-
+	/**
+	 * lecture ligne
+	 * @throws IOException
+	 */
 	private static void getLine() throws IOException {
 		line = in.readLine();
 		if (line != null) {
@@ -479,29 +492,37 @@ public class Bridge {
 		}
 	}
 
-	// lecture token
-
+	/**
+	 * lecture token
+	 * @param nomToken
+	 * @return token
+	 */
 	private static String getToken(String nomToken) {
 		if (!STline.hasMoreTokens())
 			erreur("Il manque " + nomToken);
 		return STline.nextToken();
 	}
 
-	// erreur
-
+	/**
+	 * Sortie erreur
+	 * @param cause
+	 */
 	private static void erreur(String cause) {
 		System.out.println(" *** ");
 		System.out.println(cause);
 		System.exit(0);
 	}
 
-	// substitue les cartes notées x
-
-	private static String substitueCartex(String j) {
-		int c = j.indexOf('x');
+	/**
+	 * Substitue les cartes notées x par de petites cartes de 2 à 9
+	 * @param jeu
+	 * @return jeu substitué
+	 */
+	private static String substitueCartex(String jeu) {
+		int c = jeu.indexOf('x');
 		if (c < 0)
-			return j;
-		return j.substring(0, c) + "98765432".substring(0, j.length() - c);
+			return jeu;
+		return jeu.substring(0, c) + "98765432".substring(0, jeu.length() - c);
 	}
 
 }
