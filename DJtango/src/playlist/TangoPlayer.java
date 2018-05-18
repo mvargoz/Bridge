@@ -645,7 +645,7 @@ public class TangoPlayer extends JDialog implements WindowListener {
 		metadataChangeListener = new MapChangeListener<String, Object>() {
 			@Override
 			public void onChanged(Change<? extends String, ?> change) {
-//				System.out.println("tag:" + change.getKey());
+				System.out.println("tag:" + change.getKey());
 				if ( change.getKey().equals("image") && paneImage.getChildren().isEmpty() )  {
 					ImageView imageMedia = new ImageView((Image) change.getValueAdded());
 					imageMedia.setPreserveRatio(true);

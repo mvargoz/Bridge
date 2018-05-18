@@ -27,6 +27,9 @@ import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
 import winApp.ContexteGlobal;
 
@@ -34,7 +37,7 @@ import winApp.ContexteGlobal;
  * 		édition des tandas
 */
 
-public class DialogEditTanda extends JDialog implements ActionListener {
+public class DialogEditTanda extends JDialog implements WindowListener, ActionListener {
 	private static final long serialVersionUID = 1L;
 
 		//	constantes
@@ -156,6 +159,8 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 	 */
 	public DialogEditTanda(PlaylistPanel pp)	{
 		super(winApp.ContexteGlobal.frame, titreTanda, false);
+		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+		addWindowListener(this);
 		
 			//  position
 		
@@ -245,6 +250,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 		moveUpButton.setActionCommand("upMusic");
 		moveUpButton.addActionListener(this);
 		deleteMusicButton.setActionCommand("delMusic");
+		deleteMusicButton.setMnemonic(KeyEvent.VK_DELETE); // alt + delete
 		deleteMusicButton.addActionListener(this);
 		moveDownButton.setActionCommand("downMusic");
 		moveDownButton.addActionListener(this);
@@ -282,7 +288,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 			nameTanda.setEnabled(true);
 		} else {
 			nameTanda.setText(tanda);
-			nameTanda.setEnabled(false);
+			nameTanda.setEnabled(true);
 		}
 		verifTandaName();	
 		readTanda(tanda);
@@ -325,7 +331,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 			line = in.readLine();
 			line = in.readLine();
 			while (line != null)  {
-				String[] music = new String[5];
+				String[] music = new String[6];
 				line = line.trim();
 				if ( line.startsWith("#EXTINF:")  )  {
 					String[] s = line.substring(8).split(",");
@@ -336,7 +342,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 					return;
 				}
 				String path = in.readLine();
-				music[4] = path;
+				music[5] = path;
 				File file = new File(path);
 				tableModel.addRow(music);
 				infoMedia.getInfoMedia(file.toURI(), tandasMusicTable, tableModel.getRowCount()-1);
@@ -371,7 +377,7 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 				out.write("#EXTINF:"
 				 + modelJTable.getValueAt(i,3) + ","
 				 + nameMusic.trim() + "\n"
-				 + modelJTable.getValueAt(i,4) + "\n");
+				 + modelJTable.getValueAt(i,5) + "\n");
 			}
 			out.close();
 			JOptionPane.showMessageDialog(this, ContexteGlobal.getResourceString("messSaveOK"),
@@ -455,9 +461,9 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 	        for (File file : listFile) {
 	        	String path = file.getPath();
 	        	int c = path.lastIndexOf(File.separatorChar);
-				String[] music = new String[5];
+				String[] music = new String[6];
 				music[0] = path.substring(c+1,path.lastIndexOf('.'));
-				music[4] = path;
+				music[5] = path;
 // ajout car l'insertion ne marche pas avec getInfoMedia (changement valeur row)				
 				modelJTable.addRow(music);
 				infoMedia.getInfoMedia(file.toURI(), tandasMusicTable, modelJTable.getRowCount()-1);
@@ -467,6 +473,53 @@ public class DialogEditTanda extends JDialog implements ActionListener {
 			infoMedia.stopInfoMedia();
 	        return true;
 	    }
+	}
+
+	@Override
+	public void windowActivated(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowClosed(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowClosing(WindowEvent arg0) {
+		int okno = JOptionPane.showConfirmDialog(this, ContexteGlobal.getResourceString("messConfirm"),
+				ContexteGlobal.getResourceString("messSaveFileTanda"), JOptionPane.YES_NO_OPTION);
+		if (okno == JOptionPane.OK_OPTION) {
+			writeTanda(nameTanda.getText());
+		}
+		dispose();							
+
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowIconified(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowOpened(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 

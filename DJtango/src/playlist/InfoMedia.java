@@ -136,6 +136,9 @@ public class InfoMedia implements Runnable {
 	private void search(URI uriFile, DefaultTableModel modelJTable, int row)  {
 		try {
 			media = new Media(uriFile.toString());
+			String path = uriFile.getPath();
+			String titleMus = path.substring(path.lastIndexOf('/')+1,path.lastIndexOf('.'));
+	        modelJTable.setValueAt(titleMus, row, 0);
 			setMetaDataDisplay(media.getMetadata());			
 			mediaPlayer = new MediaPlayer(media);
 		
@@ -145,7 +148,6 @@ public class InfoMedia implements Runnable {
 					try {
 						Duration duration = mediaPlayer.getMedia().getDuration();
 						playTime =  (int) Math.floor(duration.toSeconds());
-					//	System.out.println("Musique ready : " + uriFile);
 						ready.signal();
 				    } finally {
 				    	lockMedia.unlock();
@@ -173,15 +175,22 @@ public class InfoMedia implements Runnable {
 	        
 	        	//  tags
 			
-	        modelJTable.setValueAt(title, row, 0);
-	        modelJTable.setValueAt(artist, row, 1);
-	        modelJTable.setValueAt(year, row, 2);
+			if ( !title.isEmpty() ) {
+				modelJTable.setValueAt(title, row, 0);
+				modelJTable.setValueAt(artist, row, 1);
+				modelJTable.setValueAt(year, row, 2);
+		        modelJTable.setValueAt(genre, row, 4);
+			} else {
+				modelJTable.setValueAt("?", row, 1);
+				modelJTable.setValueAt("?", row, 2);
+		        modelJTable.setValueAt("?", row, 4);				
+			}
 	        modelJTable.setValueAt(playTime, row, 3);
-	        modelJTable.setValueAt(genre, row, 4);
 	        
 		} catch (Exception e) {
 			System.out.println("Erreur sur : " + uriFile);
 			e.printStackTrace();
+	        modelJTable.setValueAt("erreur", row, 3);
 		}
 
 	}
@@ -197,7 +206,7 @@ public class InfoMedia implements Runnable {
 				if ( change.wasAdded() ) {
 					String key=change.getKey();
 					Object value=change.getValueAdded(); 
-//					System.out.println("Add tag : " + key + "=" + value);
+ 					System.out.println("Add tag : " + key + "=" + value);
 					switch(key){
 					case "album":
 						album = (String) value;
@@ -215,7 +224,7 @@ public class InfoMedia implements Runnable {
 						genre = (String) value;
 						break;   
 					case "image":
-						imageMedia = new ImageView((Image) value);
+// non utilisé			imageMedia = new ImageView((Image) value);
 						break;
 					}
 				}    

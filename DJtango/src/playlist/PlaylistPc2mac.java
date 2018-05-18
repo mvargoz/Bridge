@@ -26,7 +26,9 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 		//	répertoire des modèles
 	private static String modelDir = PlaylistPanel.modelDir;	
 		//	répertoire des playlists Windows sur PC
-	private static String playlistDir = PlaylistPanel.playlistDir;
+	private static String baseDir = ContexteGlobal.getResourceString("baseDir");
+	private static String playlistDir = baseDir + "/" + ContexteGlobal.getResourceString("playlistDir");
+	private static String systemSepDir = "\\";
 		//	extension playlist
 	private static String playlistExt = PlaylistPanel.playlistExt;
 		//	répertoire des playlists mac sur PC
@@ -66,6 +68,9 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 	@Override
 	public String doInBackground() {
 
+		if ( !PlaylistPanel.system.startsWith("Windows") )  {
+			systemSepDir = "/";
+		}
 		double progress = 0;
 		setProgress((int) progress);
 
@@ -98,7 +103,7 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 		double incProgress = 100 / listFile.length;
 
 		for (File f : listFile) {
-			File fileOut = new File(playlistDirMac + "\\" + f.getName());
+			File fileOut = new File(playlistDirMac + systemSepDir + f.getName());
 			convertPlaylist(f, fileOut);
 			progress += incProgress;
 			setProgress(Math.min(100,(int) Math.round(progress)));
