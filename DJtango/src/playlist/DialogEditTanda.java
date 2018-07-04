@@ -19,14 +19,22 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Vector;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -64,12 +72,18 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 	private JTextField nameTanda = new JTextField();
 	private JButton helpButton = new JButton(new ImageIcon(ContexteGlobal.getResource("helpImage")));
 
+		// 	Tri des musiques d'une tanda
+	
+	private JRadioButton sortButton = new JRadioButton("Tri des musiques");
+	
 		// 	Liste des musiques d'une tanda
 
     private String[] columnNames = {"Titre", "Artiste", "Année", "Durée", "Genre", ""};
     private int[] columnWidth = {250, 300, 40, 40, 70, 0};
-    private JTable tandasMusicTable = new JTable(new DefaultTableModel(columnNames,0));
+	private TableModel tandasMusicTableModel = new DefaultTableModel(columnNames,0);
+    private JTable tandasMusicTable = new JTable(tandasMusicTableModel);
 	private JScrollPane tandasMusicTableScrollPane = new JScrollPane(tandasMusicTable);
+	private TableRowSorter<TableModel> tandasMusicTableSorter;
 	
 		//	Boutons action sur tanda
 	
@@ -94,6 +108,9 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 	@Override
 	public void actionPerformed(ActionEvent actev) {
 		int[] rows = tandasMusicTable.getSelectedRows();
+		for ( int i = 0; i < rows.length; i++ )  {
+			rows[i] = tandasMusicTable.convertRowIndexToModel(rows[i]);
+		}
 		DefaultTableModel tableModel = (DefaultTableModel) tandasMusicTable.getModel();
 
 		switch ( actev.getActionCommand() )  {
@@ -149,10 +166,27 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 			JOptionPane.showMessageDialog(this, out,
 					ContexteGlobal.getResourceString("messNameTanda"), JOptionPane.INFORMATION_MESSAGE);
 			break;			
+		case "sort":
+			if ( sortButton.isSelected() )  {
+				moveUpButton.setEnabled(false);
+				moveDownButton.setEnabled(false);
+					// 	tri musiques sur année-titre
+				List <RowSorter.SortKey> sortKeys = new ArrayList<RowSorter.SortKey>();
+				sortKeys.add(new RowSorter.SortKey(2, SortOrder.ASCENDING));
+				sortKeys.add(new RowSorter.SortKey(0, SortOrder.ASCENDING));
+				tandasMusicTableSorter = new TableRowSorter<TableModel>(tandasMusicTableModel);
+				tandasMusicTableSorter.setSortKeys(sortKeys);
+				tandasMusicTable.setRowSorter(tandasMusicTableSorter);				
+			} else {
+				tandasMusicTable.setRowSorter(null);								
+				moveUpButton.setEnabled(true);
+				moveDownButton.setEnabled(true);
+			}
+			break;			
 		}
 
 	}
-
+	  
 	/**
 	 * contructeur
 	 * @param pp
@@ -194,7 +228,7 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 		});
 
 			//  custumization table
-		
+
 		tandasMusicTable.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
 			private static final long serialVersionUID = 1L;
             @Override
@@ -223,9 +257,16 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 		getContentPane().add(panel);		
 		panel.setBorder(new EmptyBorder(10, 10, 10, 10));
 		panelName.add(nameTanda);
+		
 		helpButton.setActionCommand("help");
 		helpButton.addActionListener(this);
 		panelName.add(helpButton);
+		
+		sortButton.setActionCommand("sort");
+		sortButton.addActionListener(this);
+		sortButton.setSelected(false);
+		panelName.add(sortButton);
+		
 		panel.add(panelName,BorderLayout.NORTH);
 		
 		//	table
@@ -274,7 +315,8 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 		
 		pack();		
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-		setVisible(false);		
+		setVisible(false);
+
 	}
 			
 	/**
@@ -290,7 +332,11 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 			nameTanda.setText(tanda);
 			nameTanda.setEnabled(true);
 		}
-		verifTandaName();	
+		verifTandaName();
+		sortButton.setSelected(false);
+		tandasMusicTable.setRowSorter(null);								
+		moveUpButton.setEnabled(true);
+		moveDownButton.setEnabled(true);
 		readTanda(tanda);
 		setVisible(true);
 	}
@@ -372,7 +418,8 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 			out = new BufferedWriter(outstr);
 			out.write("#EXTM3U\n");
 			DefaultTableModel modelJTable = (DefaultTableModel)tandasMusicTable.getModel();
-			for (int i = 0; i < modelJTable.getRowCount(); i++ ) {
+			for (int iView = 0; iView < modelJTable.getRowCount(); iView++ ) {
+				int i = tandasMusicTable.convertRowIndexToModel(iView);
 				String nameMusic = (String) modelJTable.getValueAt(i,0);
 				out.write("#EXTINF:"
 				 + modelJTable.getValueAt(i,3) + ","
@@ -456,7 +503,12 @@ public class DialogEditTanda extends JDialog implements WindowListener, ActionLi
 	        } catch (IOException e) {
 	            return false;
 	        }
-	        	//  insert
+	        	//  disable sort
+	        sortButton.setSelected(false);
+			tandasMusicTable.setRowSorter(null);								
+			moveUpButton.setEnabled(true);
+			moveDownButton.setEnabled(true);
+        		//  insert
 	        InfoMedia infoMedia = new InfoMedia();
 	        for (File file : listFile) {
 	        	String path = file.getPath();

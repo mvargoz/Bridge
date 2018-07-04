@@ -654,7 +654,7 @@ public class TangoPlayer extends JDialog implements WindowListener {
 					paneImage.getChildren().add(imageMedia);
 				} else if ( change.getKey().equals("artist") )  {
 					String musicArtist = ((String) change.getValueAdded());
-			        textMusicArtist.setText(musicArtist);
+//			        textMusicArtist.setText(musicArtist);	// ne contient que le chanteur
 				} else if ( change.getKey().equals("title") )  {
 					String musicTitle = ((String) change.getValueAdded());
 			        textMusicTitle.setText(musicTitle);
