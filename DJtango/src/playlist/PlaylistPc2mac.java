@@ -147,11 +147,17 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 				if ( line.startsWith("#EXTINF:")  )  {
 					out.write(line+'\n');
 				} else {
-					//  test existence fichier musique
-					if ( !(new File(line).exists()) )
-						errMusic.add(line + " in " + fileIn.getName());
 					//	conversion path musique pour mac
-					out.write(macDir + albumMac(line) + '\n');
+					String macFile = macDir + albumMac(line);
+					//  test existence fichier musique
+					if ( systemSepDir == "/" )	{
+						if ( !(new File(macFile).exists()) )
+							errMusic.add(macFile + " in " + fileIn.getName());
+					} else {
+						if ( !(new File(line).exists()) )
+							errMusic.add(line + " in " + fileIn.getName());
+					}
+					out.write(macFile + '\n');
 					//	album
 					album.add(line.substring(0, line.lastIndexOf('\\')));
 				}				
@@ -160,10 +166,10 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 			in.close();
 			out.close();
 		} catch (Exception ex) {
-			JOptionPane.showMessageDialog(ContexteGlobal.frame,
-					ContexteGlobal.getResourceString("messErrIO"),
-					ContexteGlobal.getResourceString("messConvFileTanda"),
-					JOptionPane.ERROR_MESSAGE);
+//			JOptionPane.showMessageDialog(ContexteGlobal.frame,
+//					ContexteGlobal.getResourceString("messErrIO"),
+//					ContexteGlobal.getResourceString("messConvFileTanda"),
+//					JOptionPane.ERROR_MESSAGE);
 			ex.printStackTrace();
 		}
 
@@ -205,10 +211,10 @@ public class PlaylistPc2mac extends SwingWorker<String, Object> {
 			}
 			out.close();
 		} catch (Exception ex) {
-			JOptionPane.showMessageDialog(ContexteGlobal.frame,
-					ContexteGlobal.getResourceString("messErrSave"),
-					ContexteGlobal.getResourceString("messShellCopy"),
-					JOptionPane.ERROR_MESSAGE);
+//			JOptionPane.showMessageDialog(ContexteGlobal.frame,
+//					ContexteGlobal.getResourceString("messErrSave"),
+//					ContexteGlobal.getResourceString("messShellCopy"),
+//					JOptionPane.ERROR_MESSAGE);
 			ex.printStackTrace();
 		}
 	}

@@ -712,6 +712,7 @@ public class PlaylistPanel extends JPanel implements ActionListener, PropertyCha
 			String nameTanda = nm.substring(0, nm.length() - 4);
 			listCortina.addElement(nameTanda);
 		}
+		listCortina.addElement("");
 
 		// Cumparsita
 

@@ -98,21 +98,15 @@ public class PlaylistMilonga {
 				if ( line.length() == 0 )
 					continue;
 				
-				// cortina
+				// cortina (facultative)
 				
-				if ( cortinaList.size() == 0 )  {
-					JOptionPane.showMessageDialog(((PlaylistPanel) winApp.ContexteGlobal.frame.panel),
-							ContexteGlobal.getResourceString("messErreurCortina"),
-							ContexteGlobal.getResourceString("messPlaylistMilonga"),
-							JOptionPane.ERROR_MESSAGE);
-					return null;
-				}
-				int	noCortina = (int) Math.floor(Math.random()*cortinaList.size());
-				writePlaylist.write(cortinaList.get(noCortina)+",Cortina\n");
-				writePlaylist.write(cortinaFile.get(noCortina)+'\n');
-				cortinaList.remove(noCortina);
-				cortinaFile.remove(noCortina);
-				
+				if ( cortinaList.size() > 0 )  {
+					int	noCortina = (int) Math.floor(Math.random()*cortinaList.size());
+					writePlaylist.write(cortinaList.get(noCortina)+",Cortina\n");
+					writePlaylist.write(cortinaFile.get(noCortina)+'\n');
+					cortinaList.remove(noCortina);
+					cortinaFile.remove(noCortina);
+				}				
 				//  tanda
 				
 				int iSpace = line.indexOf(' ');
@@ -216,6 +210,8 @@ public class PlaylistMilonga {
 		
 		cortinaList.clear();
 		cortinaFile.clear();
+		if (pCortina == null || pCortina.isEmpty())
+			return;
 		String nmCortina = playlistDir + "/" + pCortina + playlistExt;
 		String nextCortina;
 		
